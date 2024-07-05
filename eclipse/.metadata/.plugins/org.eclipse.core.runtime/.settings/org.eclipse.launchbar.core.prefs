@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,\u30ED\u30FC\u30AB\u30EB/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,\u30ED\u30FC\u30AB\u30EB/name=\u30ED\u30FC\u30AB\u30EB
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,\u30ED\u30FC\u30AB\u30EB/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Client,org.eclipse.launchbar.core.descriptorType.default\:Server
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Client/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Client/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:\u30ED\u30FC\u30AB\u30EB

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\pleiades\2024-06\java\8" version="1.8.0_412">
+        <bootpath>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\resources.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\rt.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\jsse.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\jce.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\charsets.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\jfr.jar"/>
+            <entry path="C:\pleiades\2024-06\java\8\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\pleiades\2024-06\java\8\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\pleiades\2024-06\java\11" version="11.0.23"/>
+    <libraryInfo home="C:\pleiades\2024-06\java\21" version="21.0.3"/>
+    <libraryInfo home="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot" version="1.8.0_412">
+        <bootpath>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\resources.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\rt.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\jsse.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\jce.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\charsets.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\jfr.jar"/>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\pleiades\2024-06\java\17" version="17.0.11"/>
+    <libraryInfo home="C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot" version="17.0.6"/>
+</libraryInfos>
