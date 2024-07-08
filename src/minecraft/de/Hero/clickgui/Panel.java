@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import de.Hero.clickgui.elements.ModuleButton;
 import de.Hero.clickgui.util.FontUtil;
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import net.minecraft.client.gui.Gui;
 
 /**
@@ -67,10 +67,10 @@ public class Panel {
 		int outlineColor = new Color(temp.getRed(), temp.getGreen(), temp.getBlue(), 170).getRGB();
 		
 		Gui.drawRect(x, y, x + width, y + height, new Color(18, 18, 18).getRGB()); // 背景色を定義
-		if (Paradox.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")) {
+		if (Sotuken.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")) {
 			Gui.drawRect(x - 2, y, x, y + height, outlineColor);
 			FontUtil.drawStringWithShadow(title, x + 2, y + height / 2 - FontUtil.getFontHeight() / 2, new Color(239, 239, 239).getRGB());
-		} else if (Paradox.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("JellyLike")) {
+		} else if (Sotuken.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("JellyLike")) {
 			Gui.drawRect(x + 4, y + 2, x + 4.3, y + height - 2, new Color(170, 170, 170).getRGB());
 			Gui.drawRect(x - 4 + width, y + 2, x - 4.3 + width, y + height - 2, new Color(170, 170, 170).getRGB());
 			FontUtil.drawTotalCenteredStringWithShadow(title, x + width / 2, y + height / 2, new Color(239, 239, 239).getRGB());
@@ -78,13 +78,13 @@ public class Panel {
 		
 		if (this.extended && !Elements.isEmpty()) {
 			double startY = y + height;
-			int epanelcolor = Paradox.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New") 
+			int epanelcolor = Sotuken.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New") 
 				? new Color(35, 35, 35).getRGB() 
-				: Paradox.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("JellyLike") 
+				: Sotuken.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("JellyLike") 
 					? new Color(21, 21, 21, 187).getRGB() 
 					: 0;
 			for (ModuleButton et : Elements) {
-				if (Paradox.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")) {
+				if (Sotuken.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")) {
 					Gui.drawRect(x - 2, startY, x + width, startY + et.height + 1, outlineColor);
 				}
 				Gui.drawRect(x, startY, x + width, startY + et.height + 1, epanelcolor);

@@ -21,7 +21,7 @@ import org.lwjgl.util.glu.Project;
 import com.google.common.base.Predicates;
 import com.google.gson.JsonSyntaxException;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import me.gamrboy4life.paradox.gvent.impl.RenderEvent;
 import me.gamrboy4life.paradox.mods.ModInstances;
@@ -1666,7 +1666,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
         
         
         //Paradox
-        Paradox.moduleManager.onRender();
+        Sotuken.moduleManager.onRender();
         
         
         boolean flag3 = Reflector.callBoolean(Reflector.ForgeHooksClient_renderFirstPersonHand, new Object[] {this.mc.renderGlobal, Float.valueOf(partialTicks), Integer.valueOf(pass)});

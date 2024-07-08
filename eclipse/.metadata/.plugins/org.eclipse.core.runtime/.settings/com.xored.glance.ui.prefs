@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
 panel.startup=true
 panel.textSize=40
+search.camelCase=true
+search.caseSensitive=true
+search.regexp=true
+search.wordPrefix=true
 searchHistory=OFF

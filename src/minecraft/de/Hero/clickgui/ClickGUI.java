@@ -14,7 +14,7 @@ import de.Hero.clickgui.elements.menu.ElementSlider;
 import de.Hero.clickgui.util.ColorUtil;
 import de.Hero.clickgui.util.FontUtil;
 import de.Hero.settings.SettingsManager;
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
@@ -51,7 +51,7 @@ public class ClickGUI extends GuiScreen {
 	 * werden muss
 	 */
 	public ClickGUI() {
-		setmgr = Paradox.instance.settingsManager;
+		setmgr = Sotuken.instance.settingsManager;
 		
 		FontUtil.setupFontUtils();
 		panels = new ArrayList<Panel>();
@@ -69,7 +69,7 @@ public class ClickGUI extends GuiScreen {
 			ClickGUI.panels.add(new Panel(title, px, py, pwidth, pheight, false, this) {
 						@Override
 						public void setup() {
-							for (Module m : Paradox.instance.moduleManager.getModules()) {
+							for (Module m : Sotuken.instance.moduleManager.getModules()) {
 								if (!m.getCategory().equals(c))continue;
 								this.Elements.add(new ModuleButton(m, this));
 							}
@@ -152,7 +152,7 @@ public class ClickGUI extends GuiScreen {
 						for (Element e : b.menuelements) {
 							e.offset = off;
 							e.update();
-							if(Paradox.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")){
+							if(Sotuken.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")){
 								Gui.drawRect(e.x, e.y, e.x + e.width + 2, e.y + e.height, outlineColor);
 							}
 							e.drawScreen(mouseX, mouseY, partialTicks);

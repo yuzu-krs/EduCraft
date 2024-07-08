@@ -7,7 +7,7 @@ import me.gamrboy4life.paradox.module.Module;
 public class XYZ extends Module {
 
     public XYZ() {
-        super("XYZ", 0, Category.STATUS);
+        super("座標", 0, Category.STATUS);
     }
 
     @Override

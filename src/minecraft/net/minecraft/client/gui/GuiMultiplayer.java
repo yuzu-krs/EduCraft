@@ -10,7 +10,7 @@ import org.lwjgl.input.Keyboard;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import net.minecraft.client.multiplayer.GuiConnecting;
 import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.multiplayer.ServerList;
@@ -54,7 +54,7 @@ public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback
     public void initGui()
     {
     	//Paradox
-    	Paradox.getDiscordRP().update("Idle", "Multiplayer Menu");
+    	Sotuken.getDiscordRP().update("Idle", "Multiplayer Menu");
     	
         Keyboard.enableRepeatEvents(true);
         this.buttonList.clear();

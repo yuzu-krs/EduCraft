@@ -5,9 +5,9 @@ import java.util.HashSet;
 import com.google.common.collect.Sets;
 
 import de.Hero.clickgui.ClickGUI;
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
-import me.gamrboy4life.paradox.module.misc.Panic;
+import me.gamrboy4life.paradox.module.status.Panic;
 import me.gamrboy4life.paradox.utils.ColorUtils;
 import me.gamrboy4life.paradox.utils.Wrapper;
 import net.minecraft.client.Minecraft;
@@ -45,7 +45,7 @@ public class GuiIngameHook extends GuiIngame {
         int yCount = 0;
         int index = 0;
         long x = 0;
-        for (Module m : Paradox.instance.moduleManager.getModules()) {
+        for (Module m : Sotuken.instance.moduleManager.getModules()) {
             m.onRender();
 
             ScaledResolution sr = new ScaledResolution(mc);

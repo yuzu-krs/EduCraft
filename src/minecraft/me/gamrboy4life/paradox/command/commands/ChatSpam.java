@@ -3,7 +3,7 @@ package me.gamrboy4life.paradox.command.commands;
 import java.util.Arrays;
 import java.util.Random;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.command.Command;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.play.client.C01PacketChatMessage;
@@ -17,17 +17,17 @@ public class ChatSpam extends Command {
     @Override
     public void onCommand(String[] args, String command) {
         if (args.length < 3) {
-			Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+			Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
             return;
         }
 
         if (!args[0].matches("\\d+")) {
-        	Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+        	Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
             return;
         }
         
         if(!args[1].matches("\\d+")) {
-        	Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+        	Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
         	return;
         }
 

@@ -1,0 +1,109 @@
+package me.gamrboy4life.paradox.module;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.editor.Notepad;
+import me.gamrboy4life.paradox.module.editor.VSCode;
+import me.gamrboy4life.paradox.module.status.ClickGui;
+import me.gamrboy4life.paradox.module.status.Direction;
+import me.gamrboy4life.paradox.module.status.Panic;
+import me.gamrboy4life.paradox.module.status.TabGui;
+import me.gamrboy4life.paradox.module.status.XYZ;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.ChatComponentText;
+
+public class ModuleManager {
+	
+	private static ArrayList<Module> mods;
+	
+	public ModuleManager() {
+		mods=new ArrayList<Module>();
+		newMod(new TabGui());
+		
+		//エディタ
+		newMod(new Notepad());
+		newMod(new VSCode());
+
+	
+		newMod(new Direction());
+		
+		newMod(new XYZ());
+
+		newMod(new ClickGui());
+
+		newMod(new Panic());
+		
+		//RUN
+		newMod(new C());
+		
+		
+		
+	}
+	
+	
+	public static List<Module> getModulesbyCategory(Category c){
+		List<Module> modules=new ArrayList<Module>();
+		
+		for(Module m:Paradox.instance.moduleManager.getModules()) {
+			if(m.category==c) {
+				modules.add(m);
+			}
+		}
+		return modules;
+		
+	}
+	
+	
+	
+	public static void newMod(Module m) {
+		mods.add(m);
+	}
+	
+	public static ArrayList<Module> getModules(){
+		return mods;
+	}
+	
+	public static void onUpdate() {
+		for(Module m:mods) {
+			m.onUpdate();
+		}
+	}
+	
+	public static void onRender() {
+		for(Module m:mods) {
+			m.onRender();
+		}
+	}
+	
+	public static void onKey(int k) {
+		for(Module m:mods) {
+			if(m.getKey()==k) {
+				m.toggle();
+			}
+		}
+	}
+
+
+	public static void addChatMessage(String message) {
+		message="\u00A7e"+Paradox.name+"\2477: "+message;
+		Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
+	}
+	
+	public static Module getModuleByName(String moduleName) {
+		for(Module m:Paradox.instance.moduleManager.getModules()) {
+			if(!m.getName().trim().equalsIgnoreCase(moduleName)&&!m.toString().equalsIgnoreCase(moduleName.trim())) continue;
+			return m;
+		}
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

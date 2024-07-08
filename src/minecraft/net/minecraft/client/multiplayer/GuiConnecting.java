@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiDisconnected;
@@ -70,7 +70,7 @@ public class GuiConnecting extends GuiScreen
                     GuiConnecting.this.networkManager.sendPacket(new C00Handshake(47, ip, port, EnumConnectionState.LOGIN));
                     GuiConnecting.this.networkManager.sendPacket(new C00PacketLoginStart(GuiConnecting.this.mc.getSession().getProfile()));
                 	//Paradox
-                	Paradox.getDiscordRP().update("Playing "+ip+(port!=25565?":"+port:""),"In Game");
+                	Sotuken.getDiscordRP().update("Playing "+ip+(port!=25565?":"+port:""),"In Game");
                 }
                 catch (UnknownHostException unknownhostexception)
                 {

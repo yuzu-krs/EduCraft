@@ -2,7 +2,7 @@ package de.Hero.clickgui.util;
 
 import java.awt.Color;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 
 /**
  *  Made by HeroCode
@@ -14,6 +14,6 @@ import me.gamrboy4life.paradox.Paradox;
 public class ColorUtil {
 	
 	public static Color getClickGUIColor(){
-		return new Color((int)Paradox.instance.settingsManager.getSettingByName("GuiRed").getValDouble(), (int)Paradox.instance.settingsManager.getSettingByName("GuiGreen").getValDouble(), (int)Paradox.instance.settingsManager.getSettingByName("GuiBlue").getValDouble());
+		return new Color((int)Sotuken.instance.settingsManager.getSettingByName("GuiRed").getValDouble(), (int)Sotuken.instance.settingsManager.getSettingByName("GuiGreen").getValDouble(), (int)Sotuken.instance.settingsManager.getSettingByName("GuiBlue").getValDouble());
 	}
 }

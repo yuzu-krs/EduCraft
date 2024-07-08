@@ -1,7 +1,7 @@
-color_comment=115,135,155
-color_doc=179,181,175
-color_keyword=141,203,226
-color_normal=226,226,226
-color_number=234,184,130
-color_string=204,147,147
+color_comment=98,114,164
+color_doc=98,114,164
+color_keyword=255,121,198
+color_normal=248,248,242
+color_number=255,121,198
+color_string=241,250,140
 eclipse.preferences.version=1

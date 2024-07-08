@@ -14,7 +14,7 @@ import org.lwjgl.opengl.GL11;
 import org.newdawn.slick.UnicodeFont;
 import org.newdawn.slick.font.effects.ColorEffect;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.StringUtils;
 
@@ -143,7 +143,7 @@ public class UnicodeFontRenderer {
     }
 
     private Font getFontFromInput(String path) throws IOException, FontFormatException {
-        return Font.createFont(Font.TRUETYPE_FONT, Paradox.class.getResourceAsStream(path));
+        return Font.createFont(Font.TRUETYPE_FONT, Sotuken.class.getResourceAsStream(path));
     }
 
     public void drawStringScaled(String text, int givenX, int givenY, int color, double givenScale) {

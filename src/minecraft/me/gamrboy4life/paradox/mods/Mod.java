@@ -1,6 +1,6 @@
 package me.gamrboy4life.paradox.mods;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.gvent.GventManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
@@ -9,12 +9,12 @@ public class Mod {
     private boolean isEnabled = true;
     protected final Minecraft mc;
     protected final FontRenderer font;
-    protected final Paradox client;
+    protected final Sotuken client;
 
     public Mod() {
         this.mc = Minecraft.getMinecraft();
         this.font = this.mc.fontRendererObj;
-        this.client = Paradox.getInstance();
+        this.client = Sotuken.getInstance();
         setEnabled(isEnabled);
     }
 

@@ -9,18 +9,18 @@
 		</section>
 	</section>
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="893"/>
+		<item key="DIALOG_X_ORIGIN" value="344"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
-		<item key="DIALOG_WIDTH" value="961"/>
+		<item key="DIALOG_WIDTH" value="1584"/>
 		<item key="DIALOG_HEIGHT" value="1032"/>
-		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|15.75|0|WINDOWS|1|-21|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
 	</section>
 	<section name="PropertyDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="16"/>
 		<item key="DIALOG_Y_ORIGIN" value="148"/>
-		<item key="DIALOG_WIDTH" value="943"/>
-		<item key="DIALOG_HEIGHT" value="557"/>
-		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
+		<item key="DIALOG_WIDTH" value="1473"/>
+		<item key="DIALOG_HEIGHT" value="704"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|15.75|0|WINDOWS|1|-21|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 		<item key="actionSetFilter" value="true"/>

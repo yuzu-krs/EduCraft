@@ -1,6 +1,6 @@
 package net.minecraft.client.entity;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.event.events.EventChat;
 import me.gamrboy4life.paradox.gvent.impl.GventUpdate;
 import net.minecraft.client.Minecraft;
@@ -306,7 +306,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
     	//Paradox
     	EventChat event=new EventChat(message);
     	
-    	Paradox.onEvent(event);
+    	Sotuken.onEvent(event);
     	
     	if(event.isCancelled())
     		return;
@@ -734,7 +734,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
     {
     	
     	//Paradox
-    	Paradox.moduleManager.onUpdate();
+    	Sotuken.moduleManager.onUpdate();
     	
         if (this.sprintingTicksLeft > 0)
         {

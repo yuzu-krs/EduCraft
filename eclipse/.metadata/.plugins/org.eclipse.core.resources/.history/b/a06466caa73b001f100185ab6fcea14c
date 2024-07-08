@@ -1,0 +1,25 @@
+package me.gamrboy4life.paradox.module.editor;
+
+import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class VSCode {
+	public VSCode() {
+		super();
+	}
+	
+	
+	@Override
+	public void onUpdate() {
+		if(this.isToggled()) {
+			for(Module m:Paradox.instance.moduleManager.getModules()) {
+				m.setToggled(false);
+			}
+			Paradox.instance.moduleManager.addChatMessage("すべてのMODが無効になりました!");
+		} 
+		
+
+	}
+
+}

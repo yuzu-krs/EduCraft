@@ -1,0 +1,41 @@
+package me.gamrboy4life.paradox.module.run;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class C extends Module{
+	
+	//1回だけ実行するためのフラグ
+	private boolean hasRunProcess=false;
+
+	public C() {
+		super("C",0,Category.RUN);
+	}
+	
+   
+	@Override
+	public void onUpdate() {
+		if(isToggled()&&!hasRunProcess) {
+			for(int i=0;i<100;i++) {
+				System.out.println("HelloWorld");
+			}
+			hasRunProcess=true;
+			toggled=false;
+		}
+	}
+	
+	@Override
+	public void onEnable() {
+		super.onEnable();
+		//モジュールが有効化されたらリセット
+		hasRunProcess=false;
+	}
+	
+	@Override
+	public void onDisable() {
+		super.onDisable();
+		hasRunProcess=false;	
+	}
+
+
+}

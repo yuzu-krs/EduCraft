@@ -56,7 +56,7 @@ import com.mojang.authlib.properties.Property;
 import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.gui.GuiIngameHook;
 import me.gamrboy4life.paradox.gui.MainMenu;
 import me.gamrboy4life.paradox.gui.SplashProgress;
@@ -581,7 +581,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.ingameGUI = new GuiIngameHook(this);
         
         //Paradox
-        Paradox.startClient();
+        Sotuken.startClient();
 
         if (this.serverName != null)
         {
@@ -640,7 +640,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     private void createDisplay() throws LWJGLException
     {
         Display.setResizable(true);
-        Display.setTitle("Loading YuzuClient");
+        Display.setTitle("Loading EduCraft");
 
         try
         {
@@ -1446,7 +1446,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     public void shutdown()
     {
     	//Paradox
-    	Paradox.instance.stopClient();
+    	Sotuken.instance.stopClient();
         this.running = false;
     }
 
@@ -1956,8 +1956,8 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                     {
                     	
                     	//Paradox
-                    	Paradox.moduleManager.onKey(k);
-                    	Paradox.instance.hud.keyPressed(k);
+                    	Sotuken.moduleManager.onKey(k);
+                    	Sotuken.instance.hud.keyPressed(k);
                     	
                     	
                         if (k == 1)
@@ -2360,7 +2360,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         networkmanager.sendPacket(new C00PacketLoginStart(this.getSession().getProfile()));
         this.myNetworkManager = networkmanager;
         //Paradox
-        Paradox.getDiscordRP().update("Playing singlePlayer","In Game");
+        Sotuken.getDiscordRP().update("Playing singlePlayer","In Game");
     }
 
     /**

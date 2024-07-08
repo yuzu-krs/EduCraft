@@ -2,7 +2,7 @@ package me.gamrboy4life.paradox.command.commands;
 
 import org.lwjgl.input.Keyboard;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.command.Command;
 import me.gamrboy4life.paradox.module.Module;
 
@@ -20,18 +20,18 @@ public class Bind extends Command{
 			
 			boolean foundModule=false;
 			
-			for(Module module:Paradox.instance.moduleManager.getModules()) {
+			for(Module module:Sotuken.instance.moduleManager.getModules()) {
 				if(module.name.equalsIgnoreCase(moduleName)) {
 					module.setKey(Keyboard.getKeyIndex(keyName.toUpperCase()));
 					
-					Paradox.instance.moduleManager.addChatMessage(String.format("%s を %sキー に設定しました",module.name,Keyboard.getKeyName(module.getKey())));
+					Sotuken.instance.moduleManager.addChatMessage(String.format("%s を %sキー に設定しました",module.name,Keyboard.getKeyName(module.getKey())));
 					foundModule=true;
 					break;
 				}
 			}
 			
 			if(!foundModule) {
-				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help] ");
+				Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help] ");
 			}
 			
 		}
@@ -39,12 +39,12 @@ public class Bind extends Command{
 		
 		if(args.length==1) {
 			if(args[0].equalsIgnoreCase("Clear")) {
-				for(Module module : Paradox.instance.moduleManager.getModules()) {
+				for(Module module : Sotuken.instance.moduleManager.getModules()) {
 					module.setKey(Keyboard.KEY_NONE);
 				}
-				Paradox.instance.moduleManager.addChatMessage("すべてのキーバインドがクリアされました!");
+				Sotuken.instance.moduleManager.addChatMessage("すべてのキーバインドがクリアされました!");
 			}else {
-				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help] ");
+				Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help] ");
 			}
 		}
 		

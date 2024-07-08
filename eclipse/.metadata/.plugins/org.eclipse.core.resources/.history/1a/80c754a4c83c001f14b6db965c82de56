@@ -1,0 +1,59 @@
+package me.gamrboy4life.paradox.module.run;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class C extends Module {
+
+    private boolean hasRunProcess = false;
+    //private final ExecutorService executor = Executors.newSingleThreadExecutor();
+
+    public C() {
+        super("C", 0, Category.RUN);
+    }
+
+//    @Override
+//    public void onUpdate() {
+//        if (isToggled() && !hasRunProcess) {
+//            executor.submit(new Runnable() {
+//				@Override
+//				public void run() {
+//				    heavyProcess();
+//				    hasRunProcess = true;
+//				    toggled = false;
+//				}
+//			});
+//        }
+//    }
+//
+//    private void heavyProcess() {
+//        // 重い計算処理の例
+//        try {
+//            // 3秒待機
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println("Heavy process completed");
+//    }
+
+    @Override
+    public void onEnable() {
+        super.onEnable();
+      try {
+      // 3秒待機
+      Thread.sleep(3000);
+  } catch (InterruptedException e) {
+      e.printStackTrace();
+  }
+        System.out.println("aaaa");
+        //hasRunProcess = false;
+    }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+        System.out.println("bbbb");
+        //hasRunProcess = false;
+        //executor.shutdown(); // シャットダウン処理が必要
+    }
+}

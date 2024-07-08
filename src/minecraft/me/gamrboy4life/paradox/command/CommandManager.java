@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.command.commands.Bind;
 import me.gamrboy4life.paradox.command.commands.ChatSpam;
 import me.gamrboy4life.paradox.command.commands.Help;
@@ -57,7 +57,7 @@ public class CommandManager {
 			}
 		}
 		if(!foundCommand) {
-			Paradox.instance.moduleManager.addChatMessage("コマンドが見つかりません! [.help]");
+			Sotuken.instance.moduleManager.addChatMessage("コマンドが見つかりません! [.help]");
 		}
 		
 		

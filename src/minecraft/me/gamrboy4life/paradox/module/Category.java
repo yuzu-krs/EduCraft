@@ -1,13 +1,12 @@
 package me.gamrboy4life.paradox.module;
 
 public enum Category {
+	RUN("実行"),
+	Editor("エディタ"),
+	STATUS("ステータス");
 	
-	COMBAT("Combat"),
-	MOVEMENT("Movement"),
-	PLAYER("Player"),
-	STATUS("Status"),
-	RENDER("Render"),
-	MISC("Misc");
+	
+	
 	
 	public String name;
 	public int moduleIndex;

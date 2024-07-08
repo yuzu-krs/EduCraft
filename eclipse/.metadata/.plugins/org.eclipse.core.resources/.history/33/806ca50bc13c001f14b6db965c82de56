@@ -1,0 +1,51 @@
+package me.gamrboy4life.paradox.module.run;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class C extends Module{
+	
+	//1回だけ実行するためのフラグ
+	private boolean hasRunProcess=false;
+
+	public C() {
+		super("C",0,Category.RUN);
+	}
+	
+   
+	@Override
+	public void onUpdate() {
+		if(isToggled()&&!hasRunProcess) {
+			//別スレッドで重い計算処理を実行
+			new Thread(new Runnable() {
+				@Override
+				public void run() {
+					// 重い計算処理を実行
+					for (int i = 0; i < 10000; i++) {
+						for (int j = 0; j < 10000; j++) {
+							double result = Math.pow(i, j);
+						}
+					}
+					System.out.println("Heavy process completed");
+					hasRunProcess=true;
+					toggled=false;
+				}
+			}).start();
+		}
+	}
+	
+	@Override
+	public void onEnable() {
+		super.onEnable();
+		//モジュールが有効化されたらリセット
+		hasRunProcess=false;
+	}
+	
+	@Override
+	public void onDisable() {
+		super.onDisable();
+		hasRunProcess=false;	
+	}
+
+
+}

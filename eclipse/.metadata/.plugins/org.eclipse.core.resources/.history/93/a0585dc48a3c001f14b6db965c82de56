@@ -1,0 +1,14 @@
+package me.gamrboy4life.paradox.module.run;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class C extends Module{
+
+	public C(String nm, int k, Category c) {
+		super(nm, k, c);
+	}
+
+
+
+}

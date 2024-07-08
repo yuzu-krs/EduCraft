@@ -13,7 +13,7 @@ import de.Hero.clickgui.elements.menu.ElementSlider;
 import de.Hero.clickgui.util.ColorUtil;
 import de.Hero.clickgui.util.FontUtil;
 import de.Hero.settings.Setting;
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
@@ -53,8 +53,8 @@ public class ModuleButton {
 		 *  irgendeinen Aufwand bestimmen welches Element
 		 *  f�r ein Setting ben�tigt wird :>
 		 */
-		if (Paradox.instance.settingsManager.getSettingsByMod(imod) != null)
-			for (Setting s : Paradox.instance.settingsManager.getSettingsByMod(imod)) {
+		if (Sotuken.instance.settingsManager.getSettingsByMod(imod) != null)
+			for (Setting s : Sotuken.instance.settingsManager.getSettingsByMod(imod)) {
 				if (s.isCheck()) {
 					menuelements.add(new ElementCheckBox(this, s));
 				} else if (s.isSlider()) {
@@ -111,7 +111,7 @@ public class ModuleButton {
 		if (mouseButton == 0) {
 			mod.toggle();
 			
-			if(Paradox.instance.settingsManager.getSettingByName("Sound").getValBoolean())
+			if(Sotuken.instance.settingsManager.getSettingByName("Sound").getValBoolean())
 			Minecraft.getMinecraft().thePlayer.playSound("random.click", 0.5f, 0.5f);
 		} else if (mouseButton == 1) {
 			/*
@@ -120,10 +120,10 @@ public class ModuleButton {
 			 */
 			if (menuelements != null && menuelements.size() > 0) {
 				boolean b = !this.extended;
-				Paradox.instance.clickGUI.closeAllSettings();
+				Sotuken.instance.clickGUI.closeAllSettings();
 				this.extended = b;
 				
-				if(Paradox.instance.settingsManager.getSettingByName("Sound").getValBoolean())
+				if(Sotuken.instance.settingsManager.getSettingByName("Sound").getValBoolean())
 				if(extended)Minecraft.getMinecraft().thePlayer.playSound("tile.piston.out", 1f, 1f);else Minecraft.getMinecraft().thePlayer.playSound("tile.piston.in", 1f, 1f);
 			}
 		} else if (mouseButton == 2) {

@@ -8,7 +8,7 @@ import me.gamrboy4life.paradox.module.Module;
 public class Direction extends Module {
 
     public Direction() {
-        super("Direction", 0, Category.STATUS);
+        super("方角", 0, Category.STATUS);
     }
 
     @Override

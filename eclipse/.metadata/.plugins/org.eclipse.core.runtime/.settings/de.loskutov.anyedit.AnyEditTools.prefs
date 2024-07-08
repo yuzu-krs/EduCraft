@@ -1,2 +1,3 @@
+disallowedInPath=\ \r\n"'*?><|\=(){};&$,%@
 eclipse.preferences.version=1
 saveAndTrim=false

@@ -1,0 +1,17 @@
+package me.gamrboy4life.paradox.module;
+
+public enum Category {
+	PROGRAMMING("プログラミング言語"),
+	Editor("エディタ"),
+	STATUS("ステータス"),
+	RENDER("Render"),
+	MISC("Misc");
+	
+	public String name;
+	public int moduleIndex;
+	
+	Category(String name){
+		this.name=name;
+	}
+
+}

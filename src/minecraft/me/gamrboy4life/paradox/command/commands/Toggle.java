@@ -1,6 +1,6 @@
 package me.gamrboy4life.paradox.command.commands;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.command.Command;
 import me.gamrboy4life.paradox.module.Module;
 
@@ -16,18 +16,18 @@ public class Toggle extends Command{
 			String moduleName=args[0];
 			boolean foundModule=false;
 			
-			for(Module module:Paradox.instance.moduleManager.getModules()) {
+			for(Module module:Sotuken.instance.moduleManager.getModules()) {
 				if(module.name.equalsIgnoreCase(moduleName)) {
 					module.toggle();
 					
-					Paradox.instance.moduleManager.addChatMessage(module.name+" "+(module.isToggled()? "有効":"無効"));
+					Sotuken.instance.moduleManager.addChatMessage(module.name+" "+(module.isToggled()? "有効":"無効"));
 					
 					foundModule=true;
 					break;
 				}
 			}
 			if(!foundModule) {
-				Paradox.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
+				Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
 			}
 		}
 		

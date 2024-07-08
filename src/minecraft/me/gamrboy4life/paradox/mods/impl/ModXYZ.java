@@ -26,7 +26,7 @@ public class ModXYZ extends ModDraggable {
 
     private String getXYZString() {
         return String.format(
-            "XYZ: %.3f / %.3f / %.3f",
+            "XYZ: %.0f / %.0f / %.0f",
             mc.getRenderViewEntity().posX,
             mc.getRenderViewEntity().getEntityBoundingBox().minY,
             mc.getRenderViewEntity().posZ

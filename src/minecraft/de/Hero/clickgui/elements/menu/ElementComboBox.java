@@ -7,7 +7,7 @@ import de.Hero.clickgui.elements.ModuleButton;
 import de.Hero.clickgui.util.ColorUtil;
 import de.Hero.clickgui.util.FontUtil;
 import de.Hero.settings.Setting;
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 
@@ -91,7 +91,7 @@ public class ElementComboBox extends Element {
 			double ay = y + 15;
 			for (String slcd : set.getOptions()) {
 				if (mouseX >= x && mouseX <= x + width && mouseY >= ay && mouseY <= ay + FontUtil.getFontHeight() + 2) {
-					if(Paradox.instance.settingsManager.getSettingByName("Sound").getValBoolean())
+					if(Sotuken.instance.settingsManager.getSettingByName("Sound").getValBoolean())
 					Minecraft.getMinecraft().thePlayer.playSound("tile.piston.in", 20.0F, 20.0F);
 					
 					if(clickgui != null && clickgui.setmgr != null)

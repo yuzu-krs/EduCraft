@@ -2,7 +2,7 @@ package de.Hero.settings;
 
 import java.util.ArrayList;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
 
 //Deine Imports
@@ -49,7 +49,7 @@ public class SettingsManager {
 				return set;
 			}
 		}
-		System.err.println("["+ Paradox.instance.name + "] Error Setting NOT found: '" + name +"'!");
+		System.err.println("["+ Sotuken.instance.name + "] Error Setting NOT found: '" + name +"'!");
 		return null;
 	}
 

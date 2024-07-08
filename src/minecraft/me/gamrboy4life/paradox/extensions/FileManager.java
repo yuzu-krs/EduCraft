@@ -13,10 +13,10 @@ import com.google.common.collect.Sets;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import me.gamrboy4life.paradox.Paradox;
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
-import me.gamrboy4life.paradox.module.misc.Panic;
-import me.gamrboy4life.paradox.module.render.ClickGui;
+import me.gamrboy4life.paradox.module.status.ClickGui;
+import me.gamrboy4life.paradox.module.status.Panic;
 import me.gamrboy4life.paradox.utils.JsonUtils;
 
 public class FileManager {
@@ -39,7 +39,7 @@ public class FileManager {
 	public void saveMods() {
 		try {
 			JsonObject json=new JsonObject();
-			for(Module mod:Paradox.instance.moduleManager.getModules()) {
+			for(Module mod:Sotuken.instance.moduleManager.getModules()) {
 				JsonObject jsonMod=new JsonObject();
 				jsonMod.addProperty("enabled",mod.isToggled());
 				json.add(mod.getName(), jsonMod);
@@ -70,7 +70,7 @@ public class FileManager {
 			Iterator<Entry<String,JsonElement>> itr=json.entrySet().iterator();
 			while(itr.hasNext()) {
 				Entry<String,JsonElement> entry=itr.next();
-				Module mod=Paradox.instance.moduleManager.getModuleByName(entry.getKey());
+				Module mod=Sotuken.instance.moduleManager.getModuleByName(entry.getKey());
 				if(mod!=null&&!modBlackList.contains(mod.getClass().getName())) {
 					JsonObject jsonModule=(JsonObject)entry.getValue();
 					boolean enabled=jsonModule.get("enabled").getAsBoolean();
