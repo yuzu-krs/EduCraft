@@ -1,7 +1,7 @@
 package me.gamrboy4life.paradox.module;
 
 public enum Category {
-	RUN("実行"),
+	RUN("C言語"),
 	Editor("エディタ"),
 	STATUS("ステータス");
 	

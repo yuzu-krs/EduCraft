@@ -17,6 +17,7 @@ import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.status.ClickGui;
 import me.gamrboy4life.paradox.module.status.Panic;
+import me.gamrboy4life.paradox.module.status.TabGui;
 import me.gamrboy4life.paradox.utils.JsonUtils;
 
 public class FileManager {
@@ -55,7 +56,7 @@ public class FileManager {
 	
 	//保存したくないハック
 	//ClickGuiは標準で表示する
-	private HashSet<String> modBlackList=Sets.newHashSet(ClickGui.class.getName(),Panic.class.getName());
+	private HashSet<String> modBlackList=Sets.newHashSet(TabGui.class.getName(),ClickGui.class.getName(),Panic.class.getName());
 	
 	public boolean isModBlackListed(Module m) {
 		return modBlackList.contains(m.getClass().getName());

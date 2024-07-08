@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.gamrboy4life.paradox.Sotuken;
+import me.gamrboy4life.paradox.module.c.Run;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
-import me.gamrboy4life.paradox.module.run.C;
 import me.gamrboy4life.paradox.module.status.ClickGui;
 import me.gamrboy4life.paradox.module.status.Direction;
 import me.gamrboy4life.paradox.module.status.TabGui;
@@ -25,7 +25,7 @@ public class ModuleManager {
 		
 		
 		//RUN
-		newMod(new C());
+		newMod(new Run());
 		
 		
 		
