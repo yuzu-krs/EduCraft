@@ -7,7 +7,6 @@ import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.c.Run;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
-import me.gamrboy4life.paradox.module.status.ClickGui;
 import me.gamrboy4life.paradox.module.status.Direction;
 import me.gamrboy4life.paradox.module.status.TabGui;
 import me.gamrboy4life.paradox.module.status.XYZ;
@@ -29,16 +28,16 @@ public class ModuleManager {
 		
 		
 		
-		newMod(new ClickGui());
+//		newMod(new ClickGui());
 		
 		//エディタ
 		newMod(new Notepad());
 		newMod(new VSCode());
 
-		newMod(new Direction());
-		
+	
+		//Status
 		newMod(new XYZ());
-
+		newMod(new Direction());
 		
 
 		//newMod(new Panic());

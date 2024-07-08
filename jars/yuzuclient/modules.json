@@ -3,21 +3,18 @@
     "enabled": true
   },
   "実行": {
-    "enabled": false
-  },
-  "ClickGui": {
-    "enabled": false
+    "enabled": true
   },
   "Notepad": {
-    "enabled": false
+    "enabled": true
   },
   "VSCode": {
-    "enabled": true
-  },
-  "方角": {
-    "enabled": true
+    "enabled": false
   },
   "座標": {
-    "enabled": true
+    "enabled": false
+  },
+  "方角": {
+    "enabled": false
   }
 }

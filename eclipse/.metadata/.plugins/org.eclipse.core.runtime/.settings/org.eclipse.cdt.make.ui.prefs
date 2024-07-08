@@ -5,5 +5,3 @@ org.eclipse.cdt.make.ui.editor.function=80,250,123
 org.eclipse.cdt.make.ui.editor.keyword=255,121,198
 org.eclipse.cdt.make.ui.editor.macro_def=80,250,123
 org.eclipse.cdt.make.ui.editor.macro_ref=80,250,123
-org.eclipse.cdt.make.ui.editor.matching.brackets.color=170,170,170
-overriddenByCSS=,org.eclipse.cdt.make.ui.editor.matching.brackets.color,

@@ -61,7 +61,7 @@ public class GuiIngameHook extends GuiIngame {
                     // Draw blurred rainbow border
                     drawBlurredRainbowBorder(sr.getScaledWidth() - Wrapper.fr.getStringWidth(m.getName()) - 15, (int) offset, sr.getScaledWidth(), (int) (6 + Wrapper.fr.FONT_HEIGHT + offset), index);
 
-                    Wrapper.fr.drawString("- " + m.getName(), sr.getScaledWidth() - Wrapper.fr.getStringWidth(m.getName()) - 13, 4 + offset, rainbowColor);
+                    Wrapper.fr.drawString("- " + m.getName(), sr.getScaledWidth() - Wrapper.fr.getStringWidth(m.getName()) - 13, 4 + offset, 0xFFFFFFFF);
                     yCount++;
                     index++;
                     x++;
@@ -71,8 +71,9 @@ public class GuiIngameHook extends GuiIngame {
     }
 
     private void drawBlurredRainbowBorder(int left, int top, int right, int bottom, int index) {
-        int color = ColorUtils.rainbowEffect(index * 200000000L, 1.0f).darker().getRGB() & 0x7FFFFFFF; // Make color darker and semi-transparent
-
+        //int color = ColorUtils.rainbowEffect(index * 200000000L, 1.0f).darker().getRGB() & 0x7FFFFFFF; // Make color darker and semi-transparent
+    	int color = 0xBFFFFFFF;
+    	
         // Draw top border
         Gui.drawRect(left - 1, top - 1, right + 1, top, color);
         // Draw bottom border
