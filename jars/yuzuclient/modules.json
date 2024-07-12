@@ -2,19 +2,19 @@
   "TabGui": {
     "enabled": true
   },
-  "実行": {
-    "enabled": true
+  "Run": {
+    "enabled": false
   },
   "Notepad": {
-    "enabled": true
+    "enabled": false
   },
   "VSCode": {
-    "enabled": false
+    "enabled": true
   },
   "座標": {
-    "enabled": false
+    "enabled": true
   },
   "方角": {
-    "enabled": false
+    "enabled": true
   }
 }

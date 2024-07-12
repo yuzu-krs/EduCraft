@@ -20,7 +20,7 @@ public class ModXYZ extends ModDraggable {
     @Override
     public void render(ScreenPosition pos) {
         if (enabled) { // 静的フィールドを使用
-            font.drawString(getXYZString(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+        	font.drawString(getXYZString(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
         }
     }
 

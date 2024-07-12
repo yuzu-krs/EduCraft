@@ -1,0 +1,32 @@
+package me.gamrboy4life.paradox.module.c;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Run extends Module {
+
+    private boolean hasPrintedHelloWorld = false;
+
+    public Run() {
+        super("Run", 0, Category.RUN);
+    }
+
+    @Override
+    public void onUpdate() {
+        if (isToggled() && !hasPrintedHelloWorld) {
+            System.out.println("HelloWorld");
+            hasPrintedHelloWorld = true; // Set the flag to true after printing
+        }
+    }
+
+    @Override
+    public void onEnable() {
+        super.onEnable();
+        hasPrintedHelloWorld = false; // Reset the flag when the module is enabled
+    }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+        hasPrintedHelloWorld = false; // Reset the flag when the module is disabled
+    }
+}

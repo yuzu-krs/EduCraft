@@ -1,0 +1,52 @@
+package me.gamrboy4life.paradox.module.c;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.Minecraft;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.BlockPos;
+
+public class Run extends Module {
+
+    private boolean hasPrintedHelloWorld = false;
+
+    public Run() {
+        super("Run", 0, Category.RUN);
+    }
+
+    @Override
+    public void onUpdate() {
+        // モジュールがトグルされており、処理がまだ実行されていない場合
+        if (isToggled() && !hasPrintedHelloWorld) {
+        	
+            placeBlock(100, 64, 100);
+            // 処理が完了した後、フラグをtrueに設定
+            hasPrintedHelloWorld = true;
+
+            // モジュールのトグルを解除
+            toggled = false;
+        }
+    }
+    
+    private void placeBlock(int x, int y, int z) {
+        Minecraft mc = Minecraft.getMinecraft();
+        if (mc.theWorld != null) {
+            BlockPos blockPos = new BlockPos(x, y, z);
+            
+                        
+            // クライアント側でのブロック設置
+            mc.theWorld.setBlockState(blockPos, Blocks.stone.getDefaultState());
+        }
+    }
+
+    @Override
+    public void onEnable() {
+        super.onEnable();
+        hasPrintedHelloWorld = false; // Reset the flag when the module is enabled
+    }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+        hasPrintedHelloWorld = false; // Reset the flag when the module is disabled
+    }
+}
