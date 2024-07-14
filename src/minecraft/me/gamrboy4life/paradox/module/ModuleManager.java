@@ -97,6 +97,11 @@ public class ModuleManager {
 		Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
 	
+	public static void addErrChatMessage(String message) {
+	    message = "\u00A7e" + Sotuken.name + "\u00A77: " + "\u00A7c\u00A7o" + message;
+	    Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
+	}
+	
 	public static Module getModuleByName(String moduleName) {
 		for(Module m:Sotuken.instance.moduleManager.getModules()) {
 			if(!m.getName().trim().equalsIgnoreCase(moduleName)&&!m.toString().equalsIgnoreCase(moduleName.trim())) continue;

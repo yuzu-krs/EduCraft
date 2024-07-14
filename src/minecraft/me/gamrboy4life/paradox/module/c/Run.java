@@ -1,7 +1,10 @@
 package me.gamrboy4life.paradox.module.c;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 
@@ -38,61 +41,94 @@ public class Run extends Module {
     		File parentDir=file.getParentFile();
     		if(parentDir!=null&&!parentDir.exists()) {
     			if(parentDir.mkdirs()) {
-    				System.out.println("ディレクトリを新規作成しました:"+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました:"+parentDir.getPath());
     			}else {
-    				System.out.println("ディレクトリの作成に失敗しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
     		//ファイルが存在しない場合は新規作成
     		if(!file.exists()) {
     			if(file.createNewFile()) {
-    				System.out.println("ファイルを新規作成しました:"+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました:"+parentDir.getPath());
     			}else {
-    				System.out.println("ファイルの作成に失敗しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
+    		
     		/*コンパイル*/
+
     		ProcessBuilder compileProcessBuilder=new ProcessBuilder("C:/EduCraft/bin/gcc",filePath,"-o","C:/EduCraft/main.exe");
     		
-    		//コンパイル時のエラーを出力している
-    		compileProcessBuilder.inheritIO();
-
-    		//コンパイルの開始と終了待ち
+    		//エラーを標準出力にリダイレクト
+    		compileProcessBuilder.redirectErrorStream(true);
+    		
+    		//コンパイルの開始
     		Process compileProcess=compileProcessBuilder.start();
+    		
+    		//コンパイルprocessの出力を読み取る
+    		BufferedReader compileReader=new BufferedReader(new InputStreamReader(compileProcess.getInputStream()));
+    		String line;
+    		while((line=compileReader.readLine())!=null) {
+    			//行が50文字を超える場合は分割して表示
+    			while(line.length()>50) {
+    				Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0,50));
+    				line=line.substring(50);
+    			}
+    			Sotuken.instance.moduleManager.addErrChatMessage(line);
+    		}
+    		
+    		//コンパイル終了待ち
     		compileProcess.waitFor();
     		
     		if(compileProcess.exitValue()!=0) {
-    			System.err.println("コンパイルに失敗しました");
+    			Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
     		}
-    		/*コンパイル*/
+    		
+    		/*###########*/
+    		
     		
     		
     		/*実行*/
+    		
     		ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
     		//標準入出力のリダイレクト
     		runProcessBuilder.inheritIO();
     		
-    		//実行processの開始と終了待ち
+    		//実行processの開始
     		Process runProcess=runProcessBuilder.start();
+    		
+    		
+    		//実行プロセスの出力を読み取る
+    		BufferedReader runReader=new BufferedReader(new InputStreamReader(runProcess.getInputStream()));
+    		while((line=runReader.readLine())!=null) {
+    			Sotuken.instance.moduleManager.addChatMessage(line);
+    		}
+    		
+    		//実行プロセスの終了待ち
     		runProcess.waitFor();
     		
-    		//実行結果のチェック
-    		if(runProcess.exitValue()!=0) {
-    			System.out.println("実行に失敗しました");
-    		}else {
-    			System.out.println("実行が成功しました");
-    			
+    		//コンパイルのチェック
+    		if(compileProcess.exitValue()==0) {
+        		//実行結果のチェック
+	    		if(runProcess.exitValue()!=0) {
+	    			Sotuken.instance.moduleManager.addChatMessage("実行に失敗しました");
+	    		}else {
+	    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
+	    			
+	    		}
     		}
-    		/*実行*/
+    		
+    		/*###########*/
+
     		
     		
     	}catch(IOException e) {
-    		System.err.println("IOエラーが発生しました: " + e.getMessage());
+    		Sotuken.instance.moduleManager.addChatMessage("IOエラーが発生しました: " + e.getMessage());
     		e.printStackTrace();
     	}catch(InterruptedException e) {
-    		System.err.println("プロセスが中断されました: " + e.getMessage());	
+    		Sotuken.instance.moduleManager.addChatMessage("プロセスが中断されました: " + e.getMessage());	
     		e.printStackTrace();
     	}
 		

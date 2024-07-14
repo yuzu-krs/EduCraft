@@ -3,6 +3,7 @@ package me.gamrboy4life.paradox.module.editor;
 import java.io.File;
 import java.io.IOException;
 
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 
@@ -40,18 +41,18 @@ public class Notepad extends Module{
     		File parentDir=file.getParentFile();
     		if(parentDir!=null&&!parentDir.exists()) {
     			if(parentDir.mkdirs()) {
-    				System.out.println("ディレクトリを新規作成しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました: "+parentDir.getPath());
     			}else {
-    				System.out.println("ディレクトリの作成に失敗しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
     		//ファイルが存在しない場合は新規作成
     		if(!file.exists()) {
     			if(file.createNewFile()) {
-    				System.out.println("ファイルを新規作成しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました: "+parentDir.getPath());
     			}else {
-    				System.out.println("ファイルの作成に失敗しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
@@ -59,10 +60,10 @@ public class Notepad extends Module{
     		//メモ帳で指定のファイルを開く
     		Runtime.getRuntime().exec("notepad.exe "+filePath);
     		
-    		System.out.println("メモ帳でファイルを開きます: " + filePath);
+    		Sotuken.instance.moduleManager.addChatMessage("メモ帳でファイルを開きます: " + filePath);
     		
     	}catch(IOException e){
-    		System.out.println("メモ帳でファイルを開く際にエラーが発生しました: "+e.getMessage());
+    		Sotuken.instance.moduleManager.addChatMessage("メモ帳でファイルを開く際にエラーが発生しました: "+e.getMessage());
     		e.printStackTrace();
     	}
 		
