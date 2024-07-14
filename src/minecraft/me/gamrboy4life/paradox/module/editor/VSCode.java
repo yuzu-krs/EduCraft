@@ -39,13 +39,17 @@ public class VSCode extends Module{
     		if(parentDir!=null&&!parentDir.exists()) {
     			if(parentDir.mkdirs()) {
     				System.out.println("ディレクトリを新規作成しました:"+parentDir.getPath());
+    			}else {
+    				System.out.println("ディレクトリの作成に失敗しました:"+parentDir.getPath());
     			}
     		}
     		
     		//ファイルが存在しない場合は新規作成
     		if(!file.exists()) {
     			if(file.createNewFile()) {
-    				System.out.println("ディレクトリを新規作成しました:"+parentDir.getPath());
+    				System.out.println("ファイルを新規作成しました:"+parentDir.getPath());
+    			}else {
+    				System.out.println("ファイルの作成に失敗しました:"+parentDir.getPath());
     			}
     		}
     		
@@ -58,6 +62,7 @@ public class VSCode extends Module{
     		
     		
     	}catch(IOException e){
+    		System.err.println("VSCodeでファイルを開く際にエラーが発生しました: " + e.getMessage());
     		e.printStackTrace();
     	}
 	}

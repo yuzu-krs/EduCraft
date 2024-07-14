@@ -40,14 +40,18 @@ public class Notepad extends Module{
     		File parentDir=file.getParentFile();
     		if(parentDir!=null&&!parentDir.exists()) {
     			if(parentDir.mkdirs()) {
-    				System.out.println("ディレクトリを新規作成しました:"+parentDir.getPath());
+    				System.out.println("ディレクトリを新規作成しました: "+parentDir.getPath());
+    			}else {
+    				System.out.println("ディレクトリの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
     		//ファイルが存在しない場合は新規作成
     		if(!file.exists()) {
     			if(file.createNewFile()) {
-    				System.out.println("ディレクトリを新規作成しました:"+parentDir.getPath());
+    				System.out.println("ファイルを新規作成しました: "+parentDir.getPath());
+    			}else {
+    				System.out.println("ファイルの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
@@ -55,7 +59,10 @@ public class Notepad extends Module{
     		//メモ帳で指定のファイルを開く
     		Runtime.getRuntime().exec("notepad.exe "+filePath);
     		
+    		System.out.println("メモ帳でファイルを開きます: " + filePath);
+    		
     	}catch(IOException e){
+    		System.out.println("メモ帳でファイルを開く際にエラーが発生しました: "+e.getMessage());
     		e.printStackTrace();
     	}
 		
