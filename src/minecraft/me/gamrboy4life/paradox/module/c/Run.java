@@ -29,8 +29,12 @@ public class Run extends Module {
         Minecraft mc = Minecraft.getMinecraft();
         if (mc.theWorld != null) {
             // setblockコマンドをチャットに送信
-            String command = String.format("/setblock %d %d %d minecraft:stone", x, y, z);
-            mc.thePlayer.sendChatMessage(command);
+        	for(int i=0;i<10;i++) {
+        		y+=1;
+        		String command = String.format("/setblock %d %d %d minecraft:stone", x, y, z);
+        		mc.thePlayer.sendChatMessage(command);
+        	}
+
         }
     }
     @Override
