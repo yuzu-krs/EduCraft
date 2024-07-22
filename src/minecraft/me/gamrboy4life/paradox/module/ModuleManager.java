@@ -98,7 +98,7 @@ public class ModuleManager {
 	}
 	
 	public static void addErrChatMessage(String message) {
-	    message = "\u00A7e" + Sotuken.name + "\u00A77: " + "\u00A7c\u00A7o" + message;
+	    message = "\u00A7e" + Sotuken.name + "\u00A77: " + "\u00A7c" + message;
 	    Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
 	

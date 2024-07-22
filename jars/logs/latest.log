@@ -1,122 +1,56 @@
-[06:42:42] [Client thread/INFO]: Setting user: Player593
-[06:42:42] [Client thread/INFO]: (Session ID is token:0:Player593)
-[06:42:44] [Client thread/INFO]: LWJGL Version: 2.9.4
-[06:42:45] [Client thread/INFO]: Reloading ResourceManager: Default
-[06:42:46] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:42:46] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[06:42:46] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[06:42:46] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[06:42:46] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[06:42:46] [Thread-8/WARN]: ERROR MESSAGE:
-[06:42:46] [Thread-8/INFO]: Could not locate OpenAL library.
-[06:42:46] [Thread-8/WARN]: STACK TRACE:
-[06:42:46] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[06:42:46] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[06:42:46] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[06:42:46] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[06:42:46] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[06:42:46] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[06:42:46] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[06:42:46] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[06:42:46] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[06:42:46] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:42:47] [Thread-10/INFO]: Switching to No Sound
-[06:42:47] [Thread-10/INFO]: (Silent Mode)
-[06:42:47] [Sound Library Loader/INFO]: Sound engine started
-[06:42:55] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[06:43:02] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[06:43:02] [Server thread/INFO]: Generating keypair
-[06:43:02] [Server thread/INFO]: Preparing start region for level 0
-[06:43:03] [Server thread/INFO]: Preparing spawn area: 61%
-[06:43:03] [Server thread/INFO]: Changing view distance to 8, from 10
-[06:43:04] [Server thread/INFO]: Player593[local:E:17bd35ec] logged in with entity id 374 at (58.60955093939703, 67.0, 285.6372983952381)
-[06:43:04] [Server thread/INFO]: Player593 joined the game
-[06:43:05] [Server thread/INFO]: Saving and pausing game...
-[06:43:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[06:43:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[06:43:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c: In function 'main':
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:3:12: warning: missing terminat
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oing " character
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    3 |     printf("Hello World\n);
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |            ^
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:3:12: error: missing terminatin
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§og " character
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    3 |     printf("Hello World\n);
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |            ^~~~~~~~~~~~~~~~
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:4:28: error: expected ')' befor
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oe ';' token
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    4 |     printf("Hello World\n");
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |                            ^
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |                            )
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:3:11: note: to match this '('
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    3 |     printf("Hello World\n);
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |           ^
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:4:5: warning: passing argument 
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o1 of 'printf' makes pointer from integer without a
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o cast [-Wint-conversion]
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    4 |     printf("Hello World\n");
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |     ^~~~~~~~~~~~~~~~~~~~~~~
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |     |
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |     int
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oIn file included from C:/EduCraft/main.c:1:
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/x86_64-w64-mingw32/include/stdio.h:371
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o:25: note: expected 'const char *' but argument is
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o of type 'int'
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o  371 | int printf (const char *__format, ...)
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |             ~~~~~~~~~~~~^~~~~~~~
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:5:14: error: expected ';' befor
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oe '}' token
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    5 |     return 0;
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |              ^
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |              ;
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    6 | }
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      | ~             
-[06:43:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[06:43:29] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
-[06:43:38] [Server thread/INFO]: Saving and pausing game...
-[06:43:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[06:43:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[06:43:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[06:43:54] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:44:08] [Server thread/INFO]: Player593 has just earned the achievement [Taking Inventory]
-[06:44:09] [Client thread/INFO]: [CHAT] Player593 has just earned the achievement [Taking Inventory]
-[06:44:18] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:46:02] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
-[06:46:03] [Server thread/INFO]: Saving and pausing game...
-[06:46:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[06:46:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[06:46:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[06:48:13] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:48:31] [Server thread/INFO]: Saving and pausing game...
-[06:48:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[06:48:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[06:48:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[06:49:18] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:52:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:52:55] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:53:03] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c: In function 'main':
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oC:/EduCraft/main.c:5:13: error: expected ';' befor
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§oe '}' token
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    5 |     return 0
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |             ^
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      |             ;
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o    6 | }
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c§o      | ~            
-[06:53:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[06:53:38] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:53:39] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[06:54:15] [Server thread/INFO]: Saving and pausing game...
-[06:54:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[06:54:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[06:54:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[06:55:39] [Client thread/INFO]: Stopping!
-[06:55:39] [Client thread/INFO]: SoundSystem shutting down...
-[06:55:39] [Server thread/INFO]: Stopping server
-[06:55:39] [Server thread/INFO]: Saving players
-[06:55:39] [Server thread/INFO]: Saving worlds
-[06:55:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[06:55:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[06:55:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[06:55:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[13:51:09] [Client thread/INFO]: Setting user: Player453
+[13:51:09] [Client thread/INFO]: (Session ID is token:0:Player453)
+[13:51:10] [Client thread/INFO]: LWJGL Version: 2.9.4
+[13:51:11] [Client thread/INFO]: Reloading ResourceManager: Default
+[13:51:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:51:12] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[13:51:12] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:51:12] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[13:51:12] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[13:51:12] [Thread-8/WARN]: ERROR MESSAGE:
+[13:51:12] [Thread-8/INFO]: Could not locate OpenAL library.
+[13:51:12] [Thread-8/WARN]: STACK TRACE:
+[13:51:12] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[13:51:12] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[13:51:12] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[13:51:12] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[13:51:12] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[13:51:12] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[13:51:12] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[13:51:12] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[13:51:12] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[13:51:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:51:13] [Thread-10/INFO]: Switching to No Sound
+[13:51:13] [Thread-10/INFO]: (Silent Mode)
+[13:51:13] [Sound Library Loader/INFO]: Sound engine started
+[13:51:19] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[13:51:24] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[13:51:24] [Server thread/INFO]: Generating keypair
+[13:51:25] [Server thread/INFO]: Preparing start region for level 0
+[13:51:26] [Server thread/INFO]: Changing view distance to 8, from 10
+[13:51:26] [Server thread/INFO]: Player453[local:E:9f74e11c] logged in with entity id 371 at (91.75914301445376, 65.0, 498.91321750275904)
+[13:51:26] [Server thread/INFO]: Player453 joined the game
+[13:51:27] [Server thread/INFO]: Saving and pausing game...
+[13:51:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[13:51:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[13:51:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[13:51:32] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
+[13:51:59] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
+[13:52:09] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[13:52:13] [Server thread/INFO]: <Player453> a
+[13:52:13] [Client thread/INFO]: [CHAT] <Player453> a
+[13:52:15] [Server thread/INFO]: <Player453> hi
+[13:52:15] [Client thread/INFO]: [CHAT] <Player453> hi
+[13:52:17] [Server thread/INFO]: Saving and pausing game...
+[13:52:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[13:52:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[13:52:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[13:52:18] [Client thread/INFO]: Stopping!
+[13:52:18] [Client thread/INFO]: SoundSystem shutting down...
+[13:52:19] [Server thread/INFO]: Stopping server
+[13:52:19] [Server thread/INFO]: Saving players
+[13:52:19] [Server thread/INFO]: Saving worlds
+[13:52:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[13:52:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[13:52:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[13:52:19] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

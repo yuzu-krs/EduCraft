@@ -1,16 +1,20 @@
 package net.minecraft.client.gui;
 
-import com.google.common.collect.Lists;
 import java.util.Iterator;
 import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.google.common.collect.Lists;
+
+import me.gamrboy4life.paradox.utils.font.FontUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.util.MathHelper;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class GuiNewChat extends Gui
 {
@@ -82,7 +86,16 @@ public class GuiNewChat extends Gui
                                 drawRect(i2, j2 - 9, i2 + l + 4, j2, l1 / 2 << 24);
                                 String s = chatline.getChatComponent().getFormattedText();
                                 GlStateManager.enableBlend();
-                                this.mc.fontRendererObj.drawStringWithShadow(s, (float)i2, (float)(j2 - 8), 16777215 + (l1 << 24));
+                                
+                                if(isJapanese(s)) {
+                                	//日本語の場合はこっちを使用
+                                	this.mc.fontRendererObj.drawStringWithShadow(s, (float)i2, (float)(j2 - 8), 16777215 + (l1 << 24));
+                                }else {
+                                	//英数字の場合はこっちを使用
+                                	FontUtil.normal.drawStringWithShadow(s, (float)i2, (float)(j2 - 8), 16777215 + (l1 << 24));
+                                }
+                                
+                                
                                 GlStateManager.disableAlpha();
                                 GlStateManager.disableBlend();
                             }
@@ -113,6 +126,18 @@ public class GuiNewChat extends Gui
         }
     }
 
+    
+    //日本語かどうか
+    private boolean isJapanese(String message) {
+        for (char c : message.toCharArray()) {
+            if ((c >= '\u3040' && c <= '\u30FF') || (c >= '\u4E00' && c <= '\u9FAF')) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
     /**
      * Clears the chat.
      */
