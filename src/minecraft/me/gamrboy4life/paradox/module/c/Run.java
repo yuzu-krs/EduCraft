@@ -41,7 +41,7 @@ public class Run extends Module {
     		File parentDir=file.getParentFile();
     		if(parentDir!=null&&!parentDir.exists()) {
     			if(parentDir.mkdirs()) {
-    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました:"+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました: "+parentDir.getPath());
     			}else {
     				Sotuken.instance.moduleManager.addChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
     			}
@@ -50,12 +50,28 @@ public class Run extends Module {
     		//ファイルが存在しない場合は新規作成
     		if(!file.exists()) {
     			if(file.createNewFile()) {
-    				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました:"+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました: "+parentDir.getPath());
     			}else {
     				Sotuken.instance.moduleManager.addChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
     			}
     		}
     		
+    		
+    		
+    		//既存のmain.exeを削除する
+    		File exeFile=new File("C:/EduCraft/main.exe");
+    		if(exeFile.exists()) {
+    			if(exeFile.delete()) {
+    				//Sotuken.instance.moduleManager.addChatMessage("既存のexeファイルを削除しました:");
+    			}else {
+    				//Sotuken.instance.moduleManager.addChatMessage("既存のexeファイルの削除に失敗しました:");    				
+    			}
+    		}
+    		
+    		
+    		
+
+    		/*###########*/
     		
     		/*コンパイル*/
 
@@ -85,41 +101,55 @@ public class Run extends Module {
     		if(compileProcess.exitValue()!=0) {
     			Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
     		}
+
+    		/*###########*/    		
+    		
+    		
+    		
+    		
+    		
     		
     		/*###########*/
-    		
-    		
-    		
     		/*実行*/
     		
-    		ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
-    		//標準入出力のリダイレクト
-    		runProcessBuilder.inheritIO();
-    		
-    		//実行processの開始
-    		Process runProcess=runProcessBuilder.start();
-    		
-    		
-    		//実行プロセスの出力を読み取る
-    		BufferedReader runReader=new BufferedReader(new InputStreamReader(runProcess.getInputStream()));
-    		while((line=runReader.readLine())!=null) {
-    			Sotuken.instance.moduleManager.addChatMessage(line);
-    		}
-    		
-    		//実行プロセスの終了待ち
-    		runProcess.waitFor();
-    		
-    		//コンパイルのチェック
+    		//コンパイルが失敗した場合実行しない
     		if(compileProcess.exitValue()==0) {
-        		//実行結果のチェック
-	    		if(runProcess.exitValue()!=0) {
-	    			Sotuken.instance.moduleManager.addChatMessage("実行に失敗しました");
-	    		}else {
-	    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
-	    			
+	    		
+	    		
+	    		
+	    		
+	    		
+	    		ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
+	    		//標準入出力のリダイレクト
+	    		runProcessBuilder.inheritIO();
+	    		
+	    		//実行processの開始
+	    		Process runProcess=runProcessBuilder.start();
+	    		
+	    		
+	    		//実行プロセスの出力を読み取る
+	    		BufferedReader runReader=new BufferedReader(new InputStreamReader(runProcess.getInputStream()));
+	    		while((line=runReader.readLine())!=null) {
+	    			Sotuken.instance.moduleManager.addChatMessage(line);
 	    		}
-    		}
+	    		
+	    		//実行プロセスの終了待ち
+	    		runProcess.waitFor();
+	    		
+	    		//コンパイルのチェック
+	    		if(compileProcess.exitValue()==0) {
+	        		//実行結果のチェック
+		    		if(runProcess.exitValue()!=0) {
+		    			Sotuken.instance.moduleManager.addChatMessage("実行に失敗しました");
+		    		}else {
+		    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
+		    			
+		    		}
+	    		}
     		
+	    		
+	    		
+    		}
     		/*###########*/
 
     		
