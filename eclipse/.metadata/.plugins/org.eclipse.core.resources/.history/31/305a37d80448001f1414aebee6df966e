@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.module.info;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class BuildingBlock3 extends Module{
+
+	public BuildingBlock3() {
+		super("建築ブロック2",0,Category.INFO);
+	}
+}

@@ -27,11 +27,11 @@
 		<item key="FilterByLocation" value="false"/>
 		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
 		<section name="DialogBoundsSettings">
-			<item key="DIALOG_HEIGHT" value="563"/>
-			<item key="DIALOG_WIDTH" value="623"/>
-			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_HEIGHT" value="657"/>
+			<item key="DIALOG_WIDTH" value="700"/>
+			<item key="DIALOG_X_ORIGIN" value="508"/>
 			<item key="DIALOG_Y_ORIGIN" value="191"/>
-			<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-28|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
+			<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
 		</section>
 	</section>
 </section>

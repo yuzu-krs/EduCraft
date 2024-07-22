@@ -3449,3 +3449,56 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-07-23 01:20:48.899 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 01:21:18.154
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 01:21:18.154
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 01:21:21.020
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 01:21:21.020
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.723
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.725
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.798
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.799
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.803
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.804
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.871
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-07-23 01:30:32.872
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/mods/impl/DirectionMod/ModBuildingBlock1.java' が存在しません。
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-07-23 01:51:44.252
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

@@ -1,0 +1,87 @@
+package me.gamrboy4life.paradox.module.info;
+
+import org.lwjgl.input.Mouse;
+
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.util.ResourceLocation;
+
+public class BuildingBlockGui extends GuiScreen {
+
+    private static final ResourceLocation IMAGE = new ResourceLocation("yuzuclient/BuildingBlock1.png");
+    private int imageWidth = 320;
+    private int imageHeight = 360;
+    private int displayWidth = 320; // 表示領域の幅
+    private int displayHeight = 180; // 表示領域の高さ (16:9)
+    private int scrollY = 0;
+    private int scrollBarWidth = 10;
+    private GuiButton closeButton;
+
+    @Override
+    public void initGui() {
+        int centerX = (this.width - displayWidth) / 2;
+        int centerY = (this.height - displayHeight) / 2;
+
+        // 画像の下部、ホットバーの位置に閉じるボタンを配置
+        closeButton = new GuiButton(0, centerX, centerY + displayHeight + 10, 80, 20, "閉じる");
+        this.buttonList.add(closeButton);
+    }
+
+    @Override
+    protected void actionPerformed(GuiButton button) {
+        if (button.id == 0) {
+            this.mc.displayGuiScreen(null);
+        }
+    }
+
+    @Override
+    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        this.drawDefaultBackground();
+        GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
+        mc.getTextureManager().bindTexture(IMAGE);
+
+        int centerX = (this.width - displayWidth) / 2;
+        int centerY = (this.height - displayHeight) / 2;
+
+        // スクロール位置を考慮して画像を描画
+        drawModalRectWithCustomSizedTexture(centerX, centerY, 0, scrollY, displayWidth, displayHeight, imageWidth, imageHeight);
+
+        // スクロールバーの描画
+        drawScrollBar(centerX + displayWidth + 5, centerY, displayHeight, scrollY, imageHeight - displayHeight);
+
+        // ボタンの描画
+        super.drawScreen(mouseX, mouseY, partialTicks);
+    }
+
+    private void drawScrollBar(int x, int y, int height, int scrollY, int maxScrollY) {
+        int barHeight = Math.max(20, height * height / (maxScrollY + height));
+        int barY = y + (height - barHeight) * scrollY / maxScrollY;
+        drawRect(x, barY, x + scrollBarWidth, barY + barHeight, 0xFFAAAAAA);
+    }
+
+    @Override
+    protected void keyTyped(char typedChar, int keyCode) {
+        if (keyCode == 1) { // ESCキーでGUIを閉じる
+            this.mc.displayGuiScreen(null);
+        } else if (keyCode == 200) { // UPキー
+            scrollY = Math.max(scrollY - 10, 0);
+        } else if (keyCode == 208) { // DOWNキー
+            scrollY = Math.min(scrollY + 10, imageHeight - displayHeight);
+        }
+    }
+
+    @Override
+    public void handleMouseInput() throws java.io.IOException {
+        super.handleMouseInput();
+        int scrollAmount = Mouse.getEventDWheel();
+        if (scrollAmount != 0) {
+            scrollY = Math.max(0, Math.min(scrollY - scrollAmount / 120 * 10, imageHeight - displayHeight));
+        }
+    }
+
+    @Override
+    public boolean doesGuiPauseGame() {
+        return false;
+    }
+}

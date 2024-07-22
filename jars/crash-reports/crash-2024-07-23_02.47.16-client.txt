@@ -1,0 +1,81 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 24/07/23 2:47
+Description: Rendering screen
+
+java.lang.ArithmeticException: / by zero
+	at me.gamrboy4life.paradox.module.info.BuildingBlockGui.drawScrollBar(BuildingBlockGui.java:65)
+	at me.gamrboy4life.paradox.module.info.BuildingBlockGui.drawScreen(BuildingBlockGui.java:56)
+	at net.minecraft.client.renderer.EntityRenderer.func_181560_a(EntityRenderer.java:1303)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1148)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at me.gamrboy4life.paradox.module.info.BuildingBlockGui.drawScrollBar(BuildingBlockGui.java:65)
+	at me.gamrboy4life.paradox.module.info.BuildingBlockGui.drawScreen(BuildingBlockGui.java:56)
+
+-- Screen render details --
+Details:
+	Screen name: me.gamrboy4life.paradox.module.info.BuildingBlockGui
+	Mouse location: Scaled: (240, 126). Absolute: (960, 504)
+	Screen size: Scaled: (480, 253). Absolute: (1920, 1009). Scale factor of 4
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player265'/366, l='MpServer', x=-508.59, y=69.00, z=849.75]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 1658340 game time, 156986 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 31 total; [EntityBat['Bat'/452, l='MpServer', x=-442.63, y=15.38, z=821.41], EntityZombie['Zombie'/648, l='MpServer', x=-459.22, y=25.00, z=775.41], EntitySkeleton['Skeleton'/393, l='MpServer', x=-589.66, y=14.00, z=817.50], EntityBat['Bat'/394, l='MpServer', x=-577.78, y=19.22, z=857.81], EntityZombie['Zombie'/396, l='MpServer', x=-586.50, y=54.00, z=925.50], EntityCreeper['Creeper'/402, l='MpServer', x=-552.50, y=27.00, z=803.50], EntityBat['Bat'/914, l='MpServer', x=-565.40, y=14.06, z=782.39], EntityBat['Bat'/915, l='MpServer', x=-565.89, y=14.32, z=780.25], EntityCreeper['Creeper'/408, l='MpServer', x=-543.50, y=59.00, z=828.50], EntityCreeper['Creeper'/409, l='MpServer', x=-531.50, y=34.00, z=862.50], EntitySkeleton['Skeleton'/729, l='MpServer', x=-445.63, y=26.00, z=776.32], EntitySkeleton['Skeleton'/730, l='MpServer', x=-448.50, y=26.00, z=774.50], EntitySkeleton['Skeleton'/739, l='MpServer', x=-490.47, y=56.00, z=870.16], EntityWitch['Witch'/420, l='MpServer', x=-515.50, y=19.00, z=776.50], EntitySpider['Spider'/554, l='MpServer', x=-581.50, y=50.00, z=773.50], EntityCreeper['Creeper'/555, l='MpServer', x=-578.50, y=50.00, z=776.50], EntityCreeper['Creeper'/428, l='MpServer', x=-501.00, y=39.00, z=860.34], EntityCreeper['Creeper'/556, l='MpServer', x=-442.50, y=13.00, z=879.50], EntityZombie['Zombie'/429, l='MpServer', x=-504.50, y=37.00, z=856.50], EntityBat['Bat'/813, l='MpServer', x=-455.44, y=15.69, z=777.50], EntityBat['Bat'/430, l='MpServer', x=-502.13, y=22.22, z=879.00], EntityZombie['Zombie'/814, l='MpServer', x=-458.53, y=20.00, z=788.19], EntityBat['Bat'/367, l='MpServer', x=-519.75, y=36.10, z=849.59], EntityPlayerSP['Player265'/366, l='MpServer', x=-508.59, y=69.00, z=849.75], EntitySkeleton['Skeleton'/438, l='MpServer', x=-464.50, y=19.00, z=779.50], EntityZombie['Zombie'/439, l='MpServer', x=-471.50, y=49.00, z=838.94], EntityCreeper['Creeper'/440, l='MpServer', x=-476.03, y=20.00, z=877.41], EntityBat['Bat'/442, l='MpServer', x=-471.56, y=32.34, z=905.88], EntityCreeper['Creeper'/444, l='MpServer', x=-473.50, y=30.00, z=908.50], EntitySkeleton['Skeleton'/764, l='MpServer', x=-470.50, y=38.00, z=862.50], EntityCreeper['Creeper'/958, l='MpServer', x=-511.50, y=24.00, z=782.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:390)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2794)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:449)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 11 (amd64) version 10.0
+	CPU: 8x 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+	Java Version: 1.8.0_412, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 678240480 bytes (646 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) Iris(R) Xe Graphics GL version 4.6.0 - Build 30.0.101.1934, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz

@@ -11,6 +11,21 @@
   "VSCode": {
     "enabled": false
   },
+  "建築ブロック": {
+    "enabled": true
+  },
+  "装飾ブロック": {
+    "enabled": false
+  },
+  "RedStone系": {
+    "enabled": false
+  },
+  "トロッコ系": {
+    "enabled": false
+  },
+  "その他": {
+    "enabled": false
+  },
   "座標": {
     "enabled": true
   },

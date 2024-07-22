@@ -1,0 +1,21 @@
+package me.gamrboy4life.paradox.module.info;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.util.ResourceLocation;
+
+public class BuildingBlock2 extends Module{
+
+	public BuildingBlock2() {
+		super("建築ブロック2",0,Category.INFO);
+	}
+	
+    @Override
+    public void onRender() {
+    	if(isToggled()) {
+    		mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/BuildingBlock1.jpg"));
+    		GuiScreen.drawModalRectWithCustomSizedTexture(140, 20, 0, 0, 320,180,320,180);
+    	}
+    }
+}

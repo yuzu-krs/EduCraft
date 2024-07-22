@@ -1,0 +1,19 @@
+package me.gamrboy4life.paradox.module.info;
+
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.Minecraft;
+
+public class BuildingBlock2 extends Module {
+
+    public BuildingBlock2() {
+        super("建築ブロック", 0, Category.INFO);
+    }
+
+    @Override
+    public void onEnable() {
+        Minecraft.getMinecraft().displayGuiScreen(new BuildingBlockGui());
+        toggle=false;
+    }
+}

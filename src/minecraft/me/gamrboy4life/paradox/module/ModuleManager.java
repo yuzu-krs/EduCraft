@@ -7,6 +7,11 @@ import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.c.Run;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
+import me.gamrboy4life.paradox.module.info.BuildingBlock;
+import me.gamrboy4life.paradox.module.info.DecorationBlock;
+import me.gamrboy4life.paradox.module.info.Misc;
+import me.gamrboy4life.paradox.module.info.RedStone;
+import me.gamrboy4life.paradox.module.info.Transportation;
 import me.gamrboy4life.paradox.module.status.Direction;
 import me.gamrboy4life.paradox.module.status.TabGui;
 import me.gamrboy4life.paradox.module.status.XYZ;
@@ -33,6 +38,15 @@ public class ModuleManager {
 		//エディタ
 		newMod(new Notepad());
 		newMod(new VSCode());
+		
+		//ブロック情報
+		newMod(new BuildingBlock());
+		newMod(new DecorationBlock());
+		newMod(new RedStone());
+		newMod(new Transportation());
+		newMod(new Misc());
+		
+		
 
 	
 		//Status

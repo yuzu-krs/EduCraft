@@ -1,0 +1,47 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.util.ResourceLocation;
+
+public class ModBuildingBlock1 extends ModDraggable {
+
+    private static boolean enabled = true; // 静的フィールド
+
+    @Override
+    public int getWidth() {
+        return 320; 
+    }
+
+    @Override
+    public int getHeight() {
+        return 180; 
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        if (enabled) { // 静的フィールドを使用
+            mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/BuildingBlock1.jpg"));
+            GuiScreen.drawModalRectWithCustomSizedTexture(pos.getAbsoluteX(), pos.getAbsoluteY(), 0, 0, getWidth(), getHeight(), getWidth(), getHeight());
+        }
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        if (enabled) { // 静的フィールドを使用
+            mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/BuildingBlock1.jpg"));
+            GuiScreen.drawModalRectWithCustomSizedTexture(pos.getAbsoluteX(), pos.getAbsoluteY(), 0, 0, getWidth(), getHeight(), getWidth(), getHeight());
+        }
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled; // 静的フィールドを使用
+    }
+
+    // 静的メソッド
+    public void setEnabled(boolean isEnabled) {
+        ModBuildingBlock1.enabled = isEnabled;
+    }
+}

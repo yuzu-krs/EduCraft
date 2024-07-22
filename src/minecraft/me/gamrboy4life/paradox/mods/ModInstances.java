@@ -12,17 +12,12 @@ public class ModInstances {
     private static ModXYZ modXYZ;
     
     private static ModPerspective modPerspective;
-  
-    
-
-  
     
     private static DirectionMod direction;
     
 
 
     public static void register(HUDManager api) {
-        
   
         modXYZ=new ModXYZ();
         api.register(modXYZ);

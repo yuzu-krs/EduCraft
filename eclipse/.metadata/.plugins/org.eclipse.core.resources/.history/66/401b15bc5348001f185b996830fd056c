@@ -1,0 +1,12 @@
+
+package me.gamrboy4life.paradox.module.info;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class DecorationBlock extends Module{
+
+	public DecorationBlock() {
+		super("装飾ブロック1",0,Category.INFO);
+	}
+}
