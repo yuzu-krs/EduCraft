@@ -74,9 +74,21 @@ public class Run extends Module {
     		/*###########*/
     		
     		/*コンパイル*/
-
-    		ProcessBuilder compileProcessBuilder=new ProcessBuilder("C:/EduCraft/bin/gcc",filePath,"-o","C:/EduCraft/main.exe");
     		
+            // コンパイル
+    		String gccDir="C:/EduCraft/bin/gcc";
+            String setBlockDir = "C:/EduCraft/function_setblock";
+            String setBlockFile="C:/EduCraft/function_setblock/setblock.c";
+            
+            ProcessBuilder compileProcessBuilder = new ProcessBuilder(
+                gccDir, 
+                "-I" + setBlockDir, 
+                filePath, 
+                setBlockFile,
+                "-o", 
+                "C:/EduCraft/main.exe"
+            );
+            
     		//エラーを標準出力にリダイレクト
     		compileProcessBuilder.redirectErrorStream(true);
     		

@@ -1,0 +1,46 @@
+[01:48:59] [Client thread/INFO]: Setting user: Player46
+[01:48:59] [Client thread/INFO]: (Session ID is token:0:Player46)
+[01:49:00] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:49:00] [Client thread/INFO]: Reloading ResourceManager: Default
+[01:49:01] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:49:01] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[01:49:01] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:49:01] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[01:49:01] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[01:49:01] [Thread-8/WARN]: ERROR MESSAGE:
+[01:49:01] [Thread-8/INFO]: Could not locate OpenAL library.
+[01:49:01] [Thread-8/WARN]: STACK TRACE:
+[01:49:01] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[01:49:01] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[01:49:01] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[01:49:01] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[01:49:01] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[01:49:01] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[01:49:01] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[01:49:01] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[01:49:01] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[01:49:01] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:49:01] [Thread-10/INFO]: Switching to No Sound
+[01:49:01] [Thread-10/INFO]: (Silent Mode)
+[01:49:02] [Sound Library Loader/INFO]: Sound engine started
+[01:49:02] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[01:49:09] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[01:49:09] [Server thread/INFO]: Generating keypair
+[01:49:09] [Server thread/INFO]: Preparing start region for level 0
+[01:49:10] [Server thread/INFO]: Changing view distance to 8, from 10
+[01:49:10] [Server thread/INFO]: Player46[local:E:a362d600] logged in with entity id 366 at (-599.9885042476526, 69.0, 995.3346628208616)
+[01:49:10] [Server thread/INFO]: Player46 joined the game
+[01:49:10] [Server thread/INFO]: Saving and pausing game...
+[01:49:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:13] [Server thread/INFO]: Saving and pausing game...
+[01:49:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:49:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:49:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:49:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:2:10: fatal error: setblock.h: 
+[01:49:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cNo such file or directory
+[01:49:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    2 | #include "setblock.h"
+[01:49:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |          ^~~~~~~~~~~~
+[01:49:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ccompilation terminated.
+[01:49:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
