@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import org.lwjgl.input.Keyboard;
+
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
@@ -13,7 +15,7 @@ public class Run extends Module {
     private boolean hasToggled = false;
 
     public Run() {
-        super("Run", 0, Category.RUN);
+        super("Run", Keyboard.KEY_R , Category.RUN);
     }
 
     @Override
