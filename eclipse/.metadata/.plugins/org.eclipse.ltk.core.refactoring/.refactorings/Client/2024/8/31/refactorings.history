@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;Client/src/assets/minecraft/font/keifont.ttf&apos; を &apos;cica.ttf&apos; に変更します" description="リソース &apos;keifont.ttf&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/assets/minecraft/font/keifont.ttf" name="cica.ttf" stamp="1722613114535" updateReferences="true"/>
+</session>

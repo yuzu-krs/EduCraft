@@ -44,7 +44,7 @@ public class FontUtil {
 			@Override
 			public void run() {
 			    Map<String, Font> locationMap = new HashMap<String, Font>();
-			    normal_ = getFont(locationMap, "keifont.ttf", 19);
+			    normal_ = getFont(locationMap, "cica.ttf", 19);
 			    completed++;
 			}
 		}).start();
