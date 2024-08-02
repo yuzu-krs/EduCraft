@@ -22,7 +22,7 @@ public class MainMenu extends GuiScreen{
     }
 
     public void drawScreen(int mouseX,int mouseY,float partialticks) {
-        String backgroundImage = useFirstBackground ? "yuzuclient/yuzuclient.png" : "yuzuclient/yuzuclient2.png";
+        String backgroundImage = useFirstBackground ? "yuzuclient/EduCraft-Main.png" : "yuzuclient/yuzuclient2";
         mc.getTextureManager().bindTexture(new ResourceLocation(backgroundImage));
         this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0,this.width, this.height, this.width, this.height);
         this.drawGradientRect(0, height-120, width, height, 0x00000000, 0xff000000);
@@ -44,7 +44,7 @@ public class MainMenu extends GuiScreen{
         GlStateManager.translate(width/2f,height/2f,0);
         GlStateManager.scale(2,2,1);
         GlStateManager.translate(-(width/2f),-(height/2f),0);
-        this.drawCenteredString(mc.fontRendererObj, "ver1.0", width/2f, height/1.8f- mc.fontRendererObj.FONT_HEIGHT/2f, -1);
+        this.drawCenteredString(mc.fontRendererObj, "ver-1.0 by Sotuken", width/2f, height/1.8f- mc.fontRendererObj.FONT_HEIGHT/2f, -1);
         GlStateManager.popMatrix();
 
     }
