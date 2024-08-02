@@ -29,7 +29,7 @@ public class Sotuken {
     
     public static Sotuken instance = new Sotuken();
     
-    public static String name = "EduCraft", version = "1.0", creator = "Yuzu";
+    public static String name = "EduCraft", version = "1.0", creator = "Sotuken";
     
     public static SettingsManager settingsManager;
     public static ModuleManager moduleManager;

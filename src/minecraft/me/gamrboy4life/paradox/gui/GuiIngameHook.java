@@ -27,8 +27,8 @@ public class GuiIngameHook extends GuiIngame {
         super.renderGameOverlay(p_175180_1_);
 
         if (!mc.gameSettings.showDebugInfo) {
-			mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/yuzuclientlogo.png"));
-			GuiScreen.drawModalRectWithCustomSizedTexture(3, 0, 1, 5,60,30, 60, 30);
+			mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/EduCraft.png"));
+			GuiScreen.drawModalRectWithCustomSizedTexture(1, 4, 1, 5, 80,23, 80,23);
             
             
             renderArrayList();
