@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 
 import org.lwjgl.input.Keyboard;
 
@@ -76,46 +77,44 @@ public class Run extends Module {
     		/*###########*/
     		
     		/*コンパイル*/
-    		
-            // コンパイル
-    		String gccDir="C:/EduCraft/bin/gcc";
-            String setBlockDir = "C:/EduCraft/function_setblock";
-            String setBlockFile="C:/EduCraft/function_setblock/setblock.c";
-            
-            ProcessBuilder compileProcessBuilder = new ProcessBuilder(
-                gccDir, 
-                "-I" + setBlockDir, 
-                filePath, 
-                setBlockFile,
-                "-o", 
-                "C:/EduCraft/main.exe"
-            );
-            
-    		//エラーを標準出力にリダイレクト
+
+    		String gccDir = "C:/EduCraft/bin/gcc";
+    		String setBlockDir = "C:/EduCraft/function_setblock";
+    		String setBlockFile = "C:/EduCraft/function_setblock/setblock.c";
+
+    		ProcessBuilder compileProcessBuilder = new ProcessBuilder(
+    		    gccDir,
+    		    "-I" + setBlockDir,
+    		    filePath,
+    		    setBlockFile,
+    		    "-o",
+    		    "C:/EduCraft/main.exe"
+    		);
+
+    		// エラーを標準出力にリダイレクト
     		compileProcessBuilder.redirectErrorStream(true);
-    		
-    		//コンパイルの開始
-    		Process compileProcess=compileProcessBuilder.start();
-    		
-    		//コンパイルprocessの出力を読み取る
-    		BufferedReader compileReader=new BufferedReader(new InputStreamReader(compileProcess.getInputStream()));
+
+    		// コンパイルの開始
+    		Process compileProcess = compileProcessBuilder.start();
+
+    		// コンパイルprocessの出力をUTF-8で読み取る
+    		BufferedReader compileReader = new BufferedReader(new InputStreamReader(compileProcess.getInputStream(), StandardCharsets.UTF_8));
     		String line;
-    		while((line=compileReader.readLine())!=null) {
-    			//行が50文字を超える場合は分割して表示
-    			while(line.length()>50) {
-    				Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0,50));
-    				line=line.substring(50);
-    			}
-    			Sotuken.instance.moduleManager.addErrChatMessage(line);
-    		}
-    		
-    		//コンパイル終了待ち
-    		compileProcess.waitFor();
-    		
-    		if(compileProcess.exitValue()!=0) {
-    			Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
+    		while ((line = compileReader.readLine()) != null) {
+    		    // 行が50文字を超える場合は分割して表示
+    		    while (line.length() > 50) {
+    		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 50));
+    		        line = line.substring(50);
+    		    }
+    		    Sotuken.instance.moduleManager.addErrChatMessage(line);
     		}
 
+    		// コンパイル終了待ち
+    		compileProcess.waitFor();
+
+    		if (compileProcess.exitValue() != 0) {
+    		    Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
+    		}
     		/*###########*/    		
     		
     		
