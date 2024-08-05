@@ -54,7 +54,7 @@ public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback
     public void initGui()
     {
     	//Paradox
-    	Sotuken.getDiscordRP().update("Idle", "Multiplayer Menu");
+    	Sotuken.getDiscordRP().update("Idle", "MultiPlayer Menu");
     	
         Keyboard.enableRepeatEvents(true);
         this.buttonList.clear();

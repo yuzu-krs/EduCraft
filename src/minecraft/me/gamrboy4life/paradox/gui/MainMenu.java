@@ -1,5 +1,6 @@
 package me.gamrboy4life.paradox.gui;
 
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.utils.font.FontUtil;
 import net.minecraft.client.gui.GuiLanguage;
 import net.minecraft.client.gui.GuiMultiplayer;
@@ -18,7 +19,7 @@ public class MainMenu extends GuiScreen{
     }
 
     public void initGui() {
-
+    	Sotuken.getDiscordRP().update("Idle", "Main Menu");
     }
 
     public void drawScreen(int mouseX,int mouseY,float partialticks) {
