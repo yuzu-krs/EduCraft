@@ -4616,3 +4616,16 @@ Java Model Exception: Error in Java Model (code 1009): png {key=Lsun/net/www/con
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1009 2024-08-03 02:06:34.828
 !MESSAGE png {key=Lsun/net/www/content/image/png;} [in png.class [in sun.net.www.content.image [in C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\jre\lib\rt.jar]]] に対しては不明な javadoc フォーマットです
+!SESSION 2024-08-05 09:30:21.849 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-05 09:30:33.805
+!MESSAGE ワークスペースは以前のセッションで変更が保存されずに終了しました； 変更を回復するためにワークスペースをリフレッシュ中です。
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2024-08-05 09:30:35.896
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.launchbar.ui.controls/org.eclipse.launchbar.ui.controls.internal.LaunchBarControl

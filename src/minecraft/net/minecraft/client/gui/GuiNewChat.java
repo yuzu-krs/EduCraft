@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 
 import com.google.common.collect.Lists;
 
-import me.gamrboy4life.paradox.utils.font.FontUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
@@ -87,14 +86,7 @@ public class GuiNewChat extends Gui
                                 String s = chatline.getChatComponent().getFormattedText();
                                 GlStateManager.enableBlend();
                                 
-                                if(isJapanese(s)) {
-                                	//日本語の場合はこっちを使用
-                                	this.mc.fontRendererObj.drawStringWithShadow(s, (float)i2, (float)(j2 - 8), 16777215 + (l1 << 24));
-                                }else {
-                                	//英数字の場合はこっちを使用
-                                	FontUtil.normal.drawStringWithShadow(s, (float)i2, (float)(j2 - 8), 16777215 + (l1 << 24));
-                                }
-                                
+                            	this.mc.fontRendererObj.drawStringWithShadow(s, (float)i2, (float)(j2 - 8), 16777215 + (l1 << 24));
                                 
                                 GlStateManager.disableAlpha();
                                 GlStateManager.disableBlend();
@@ -127,15 +119,15 @@ public class GuiNewChat extends Gui
     }
 
     
-    //日本語かどうか
-    private boolean isJapanese(String message) {
-        for (char c : message.toCharArray()) {
-            if ((c >= '\u3040' && c <= '\u30FF') || (c >= '\u4E00' && c <= '\u9FAF')) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    //日本語かどうか
+//    private boolean isJapanese(String message) {
+//        for (char c : message.toCharArray()) {
+//            if ((c >= '\u3040' && c <= '\u30FF') || (c >= '\u4E00' && c <= '\u9FAF')) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
     
     
     /**
