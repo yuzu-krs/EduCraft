@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.TimeUnit;
 
 import org.lwjgl.input.Keyboard;
 
@@ -39,6 +40,7 @@ public class Run extends Module {
     	try {
     		
     		File file=new File(filePath);
+
     		
     		//ファイルのディレクトリが存在しない場合は作成する
     		File parentDir=file.getParentFile();
@@ -127,30 +129,50 @@ public class Run extends Module {
     		
     		//コンパイルが失敗した場合実行しない
     		if(compileProcess.exitValue()==0) {
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
-	    		//標準入出力のリダイレクト
-	    		runProcessBuilder.inheritIO();
+
+    			ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
+    			
+//	    		//標準入出力のリダイレクト
+//	    		runProcessBuilder.inheritIO();
 	    		
 	    		//実行processの開始
-	    		Process runProcess=runProcessBuilder.start();
+	    		final Process runProcess=runProcessBuilder.start();
 	    		
 	    		
-	    		//実行プロセスの出力を読み取る
-	    		BufferedReader runReader=new BufferedReader(new InputStreamReader(runProcess.getInputStream()));
-	    		while((line=runReader.readLine())!=null) {
-	    			Sotuken.instance.moduleManager.addChatMessage(line);
-	    		}
-	    		
-	    		//実行プロセスの終了待ち
-	    		runProcess.waitFor();
-	    		
-	    		//コンパイルのチェック
-	    		if(compileProcess.exitValue()==0) {
+	            // 出力を非同期的に読み取るスレッドを作成
+	            Thread outputReaderThread = new Thread(new Runnable() {
+					@Override
+					public void run() {
+						
+					    try {
+					    	BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(),StandardCharsets.UTF_8));
+					        String line;
+					        while ((line = runReader.readLine()) != null) {
+					            Sotuken.instance.moduleManager.addChatMessage(line);
+					        }
+							
+					    } catch (IOException e) {
+					        Sotuken.instance.moduleManager.addChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+					        e.printStackTrace();
+					    }
+					}
+					
+				});
+	            outputReaderThread.start();
+	            
+
+	            //無限ループのためのタイムアウト設定をする(30秒)
+	            boolean completed = runProcess.waitFor(30, TimeUnit.SECONDS);
+	            if(!completed) {
+	            	//タイムアウト発生時の処理
+	            	runProcess.destroy(); //プロセスを強制終了
+	            	Sotuken.instance.moduleManager.addChatMessage("プログラムの実行がタイムアウトしました");
+	            	//出力読み取りスレッドを中断
+	            	outputReaderThread.interrupt();
+	            }else {
+	            	//タイムアウトしなかったら、出力を読み取りスレッドの終了を待つ
+	            	outputReaderThread.join();
+	            	
 	        		//実行結果のチェック
 		    		if(runProcess.exitValue()!=0) {
 		    			Sotuken.instance.moduleManager.addChatMessage("実行に失敗しました");
@@ -158,8 +180,10 @@ public class Run extends Module {
 		    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
 		    			
 		    		}
-	    		}
-    		
+	            }
+	    		
+	    		
+
 	    		
 	    		
     		}

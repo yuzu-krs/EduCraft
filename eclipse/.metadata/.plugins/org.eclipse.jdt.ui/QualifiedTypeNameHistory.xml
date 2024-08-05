@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.info.BuildingBlock2"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.info.BuildingBlock"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 </qualifiedTypeNameHistroy>
