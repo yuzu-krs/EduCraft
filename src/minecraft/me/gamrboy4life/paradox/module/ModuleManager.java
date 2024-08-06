@@ -7,6 +7,7 @@ import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.c.Run;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
+import me.gamrboy4life.paradox.module.grammar.SetBlock;
 import me.gamrboy4life.paradox.module.info.BuildingBlock;
 import me.gamrboy4life.paradox.module.info.DecorationBlock;
 import me.gamrboy4life.paradox.module.info.Misc;
@@ -38,6 +39,12 @@ public class ModuleManager {
 		//エディタ
 		newMod(new Notepad());
 		newMod(new VSCode());
+		
+		
+		//文法情報
+		newMod(new SetBlock());
+		
+		
 		
 		//ブロック情報
 		newMod(new BuildingBlock());

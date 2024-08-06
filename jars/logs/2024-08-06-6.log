@@ -1,0 +1,64 @@
+[05:37:55] [Client thread/INFO]: Setting user: Player734
+[05:37:55] [Client thread/INFO]: (Session ID is token:0:Player734)
+[05:37:56] [Client thread/INFO]: LWJGL Version: 2.9.4
+[05:37:56] [Client thread/INFO]: Reloading ResourceManager: Default
+[05:37:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[05:37:56] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[05:37:56] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[05:37:56] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[05:37:56] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[05:37:56] [Thread-8/WARN]: ERROR MESSAGE:
+[05:37:56] [Thread-8/INFO]: Could not locate OpenAL library.
+[05:37:56] [Thread-8/WARN]: STACK TRACE:
+[05:37:56] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[05:37:56] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[05:37:56] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[05:37:56] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[05:37:56] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[05:37:56] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[05:37:56] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[05:37:57] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[05:37:57] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[05:37:57] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[05:37:57] [Thread-10/INFO]: Switching to No Sound
+[05:37:57] [Thread-10/INFO]: (Silent Mode)
+[05:37:57] [Sound Library Loader/INFO]: Sound engine started
+[05:37:58] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[05:38:01] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[05:38:01] [Server thread/INFO]: Generating keypair
+[05:38:01] [Server thread/INFO]: Preparing start region for level 0
+[05:38:02] [Server thread/INFO]: Changing view distance to 8, from 10
+[05:38:02] [Server thread/INFO]: Player734[local:E:f4096a0a] logged in with entity id 366 at (-795.387594039009, 77.0, 1053.0796703583524)
+[05:38:02] [Server thread/INFO]: Player734 がゲームに参加しました
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:6:9: error: parameter 'x' is initialized
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    6 |         int x=100;
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:7:9: error: parameter 'y' is initialized
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    7 |         int y=64;
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:8:9: error: parameter 'z' is initialized
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    8 |         int z=100;
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:10:9: error: parameter 'block_name' is initialized
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   10 |         const char *block_name="stone";
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: parameter 'block_id' is initialized
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   12 |         int block_id=0;
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: error: expected declaration specifiers before 'setBlock
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c'
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id)
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:16:9: error: expected declaration specifiers before 'return'
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   16 |         return 0; //こんにちは
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:1: error: expected declaration specifiers before '}' token
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   17 | }
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:5: error: old-style parameter declarations in prototyped fu
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cnction definition
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    4 | int main(void)
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |     ^~~~
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:18: error: expected '{' at end of input
+[05:38:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました

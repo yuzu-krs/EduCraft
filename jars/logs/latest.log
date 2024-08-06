@@ -1,196 +1,45 @@
-[05:24:41] [Client thread/INFO]: Setting user: Player31
-[05:24:41] [Client thread/INFO]: (Session ID is token:0:Player31)
-[05:24:42] [Client thread/INFO]: LWJGL Version: 2.9.4
-[05:24:42] [Client thread/INFO]: Reloading ResourceManager: Default
-[05:24:42] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[05:24:43] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[05:24:43] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[05:24:43] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[05:24:43] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[05:24:43] [Thread-8/WARN]: ERROR MESSAGE:
-[05:24:43] [Thread-8/INFO]: Could not locate OpenAL library.
-[05:24:43] [Thread-8/WARN]: STACK TRACE:
-[05:24:43] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[05:24:43] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[05:24:43] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[05:24:43] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[05:24:43] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[05:24:43] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[05:24:43] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[05:24:43] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[05:24:43] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[05:24:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[05:24:43] [Thread-10/INFO]: Switching to No Sound
-[05:24:43] [Thread-10/INFO]: (Silent Mode)
-[05:24:44] [Sound Library Loader/INFO]: Sound engine started
-[05:24:45] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[05:24:49] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[05:24:49] [Server thread/INFO]: Generating keypair
-[05:24:49] [Server thread/INFO]: Preparing start region for level 0
-[05:24:50] [Server thread/INFO]: Changing view distance to 8, from 10
-[05:24:50] [Server thread/INFO]: Player31[local:E:2543532a] logged in with entity id 366 at (-805.8416827201441, 69.0, 1002.6899134629812)
-[05:24:50] [Server thread/INFO]: Player31 がゲームに参加しました
-[05:24:52] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[05:24:52] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[05:24:56] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
-[05:24:56] [Server thread/INFO]: Saving and pausing game...
-[05:24:56] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[05:24:56] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[05:24:56] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:11] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:19] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:27] [Server thread/INFO]: <Player31> a
-[05:25:27] [Client thread/INFO]: [CHAT] <Player31> a
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:2: error: stray '#' in progra
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cm
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |  ^
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:1: error: unknown type name '
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ct'
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      | ^
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:1:11: error: expected '=', ',',
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c ';', 'asm' or '__attribute__' before '<' token
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c    1 | t#include <stdio.h>
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |           ^
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:9: warning: implicit declara
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ction of function 'setBlock' [-Wimplicit-function-d
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §ceclaration]
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c   14 |         setBlock(x,y,z,block_name,block_id
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c);
-[05:25:27] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~~~
-[05:25:28] [Client thread/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
-[05:25:40] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[05:25:40] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[05:25:40] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[05:26:26] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[05:26:26] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[05:26:26] [Client thread/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[05:27:00] [Client thread/INFO]: Stopping!
-[05:27:00] [Client thread/INFO]: SoundSystem shutting down...
-[05:27:00] [Server thread/INFO]: Stopping server
-[05:27:00] [Server thread/INFO]: Saving players
-[05:27:00] [Server thread/INFO]: Saving worlds
-[05:27:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[05:27:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[05:27:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[05:27:00] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:56:41] [Client thread/INFO]: Setting user: Player234
+[01:56:41] [Client thread/INFO]: (Session ID is token:0:Player234)
+[01:56:42] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:56:42] [Client thread/INFO]: Reloading ResourceManager: Default
+[01:56:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:56:43] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[01:56:43] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:56:43] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[01:56:43] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[01:56:43] [Thread-8/WARN]: ERROR MESSAGE:
+[01:56:43] [Thread-8/INFO]: Could not locate OpenAL library.
+[01:56:43] [Thread-8/WARN]: STACK TRACE:
+[01:56:43] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[01:56:43] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[01:56:43] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[01:56:43] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[01:56:43] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[01:56:43] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[01:56:43] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[01:56:43] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[01:56:43] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[01:56:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:56:44] [Thread-10/INFO]: Switching to No Sound
+[01:56:44] [Thread-10/INFO]: (Silent Mode)
+[01:56:44] [Sound Library Loader/INFO]: Sound engine started
+[01:56:44] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[01:56:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[01:56:47] [Server thread/INFO]: Generating keypair
+[01:56:47] [Server thread/INFO]: Preparing start region for level 0
+[01:56:48] [Server thread/INFO]: Changing view distance to 8, from 10
+[01:56:48] [Server thread/INFO]: Player234[local:E:f215fe06] logged in with entity id 366 at (-562.5626277015367, 70.0155550727022, 888.0003897903035)
+[01:56:48] [Server thread/INFO]: Player234 がゲームに参加しました
+[02:00:07] [Server thread/INFO]: Saving and pausing game...
+[02:00:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:00:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:00:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:00:09] [Client thread/INFO]: Stopping!
+[02:00:09] [Client thread/INFO]: SoundSystem shutting down...
+[02:00:09] [Server thread/INFO]: Stopping server
+[02:00:09] [Server thread/INFO]: Saving players
+[02:00:09] [Server thread/INFO]: Saving worlds
+[02:00:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:00:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:00:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:00:10] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

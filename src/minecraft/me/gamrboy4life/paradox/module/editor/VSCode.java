@@ -12,7 +12,7 @@ public class VSCode extends Module{
 	private boolean hasToggled=false;
 	
 	public VSCode() {
-		super("VSCode",0,Category.Editor);
+		super("VSCode",0,Category.EDITOR);
 	}
 	
 	@Override

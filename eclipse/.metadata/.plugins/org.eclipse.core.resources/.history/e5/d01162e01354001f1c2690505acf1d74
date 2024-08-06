@@ -1,0 +1,25 @@
+package me.gamrboy4life.paradox.module.grammar;
+
+
+import me.gamrboy4life.paradox.gui.BuildingBlockGui;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.Minecraft;
+
+public class SetBlock extends Module {
+
+    public SetBlock() {
+        super("建築ブロック", 0, Category.INFO);
+    }
+
+    @Override
+    public void onEnable() {
+    	if(isToggled()) {
+    		Minecraft.getMinecraft().displayGuiScreen(new BuildingBlockGui(this));
+    	}
+    }
+    
+    public void falseToggled() {
+    	toggled=false;
+    }
+}

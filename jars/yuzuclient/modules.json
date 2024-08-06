@@ -11,6 +11,9 @@
   "VSCode": {
     "enabled": false
   },
+  "SetBlock関数": {
+    "enabled": false
+  },
   "建築ブロック": {
     "enabled": false
   },

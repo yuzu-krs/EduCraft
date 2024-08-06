@@ -12,7 +12,7 @@ public class Notepad extends Module{
 	private boolean hasToggled=false;
 	
 	public Notepad() {
-		super("Notepad",0,Category.Editor);
+		super("Notepad",0,Category.EDITOR);
 	}
 	
 	@Override
