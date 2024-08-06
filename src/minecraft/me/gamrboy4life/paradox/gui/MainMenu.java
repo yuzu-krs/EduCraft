@@ -1,7 +1,6 @@
 package me.gamrboy4life.paradox.gui;
 
 import me.gamrboy4life.paradox.Sotuken;
-import me.gamrboy4life.paradox.utils.font.FontUtil;
 import net.minecraft.client.gui.GuiLanguage;
 import net.minecraft.client.gui.GuiMultiplayer;
 import net.minecraft.client.gui.GuiOptions;
@@ -23,12 +22,12 @@ public class MainMenu extends GuiScreen{
     }
 
     public void drawScreen(int mouseX,int mouseY,float partialticks) {
-        String backgroundImage = useFirstBackground ? "yuzuclient/EduCraft-Main.png" : "yuzuclient/yuzuclient2";
+        String backgroundImage = useFirstBackground ? "yuzuclient/EduCraft-Main.png" : "yuzuclient/describe.png";
         mc.getTextureManager().bindTexture(new ResourceLocation(backgroundImage));
         this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0,this.width, this.height, this.width, this.height);
         this.drawGradientRect(0, height-120, width, height, 0x00000000, 0xff000000);
 
-        String[] buttons= {"SinglePlayer","MultiPlayer","Settings","Language","Background","Quit"};
+        String[] buttons= {"シングルプレイ","マルチプレイ","設定","言語","説明","終了"};
         int count=0;
         for(String name:buttons) {
             float x=(width/buttons.length)*count+(width/buttons.length)/2f+8-mc.fontRendererObj.getStringWidth(name)/2f;
@@ -36,7 +35,9 @@ public class MainMenu extends GuiScreen{
 
             boolean hovered=(mouseX>=x&&mouseY>=y&&mouseX<x+mc.fontRendererObj.getStringWidth(name)&&mouseY<y+mc.fontRendererObj.FONT_HEIGHT);
 
-            FontUtil.normal.drawCenteredString(name, (width/buttons.length)*count+(width/buttons.length/2f+8), y,hovered?0xFFE600:-1 );
+            this.drawCenteredString(fontRendererObj, name, (width/buttons.length)*count+(width/buttons.length/2f+8), y,hovered?0xFFE600:-1 );
+            
+//            FontUtil.normal.drawCenteredString(name, (width/buttons.length)*count+(width/buttons.length/2f+8), y,hovered?0xFFE600:-1 );
             count++;
         }
 
@@ -51,7 +52,7 @@ public class MainMenu extends GuiScreen{
     }
 
     public void mouseClicked(int mouseX,int mouseY,int button) {
-        String[] buttons= {"SinglePlayer","MultiPlayer","Settings","Language","Background","Quit"};
+        String[] buttons= {"シングルプレイ","マルチプレイ","設定","言語","説明","終了"};
 
         int count=0;
         for(String name : buttons) {
@@ -60,17 +61,17 @@ public class MainMenu extends GuiScreen{
             float y = height - 20;
 
             if(mouseX >= x && mouseY >= y && mouseX < x + mc.fontRendererObj.getStringWidth(name) && mouseY < y + mc.fontRendererObj.FONT_HEIGHT) {
-                if(name.equals("SinglePlayer")) {
+                if(name.equals("シングルプレイ")) {
                     mc.displayGuiScreen(new GuiSelectWorld(this));
-                } else if(name.equals("MultiPlayer")) {
+                } else if(name.equals("マルチプレイ")) {
                     mc.displayGuiScreen(new GuiMultiplayer(this));
-                } else if(name.equals("Settings")) {
+                } else if(name.equals("設定")) {
                     mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
-                } else if(name.equals("Language")) {
+                } else if(name.equals("言語")) {
                     mc.displayGuiScreen(new GuiLanguage(this, mc.gameSettings, mc.getLanguageManager()));
-                } else if(name.equals("Background")) {
+                } else if(name.equals("説明")) {
                     useFirstBackground = !useFirstBackground;
-                } else if(name.equals("Quit")) {
+                } else if(name.equals("終了")) {
                     mc.shutdown();
                 }
             }
