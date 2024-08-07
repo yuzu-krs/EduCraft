@@ -1,0 +1,225 @@
+package me.gamrboy4life.paradox.module.c;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.concurrent.TimeUnit;
+
+import org.lwjgl.input.Keyboard;
+
+import me.gamrboy4life.paradox.Sotuken;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+
+public class Run extends Module {
+
+    private boolean hasToggled = false;
+
+    public Run() {
+        super("Run", Keyboard.KEY_R , Category.RUN);
+    }
+
+    @Override
+    public void onUpdate() {
+        // モジュールがトグルされており、処理がまだ実行されていない場合
+        if (isToggled() && !hasToggled) {
+        	
+        	
+        	
+        	new Thread(new Runnable() {
+				@Override
+				public void run() {
+					//コンパイルと実行を行う
+					compileAndRunCFile("C:/EduCraft/main.c");
+				}
+			}).start();
+        
+        	
+        	
+        	
+             // 処理が完了した後、フラグをtrueに設定
+            hasToggled = true;
+
+            // モジュールのトグルを解除
+            toggled = false;
+        }
+    }
+ 
+    private void compileAndRunCFile(String filePath) {
+    	try {
+    		
+    		File file=new File(filePath);
+
+    		
+    		//ファイルのディレクトリが存在しない場合は作成する
+    		File parentDir=file.getParentFile();
+    		if(parentDir!=null&&!parentDir.exists()) {
+    			if(parentDir.mkdirs()) {
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました: "+parentDir.getPath());
+    			}else {
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
+    			}
+    		}
+    		
+    		//ファイルが存在しない場合は新規作成
+    		if(!file.exists()) {
+    			if(file.createNewFile()) {
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました: "+parentDir.getPath());
+    			}else {
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
+    			}
+    		}
+    		
+    		
+    		
+    		//既存のmain.exeを削除する
+    		File exeFile=new File("C:/EduCraft/main.exe");
+    		if(exeFile.exists()) {
+    			if(exeFile.delete()) {
+    				//Sotuken.instance.moduleManager.addChatMessage("既存のexeファイルを削除しました:");
+    			}else {
+    				//Sotuken.instance.moduleManager.addChatMessage("既存のexeファイルの削除に失敗しました:");    				
+    			}
+    		}
+    		
+    		
+    		
+
+    		/*###########*/
+    		
+    		/*コンパイル*/
+
+    		String gccDir = "C:/EduCraft/bin/gcc";
+    		String setBlockDir = "C:/EduCraft/function_setblock";
+    		String setBlockFile = "C:/EduCraft/function_setblock/setblock.c";
+
+    		ProcessBuilder compileProcessBuilder = new ProcessBuilder(
+    		    gccDir,
+    		    "-I" + setBlockDir,
+    		    filePath,
+    		    setBlockFile,
+    		    "-o",
+    		    "C:/EduCraft/main.exe"
+    		);
+
+    		// エラーを標準出力にリダイレクト
+    		compileProcessBuilder.redirectErrorStream(true);
+
+    		// コンパイルの開始
+    		Process compileProcess = compileProcessBuilder.start();
+
+    		// コンパイルprocessの出力をUTF-8で読み取る
+    		BufferedReader compileReader = new BufferedReader(new InputStreamReader(compileProcess.getInputStream(), StandardCharsets.UTF_8));
+    		String line;
+    		while ((line = compileReader.readLine()) != null) {
+    		    // 行が50文字を超える場合は分割して表示
+    		    while (line.length() > 50) {
+    		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 50));
+    		        line = line.substring(50);
+    		    }
+    		    Sotuken.instance.moduleManager.addErrChatMessage(line);
+    		}
+
+    		// コンパイル終了待ち
+    		compileProcess.waitFor();
+
+    		if (compileProcess.exitValue() != 0) {
+    		    Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
+    		}
+    		/*###########*/    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		/*###########*/
+    		/*実行*/
+    		
+    		//コンパイルが失敗した場合実行しない
+    		if(compileProcess.exitValue()==0) {
+
+    			ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
+    			
+//	    		//標準入出力のリダイレクト
+//	    		runProcessBuilder.inheritIO();
+	    		
+	    		//実行processの開始
+	    		final Process runProcess=runProcessBuilder.start();
+	    		
+	    		
+	            // 出力を非同期的に読み取るスレッドを作成
+	            Thread outputReaderThread = new Thread(new Runnable() {
+					@Override
+					public void run() {
+						
+					    try {
+					    	BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(),StandardCharsets.UTF_8));
+					        String line;
+					        while ((line = runReader.readLine()) != null) {
+					            Sotuken.instance.moduleManager.addChatMessage(line);
+					        }
+							
+					    } catch (IOException e) {
+					        Sotuken.instance.moduleManager.addChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+					        e.printStackTrace();
+					    }
+					}
+					
+				});
+	            outputReaderThread.start();
+	            
+
+	            //無限ループのためのタイムアウト設定をする(30秒)
+	            boolean completed = runProcess.waitFor(30, TimeUnit.SECONDS);
+	            if(!completed) {
+	            	//タイムアウト発生時の処理
+	            	runProcess.destroy(); //プロセスを強制終了
+	            	Sotuken.instance.moduleManager.addChatMessage("プログラムの実行がタイムアウトしました");
+	            	//出力読み取りスレッドを中断
+	            	outputReaderThread.interrupt();
+	            }else {
+	            	//タイムアウトしなかったら、出力を読み取りスレッドの終了を待つ
+	            	outputReaderThread.join();
+	            	
+	        		//実行結果のチェック
+		    		if(runProcess.exitValue()!=0) {
+		    			Sotuken.instance.moduleManager.addChatMessage("実行に失敗しました");
+		    		}else {
+		    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
+		    			
+		    		}
+	            }
+	    		
+	    		
+
+	    		
+	    		
+    		}
+    		/*###########*/
+
+    		
+    		
+    	}catch(IOException e) {
+    		Sotuken.instance.moduleManager.addChatMessage("IOエラーが発生しました: " + e.getMessage());
+    		e.printStackTrace();
+    	}catch(InterruptedException e) {
+    		Sotuken.instance.moduleManager.addChatMessage("プロセスが中断されました: " + e.getMessage());	
+    		e.printStackTrace();
+    	}
+		
+	}
+
+	@Override
+    public void onEnable() {
+        super.onEnable();
+        hasToggled = false; 
+    }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+        hasToggled = false; 
+    }
+}

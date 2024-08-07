@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.utils.font.FontUtil"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModBuildingBlock1"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.info.BuildingBlock2"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.info.BuildingBlock"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
 </qualifiedTypeNameHistroy>

@@ -25,8 +25,18 @@ public class Run extends Module {
         // モジュールがトグルされており、処理がまだ実行されていない場合
         if (isToggled() && !hasToggled) {
         	
-        	//コンパイルと実行を行う
-        	compileAndRunCFile("C:/EduCraft/main.c");
+        	
+        	
+        	new Thread(new Runnable() {
+				@Override
+				public void run() {
+					//コンパイルと実行を行う
+					compileAndRunCFile("C:/EduCraft/main.c");
+				}
+			}).start();
+        
+        	
+        	
         	
              // 処理が完了した後、フラグをtrueに設定
             hasToggled = true;
@@ -162,7 +172,7 @@ public class Run extends Module {
 	            
 
 	            //無限ループのためのタイムアウト設定をする(30秒)
-	            boolean completed = runProcess.waitFor(30, TimeUnit.SECONDS);
+	            boolean completed = runProcess.waitFor(10, TimeUnit.SECONDS);
 	            if(!completed) {
 	            	//タイムアウト発生時の処理
 	            	runProcess.destroy(); //プロセスを強制終了
