@@ -158,7 +158,7 @@ public class Run extends Module {
 					    	BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(),StandardCharsets.UTF_8));
 					        String line;
 					        while ((line = runReader.readLine()) != null) {
-					            Sotuken.instance.moduleManager.addChatMessage(line);
+					            Sotuken.instance.moduleManager.addRunChatMessage(line);
 					        }
 							
 					    } catch (IOException e) {

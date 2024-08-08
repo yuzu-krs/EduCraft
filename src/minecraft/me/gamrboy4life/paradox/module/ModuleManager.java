@@ -112,14 +112,22 @@ public class ModuleManager {
 		}
 	}
 
-
+	
 	public static void addChatMessage(String message) {
 		message="\u00A7e"+Sotuken.name+"\2477: "+message;
 		Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
 	
+	//コンパイルエラーの場合
 	public static void addErrChatMessage(String message) {
 	    message = "\u00A7e" + Sotuken.name + "\u00A77: " + "\u00A7c" + message;
+	    Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
+	}
+	
+	//実行結果の場合
+	public static void addRunChatMessage(String message) {
+	    //message = "\u00A7e" + Sotuken.name + "\u00A77: " + "\u00A7f\u00A7l" + message; 太文字の場合
+	    message = "\u00A7e" + Sotuken.name + "\u00A77: " + "\u00A7f" + message;
 	    Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
 	
