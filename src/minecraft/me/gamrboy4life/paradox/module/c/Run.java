@@ -113,7 +113,7 @@ public class Run extends Module {
     		BufferedReader compileReader = new BufferedReader(new InputStreamReader(compileProcess.getInputStream(), StandardCharsets.UTF_8));
     		String line;
     		while ((line = compileReader.readLine()) != null) {
-    		    // 行が50文字を超える場合は分割して表示
+    		    // 行が76文字を超える場合は分割して表示
     		    while (line.length() > 76) {
     		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 76));
     		        line = line.substring(76);
