@@ -1,55 +1,181 @@
-[01:14:05] [Client thread/INFO]: Setting user: Player953
-[01:14:05] [Client thread/INFO]: (Session ID is token:0:Player953)
-[01:14:06] [Client thread/INFO]: LWJGL Version: 2.9.4
-[01:14:06] [Client thread/INFO]: Reloading ResourceManager: Default
-[01:14:06] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:14:07] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[01:14:07] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[01:14:07] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[01:14:07] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
-[01:14:07] [Thread-8/WARN]: ERROR MESSAGE:
-[01:14:07] [Thread-8/INFO]: Could not locate OpenAL library.
-[01:14:07] [Thread-8/WARN]: STACK TRACE:
-[01:14:07] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
-[01:14:07] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
-[01:14:07] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
-[01:14:07] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
-[01:14:07] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
-[01:14:07] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
-[01:14:07] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
-[01:14:07] [Sound Library Loader/WARN]: ERROR MESSAGE:
-[01:14:07] [Sound Library Loader/INFO]: Could not locate OpenAL library.
-[01:14:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:14:07] [Thread-10/INFO]: Switching to No Sound
-[01:14:07] [Thread-10/INFO]: (Silent Mode)
-[01:14:08] [Sound Library Loader/INFO]: Sound engine started
-[01:14:08] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[01:14:38] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[01:14:38] [Server thread/INFO]: Generating keypair
-[01:14:38] [Server thread/INFO]: Preparing start region for level 0
-[01:14:39] [Server thread/INFO]: Changing view distance to 8, from 10
-[01:14:39] [Server thread/INFO]: Player953[local:E:9fe69404] logged in with entity id 380 at (-153.57077931606113, 72.0, 1029.7937288642383)
-[01:14:39] [Server thread/INFO]: Player953 がゲームに参加しました
-[01:14:39] [Server thread/INFO]: Saving and pausing game...
-[01:14:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[01:14:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[01:14:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[01:14:42] [Thread-20/INFO]: [CHAT] §eEduCraft§7: こんにちは、こんばんは、さようなら、こんちゃっすー
-[01:14:42] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[01:14:42] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 99999,100,64,100,stone,0
-[01:14:42] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[01:15:25] [Thread-21/INFO]: [CHAT] §eEduCraft§7: プログラムの実行がタイムアウトしました
-[01:16:01] [Thread-23/INFO]: [CHAT] §eEduCraft§7: プログラムの実行がタイムアウトしました
-[01:18:32] [Thread-25/INFO]: [CHAT] §eEduCraft§7: プログラムの実行がタイムアウトしました
-[01:20:06] [Thread-27/INFO]: [CHAT] §eEduCraft§7: プログラムの実行がタイムアウトしました
-[01:21:40] [Thread-29/INFO]: [CHAT] §eEduCraft§7: プログラムの実行がタイムアウトしました
-[01:24:57] [Thread-31/INFO]: [CHAT] §eEduCraft§7: プログラムの実行がタイムアウトしました
-[01:25:41] [Client thread/INFO]: Stopping!
-[01:25:41] [Client thread/INFO]: SoundSystem shutting down...
-[01:25:41] [Server thread/INFO]: Stopping server
-[01:25:41] [Server thread/INFO]: Saving players
-[01:25:41] [Server thread/INFO]: Saving worlds
-[01:25:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[01:25:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[01:25:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[01:25:42] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[02:56:04] [Client thread/INFO]: Setting user: Player375
+[02:56:04] [Client thread/INFO]: (Session ID is token:0:Player375)
+[02:56:04] [Client thread/INFO]: LWJGL Version: 2.9.4
+[02:56:04] [Client thread/INFO]: Reloading ResourceManager: Default
+[02:56:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:56:05] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[02:56:05] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:56:05] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[02:56:05] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[02:56:05] [Thread-8/WARN]: ERROR MESSAGE:
+[02:56:05] [Thread-8/INFO]: Could not locate OpenAL library.
+[02:56:05] [Thread-8/WARN]: STACK TRACE:
+[02:56:05] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[02:56:05] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[02:56:05] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[02:56:05] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[02:56:05] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[02:56:05] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[02:56:05] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[02:56:05] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[02:56:05] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[02:56:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:56:06] [Thread-10/INFO]: Switching to No Sound
+[02:56:06] [Thread-10/INFO]: (Silent Mode)
+[02:56:06] [Sound Library Loader/INFO]: Sound engine started
+[02:56:06] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[02:56:10] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[02:56:10] [Server thread/INFO]: Generating keypair
+[02:56:10] [Server thread/INFO]: Preparing start region for level 0
+[02:56:10] [Server thread/INFO]: Changing view distance to 8, from 10
+[02:56:10] [Server thread/INFO]: Player375[local:E:7f28f64a] logged in with entity id 378 at (-127.73876318902177, 66.0, 1013.3000000119209)
+[02:56:10] [Server thread/INFO]: Player375 がゲームに参加しました
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaa
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:56:12] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:56:20] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
+[02:56:21] [Server thread/INFO]: Saving and pausing game...
+[02:56:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:56:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:56:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaa
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:57:14] [Thread-20/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:57:21] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:57:21] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:57:22] [Thread-22/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaaaaaa
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:57:27] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:57:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:57:41] [Thread-25/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:57:45] [Server thread/INFO]: Saving and pausing game...
+[02:57:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:57:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:57:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:12:9: error: expected expression before '/' token
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c   12 |         /あああああああああああああaaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: error: 'block_id' undeclared (first use in this fu
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c   17 |         setBlock(x,y,z,block_name,block_id);
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:17:35: note: each undeclared identifier is reported only 
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:58:26] [Thread-26/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:13:9: error: expected expression before '/' token
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c   13 |         /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:18:35: error: 'block_id' undeclared (first use in this fu
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c   18 |         setBlock(x,y,z,block_name,block_id);
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:18:35: note: each undeclared identifier is reported only 
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:59:02] [Thread-27/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:13:9: error: expected expression before '/' token
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §c   13 |         /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §c      |         ^
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:18:35: error: 'block_id' undeclared (first use in this fu
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §cnction); did you mean 'block_name'?
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §c   18 |         setBlock(x,y,z,block_name,block_id);
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~~~~
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §c      |                                   block_name
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:18:35: note: each undeclared identifier is reported only 
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[02:59:10] [Thread-28/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[03:00:08] [Server thread/INFO]: <Player375> a
+[03:00:08] [Client thread/INFO]: [CHAT] <Player375> a
+[03:00:14] [Server thread/INFO]: <Player375> あああ
+[03:00:14] [Client thread/INFO]: [CHAT] <Player375> あああ
+[03:00:22] [Server thread/INFO]: <Player375> ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+[03:00:22] [Client thread/INFO]: [CHAT] <Player375> ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+[03:00:36] [Server thread/INFO]: <Player375> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[03:00:36] [Client thread/INFO]: [CHAT] <Player375> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[03:01:01] [Client thread/ERROR]: Item entity 8306 has no item?!
+[03:01:01] [Client thread/ERROR]: Item entity 8306 has no item?!
+[03:01:01] [Client thread/ERROR]: Item entity 8306 has no item?!
+[03:02:12] [Client thread/INFO]: Stopping!
+[03:02:12] [Client thread/INFO]: SoundSystem shutting down...
+[03:02:12] [Server thread/INFO]: Stopping server
+[03:02:12] [Server thread/INFO]: Saving players
+[03:02:12] [Server thread/INFO]: Saving worlds
+[03:02:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:02:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:02:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:02:12] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

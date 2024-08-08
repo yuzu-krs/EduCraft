@@ -114,9 +114,9 @@ public class Run extends Module {
     		String line;
     		while ((line = compileReader.readLine()) != null) {
     		    // 行が50文字を超える場合は分割して表示
-    		    while (line.length() > 50) {
-    		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 50));
-    		        line = line.substring(50);
+    		    while (line.length() > 76) {
+    		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 76));
+    		        line = line.substring(76);
     		    }
     		    Sotuken.instance.moduleManager.addErrChatMessage(line);
     		}
