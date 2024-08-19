@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-8.0.412.8-hotspot">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
@@ -40,10 +40,10 @@
 	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/tv/twitch/twitch/6.5/twitch-6.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/EduCraft/lib/annotations-16.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/EduCraft/lib/discord-rpc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/EduCraft/lib/json-20180813.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/EduCraft/lib/procbridge-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/yztim/OneDrive/デスクトップ/EduCraft/lib/slick.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/EduCraft/lib/annotations-16.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/EduCraft/lib/discord-rpc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/EduCraft/lib/json-20180813.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/EduCraft/lib/procbridge-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuzut/Desktop/EduCraft/lib/slick.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

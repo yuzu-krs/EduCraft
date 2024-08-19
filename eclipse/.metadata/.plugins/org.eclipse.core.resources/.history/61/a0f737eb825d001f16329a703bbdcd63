@@ -1,0 +1,29 @@
+package me.gamrboy4life.paradox.analysis;
+
+public class DataParser {
+	public void parseData(String data) {
+		// 解析処理を行う
+        if (data.matches("^99999,\\d+,\\d+,\\d+,[a-zA-Z]+,\\d+$")) {
+            // ブロック設定コマンドの場合
+            System.out.println("Detected setBlock command: " + data);
+
+            // カンマで分割して各要素を抽出
+            String[] parts = data.split(",");
+            int commandCheck = Integer.parseInt(parts[0]);
+            int x = Integer.parseInt(parts[1]);
+            int y = Integer.parseInt(parts[2]);
+            int z = Integer.parseInt(parts[3]);
+            String blockName = parts[4];
+            int blockId = Integer.parseInt(parts[5]);
+
+            // 抽出した各要素を表示
+            System.out.println("Command Check: " + commandCheck);
+            System.out.println("Coordinates: (" + x + ", " + y + ", " + z + ")");
+            System.out.println("Block Name: " + blockName);
+            System.out.println("Block ID: " + blockId);
+        } else {
+            // 通常の文字列の場合
+            System.out.println("Regular message: " + data);
+        }
+	}
+}

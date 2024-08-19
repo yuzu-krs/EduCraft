@@ -1,0 +1,28 @@
+package me.gamrboy4life.paradox.analysis;
+
+public class DataParser {
+	public void parseData(String data) {
+		  // 解析処理を行う
+        if (data.matches("^99999,\\d+,\\d+,\\d+,[a-zA-Z]+,\\d+$")) {
+            // ブロック設定コマンドの場合
+            System.out.println("Detected setBlock command: " + data);
+
+            // カンマで分割して各要素を抽出
+            String[] parts = data.split(",");
+            int x = Integer.parseInt(parts[1]);
+            int y = Integer.parseInt(parts[2]);
+            int z = Integer.parseInt(parts[3]);
+            String blockName = parts[4];
+            int blockId = Integer.parseInt(parts[5]);
+
+            // `setblock` コマンドをMinecraftに送信
+            String chatCommand = "/setblock " + x + " " + y + " " + z + " " + blockName + " " + blockId;
+            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(new C01PacketChatMessage(chatCommand));
+
+        } else {
+            // 通常の文字列の場合
+            System.out.println("Regular message: " + data);
+            Sotuken.instance.moduleManager.addRunChatMessage(data);
+        }
+	}
+}

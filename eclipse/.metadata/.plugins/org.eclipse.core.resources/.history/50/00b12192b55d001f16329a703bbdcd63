@@ -1,0 +1,9 @@
+package me.gamrboy4life.paradox.analysis;
+
+import me.gamrboy4life.paradox.Sotuken;
+
+public class DataParser {
+	public void parseData(String data) {
+		System.out.println(data);
+	}
+}
