@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+C:\Users\yuzut\Desktop\EduCraft\eclipse\.metadata\.plugins\org.eclipse.jdt.core
-137624701.index
 1865797976.index
 2901453710.index
 3706746149.index

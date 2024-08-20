@@ -180,7 +180,7 @@ public class Run extends Module {
 	            outputReaderThread.start();
 	            
 
-	            //無限ループのためのタイムアウト設定をする(10秒)
+	            //無限ループのためのタイムアウト設定をする(30秒)
 	            boolean completed = runProcess.waitFor(10, TimeUnit.SECONDS);
 	            if(!completed) {
 	            	//タイムアウト発生時の処理
