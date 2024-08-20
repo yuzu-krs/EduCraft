@@ -1,7 +1,0 @@
-package me.gamrboy4life.paradox.analysis;
-
-public class DataParser {
-	public void parseData(String data) {
-		//カンマ分割
-	}
-}
