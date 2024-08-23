@@ -1,0 +1,11 @@
+package me.gamrboy4life.paradox.module.c;
+
+import org.lwjgl.input.Keyboard;
+
+import me.gamrboy4life.paradox.module.Category;
+
+public class KillProcess extends Module{
+	   public Run() {
+	        super("実行", Keyboard.KEY_R , Category.RUN);
+	    }
+}

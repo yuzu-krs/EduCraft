@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.gamrboy4life.paradox.Sotuken;
+import me.gamrboy4life.paradox.module.c.KillProcess;
 import me.gamrboy4life.paradox.module.c.Run;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
@@ -31,7 +32,7 @@ public class ModuleManager {
 		
 		//RUN
 		newMod(new Run());
-		
+		newMod(new KillProcess());
 		
 		
 //		newMod(new ClickGui());

@@ -2,8 +2,11 @@
   "TabGui": {
     "enabled": true
   },
-  "Run": {
+  "実行": {
     "enabled": false
+  },
+  "強制終了": {
+    "enabled": true
   },
   "Notepad": {
     "enabled": false

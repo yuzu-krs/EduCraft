@@ -18,7 +18,7 @@ public class Run extends Module {
     private boolean hasToggled = false;
 
     public Run() {
-        super("Run", Keyboard.KEY_R , Category.RUN);
+        super("実行", Keyboard.KEY_R , Category.RUN);
     }
 
     @Override

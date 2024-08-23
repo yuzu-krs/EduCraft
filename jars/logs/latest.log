@@ -1,85 +1,33 @@
-[13:50:03] [Client thread/INFO]: Setting user: Player343
-[13:50:03] [Client thread/INFO]: (Session ID is token:0:Player343)
-[13:50:04] [Client thread/INFO]: LWJGL Version: 2.9.4
-[13:50:04] [Client thread/INFO]: Reloading ResourceManager: Default
-[13:50:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:50:05] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[13:50:05] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:50:05] [Thread-8/INFO]: OpenAL initialized.
-[13:50:06] [Sound Library Loader/INFO]: Sound engine started
-[13:50:10] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[13:50:16] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[13:50:16] [Server thread/INFO]: Generating keypair
-[13:50:16] [Server thread/INFO]: Preparing start region for level 0
-[13:50:17] [Server thread/INFO]: Preparing spawn area: 96%
-[13:50:18] [Server thread/INFO]: Changing view distance to 8, from 10
-[13:50:18] [Server thread/INFO]: Player343[local:E:f8e7d69f] logged in with entity id 366 at (99.17157488571824, 104.42218220222072, 100.098429567362)
-[13:50:18] [Server thread/INFO]: Player343 がゲームに参加しました
-[13:50:48] [Server thread/INFO]: [Player343: 現在時刻を1000に設定]
-[13:50:48] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
-[13:50:49] [Server thread/INFO]: Saving and pausing game...
-[13:50:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:50:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:50:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:50:59] [Server thread/INFO]: Saving and pausing game...
-[13:50:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:50:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:50:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:51:05] [Client thread/INFO]: [CHAT] 使用法: /weather <clear|rain|thunder> [持続時間(単位：秒)]
-[13:51:16] [Server thread/INFO]: [Player343: 天気を晴れに変更します]
-[13:51:16] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
-[13:51:18] [Server thread/INFO]: Saving and pausing game...
-[13:51:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:51:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:51:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:52:34] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
-[13:52:36] [Server thread/INFO]: Saving and pausing game...
-[13:52:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:52:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:52:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:57:19] [Server thread/INFO]: Saving and pausing game...
-[13:57:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:57:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:57:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:57:22] [Server thread/INFO]: Saving and pausing game...
-[13:57:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:57:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:57:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:57:25] [Server thread/INFO]: Saving and pausing game...
-[13:57:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:57:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:57:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fStarting block placement program!
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:58:09] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fBlock placement completed!
-[13:58:09] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[13:58:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[14:00:42] [Client thread/INFO]: Stopping!
-[14:00:42] [Client thread/INFO]: SoundSystem shutting down...
-[14:00:42] [Server thread/INFO]: Stopping server
-[14:00:42] [Server thread/INFO]: Saving players
-[14:00:42] [Server thread/INFO]: Saving worlds
-[14:00:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[14:00:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[14:00:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[14:00:42] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[03:25:54] [Client thread/INFO]: Setting user: Player937
+[03:25:54] [Client thread/INFO]: (Session ID is token:0:Player937)
+[03:25:55] [Client thread/INFO]: LWJGL Version: 2.9.4
+[03:25:55] [Client thread/INFO]: Reloading ResourceManager: Default
+[03:25:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:25:56] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[03:25:56] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:25:56] [Thread-8/INFO]: OpenAL initialized.
+[03:25:57] [Sound Library Loader/INFO]: Sound engine started
+[03:26:01] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[03:26:10] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[03:26:10] [Server thread/INFO]: Generating keypair
+[03:26:10] [Server thread/INFO]: Preparing start region for level 0
+[03:26:11] [Server thread/INFO]: Changing view distance to 8, from 10
+[03:26:12] [Server thread/INFO]: Player937[local:E:7da6621d] logged in with entity id 300 at (101.042507224022, 200.0, 102.47974878058265)
+[03:26:12] [Server thread/INFO]: Player937 がゲームに参加しました
+[03:26:24] [Server thread/INFO]: Saving and pausing game...
+[03:26:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:26:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:26:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:31:51] [Server thread/INFO]: Saving and pausing game...
+[03:31:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:31:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:31:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:31:53] [Client thread/INFO]: Stopping!
+[03:31:53] [Client thread/INFO]: SoundSystem shutting down...
+[03:31:53] [Server thread/INFO]: Stopping server
+[03:31:53] [Server thread/INFO]: Saving players
+[03:31:53] [Server thread/INFO]: Saving worlds
+[03:31:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[03:31:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[03:31:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[03:31:53] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
