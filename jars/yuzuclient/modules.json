@@ -6,7 +6,7 @@
     "enabled": false
   },
   "強制終了": {
-    "enabled": true
+    "enabled": false
   },
   "Notepad": {
     "enabled": false
