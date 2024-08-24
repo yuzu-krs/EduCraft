@@ -156,17 +156,10 @@ public class Run extends Module {
 						
 					    try {
 					    	BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(),StandardCharsets.UTF_8));
-					    
-					    	StringBuilder fullData=new StringBuilder();
 					        String line;
 					        while ((line = runReader.readLine()) != null) {
-					        	fullData.append(line);
-					        	//次の行が存在する場合のみ改行
-					        	if(runReader.ready()) {
-					        		fullData.append("\n");
-					        	}
+					        	parser.parseData(line);
 					        }	
-					        parser.parseData(fullData.toString());
 					    } catch (IOException e) {
 					        Sotuken.instance.moduleManager.addChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
 					        e.printStackTrace();
