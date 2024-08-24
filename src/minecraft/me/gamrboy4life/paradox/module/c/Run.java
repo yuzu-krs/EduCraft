@@ -142,9 +142,6 @@ public class Run extends Module {
     		if(compileProcess.exitValue()==0) {
 
     			ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
-    			
-//	    		//標準入出力のリダイレクト
-//	    		runProcessBuilder.inheritIO();
 	    		
 	    		//実行processの開始
 	    		final Process runProcess=runProcessBuilder.start();
