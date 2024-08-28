@@ -2,6 +2,7 @@ package me.gamrboy4life.paradox.module.c;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
@@ -173,9 +174,40 @@ public class Run extends Module {
 	            //無限ループのためのタイムアウト設定をする(10秒)
 	            boolean completed = runProcess.waitFor(10, TimeUnit.SECONDS);
 	            if(!completed) {
+	            	
+	            	
+                    DataParser parser = new DataParser();
+                    try {
+                        InputStream inputStream = runProcess.getInputStream();
+                        BufferedReader runReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+
+                        StringBuilder fullData = new StringBuilder();
+                        
+                        //一度に読み取れるバッファサイズを最大1024文字にする
+                        char[] buffer = new char[1024]; 
+                        int numCharsRead;
+
+                    	//最大1024文字までデータを格納し、numCharsReadに格納する
+                        while ((numCharsRead = runReader.read(buffer)) != -1) {
+                            fullData.append(buffer, 0, numCharsRead);
+                            //何かしらデータがある場合、解析を行う。 
+                            if (fullData.length() > 0) {
+                                parser.parseData(fullData.toString()); //解析
+                                fullData.setLength(0); // 解析後fullDataをリセット
+                            }
+                        }
+                    } catch (IOException e) {
+                        Sotuken.instance.moduleManager.addChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+                        e.printStackTrace();
+                    }
+	            	
+
+	            	
 	            	//タイムアウト発生時の処理
 	            	runProcess.destroy(); //プロセスを強制終了
-	            	Sotuken.instance.moduleManager.addChatMessage("プログラムの実行がタイムアウトしました");
+	            	Sotuken.instance.moduleManager.addChatMessage("プログラムの実行がタイムアウトしました");	            	
+	            		            	
+	            	
 	            	//出力読み取りスレッドを中断
 	            	outputReaderThread.interrupt();
 	            }else {
