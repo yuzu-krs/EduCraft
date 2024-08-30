@@ -34,9 +34,9 @@
 	<section name="NewClassCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="574"/>
 		<item key="DIALOG_Y_ORIGIN" value="203"/>
-		<item key="DIALOG_WIDTH" value="788"/>
-		<item key="DIALOG_HEIGHT" value="772"/>
-		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
+		<item key="DIALOG_WIDTH" value="1143"/>
+		<item key="DIALOG_HEIGHT" value="1057"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>

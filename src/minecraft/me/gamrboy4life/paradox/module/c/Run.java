@@ -93,14 +93,14 @@ public class Run extends Module {
     		/*コンパイル*/
 
     		String gccDir = "C:/EduCraft/bin/gcc";
-    		String setBlockDir = "C:/EduCraft/function_setblock";
-    		String setBlockFile = "C:/EduCraft/function_setblock/setblock.c";
+    		String minecraftDir = "C:/EduCraft/function_minecraft";
+    		String minecraftFile = "C:/EduCraft/function_minecraft/minecraft.c";
 
     		ProcessBuilder compileProcessBuilder = new ProcessBuilder(
     		    gccDir,
-    		    "-I" + setBlockDir,
+    		    "-I" + minecraftDir,
     		    filePath,
-    		    setBlockFile,
+    		    minecraftFile,
     		    "-o",
     		    "C:/EduCraft/main.exe"
     		);
