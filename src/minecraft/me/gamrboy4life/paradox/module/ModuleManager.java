@@ -8,6 +8,7 @@ import me.gamrboy4life.paradox.module.c.KillProcess;
 import me.gamrboy4life.paradox.module.c.Run;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
+import me.gamrboy4life.paradox.module.grammar.FillBlock;
 import me.gamrboy4life.paradox.module.grammar.SetBlock;
 import me.gamrboy4life.paradox.module.info.BuildingBlock;
 import me.gamrboy4life.paradox.module.info.DecorationBlock;
@@ -43,6 +44,7 @@ public class ModuleManager {
 		
 		
 		//文法情報
+		newMod(new FillBlock());	
 		newMod(new SetBlock());
 		
 		
