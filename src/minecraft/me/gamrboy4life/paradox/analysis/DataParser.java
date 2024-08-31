@@ -20,10 +20,13 @@ public class DataParser {
 				
 				//setblock関数の判定
 				if(isSetBlock(line)) {
-
-					
 					executeSetBlock(line);
-				}else {
+					
+				//fillblock関数の判定
+				}else if(isFillBlock(line)){
+					executeFillBlock(line);
+					
+				}else{
 					//マインクラフトチャットに表示
 					Sotuken.instance.moduleManager.addRunChatMessage(message.toString());	
 				}
@@ -45,9 +48,11 @@ public class DataParser {
 			//関数判定のための文字列
 			String line=message.toString();
 			if(isSetBlock(line)) {
-
-				
 				executeSetBlock(line);
+				
+			}else if(isFillBlock(line)) {
+				executeFillBlock(line);
+			
 			}else {
 				Sotuken.instance.moduleManager.addRunChatMessage(message.toString());
 			}
@@ -61,12 +66,9 @@ public class DataParser {
 		return line.startsWith("99999,");
 	}
 	
-	
 	//setblock関数を実行
 	private void executeSetBlock(String line) {
-	
 		try {
-
 			//lineをカンマで分割
 			String[] parts=line.split(",");
 			//6パーツあるか
@@ -83,15 +85,50 @@ public class DataParser {
                     		String.format("/setblock %d %d %d %s %d",x,y,z,blockName,blockInfo)
                     )
 				);
-				
 			}else {
 				Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンドの形式: "+line);
 			}
 		}catch (NumberFormatException e) {
 			Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンド解析: "+e.getMessage());
-			
 		}
-		
 	}
 	
+	
+	
+	//fillblock関数を判定
+	private boolean isFillBlock(String line) {
+		//行が-99999で始まっているかチェック
+		return line.startsWith("-99999,");
+	}
+	
+	//fillblock関数を実行
+	private void executeFillBlock(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        // 9パーツあるか
+	        if (parts.length == 9) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            String blockName = parts[7];
+	            int blockInfo = Integer.parseInt(parts[8]);
+
+	            // fillコマンドをマイクラのチャットに送信
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/fill %d %d %d %d %d %d %s %d", 
+	                        x1, y1, z1, x2, y2, z2, blockName, blockInfo)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	    }
+	}
 }
