@@ -1,44 +1,30 @@
-[07:38:25] [Client thread/INFO]: Setting user: Player265
-[07:38:25] [Client thread/INFO]: (Session ID is token:0:Player265)
-[07:38:26] [Client thread/INFO]: LWJGL Version: 2.9.4
-[07:38:27] [Client thread/INFO]: Reloading ResourceManager: Default
-[07:38:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[07:38:28] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[07:38:28] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[07:38:28] [Thread-8/INFO]: OpenAL initialized.
-[07:38:28] [Sound Library Loader/INFO]: Sound engine started
-[07:38:33] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[07:38:38] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[07:38:38] [Server thread/INFO]: Generating keypair
-[07:38:38] [Server thread/INFO]: Preparing start region for level 0
-[07:38:39] [Server thread/INFO]: Changing view distance to 8, from 10
-[07:38:39] [Server thread/INFO]: Player265[local:E:6a8bb86c] logged in with entity id 300 at (-68.3000000119209, 67.0, -211.699999988079)
-[07:38:39] [Server thread/INFO]: Player265 がゲームに参加しました
-[07:38:48] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
-[07:38:50] [Server thread/INFO]: Saving and pausing game...
-[07:38:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[07:38:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[07:38:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[07:39:04] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[07:39:04] [Server thread/INFO]: [Player265: ブロックを設置しました]
-[07:39:04] [Client thread/INFO]: [CHAT] ワールドの範囲外にブロックを設置することはできません
-[07:39:04] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[07:39:22] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
-[07:39:23] [Server thread/INFO]: Saving and pausing game...
-[07:39:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[07:39:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[07:39:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[07:39:53] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[07:39:53] [Server thread/INFO]: [Player265: 1000 個のブロックで満たしました]
-[07:39:53] [Server thread/INFO]: [Player265: ブロックを設置しました]
-[07:39:53] [Client thread/INFO]: [CHAT] 1000 個のブロックで満たしました
-[07:39:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[07:40:00] [Client thread/INFO]: Stopping!
-[07:40:00] [Client thread/INFO]: SoundSystem shutting down...
-[07:40:00] [Server thread/INFO]: Stopping server
-[07:40:00] [Server thread/INFO]: Saving players
-[07:40:00] [Server thread/INFO]: Saving worlds
-[07:40:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[07:40:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[07:40:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[07:40:00] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[06:48:24] [Client thread/INFO]: Setting user: Player343
+[06:48:24] [Client thread/INFO]: (Session ID is token:0:Player343)
+[06:48:25] [Client thread/INFO]: LWJGL Version: 2.9.4
+[06:48:25] [Client thread/INFO]: Reloading ResourceManager: Default
+[06:48:26] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[06:48:26] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[06:48:26] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[06:48:26] [Thread-8/INFO]: OpenAL initialized.
+[06:48:27] [Sound Library Loader/INFO]: Sound engine started
+[06:48:31] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[06:48:35] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[06:48:35] [Server thread/INFO]: Generating keypair
+[06:48:35] [Server thread/INFO]: Preparing start region for level 0
+[06:48:36] [Server thread/INFO]: Changing view distance to 8, from 10
+[06:48:37] [Server thread/INFO]: Player343[local:E:3b429734] logged in with entity id 300 at (-66.32332522986283, 64.0, 61.491944739872444)
+[06:48:37] [Server thread/INFO]: Player343 がゲームに参加しました
+[06:48:37] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[06:48:44] [Server thread/INFO]: Saving and pausing game...
+[06:48:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:48:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:48:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:48:48] [Client thread/INFO]: Stopping!
+[06:48:48] [Client thread/INFO]: SoundSystem shutting down...
+[06:48:48] [Server thread/INFO]: Stopping server
+[06:48:48] [Server thread/INFO]: Saving players
+[06:48:48] [Server thread/INFO]: Saving worlds
+[06:48:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:48:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:48:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:48:48] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
