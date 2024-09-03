@@ -35,10 +35,13 @@
   "その他": {
     "enabled": false
   },
-  "座標": {
+  "方角": {
     "enabled": true
   },
-  "方角": {
+  "視点先の座標": {
+    "enabled": true
+  },
+  "座標": {
     "enabled": true
   }
 }

@@ -27,4 +27,6 @@
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModLookingAt"/>
+    <fullyQualifiedTypeName name="org.jetbrains.annotations.Nls.Capitalization"/>
 </qualifiedTypeNameHistroy>

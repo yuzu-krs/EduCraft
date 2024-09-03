@@ -16,6 +16,7 @@ import me.gamrboy4life.paradox.module.info.Misc;
 import me.gamrboy4life.paradox.module.info.RedStone;
 import me.gamrboy4life.paradox.module.info.Transportation;
 import me.gamrboy4life.paradox.module.status.Direction;
+import me.gamrboy4life.paradox.module.status.LookingAt;
 import me.gamrboy4life.paradox.module.status.TabGui;
 import me.gamrboy4life.paradox.module.status.XYZ;
 import net.minecraft.client.Minecraft;
@@ -60,8 +61,10 @@ public class ModuleManager {
 
 	
 		//Status
-		newMod(new XYZ());
 		newMod(new Direction());
+		newMod(new LookingAt());
+		newMod(new XYZ());
+		
 		
 
 		//newMod(new Panic());
