@@ -6,57 +6,17 @@ import net.minecraft.network.play.client.C01PacketChatMessage;
 public class DataParser {
 	
 	public void parseData(String data) {
-		int i=0; 
-		//1行保存するため
-		StringBuilder message=new StringBuilder();
 		
-		while(i<data.length()) {
-			char c=data.charAt(i);
+		if(isSetBlock(data)) {
+			executeSetBlock(data);
 			
-			if(c=='\n') {
-				
-				//関数判定のための文字列
-				String line=message.toString();
-				
-				//setblock関数の判定
-				if(isSetBlock(line)) {
-					executeSetBlock(line);
-					
-				//fillblock関数の判定
-				}else if(isFillBlock(line)){
-					executeFillBlock(line);
-					
-				}else{
-					//マインクラフトチャットに表示
-					Sotuken.instance.moduleManager.addRunChatMessage(message.toString());	
-				}
-				
-				
-				message.setLength(0); //次の保存するメッセージを初期化
-			}else {
-				//改行ではない場合はmessageに追加
-				message.append(c);
-			}
-			i++;
+		}else if(isFillBlock(data)) {
+			executeFillBlock(data);
+		
+		}else {
+			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
-		
-		
-		
-		//ループ終了後，残りの文字があれば表示
-		if(message.length()>0) {
-			
-			//関数判定のための文字列
-			String line=message.toString();
-			if(isSetBlock(line)) {
-				executeSetBlock(line);
-				
-			}else if(isFillBlock(line)) {
-				executeFillBlock(line);
-			
-			}else {
-				Sotuken.instance.moduleManager.addRunChatMessage(message.toString());
-			}
-		}
+	
 	}
 	
 
