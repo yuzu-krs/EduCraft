@@ -7,8 +7,8 @@ public class DataParser {
 	
 	public void parseData(String data) {
 		
-		if(isSetBlock(data)) {
-			executeSetBlock(data);
+		if(isSetBlockReplace(data)) {
+			executeSetBlockReplace(data);
 			
 		}else if(isFillBlock(data)) {
 			executeFillBlock(data);
@@ -21,13 +21,13 @@ public class DataParser {
 	
 
 	//setblock関数を判定
-	private boolean isSetBlock(String line) {
+	private boolean isSetBlockReplace(String line) {
 		//行が99999で始まっているかチェック
-		return line.startsWith("99999,");
+		return line.startsWith("999999999,");
 	}
 	
 	//setblock関数を実行
-	private void executeSetBlock(String line) {
+	private void executeSetBlockReplace(String line) {
 		try {
 			//lineをカンマで分割
 			String[] parts=line.split(",");
@@ -42,7 +42,7 @@ public class DataParser {
 				//setblockコマンドをマイクラのチャットに送信
 				Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
                     new C01PacketChatMessage(
-                    		String.format("/setblock %d %d %d %s %d",x,y,z,blockName,blockInfo)
+                    		String.format("/setblock %d %d %d %s %d replace",x,y,z,blockName,blockInfo)
                     )
 				);
 			}else {
