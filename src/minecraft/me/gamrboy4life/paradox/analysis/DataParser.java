@@ -13,6 +13,9 @@ public class DataParser {
 		}else if(isSetBlockKeep(data)) {
 			executeSetBlockKeep(data);
 			
+		}else if(isSetBlockDestroy(data)) {
+			executeSetBlockDestroy(data);
+			
 		}else if(isFillBlock(data)) {
 			executeFillBlock(data);
 		
@@ -33,6 +36,9 @@ public class DataParser {
 		return line.startsWith("999999998,");
 	}
 	
+	private boolean isSetBlockDestroy(String line) {
+		return line.startsWith("999999997,");
+	}
 	
 	
 	
@@ -87,7 +93,34 @@ public class DataParser {
 		}catch (NumberFormatException e) {
 			Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンド解析: "+e.getMessage());
 		}
+	}	
+	
+	private void executeSetBlockDestroy(String line) {
+		try {
+			//lineをカンマで分割
+			String[] parts=line.split(",");
+			//6パーツあるか
+			if(parts.length==6) {
+				int x=Integer.parseInt(parts[1]);
+				int y=Integer.parseInt(parts[2]);
+				int z=Integer.parseInt(parts[3]);
+				String blockName=parts[4];
+				int blockInfo=Integer.parseInt(parts[5]);
+				
+				//setblockコマンドをマイクラのチャットに送信
+				Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+                    new C01PacketChatMessage(
+                    		String.format("/setblock %d %d %d %s %d destroy",x,y,z,blockName,blockInfo)
+                    )
+				);
+			}else {
+				Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンドの形式: "+line);
+			}
+		}catch (NumberFormatException e) {
+			Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンド解析: "+e.getMessage());
+		}
 	}
+	
 	
 	
 	
