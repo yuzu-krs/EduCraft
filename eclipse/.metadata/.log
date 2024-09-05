@@ -6865,3 +6865,51 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-09-05 22:37:47.210 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2024-09-05 22:37:53.381
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-05 22:37:53.381
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2024-09-05 22:37:55.293
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.launchbar.ui.controls/org.eclipse.launchbar.ui.controls.internal.LaunchBarControl
+
+!ENTRY mergedoc.encoding 2 0 2024-09-06 03:26:51.834
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/gui/SetBlockGui.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-09-06 03:26:51.835
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/gui/SetBlockGui.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-09-06 03:26:51.839
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/gui/SetBlockGui.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-09-06 03:26:51.840
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/gui/SetBlockGui.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-09-06 03:26:51.880
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/gui/SetBlockGui.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2024-09-06 03:26:51.882
+!MESSAGE リソース '/Client/src/me/gamrboy4life/paradox/gui/SetBlockGui.java' が存在しません。
+!SESSION 2024-09-06 04:28:40.758 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2024-09-06 04:28:55.486
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-06 04:28:55.486
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2024-09-06 04:28:57.606
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.launchbar.ui.controls/org.eclipse.launchbar.ui.controls.internal.LaunchBarControl

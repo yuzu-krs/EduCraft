@@ -1,7 +1,7 @@
 package me.gamrboy4life.paradox.module.grammar;
 
 
-import me.gamrboy4life.paradox.gui.SetBlockGui;
+import me.gamrboy4life.paradox.gui.grammargui.SetBlockGui;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;

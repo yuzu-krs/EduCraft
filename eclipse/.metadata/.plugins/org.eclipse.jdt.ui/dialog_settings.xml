@@ -24,9 +24,9 @@
 	<section name="NewPackageCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="711"/>
 		<item key="DIALOG_Y_ORIGIN" value="283"/>
-		<item key="DIALOG_WIDTH" value="700"/>
-		<item key="DIALOG_HEIGHT" value="500"/>
-		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-28|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
+		<item key="DIALOG_WIDTH" value="963"/>
+		<item key="DIALOG_HEIGHT" value="541"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-20|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
