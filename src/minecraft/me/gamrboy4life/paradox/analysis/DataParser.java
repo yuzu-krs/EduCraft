@@ -37,6 +37,39 @@ public class DataParser {
 		}else if(isFillReplaceBlock(data)) {
 			executeFillReplaceBlock(data);
 			
+			
+			
+			
+		}else if(isCloneReplaceNormal(data)) {
+			executeCloneReplaceNormal(data);
+			
+		}else if(isCloneReplaceForce(data)) {
+			executeCloneReplaceForce(data);
+			
+		}else if(isCloneReplaceMove(data)) {
+			executeCloneReplaceMove(data);
+
+			
+		}else if(isCloneMaskedNormal(data)) {
+			executeCloneMaskedNormal(data);
+			
+		}else if(isCloneMaskedForce(data)) {
+			executeCloneMaskedForce(data);
+			
+		}else if(isCloneMaskedMove(data)) {
+			executeCloneMaskedMove(data);
+			
+			
+		}else if(isCloneFilteredNormal(data)) {
+			executeCloneFilteredNormal(data);
+			
+		}else if(isCloneFilteredForce(data)) {
+			executeCloneFilteredForce(data);
+			
+		}else if(isCloneFilteredMove(data)) {
+			executeCloneFilteredMove(data);
+			
+			
 		}else {
 			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
@@ -362,6 +395,316 @@ public class DataParser {
 	
 	
 	
+	private boolean isCloneReplaceNormal(String line) {
+		return line.startsWith("999999989,");
+	}
+	
+	private boolean isCloneReplaceForce(String line) {
+		return line.startsWith("999999988,");
+	}
+	
+	private boolean isCloneReplaceMove(String line) {
+		return line.startsWith("999999987,");
+	}
+	
+	
+	private boolean isCloneMaskedNormal(String line) {
+		return line.startsWith("999999986,");
+	}
+	
+	private boolean isCloneMaskedForce(String line) {
+		return line.startsWith("999999985,");
+	}
+	
+	private boolean isCloneMaskedMove(String line) {
+		return line.startsWith("999999984,");
+	}
+	
+	
+	private boolean isCloneFilteredNormal(String line) {
+		return line.startsWith("999999983,");
+	}
+	
+	private boolean isCloneFilteredForce(String line) {
+		return line.startsWith("999999982,");
+	}
+	
+	private boolean isCloneFilteredMove(String line) {
+		return line.startsWith("999999981,");
+	}
+	
+	
+	private void executeCloneReplaceNormal(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d replace normal", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	
+	private void executeCloneReplaceForce(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d replace force", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneReplaceMove(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d replace move", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneMaskedNormal(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d masked normal", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneMaskedForce(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d masked force", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	
+	private void executeCloneMaskedMove(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d masked move", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	
+	private void executeCloneFilteredNormal(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 12) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	            String blockName = parts[10];
+	            int blockInfo = Integer.parseInt(parts[11]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d filtered normal %s %d", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z,blockName,blockInfo)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneFilteredForce(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 12) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	            String blockName = parts[10];
+	            int blockInfo = Integer.parseInt(parts[11]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d filtered force %s %d", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z,blockName,blockInfo)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneFilteredMove(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 12) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	            String blockName = parts[10];
+	            int blockInfo = Integer.parseInt(parts[11]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d filtered move %s %d", 
+	                        x1, y1, z1, x2, y2, z2, x,y,z,blockName,blockInfo)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+    
 	
 	
 }
