@@ -30,4 +30,5 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModLookingAt"/>
     <fullyQualifiedTypeName name="org.jetbrains.annotations.Nls.Capitalization"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.FillGui"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.CloneGui"/>
 </qualifiedTypeNameHistroy>
