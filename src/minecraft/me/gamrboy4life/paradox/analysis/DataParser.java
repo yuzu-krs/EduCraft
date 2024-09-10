@@ -719,14 +719,23 @@ public class DataParser {
 		try {
 	        // lineをカンマで分割
 	        String[] parts = line.split(",");
-	        if (parts.length == 6) {
+	        if (parts.length >= 6) {
 	        	
 	        	String entity = parts[1];
 	            int x = Integer.parseInt(parts[2]);
 	            int y = Integer.parseInt(parts[3]);
 	            int z = Integer.parseInt(parts[4]);
-	            String status = parts[5];
 	            
+	            //parts[5]以降をすべて結合する
+	            StringBuilder statusBuilder =new StringBuilder();
+	            for(int i=5;i<parts.length;i++) {
+	            	if(i>5) {
+	            		statusBuilder.append(",");
+	            	}
+	            	statusBuilder.append(parts[i]);
+	            }
+	            String status = statusBuilder.toString();
+	            	            
 	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
 	                new C01PacketChatMessage(
 	                        String.format("/summon %s %d %d %d %s", 
