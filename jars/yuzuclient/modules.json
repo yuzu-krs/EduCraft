@@ -23,6 +23,9 @@
   "SetBlock関数": {
     "enabled": false
   },
+  "Summon関数": {
+    "enabled": true
+  },
   "建築ブロック": {
     "enabled": false
   },

@@ -24,11 +24,12 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModLookingAt"/>
     <fullyQualifiedTypeName name="org.jetbrains.annotations.Nls.Capitalization"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.FillGui"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.CloneGui"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="org.intellij.lang.annotations.PrintFormat"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
