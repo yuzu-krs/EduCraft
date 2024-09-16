@@ -75,6 +75,10 @@ public class DataParser {
 			executeSummon(data);
 		
 			
+			
+		}else if(isSendCommand(data)) {
+			executeSendCommand(data);
+			
 		}else {
 			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
@@ -749,6 +753,34 @@ public class DataParser {
 	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:summonコマンド解析: " + e.getMessage());
 	    }
 	}
+	
+	
+	
+	
+	private boolean isSendCommand(String line) {
+		return line.startsWith("999999969,");
+	}
+	
+	private void executeSendCommand(String line) {
+		try {
+		
+			 // コマンド部分を分割して処理
+	        String[] parts = line.split(",", 2);
+	        if (parts.length == 2) {
+	            String command = parts[1];  // コマンド部分を取得
+	            
+	            // Minecraftのチャットにコマンドを送信
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage("/"+command)
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:sendCommandコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:sendCommandコマンド解析: " + e.getMessage());
+	    }
+	}
+	
 	
 	
 	
