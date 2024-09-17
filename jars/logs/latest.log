@@ -1,43 +1,84 @@
-[10:03:25] [Client thread/INFO]: Setting user: Player468
-[10:03:25] [Client thread/INFO]: (Session ID is token:0:Player468)
-[10:03:27] [Client thread/INFO]: LWJGL Version: 2.9.4
-[10:03:27] [Client thread/INFO]: Reloading ResourceManager: Default
-[10:03:28] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:03:28] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[10:03:28] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:03:28] [Thread-8/INFO]: OpenAL initialized.
-[10:03:29] [Sound Library Loader/INFO]: Sound engine started
-[10:03:34] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[10:03:40] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[10:03:40] [Server thread/INFO]: Generating keypair
-[10:03:40] [Server thread/INFO]: Preparing start region for level 0
-[10:03:41] [Server thread/INFO]: Preparing spawn area: 50%
-[10:03:42] [Server thread/INFO]: Changing view distance to 8, from 10
-[10:03:42] [Server thread/INFO]: Player468[local:E:37fb90d1] logged in with entity id 384 at (571.3416776677886, 68.0, 155.1971338233022)
-[10:03:42] [Server thread/INFO]: Player468 がゲームに参加しました
-[10:03:43] [Server thread/INFO]: Saving and pausing game...
-[10:03:43] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[10:03:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:03:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:03:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:03:44] [Server thread/INFO]: Saving and pausing game...
-[10:03:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:03:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:03:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:04:04] [Server thread/INFO]: Saving and pausing game...
-[10:04:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:04:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:04:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:04:29] [Server thread/INFO]: Saving and pausing game...
-[10:04:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:04:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:04:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:04:46] [Client thread/INFO]: Stopping!
-[10:04:46] [Client thread/INFO]: SoundSystem shutting down...
-[10:04:46] [Server thread/INFO]: Stopping server
-[10:04:46] [Server thread/INFO]: Saving players
-[10:04:46] [Server thread/INFO]: Saving worlds
-[10:04:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:04:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:04:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:04:46] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:41:55] [Client thread/INFO]: Setting user: Player625
+[18:41:55] [Client thread/INFO]: (Session ID is token:0:Player625)
+[18:41:57] [Client thread/INFO]: LWJGL Version: 2.9.4
+[18:41:58] [Client thread/INFO]: Reloading ResourceManager: Default
+[18:41:59] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:41:59] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:41:59] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:41:59] [Thread-8/INFO]: OpenAL initialized.
+[18:41:59] [Sound Library Loader/INFO]: Sound engine started
+[18:42:07] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:42:13] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[18:42:13] [Server thread/INFO]: Generating keypair
+[18:42:13] [Server thread/INFO]: Preparing start region for level 0
+[18:42:14] [Server thread/INFO]: Preparing spawn area: 66%
+[18:42:15] [Server thread/INFO]: Changing view distance to 8, from 10
+[18:42:15] [Server thread/INFO]: Player625[local:E:9410529c] logged in with entity id 306 at (95.92309886621838, 91.0, 101.98903589400622)
+[18:42:15] [Server thread/INFO]: Player625 がゲームに参加しました
+[18:42:16] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[18:42:29] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[18:42:29] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[18:42:29] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:42:29] [Server thread/INFO]: [Player625: 現在時刻を1000に設定]
+[18:42:29] [Server thread/INFO]: [Player625: 天気を晴れに変更します]
+[18:42:29] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[18:42:29] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[18:47:22] [Server thread/INFO]: Saving and pausing game...
+[18:47:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:47:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:47:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:47:40] [Server thread/INFO]: Saving and pausing game...
+[18:47:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:47:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:47:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:47:47] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
+[18:47:47] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
+[18:47:47] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:47:47] [Server thread/INFO]: [Player625: 現在時刻を1000に設定]
+[18:47:47] [Server thread/INFO]: [Player625: 天気を晴れに変更します]
+[18:47:47] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[18:47:47] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[18:47:50] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
+[18:51:40] [Server thread/INFO]: [Player625: Player625 は 2000.5,100.0,2000.5 にテレポートしました]
+[18:51:40] [Client thread/INFO]: [CHAT] Player625 は 2000.5,100.0,2000.5 にテレポートしました
+[18:55:50] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
+[18:55:51] [Server thread/INFO]: Saving and pausing game...
+[18:55:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:55:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:55:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:56:56] [Server thread/INFO]: [Player625: 天気を晴れに変更します]
+[18:56:56] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[18:56:59] [Server thread/INFO]: [Player625: 現在時刻を1000に設定]
+[18:56:59] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[18:57:03] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[18:57:03] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:57:03] [Server thread/INFO]: [Player625: ブロックは2005, 112, 2002に見つかりました。]
+[18:57:03] [Client thread/INFO]: [CHAT] ブロックは2005, 112, 2002に見つかりました。
+[18:57:08] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[18:57:08] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:57:08] [Client thread/INFO]: [CHAT] 2005,112,2002のブロックはtile.air.nameです (予想では石)。
+[18:57:15] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[18:57:15] [Thread-25/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:57:15] [Client thread/INFO]: [CHAT] 2005,112,2002のブロックはtile.air.nameです (予想では石)。
+[18:57:19] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[18:57:19] [Thread-27/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:57:19] [Client thread/INFO]: [CHAT] 2005,112,2002のブロックはネザー水晶ブロックです (予想では石)。
+[18:57:26] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f
+[18:57:26] [Thread-29/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:57:26] [Client thread/INFO]: [CHAT] 2005,112,2002のブロックは羊毛です (予想では石)。
+[18:57:52] [Server thread/INFO]: Saving and pausing game...
+[18:57:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:57:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:57:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:58:40] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §f
+[18:58:40] [Thread-31/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[18:58:41] [Client thread/INFO]: [CHAT] 2005,112,2002のブロックは羊毛です (予想では石)。
+[18:59:50] [Client thread/INFO]: Stopping!
+[18:59:50] [Client thread/INFO]: SoundSystem shutting down...
+[18:59:50] [Server thread/INFO]: Stopping server
+[18:59:50] [Server thread/INFO]: Saving players
+[18:59:50] [Server thread/INFO]: Saving worlds
+[18:59:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:59:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:59:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:59:50] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

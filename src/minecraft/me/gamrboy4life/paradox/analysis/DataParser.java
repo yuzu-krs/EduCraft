@@ -79,6 +79,11 @@ public class DataParser {
 		}else if(isSendCommand(data)) {
 			executeSendCommand(data);
 			
+			
+			
+		}else if(isTestForBlock(data)) {
+			executeTestForBlock(data);
+			
 		}else {
 			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
@@ -780,6 +785,39 @@ public class DataParser {
 	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:sendCommandコマンド解析: " + e.getMessage());
 	    }
 	}
+	
+	
+	private boolean isTestForBlock(String line) {
+		return line.startsWith("999999959,");
+	}
+	
+	private void executeTestForBlock(String line) {
+		try {
+		
+			 // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 6) {
+	            int x = Integer.parseInt(parts[1]);
+	            int y = Integer.parseInt(parts[2]);
+	            int z = Integer.parseInt(parts[3]);
+	            String blockName = parts[4];
+	            int blockInfo = Integer.parseInt(parts[5]);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/testforblock %d %d %d %s %d",x,y,z,blockName,blockInfo) 
+	                )
+	            );
+	            
+	            
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlockコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlockコマンド解析: " + e.getMessage());
+	    }
+	}
+	
 	
 	
 	
