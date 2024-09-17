@@ -20,11 +20,14 @@
   "Fill関数": {
     "enabled": false
   },
+  "SendCommand関数": {
+    "enabled": true
+  },
   "SetBlock関数": {
     "enabled": false
   },
   "Summon関数": {
-    "enabled": true
+    "enabled": false
   },
   "建築ブロック": {
     "enabled": false
