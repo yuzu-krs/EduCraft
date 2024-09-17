@@ -21,12 +21,15 @@
     "enabled": false
   },
   "SendCommand関数": {
-    "enabled": true
+    "enabled": false
   },
   "SetBlock関数": {
     "enabled": false
   },
   "Summon関数": {
+    "enabled": false
+  },
+  "TestForBlock関数": {
     "enabled": false
   },
   "建築ブロック": {
