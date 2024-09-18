@@ -14,6 +14,7 @@ import me.gamrboy4life.paradox.module.grammar.SendCommand;
 import me.gamrboy4life.paradox.module.grammar.SetBlock;
 import me.gamrboy4life.paradox.module.grammar.Summon;
 import me.gamrboy4life.paradox.module.grammar.TestForBlock;
+import me.gamrboy4life.paradox.module.grammar.TestForBlocks;
 import me.gamrboy4life.paradox.module.info.BuildingBlock;
 import me.gamrboy4life.paradox.module.info.DecorationBlock;
 import me.gamrboy4life.paradox.module.info.Misc;
@@ -55,6 +56,7 @@ public class ModuleManager {
 		newMod(new SetBlock());
 		newMod(new Summon());
 		newMod(new TestForBlock());
+		newMod(new TestForBlocks());
 		
 		
 		
