@@ -84,6 +84,13 @@ public class DataParser {
 		}else if(isTestForBlock(data)) {
 			executeTestForBlock(data);
 			
+			
+		}else if(isTestForBlocksAll(data)) {
+			executeTestForBlocksAll(data);
+			
+		}else if(isTestForBlocksMasked(data)) {
+			executeTestForBlocksMasked(data);
+			
 		}else {
 			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
@@ -817,6 +824,101 @@ public class DataParser {
 	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlockコマンド解析: " + e.getMessage());
 	    }
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	private boolean isTestForBlocksAll(String line) {
+		return line.startsWith("999999949,");
+	}
+	
+	private void executeTestForBlocksAll(String line) {
+		try {
+		
+			 // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/testforblocks %d %d %d %d %d %d %d %d %d all",x1,y1,z1,x2,y2,z2,x,y,z) 
+	                )
+	            );
+	            
+	            
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンド解析: " + e.getMessage());
+	    }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	private boolean isTestForBlocksMasked(String line) {
+		return line.startsWith("999999948,");
+	}
+	
+	private void executeTestForBlocksMasked(String line) {
+		try {
+		
+			 // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/testforblocks %d %d %d %d %d %d %d %d %d masked",x1,y1,z1,x2,y2,z2,x,y,z) 
+	                )
+	            );
+	            
+	            
+	        } else {
+	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンドの形式: " + line);
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンド解析: " + e.getMessage());
+	    }
+	}
+	
 	
 	
 	

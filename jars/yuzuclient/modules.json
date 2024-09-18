@@ -30,7 +30,7 @@
     "enabled": false
   },
   "TestForBlock関数": {
-    "enabled": false
+    "enabled": true
   },
   "建築ブロック": {
     "enabled": false
