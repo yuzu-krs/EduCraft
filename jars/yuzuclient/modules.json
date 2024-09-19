@@ -35,21 +35,6 @@
   "TestForBlocks関数": {
     "enabled": false
   },
-  "建築ブロック": {
-    "enabled": false
-  },
-  "装飾ブロック": {
-    "enabled": false
-  },
-  "RedStone系": {
-    "enabled": false
-  },
-  "トロッコ系": {
-    "enabled": false
-  },
-  "その他": {
-    "enabled": false
-  },
   "方角": {
     "enabled": true
   },

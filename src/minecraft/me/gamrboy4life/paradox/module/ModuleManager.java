@@ -15,11 +15,6 @@ import me.gamrboy4life.paradox.module.grammar.SetBlock;
 import me.gamrboy4life.paradox.module.grammar.Summon;
 import me.gamrboy4life.paradox.module.grammar.TestForBlock;
 import me.gamrboy4life.paradox.module.grammar.TestForBlocks;
-import me.gamrboy4life.paradox.module.info.BuildingBlock;
-import me.gamrboy4life.paradox.module.info.DecorationBlock;
-import me.gamrboy4life.paradox.module.info.Misc;
-import me.gamrboy4life.paradox.module.info.RedStone;
-import me.gamrboy4life.paradox.module.info.Transportation;
 import me.gamrboy4life.paradox.module.status.Direction;
 import me.gamrboy4life.paradox.module.status.LookingAt;
 import me.gamrboy4life.paradox.module.status.TabGui;
@@ -59,16 +54,6 @@ public class ModuleManager {
 		newMod(new TestForBlocks());
 		
 		
-		
-		//ブロック情報
-		newMod(new BuildingBlock());
-		newMod(new DecorationBlock());
-		newMod(new RedStone());
-		newMod(new Transportation());
-		newMod(new Misc());
-		
-		
-
 	
 		//Status
 		newMod(new Direction());

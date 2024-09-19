@@ -4,7 +4,6 @@ public enum Category {
 	RUN("C言語"),
 	EDITOR("エディタ"),
 	GRAMMAR("基本文法"),
-	INFO("ブロック情報"),
 	STATUS("ステータス");
 	
 	
