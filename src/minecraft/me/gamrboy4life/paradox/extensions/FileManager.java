@@ -15,6 +15,13 @@ import com.google.gson.JsonObject;
 
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.module.grammar.Clone;
+import me.gamrboy4life.paradox.module.grammar.Fill;
+import me.gamrboy4life.paradox.module.grammar.SendCommand;
+import me.gamrboy4life.paradox.module.grammar.SetBlock;
+import me.gamrboy4life.paradox.module.grammar.Summon;
+import me.gamrboy4life.paradox.module.grammar.TestForBlock;
+import me.gamrboy4life.paradox.module.grammar.TestForBlocks;
 import me.gamrboy4life.paradox.module.status.ClickGui;
 import me.gamrboy4life.paradox.module.status.Panic;
 import me.gamrboy4life.paradox.module.status.TabGui;
@@ -56,7 +63,15 @@ public class FileManager {
 	
 	//保存したくないハック
 	//ClickGuiは標準で表示する
-	private HashSet<String> modBlackList=Sets.newHashSet(TabGui.class.getName(),ClickGui.class.getName(),Panic.class.getName());
+	private HashSet<String> modBlackList=Sets.newHashSet(TabGui.class.getName(),ClickGui.class.getName(),Panic.class.getName()
+			,Clone.class.getName()
+			,Fill.class.getName()
+			,SendCommand.class.getName()
+			,SetBlock.class.getName()
+			,Summon.class.getName()
+			,TestForBlock.class.getName()
+			,TestForBlocks.class.getName()
+			);
 	
 	public boolean isModBlackListed(Module m) {
 		return modBlackList.contains(m.getClass().getName());

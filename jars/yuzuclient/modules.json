@@ -30,7 +30,7 @@
     "enabled": false
   },
   "TestForBlock関数": {
-    "enabled": true
+    "enabled": false
   },
   "TestForBlocks関数": {
     "enabled": false
