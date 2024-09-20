@@ -41,4 +41,5 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.Summon"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlock"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlocks"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.describe.EduCraft"/>
 </qualifiedTypeNameHistroy>

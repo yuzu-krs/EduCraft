@@ -2,6 +2,9 @@
   "TabGui": {
     "enabled": true
   },
+  "使い方": {
+    "enabled": false
+  },
   "実行": {
     "enabled": false
   },

@@ -6,6 +6,7 @@ import java.util.List;
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.c.KillProcess;
 import me.gamrboy4life.paradox.module.c.Run;
+import me.gamrboy4life.paradox.module.describe.EduCraft;
 import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
 import me.gamrboy4life.paradox.module.grammar.Clone;
@@ -30,6 +31,10 @@ public class ModuleManager {
 		mods=new ArrayList<Module>();
 		
 		newMod(new TabGui());
+		
+		
+		//DESCRIBE
+		newMod(new EduCraft());
 		
 		
 		//RUN

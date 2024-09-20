@@ -15,6 +15,7 @@ import com.google.gson.JsonObject;
 
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.module.describe.EduCraft;
 import me.gamrboy4life.paradox.module.grammar.Clone;
 import me.gamrboy4life.paradox.module.grammar.Fill;
 import me.gamrboy4life.paradox.module.grammar.SendCommand;
@@ -71,6 +72,7 @@ public class FileManager {
 			,Summon.class.getName()
 			,TestForBlock.class.getName()
 			,TestForBlocks.class.getName()
+			,EduCraft.class.getName()
 			);
 	
 	public boolean isModBlackListed(Module m) {

@@ -92,7 +92,7 @@ key_key.hotbar.9:10
 key_Zoom:46
 key_PVP HUD:210
 key_Toggle Perspective:33
-soundCategory_master:1.0
+soundCategory_master:0.026490066
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.0
