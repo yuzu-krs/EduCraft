@@ -134,10 +134,10 @@ public class DataParser {
                     )
 				);
 			}else {
-				Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンドの形式: "+line);
+				Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockReplace関数の形式が違います");
 			}
 		}catch (NumberFormatException e) {
-			Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンド解析: "+e.getMessage());
+			Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockReplace関数解析: "+e.getMessage());
 		}
 	}
 	
@@ -160,10 +160,10 @@ public class DataParser {
                     )
 				);
 			}else {
-				Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンドの形式: "+line);
+				Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockKeep関数の形式が違います");
 			}
 		}catch (NumberFormatException e) {
-			Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンド解析: "+e.getMessage());
+			Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockKeep関数解析: "+e.getMessage());
 		}
 	}	
 	
@@ -186,10 +186,10 @@ public class DataParser {
                     )
 				);
 			}else {
-				Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンドの形式: "+line);
+				Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockDestroy関数の形式が違います");
 			}
 		}catch (NumberFormatException e) {
-			Sotuken.instance.moduleManager.addRunChatMessage("エラー:setblockコマンド解析: "+e.getMessage());
+			Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockDestroy関数解析: "+e.getMessage());
 		}
 	}
 	
@@ -252,10 +252,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillDestroy関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillDestroy関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -282,10 +282,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillKeep関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillKeep関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -312,10 +312,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillHollow関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillHollow関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -343,10 +343,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillOutline関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillOutline関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -374,10 +374,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillReplace関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillReplace関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -407,10 +407,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillReplaceBlock関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:fillblockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillReplaceBlock関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -477,10 +477,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceNormal関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceNormal関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -507,10 +507,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceForce関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceForce関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -536,10 +536,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceMove関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceMove関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -565,10 +565,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneMaskedNormal関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneMaskedNormal関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -594,10 +594,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneMaskedForce関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneMaskedForce関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -624,10 +624,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneMaskedMove関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneMaskedMove関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -656,10 +656,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredNormal関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredNormal関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -687,10 +687,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredForce関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredForce関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -718,10 +718,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredMove関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:cloneコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredMove関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -759,10 +759,10 @@ public class DataParser {
 	                )
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:summonコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:summon関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:summonコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:summon関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -786,10 +786,10 @@ public class DataParser {
 	                new C01PacketChatMessage("/"+command)
 	            );
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:sendCommandコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:sendCommand関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:sendCommandコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:sendCommand関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -818,10 +818,10 @@ public class DataParser {
 	            
 	            
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlockコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlock関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlockコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlock関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -869,10 +869,10 @@ public class DataParser {
 	            
 	            
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlocksAll関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlocksAll関数解析: " + e.getMessage());
 	    }
 	}
 	
@@ -912,10 +912,10 @@ public class DataParser {
 	            
 	            
 	        } else {
-	            Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンドの形式: " + line);
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlocksMasked関数の形式が違います");
 	        }
 	    } catch (NumberFormatException e) {
-	        Sotuken.instance.moduleManager.addRunChatMessage("エラー:testForBlocksコマンド解析: " + e.getMessage());
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlocksMasked関数解析: " + e.getMessage());
 	    }
 	}
 	
