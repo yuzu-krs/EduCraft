@@ -1,0 +1,51 @@
+package me.gamrboy4life.paradox.module.misc;
+
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.MovingObjectPosition;
+
+public class CopyLookingAt extends Module{
+	
+	private boolean hasToggled = false;
+	
+	public CopyLookingAt() {
+        super("視点先の座標をコピー", 0 , Category.MISC);
+    }
+	
+    @Override
+    public void onUpdate() {
+        // モジュールがトグルされており、処理がまだ実行されていない場合
+        if (isToggled() && !hasToggled) {
+
+        	//クリップボードにコピー
+        	
+        	
+        	
+        	// 処理が完了した後、フラグをtrueに設定
+            hasToggled = true;
+
+            // モジュールのトグルを解除
+            toggled = false;
+        }
+    }
+	   
+
+    //プレイヤーが見ているブロックの座標を取得
+    private BlockPos getLookingAtBlockPos() {
+    	MovingObjectPosition objectMouseOver=mc.objectMouseOver;
+    }
+    
+   
+	@Override
+    public void onEnable() {
+        super.onEnable();
+        hasToggled = false; 
+    }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+        hasToggled = false; 
+    }
+}

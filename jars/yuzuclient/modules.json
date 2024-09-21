@@ -46,5 +46,11 @@
   },
   "座標": {
     "enabled": true
+  },
+  "現在位置の座標をコピー": {
+    "enabled": false
+  },
+  "視点先の座標をコピー": {
+    "enabled": false
   }
 }
