@@ -1,25 +1,219 @@
-[14:11:14] [Client thread/INFO]: Setting user: Player203
-[14:11:14] [Client thread/INFO]: (Session ID is token:0:Player203)
-[14:11:16] [Client thread/INFO]: LWJGL Version: 2.9.4
-[14:11:17] [Client thread/INFO]: Reloading ResourceManager: Default
-[14:11:19] [Client thread/INFO]: Setting user: Player250
-[14:11:19] [Client thread/INFO]: (Session ID is token:0:Player250)
-[14:11:21] [Client thread/INFO]: LWJGL Version: 2.9.4
-[14:11:21] [Client thread/INFO]: Reloading ResourceManager: Default
-[14:11:22] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[14:11:22] [Thread-7/INF[14:11:25] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[14:11:41] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[14:11:41] [Server thread/INFO]: Generating keypair
-[14:11:41] [Server thread/INFO]: Preparing start region for level 0
-[14:11:42] [Server thread/INFO]: Changing view distance to 8, from 10
-[14:11:43] [Server thread/INFO]: Player203[local:E:19c45ca9] logged in with entity id 272 at (101.30000001192093, 53.96636804164124, 134.69999998807907)
-[14:11:43] [Server thread/INFO]: Player203 がゲームに参加しました
-[14:11:43] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[14:12:56] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fWorld　HI	HELLO
-[14:12:56] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fこんにちは
-[14:12:56] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[14:13:09] [Server thread/INFO]: Saving and pausing game...
-[14:13:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[14:13:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[14:13:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[14:15:45] [Client thread/INFO]: [CHAT] §eEduCraft§7: メモ帳でファイルを開きます: C:/EduCraft/main.c
+[17:26:17] [Client thread/INFO]: Setting user: Player750
+[17:26:17] [Client thread/INFO]: (Session ID is token:0:Player750)
+[17:26:18] [Client thread/INFO]: LWJGL Version: 2.9.4
+[17:26:19] [Client thread/INFO]: Reloading ResourceManager: Default
+[17:26:19] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:26:20] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[17:26:20] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:26:20] [Thread-8/INFO]: OpenAL initialized.
+[17:26:20] [Sound Library Loader/INFO]: Sound engine started
+[17:26:28] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[17:26:33] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[17:26:33] [Server thread/INFO]: Generating keypair
+[17:26:34] [Server thread/INFO]: Preparing start region for level 0
+[17:26:35] [Server thread/INFO]: Preparing spawn area: 51%
+[17:26:36] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:26:36] [Server thread/INFO]: Player750[local:E:986f816a] logged in with entity id 296 at (99.0436102941558, 87.0, 103.70953819838138)
+[17:26:36] [Server thread/INFO]: Player750 がゲームに参加しました
+[17:26:37] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:3:15: warning: passing argument 2 of 'setBlockReplace' ma
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §ckes integer from pointer without a cast [-Wint-conversion]
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c    3 | #define STONE "stone"
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c      |               ^~~~~~~
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c      |               |
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c      |               char *
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:5:25: note: in expansion of macro 'STONE'
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c    5 |     setBlockReplace(100,STONE,100,STONE,0);
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c      |                         ^~~~~
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §cIn file included from C:/EduCraft/main.c:2:
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/function_minecraft/minecraft.h:5:33: note: expected 'int' but ar
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §cgument is of type 'char *'
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c    5 | void setBlockReplace(int x, int y, int z, const char *block_name, in
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §ct block_id);
+[17:26:40] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c      |                             ~~~~^
+[17:26:42] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルは成功しましたが、警告があります
+[17:26:43] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[17:26:43] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:26:43] [Client thread/INFO]: [CHAT] 入力した数値 (-1.646026752E9) は小さすぎます。0 以上にしてください
+[17:30:17] [Server thread/INFO]: <Player750> 私はとてもいい敵だと思います
+[17:30:17] [Client thread/INFO]: [CHAT] <Player750> 私はとてもいい敵だと思います
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:3:15: warning: passing argument 2 of 'setBlockReplace' ma
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §ckes integer from pointer without a cast [-Wint-conversion]
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c    3 | #define STONE "stone"
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |               ^~~~~~~
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |               |
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |               char *
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:5:25: note: in expansion of macro 'STONE'
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c    5 |     setBlockReplace(100,STONE,100,STONE,0);
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |                         ^~~~~
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cIn file included from C:/EduCraft/main.c:2:
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/function_minecraft/minecraft.h:5:33: note: expected 'int' but ar
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cgument is of type 'char *'
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c    5 | void setBlockReplace(int x, int y, int z, const char *block_name, in
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §ct block_id);
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |                             ~~~~^
+[17:34:14] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルは成功しましたが、警告があります
+[17:34:15] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
+[17:34:15] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:34:15] [Client thread/INFO]: [CHAT] 入力した数値 (8.3464192E8) は大きすぎます。256 以下にしてください
+[17:34:18] [Server thread/INFO]: Saving and pausing game...
+[17:34:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:34:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:34:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:34:34] [Server thread/INFO]: Saving and pausing game...
+[17:34:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:34:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:34:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:3:15: warning: passing argument 2 of 'setBlockReplace' ma
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §ckes integer from pointer without a cast [-Wint-conversion]
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c    3 | #define STONE "stone"
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |               ^~~~~~~
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |               |
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |               char *
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:6:25: note: in expansion of macro 'STONE'
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c    6 |     setBlockReplace(100,STONE,100,STONE,0);
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |                         ^~~~~
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cIn file included from C:/EduCraft/main.c:2:
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/function_minecraft/minecraft.h:5:33: note: expected 'int' but ar
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §cgument is of type 'char *'
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c    5 | void setBlockReplace(int x, int y, int z, const char *block_name, in
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §ct block_id);
+[17:34:35] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c      |                             ~~~~^
+[17:34:36] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルは成功しましたが、警告があります
+[17:34:36] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §faaa
+[17:34:36] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §fbbb
+[17:34:36] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:34:36] [Client thread/INFO]: [CHAT] 入力した数値 (1.862770692E9) は大きすぎます。256 以下にしてください
+[17:35:10] [Server thread/INFO]: Saving and pausing game...
+[17:35:10] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:35:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:35:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:35:23] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[17:35:24] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §faaa
+[17:35:24] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §fbbb
+[17:35:24] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:35:24] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[17:35:26] [Server thread/INFO]: Saving and pausing game...
+[17:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:6:41: error: expected ';' before 'printf'
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c    6 |     setBlockReplace(100,100,100,STONE,0)
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c      |                                         ^
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c      |                                         ;
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c    7 |     printf("bbb");
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c      |     ~~~~~~                               
+[17:35:31] [Thread-25/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[17:35:43] [Server thread/INFO]: Saving and pausing game...
+[17:35:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:35:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:35:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:38:19] [Server thread/INFO]: Saving and pausing game...
+[17:38:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:38:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:38:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:38:54] [Server thread/INFO]: Saving and pausing game...
+[17:38:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:38:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:38:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:40:13] [Server thread/INFO]: Saving and pausing game...
+[17:40:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:40:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:40:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:40:27] [Server thread/INFO]: Saving and pausing game...
+[17:40:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:40:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:40:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:41:32] [Server thread/INFO]: Saving and pausing game...
+[17:41:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:41:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:41:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:6:41: error: expected ';' before 'printf'
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c    6 |     setBlockReplace(100,100,100,STONE,0)
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c      |                                         ^
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c      |                                         ;
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c    7 |     printf("bbb");
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §c      |     ~~~~~~                               
+[17:41:42] [Thread-26/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[17:41:53] [Server thread/INFO]: Saving and pausing game...
+[17:41:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:41:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:41:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:6:41: error: expected ';' before 'printf'
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c    6 |     setBlockReplace(100,100,100,STONE,0)
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c      |                                         ^
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c      |                                         ;
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c    7 |     printf("bbb");
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §c      |     ~~~~~~                               
+[17:42:14] [Thread-27/INFO]: [CHAT] §eEduCraft§7: コンパイルに失敗しました
+[17:42:17] [Server thread/INFO]: Saving and pausing game...
+[17:42:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:42:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:42:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:43:26] [Thread-28/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[17:43:27] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §faaa
+[17:43:27] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §fbbb
+[17:43:27] [Thread-28/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:43:27] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[17:43:29] [Server thread/INFO]: Saving and pausing game...
+[17:43:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:43:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:43:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:43:35] [Thread-30/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[17:43:35] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §faaa
+[17:43:35] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §fbbb
+[17:43:35] [Thread-30/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:43:36] [Server thread/INFO]: [Player750: ブロックを設置しました]
+[17:43:36] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[17:43:38] [Server thread/INFO]: Saving and pausing game...
+[17:43:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:43:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:43:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:44:05] [Server thread/INFO]: Saving and pausing game...
+[17:44:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:44:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:44:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:3:15: warning: passing argument 2 of 'setBlockReplace' ma
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §ckes integer from pointer without a cast [-Wint-conversion]
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c    3 | #define STONE "stone"
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c      |               ^~~~~~~
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c      |               |
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c      |               char *
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:6:25: note: in expansion of macro 'STONE'
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c    6 |     setBlockReplace(100,STONE,100,STONE,0);
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c      |                         ^~~~~
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §cIn file included from C:/EduCraft/main.c:2:
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/function_minecraft/minecraft.h:5:33: note: expected 'int' but ar
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §cgument is of type 'char *'
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c    5 | void setBlockReplace(int x, int y, int z, const char *block_name, in
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §ct block_id);
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §c      |                             ~~~~^
+[17:44:34] [Thread-32/INFO]: [CHAT] §eEduCraft§7: コンパイルは成功しましたが、警告があります
+[17:44:35] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §faaa
+[17:44:35] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §fbbb
+[17:44:35] [Thread-32/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[17:44:35] [Client thread/INFO]: [CHAT] 入力した数値 (-7.88094972E8) は小さすぎます。0 以上にしてください
+[17:44:37] [Server thread/INFO]: Saving and pausing game...
+[17:44:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:44:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:44:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:46:41] [Server thread/INFO]: Saving and pausing game...
+[17:46:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:46:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:46:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:15:59] [Client thread/INFO]: Stopping!
+[18:15:59] [Client thread/INFO]: SoundSystem shutting down...
+[18:15:59] [Server thread/INFO]: Stopping server
+[18:15:59] [Server thread/INFO]: Saving players
+[18:15:59] [Server thread/INFO]: Saving worlds
+[18:15:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[18:15:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[18:15:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[18:15:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

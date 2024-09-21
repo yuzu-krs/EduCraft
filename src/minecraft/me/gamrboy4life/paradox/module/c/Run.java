@@ -90,6 +90,9 @@ public class Run extends Module {
 
     		/*###########*/
     		
+    		//コンパイル時の警告を検出するフラグ
+    		boolean hasWarnings = false;
+    		
     		/*コンパイル*/
 
     		String gccDir = "C:/EduCraft/bin/gcc";
@@ -115,11 +118,18 @@ public class Run extends Module {
     		BufferedReader compileReader = new BufferedReader(new InputStreamReader(compileProcess.getInputStream(), StandardCharsets.UTF_8));
     		String line;
     		while ((line = compileReader.readLine()) != null) {
+    			
+    		    // "warning"が出力内に含まれていたら、警告があったと判断する
+    		    if(line.toLowerCase().contains("warning")) {
+    		    	hasWarnings=true;
+    		    }
+    			
     		    // 行が76文字を超える場合は分割して表示
     		    while (line.length() > 76) {
     		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 76));
     		        line = line.substring(76);
     		    }
+    		    
     		    Sotuken.instance.moduleManager.addErrChatMessage(line);
     		}
 
@@ -128,6 +138,10 @@ public class Run extends Module {
 
     		if (compileProcess.exitValue() != 0) {
     		    Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
+    		}else if(hasWarnings){
+    			Sotuken.instance.moduleManager.addChatMessage("コンパイルは成功しましたが、警告があります");
+    		}else {
+    			Sotuken.instance.moduleManager.addChatMessage("コンパイルに成功しました");
     		}
     		/*###########*/    		
     		

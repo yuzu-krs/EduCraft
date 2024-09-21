@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="org.apache.logging.log4j.message.StringFormatterMessageFactory"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="java.awt.image.ImagingOpException"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Sotuken"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.analysis.DataParser"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
@@ -30,7 +29,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.CloneGui"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="org.intellij.lang.annotations.PrintFormat"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.SendCommandGui"/>
     <fullyQualifiedTypeName name="java.lang.Cloneable"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.Clone"/>
@@ -42,4 +40,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlock"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlocks"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.describe.EduCraft"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Sotuken"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
