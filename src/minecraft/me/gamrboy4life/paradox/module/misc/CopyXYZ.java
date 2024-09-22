@@ -6,7 +6,6 @@ import java.awt.datatransfer.StringSelection;
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
-import net.minecraft.util.BlockPos;
 
 public class CopyXYZ extends Module{
 	
@@ -22,18 +21,13 @@ public class CopyXYZ extends Module{
     public void onUpdate() {
         // モジュールがトグルされており、処理がまだ実行されていない場合
         if (isToggled() && !hasToggled) {
-
-        	
-        	
-        	BlockPos playerPos=new BlockPos(
-        		mc.thePlayer.posX,
-        		mc.thePlayer.getEntityBoundingBox().minY, //プレイヤーの高さを考慮
-        		mc.thePlayer.posZ
-			);
         	
         	//x,y,z座標を文字形式にする
         	String coordinates=String.format("%d,%d,%d", 
-        			playerPos.getX(),playerPos.getY(),playerPos.getZ());
+                    (int) Math.floor(mc.thePlayer.posX),  // 切り捨てて整数に
+                    (int) Math.floor(mc.thePlayer.posY),  // Y座標も切り捨て
+                    (int) Math.floor(mc.thePlayer.posZ)   // Z座標も切り捨て
+                    );
         	
         	copyToClipboard(coordinates);
         	
