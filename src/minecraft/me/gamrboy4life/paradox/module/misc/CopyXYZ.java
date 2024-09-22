@@ -1,11 +1,18 @@
 package me.gamrboy4life.paradox.module.misc;
 
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+
+import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.util.BlockPos;
 
 public class CopyXYZ extends Module{
 	
 	private boolean hasToggled = false;
+	
+	
 	
 	public CopyXYZ() {
         super("現在位置の座標をコピー", 0 , Category.MISC);
@@ -16,7 +23,25 @@ public class CopyXYZ extends Module{
         // モジュールがトグルされており、処理がまだ実行されていない場合
         if (isToggled() && !hasToggled) {
 
-        	//クリップボードにコピー
+        	
+        	
+        	BlockPos playerPos=new BlockPos(
+        		mc.thePlayer.posX,
+        		mc.thePlayer.getEntityBoundingBox().minY, //プレイヤーの高さを考慮
+        		mc.thePlayer.posZ
+			);
+        	
+        	//x,y,z座標を文字形式にする
+        	String coordinates=String.format("%d,%d,%d", 
+        			playerPos.getX(),playerPos.getY(),playerPos.getZ());
+        	
+        	copyToClipboard(coordinates);
+        	
+        	//メッセージを表示
+        	Sotuken.instance.moduleManager.addChatMessage("現在位置の座標がクリップボードにコピーされました: " + coordinates);
+        	
+        	
+        	
         	
         	// 処理が完了した後、フラグをtrueに設定
             hasToggled = true;
@@ -27,6 +52,16 @@ public class CopyXYZ extends Module{
     }
 	   
 
+    
+    
+    
+    
+    //文字列をクリップボードにコピーする
+    private void copyToClipboard(String text) {
+    	StringSelection stringSelection=new StringSelection(text);
+    	//クリップ内容が変更されても通知されないようにnull
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+    }
     
    
 	@Override
