@@ -1,0 +1,177 @@
+package me.gamrboy4life.paradox.module.status;
+
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+
+import me.gamrboy4life.paradox.Sotuken;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.utils.Wrapper;
+
+public class TabGui extends Module{
+	
+	public int currentTab;
+	public boolean expanded;
+
+	public TabGui() {
+		super("TabGui",0,Category.STATUS);
+		toggled=true;
+	}
+	
+	// フィールドにアニメーションや透明度の調整用変数を追加
+	private float backgroundAlpha = 0.0f; // 背景のアルファ値 (0.0 - 1.0)
+	private float highlightAlpha = 0.0f; // ハイライトのアルファ値 (0.0 - 1.0)
+	private final float ANIMATION_SPEED = 0.03f; // アニメーションの速度
+	private final int SHADOW_COLOR = 0x50000000; // ドロップシャドウの色
+
+	public void draw() {
+	    if (this.isToggled()) {
+	        // 背景のアルファ値を徐々に変化させる
+	        backgroundAlpha = Math.min(1.0f, backgroundAlpha + ANIMATION_SPEED);
+	        int backgroundColor = ((int) (backgroundAlpha * 0x90) << 24) | 0xFFFFFF; // 透明度を反映した白系の背景
+
+	        // 四角形に角丸の矩形を描画 (角丸関数を仮定)
+	        drawRoundedRectWithShadow(5, 20, 68, 102, 10, backgroundColor, SHADOW_COLOR);
+
+	        // ハイライトのアルファ値もアニメーションさせる
+	        highlightAlpha = Math.min(1.0f, highlightAlpha + ANIMATION_SPEED);
+	        int highlightColor = ((int) (highlightAlpha * 0xFF) << 24) | 0x00FF7F; // ソフトなグリーンのハイライト
+
+	        // 選択中のタブにグラデーションと角丸を使用
+	        drawGradientRoundedRect(8, 23 + currentTab * 13, 7 + 58, 34 + currentTab * 13, 10, 0xFFB0E0E6, highlightColor);
+
+	        int count = 0;
+
+	        // カテゴリの描画 (カスタムフォント/影をつけるなどで高級感をプラス)
+	        for (Category c : Category.values()) {
+	            Wrapper.fr.drawStringWithShadow(c.name, 10, 25 + count * 13, -1);
+	            count++;
+	        }
+
+	        // 展開されている場合
+	        if (expanded) {
+	            Category category = Category.values()[currentTab];
+	            List<Module> modules = Sotuken.instance.moduleManager.getModulesbyCategory(category);
+
+	            if (modules.size() == 0) {
+	                return;
+	            }
+
+	            // モジュール名の最大幅を計算
+	            int maxLenModule = 0;
+	            for (Module module : modules) {
+	                if (Wrapper.fr.getStringWidth(module.name) > maxLenModule)
+	                    maxLenModule = Wrapper.fr.getStringWidth(module.name);
+	            }
+
+	            // モジュールリストの背景に角丸＆影を付ける
+	            drawRoundedRectWithShadow(68, 20, 48 + maxLenModule + 30, 25 + modules.size() * 13, 10, backgroundColor, SHADOW_COLOR);
+	            
+	            // 選択中のモジュールにグラデーション
+	            drawGradientRoundedRect(70, 23 + category.moduleIndex * 13, 63 + maxLenModule + 12, 34 + category.moduleIndex * 13, 10, 0xFFE6E6FA, highlightColor);
+
+	            count = 0;
+
+	            // モジュール名の描画（柔らかい影付き）
+	            for (Module m : modules) {
+	                Wrapper.fr.drawStringWithShadow(m.name, 73, 25 + count * 13, -1);
+	                count++;
+	            }
+	        }
+	    }
+	}
+
+	/**
+	 * 角丸の矩形を描画し、ドロップシャドウを追加する関数
+	 * @param x1, y1, x2, y2 矩形の座標
+	 * @param radius 角丸の半径
+	 * @param color 矩形の色
+	 * @param shadowColor シャドウの色
+	 */
+	private void drawRoundedRectWithShadow(int x1, int y1, int x2, int y2, int radius, int color, int shadowColor) {
+	    // ここで角丸の矩形を描画 (drawRoundedRect関数を仮定)
+	    drawRoundedRect(x1, y1, x2, y2, radius, color);
+	    // 影を描画 (少し下にずらして半透明の矩形を描く)
+	    drawRoundedRect(x1 + 2, y1 + 2, x2 + 2, y2 + 2, radius, shadowColor);
+	}
+
+	/**
+	 * グラデーション付き角丸矩形を描画する関数
+	 * @param x1, y1, x2, y2 矩形の座標
+	 * @param radius 角丸の半径
+	 * @param color1 グラデーション開始色
+	 * @param color2 グラデーション終了色
+	 */
+	private void drawGradientRoundedRect(int x1, int y1, int x2, int y2, int radius, int color1, int color2) {
+	    // グラデーションを描画 (仮想の描画関数)
+	    drawGradientRect(x1, y1, x2, y2, color1, color2);
+	    // 角丸を反映する
+	    drawRoundedRect(x1, y1, x2, y2, radius, color1);
+	}
+	
+	public void keyPressed(int k) {
+		Category category=Category.values()[currentTab];
+		List<Module> modules=Sotuken.instance.moduleManager.getModulesbyCategory(category);
+		switch(k) {
+		
+		case Keyboard.KEY_UP:
+			if(expanded) {
+				if(category.moduleIndex<=0) {
+					category.moduleIndex=modules.size()-1;
+				}else {
+					category.moduleIndex--;
+				}
+			}else {
+				if(currentTab<=0) {
+					currentTab=Category.values().length-1;
+				}else {
+					currentTab--;
+				}
+				
+			}
+			break;
+			
+		case Keyboard.KEY_DOWN:
+			if(expanded) {
+				if(category.moduleIndex>=modules.size()-1) {
+					category.moduleIndex=0;
+				}else {
+					category.moduleIndex++;
+				}
+			}else {
+				if(currentTab>=Category.values().length-1) {
+					currentTab=0;
+				}else {
+					currentTab++;
+				}
+			}
+			break;
+			
+		case Keyboard.KEY_RIGHT:
+			if(expanded&&modules.size()!=0) {
+				Module module=modules.get(category.moduleIndex);
+				if(!module.name.equals("TabGui"))
+					module.toggle();
+			}else {
+				if(modules.size()!=0) {
+					expanded=true;
+					category.moduleIndex=0;
+				}
+			}
+			break;
+			
+		case Keyboard.KEY_LEFT:
+			expanded=false;
+
+			
+			
+			
+			
+			
+		
+		}
+		
+	}
+
+}

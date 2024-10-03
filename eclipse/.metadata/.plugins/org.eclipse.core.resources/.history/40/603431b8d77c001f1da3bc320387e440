@@ -1,0 +1,134 @@
+package me.gamrboy4life.paradox.module.status;
+
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+
+import me.gamrboy4life.paradox.Sotuken;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.utils.Wrapper;
+import net.minecraft.client.gui.Gui;
+
+public class TabGui extends Module{
+	
+	public int currentTab;
+	public boolean expanded;
+
+	public TabGui() {
+		super("TabGui",0,Category.STATUS);
+		toggled=true;
+	}
+	
+	public void draw() {
+	    if (this.isToggled()) {
+	        // メインの背景を浮き出るように半透明で表示
+	        Gui.drawRectWithShadow(5, 20, 75, 110, 0xAA1E1E1E, 5);  // 背景に影を付ける
+	        // カテゴリー選択部分にふわっとした背景色と透明感
+	        Gui.drawRoundedRect(10, 25 + currentTab * 15, 65, 38 + currentTab * 15, 0x55FFFFFF, 5);  // 角丸 + 透明
+	        
+	        int count = 0;
+
+	        // カテゴリー名の描画
+	        for (Category c : Category.values()) {
+	            Wrapper.fr.drawStringWithShadow(c.name, 15, 28 + count * 15, 0xFFFFFFFF);  // シャドウ付き文字で浮き出る感じに
+	            count++;
+	        }
+
+	        if (expanded) {
+	            Category category = Category.values()[currentTab];
+	            List<Module> modules = Sotuken.instance.moduleManager.getModulesbyCategory(category);
+
+	            if (modules.size() == 0) {
+	                return;
+	            }
+
+	            int maxLenModule = 0;
+	            for (Module module : modules) {
+	                if (Wrapper.fr.getStringWidth(module.name) > maxLenModule) {
+	                    maxLenModule = Wrapper.fr.getStringWidth(module.name);
+	                }
+	            }
+
+	            // モジュール選択部分に透明感のある背景と影を追加して浮き上がらせる
+	            Gui.drawRectWithShadow(75, 20, 55 + maxLenModule + 40, 30 + modules.size() * 15, 0xAA2B2B2B, 5);
+
+	            // 選択中のモジュールをハイライトし、角丸を追加
+	            Gui.drawRoundedRect(80, 28 + category.moduleIndex * 15, 70 + maxLenModule + 15, 40 + category.moduleIndex * 15, 0x55FFFFFF, 5);
+
+	            count = 0;
+
+	            // モジュール名の描画
+	            for (Module m : modules) {
+	                Wrapper.fr.drawStringWithShadow(m.name, 85, 30 + count * 15, 0xFFFFFFFF);  // シャドウ付き文字
+	                count++;
+	            }
+	        }
+	    }
+	}
+	
+	public void keyPressed(int k) {
+		Category category=Category.values()[currentTab];
+		List<Module> modules=Sotuken.instance.moduleManager.getModulesbyCategory(category);
+		switch(k) {
+		
+		case Keyboard.KEY_UP:
+			if(expanded) {
+				if(category.moduleIndex<=0) {
+					category.moduleIndex=modules.size()-1;
+				}else {
+					category.moduleIndex--;
+				}
+			}else {
+				if(currentTab<=0) {
+					currentTab=Category.values().length-1;
+				}else {
+					currentTab--;
+				}
+				
+			}
+			break;
+			
+		case Keyboard.KEY_DOWN:
+			if(expanded) {
+				if(category.moduleIndex>=modules.size()-1) {
+					category.moduleIndex=0;
+				}else {
+					category.moduleIndex++;
+				}
+			}else {
+				if(currentTab>=Category.values().length-1) {
+					currentTab=0;
+				}else {
+					currentTab++;
+				}
+			}
+			break;
+			
+		case Keyboard.KEY_RIGHT:
+			if(expanded&&modules.size()!=0) {
+				Module module=modules.get(category.moduleIndex);
+				if(!module.name.equals("TabGui"))
+					module.toggle();
+			}else {
+				if(modules.size()!=0) {
+					expanded=true;
+					category.moduleIndex=0;
+				}
+			}
+			break;
+			
+		case Keyboard.KEY_LEFT:
+			expanded=false;
+
+			
+			
+			
+			
+			
+		
+		}
+		
+	}
+
+}

@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLEditorKit.Parser"/>
     <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="org.apache.logging.log4j.message.StringFormatterMessageFactory"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="java.awt.image.ImagingOpException"/>
@@ -45,6 +44,7 @@
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.awt.datatransfer.StringSelection"/>
     <fullyQualifiedTypeName name="java.awt.Toolkit"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="net.minecraft.util.BlockPos"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

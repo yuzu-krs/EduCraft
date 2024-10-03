@@ -1,0 +1,174 @@
+package me.gamrboy4life.paradox.module.status;
+
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.opengl.GL11;
+
+import me.gamrboy4life.paradox.Sotuken;
+import me.gamrboy4life.paradox.module.Category;
+import me.gamrboy4life.paradox.module.Module;
+import me.gamrboy4life.paradox.utils.Wrapper;
+import net.minecraft.client.gui.Gui;
+
+public class TabGui extends Module{
+	
+	public int currentTab;
+	public boolean expanded;
+
+	public TabGui() {
+		super("TabGui",0,Category.STATUS);
+		toggled=true;
+	}
+	
+
+public void draw() {
+    if (this.isToggled()) {
+        // 角を丸くするための関数を使用
+        drawRoundedRect(5, 20, 68, 102, 8, 0x90000000);
+        drawRoundedRect(8, 23 + currentTab * 13, 7 + 58, 34 + currentTab * 13, 8, 0xFF006400);
+        
+        int count = 0;
+        
+        for (Category c : Category.values()) {
+            Wrapper.fr.drawString(c.name, 10, 25 + count * 13, -1);
+            count++;
+        }
+        
+        if (expanded) {
+            Category category = Category.values()[currentTab];
+            List<Module> modules = Sotuken.instance.moduleManager.getModulesbyCategory(category);
+            
+            if (modules.size() == 0) {
+                return;
+            }
+            
+            int maxLenModule = 0;
+            for (Module module : modules) {
+                int moduleNameWidth = Wrapper.fr.getStringWidth(module.name);
+                if (moduleNameWidth > maxLenModule) {
+                    maxLenModule = moduleNameWidth;
+                }
+            }
+            
+            // モジュールの枠を描画
+            drawRoundedRect(68, 20, 48 + maxLenModule + 30, 25 + modules.size() * 13, 8, 0x90000000);
+            drawRoundedRect(70, 23 + category.moduleIndex * 13, 63 + maxLenModule + 12, 34 + category.moduleIndex * 13, 8, 0xFF006400);
+            
+            count = 0;
+            
+            for (Module m : modules) {
+                Wrapper.fr.drawStringWithShadow(m.name, 73, 25 + count * 13, -1);
+                count++;
+            }
+        }
+    }
+}
+
+// 角を丸く描画するためのメソッド
+public void drawRoundedRect(int x, int y, int width, int height, int radius, int color) {
+    // カラーコードをデコード (AARRGGBB)
+    float alpha = (color >> 24 & 0xFF) / 255.0F;
+    float red = (color >> 16 & 0xFF) / 255.0F;
+    float green = (color >> 8 & 0xFF) / 255.0F;
+    float blue = (color & 0xFF) / 255.0F;
+    
+    // OpenGLの描画準備
+    GL11.glPushAttrib(GL11.GL_ENABLE_BIT);
+    GL11.glEnable(GL11.GL_BLEND);
+    GL11.glDisable(GL11.GL_TEXTURE_2D);
+    GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+    GL11.glColor4f(red, green, blue, alpha);
+    
+    // 四角形の中央部分を描画
+    Gui.drawRect(x + radius, y, x + width - radius, y + height, color); // 上の中央部分
+    Gui.drawRect(x, y + radius, x + width, y + height - radius, color); // 左右の中央部分
+    
+    // 角の部分を描画（円弧）
+    drawCirclePart(x + radius, y + radius, radius, 180, 270); // 左上
+    drawCirclePart(x + width - radius, y + radius, radius, 270, 360); // 右上
+    drawCirclePart(x + width - radius, y + height - radius, radius, 0, 90); // 右下
+    drawCirclePart(x + radius, y + height - radius, radius, 90, 180); // 左下
+    
+    // OpenGLの後処理
+    GL11.glEnable(GL11.GL_TEXTURE_2D);
+    GL11.glDisable(GL11.GL_BLEND);
+    GL11.glPopAttrib();
+}
+
+// 部分円を描画するヘルパーメソッド
+private void drawCirclePart(int cx, int cy, int r, int startAngle, int endAngle) {
+    GL11.glBegin(GL11.GL_TRIANGLE_FAN);
+    GL11.glVertex2f(cx, cy); // 中心点
+    for (int i = startAngle; i <= endAngle; i++) {
+        double angle = Math.toRadians(i);
+        GL11.glVertex2f((float) (cx + Math.cos(angle) * r), (float) (cy + Math.sin(angle) * r));
+    }
+    GL11.glEnd();
+}
+	
+	public void keyPressed(int k) {
+		Category category=Category.values()[currentTab];
+		List<Module> modules=Sotuken.instance.moduleManager.getModulesbyCategory(category);
+		switch(k) {
+		
+		case Keyboard.KEY_UP:
+			if(expanded) {
+				if(category.moduleIndex<=0) {
+					category.moduleIndex=modules.size()-1;
+				}else {
+					category.moduleIndex--;
+				}
+			}else {
+				if(currentTab<=0) {
+					currentTab=Category.values().length-1;
+				}else {
+					currentTab--;
+				}
+				
+			}
+			break;
+			
+		case Keyboard.KEY_DOWN:
+			if(expanded) {
+				if(category.moduleIndex>=modules.size()-1) {
+					category.moduleIndex=0;
+				}else {
+					category.moduleIndex++;
+				}
+			}else {
+				if(currentTab>=Category.values().length-1) {
+					currentTab=0;
+				}else {
+					currentTab++;
+				}
+			}
+			break;
+			
+		case Keyboard.KEY_RIGHT:
+			if(expanded&&modules.size()!=0) {
+				Module module=modules.get(category.moduleIndex);
+				if(!module.name.equals("TabGui"))
+					module.toggle();
+			}else {
+				if(modules.size()!=0) {
+					expanded=true;
+					category.moduleIndex=0;
+				}
+			}
+			break;
+			
+		case Keyboard.KEY_LEFT:
+			expanded=false;
+
+			
+			
+			
+			
+			
+		
+		}
+		
+	}
+
+}
