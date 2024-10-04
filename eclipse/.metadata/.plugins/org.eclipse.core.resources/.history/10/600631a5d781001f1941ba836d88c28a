@@ -1,8 +1,6 @@
 package me.gamrboy4life.paradox.gui;
 
 import me.gamrboy4life.paradox.Sotuken;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.GuiLanguage;
 import net.minecraft.client.gui.GuiMultiplayer;
 import net.minecraft.client.gui.GuiOptions;
@@ -76,9 +74,6 @@ public class MainMenu extends GuiScreen{
                 } else if(name.equals("終了")) {
                     mc.shutdown();
                 }
-                Minecraft.getMinecraft().getSoundHandler().playSound(
-                		PositionedSoundRecord.create(new ResourceLocation("random.click"),1.0F )
-        		);
             }
             count++;
         }

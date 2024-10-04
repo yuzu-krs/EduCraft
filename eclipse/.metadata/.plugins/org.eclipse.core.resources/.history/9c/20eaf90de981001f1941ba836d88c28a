@@ -65,6 +65,9 @@ public class MainMenu extends GuiScreen{
             if(mouseX >= x && mouseY >= y && mouseX < x + mc.fontRendererObj.getStringWidth(name) && mouseY < y + mc.fontRendererObj.FONT_HEIGHT) {
                 if(name.equals("シングルプレイ")) {
                     mc.displayGuiScreen(new GuiSelectWorld(this));
+                    Minecraft.getMinecraft().getSoundHandler().playSound(
+                    		PositionedSoundRecord.create(new ResourceLocation("random.click"),1.0F )
+            		);
                 } else if(name.equals("マルチプレイ")) {
                     mc.displayGuiScreen(new GuiMultiplayer(this));
                 } else if(name.equals("設定")) {
@@ -76,9 +79,6 @@ public class MainMenu extends GuiScreen{
                 } else if(name.equals("終了")) {
                     mc.shutdown();
                 }
-                Minecraft.getMinecraft().getSoundHandler().playSound(
-                		PositionedSoundRecord.create(new ResourceLocation("random.click"),1.0F )
-        		);
             }
             count++;
         }

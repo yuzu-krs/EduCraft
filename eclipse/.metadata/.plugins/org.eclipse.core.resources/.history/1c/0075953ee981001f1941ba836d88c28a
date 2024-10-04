@@ -74,6 +74,9 @@ public class MainMenu extends GuiScreen{
                 } else if(name.equals("説明")) {
                     useFirstBackground = !useFirstBackground;
                 } else if(name.equals("終了")) {
+                    Minecraft.getMinecraft().getSoundHandler().playSound(
+                    		PositionedSoundRecord.create(new ResourceLocation("random.click"),1.0F )
+            		);
                     mc.shutdown();
                 }
                 Minecraft.getMinecraft().getSoundHandler().playSound(
