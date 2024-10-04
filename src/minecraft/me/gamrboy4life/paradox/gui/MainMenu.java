@@ -24,12 +24,11 @@ public class MainMenu extends GuiScreen{
     }
 
     public void drawScreen(int mouseX,int mouseY,float partialticks) {
-        String backgroundImage = useFirstBackground ? "yuzuclient/EduCraft-Main.png" : "yuzuclient/describe.png";
-        mc.getTextureManager().bindTexture(new ResourceLocation(backgroundImage));
+        mc.getTextureManager().bindTexture(new ResourceLocation("yuzuclient/EduCraft-Main.png"));
         this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0,this.width, this.height, this.width, this.height);
         this.drawGradientRect(0, height-120, width, height, 0x00000000, 0xff000000);
 
-        String[] buttons= {"シングルプレイ","マルチプレイ","設定","言語","説明","終了"};
+        String[] buttons= {"シングルプレイ","マルチプレイ","設定","言語","終了"};
         int count=0;
         for(String name:buttons) {
             float x=(width/buttons.length)*count+(width/buttons.length)/2f+8-mc.fontRendererObj.getStringWidth(name)/2f;
@@ -54,7 +53,7 @@ public class MainMenu extends GuiScreen{
     }
 
     public void mouseClicked(int mouseX,int mouseY,int button) {
-        String[] buttons= {"シングルプレイ","マルチプレイ","設定","言語","説明","終了"};
+        String[] buttons= {"シングルプレイ","マルチプレイ","設定","言語","終了"};
 
         int count=0;
         for(String name : buttons) {
@@ -71,8 +70,6 @@ public class MainMenu extends GuiScreen{
                     mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
                 } else if(name.equals("言語")) {
                     mc.displayGuiScreen(new GuiLanguage(this, mc.gameSettings, mc.getLanguageManager()));
-                } else if(name.equals("説明")) {
-                    useFirstBackground = !useFirstBackground;
                 } else if(name.equals("終了")) {
                     mc.shutdown();
                 }
