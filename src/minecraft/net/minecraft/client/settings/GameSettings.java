@@ -282,8 +282,8 @@ public class GameSettings {
 	public KeyBinding ofKeyBindZoom;
 	private File optionsFileOF;
 
-	public KeyBinding CLIENT_GUI_MOD_POS = new KeyBinding("PVP HUD", Keyboard.KEY_INSERT, "1-YuzuClient");
-	public KeyBinding CLIENT_PERSPECTIVE =new KeyBinding("Toggle Perspective",Keyboard.KEY_F,"2-YuzuClient");
+	public KeyBinding CLIENT_GUI_MOD_POS = new KeyBinding("Status移動", Keyboard.KEY_INSERT, "EduCraft");
+	public KeyBinding CLIENT_PERSPECTIVE =new KeyBinding("他視点",Keyboard.KEY_F,"EduCraft");
 
 	public GameSettings(Minecraft mcIn, File p_i46326_2_) {
 
