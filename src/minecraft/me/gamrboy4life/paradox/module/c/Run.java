@@ -13,6 +13,9 @@ import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.analysis.DataParser;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.util.ResourceLocation;
 
 public class Run extends Module {
 
@@ -60,7 +63,10 @@ public class Run extends Module {
     			if(parentDir.mkdirs()) {
     				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました: "+parentDir.getPath());
     			}else {
-    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addErrChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
+            		Minecraft.getMinecraft().getSoundHandler().playSound(
+            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+        			);
     			}
     		}
     		
@@ -69,7 +75,10 @@ public class Run extends Module {
     			if(file.createNewFile()) {
     				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました: "+parentDir.getPath());
     			}else {
-    				Sotuken.instance.moduleManager.addChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
+    				Sotuken.instance.moduleManager.addErrChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
+            		Minecraft.getMinecraft().getSoundHandler().playSound(
+            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+        			);
     			}
     		}
     		
@@ -137,9 +146,15 @@ public class Run extends Module {
     		compileProcess.waitFor();
 
     		if (compileProcess.exitValue() != 0) {
-    		    Sotuken.instance.moduleManager.addChatMessage("コンパイルに失敗しました");
+    		    Sotuken.instance.moduleManager.addErrChatMessage("コンパイルに失敗しました");
+        		Minecraft.getMinecraft().getSoundHandler().playSound(
+        			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+    			);
     		}else if(hasWarnings){
-    			Sotuken.instance.moduleManager.addChatMessage("コンパイルは成功しましたが、警告があります");
+    			Sotuken.instance.moduleManager.addErrChatMessage("コンパイルは成功しましたが、警告があります");
+        		Minecraft.getMinecraft().getSoundHandler().playSound(
+        			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+    			);
     		}else {
     			Sotuken.instance.moduleManager.addChatMessage("コンパイルに成功しました");
     		}
@@ -176,8 +191,11 @@ public class Run extends Module {
 					        	parser.parseData(line);
 					        }	
 					    } catch (IOException e) {
-					        Sotuken.instance.moduleManager.addChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
 					        e.printStackTrace();
+		            		Minecraft.getMinecraft().getSoundHandler().playSound(
+		            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+		        			);
 					    }
 					}
 					
@@ -211,15 +229,21 @@ public class Run extends Module {
                             }
                         }
                     } catch (IOException e) {
-                        Sotuken.instance.moduleManager.addChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+                        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
                         e.printStackTrace();
+                		Minecraft.getMinecraft().getSoundHandler().playSound(
+                			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+            			);
                     }
 	            	
 
 	            	
 	            	//タイムアウト発生時の処理
 	            	runProcess.destroy(); //プロセスを強制終了
-	            	Sotuken.instance.moduleManager.addChatMessage("プログラムの実行がタイムアウトしました");	            	
+	            	Sotuken.instance.moduleManager.addErrChatMessage("プログラムの実行がタイムアウトしました");
+            		Minecraft.getMinecraft().getSoundHandler().playSound(
+            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+        			);
 	            		            	
 	            	
 	            	//出力読み取りスレッドを中断
@@ -230,7 +254,10 @@ public class Run extends Module {
 	            	
 	        		//実行結果のチェック
 		    		if(runProcess.exitValue()!=0) {
-		    			Sotuken.instance.moduleManager.addChatMessage("実行に失敗しました");
+		    			Sotuken.instance.moduleManager.addErrChatMessage("実行に失敗しました");
+	            		Minecraft.getMinecraft().getSoundHandler().playSound(
+	            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+	        			);
 		    		}else {
 		    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
 		    			
@@ -247,11 +274,17 @@ public class Run extends Module {
     		
     		
     	}catch(IOException e) {
-    		Sotuken.instance.moduleManager.addChatMessage("IOエラーが発生しました: " + e.getMessage());
+    		Sotuken.instance.moduleManager.addErrChatMessage("IOエラーが発生しました: " + e.getMessage());
     		e.printStackTrace();
+    		Minecraft.getMinecraft().getSoundHandler().playSound(
+    			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+			);
     	}catch(InterruptedException e) {
-    		Sotuken.instance.moduleManager.addChatMessage("プロセスが中断されました: " + e.getMessage());	
+    		Sotuken.instance.moduleManager.addErrChatMessage("プロセスが中断されました: " + e.getMessage());	
     		e.printStackTrace();
+    		Minecraft.getMinecraft().getSoundHandler().playSound(
+    			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+			);
     	}
 		
 	}
