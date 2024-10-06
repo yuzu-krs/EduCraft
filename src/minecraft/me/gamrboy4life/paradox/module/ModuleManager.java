@@ -67,9 +67,9 @@ public class ModuleManager {
 		
 	
 		//Status
-		newMod(new Direction());
-		newMod(new LookingAt());
 		newMod(new XYZ());
+		newMod(new LookingAt());
+		newMod(new Direction());
 		
 		
 

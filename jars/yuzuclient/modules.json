@@ -41,13 +41,13 @@
   "TestForBlocks関数": {
     "enabled": false
   },
-  "方角": {
+  "座標": {
     "enabled": true
   },
   "視点先の座標": {
     "enabled": true
   },
-  "座標": {
+  "方角": {
     "enabled": true
   },
   "現在位置の座標をコピー": {
