@@ -11,6 +11,9 @@
   "強制終了": {
     "enabled": false
   },
+  "Undo": {
+    "enabled": false
+  },
   "Notepad": {
     "enabled": false
   },
