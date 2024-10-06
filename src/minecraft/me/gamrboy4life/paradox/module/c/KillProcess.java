@@ -13,7 +13,7 @@ public class KillProcess extends Module{
 	private boolean hasToggled = false;
 	
 	public KillProcess() {
-        super("強制終了", Keyboard.KEY_C , Category.RUN);
+        super("強制終了", Keyboard.KEY_X, Category.RUN);
     }
 	
     @Override
