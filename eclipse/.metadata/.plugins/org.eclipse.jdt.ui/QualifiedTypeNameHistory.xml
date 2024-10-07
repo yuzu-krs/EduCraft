@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="org.apache.logging.log4j.message.StringFormatterMessageFactory"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="java.awt.image.ImagingOpException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.analysis.DataParser"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -37,7 +36,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlock"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlocks"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.describe.EduCraft"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Sotuken"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
@@ -46,7 +44,12 @@
     <fullyQualifiedTypeName name="java.awt.Toolkit"/>
     <fullyQualifiedTypeName name="net.minecraft.util.BlockPos"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.file.StandardCopyOption"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Sotuken"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="net.minecraft.client.audio.PositionedSoundRecord"/>
-    <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
 </qualifiedTypeNameHistroy>
