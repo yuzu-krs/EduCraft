@@ -368,7 +368,7 @@ public class Run extends Module {
             Files.write(Paths.get(filePath), (defineAir + updatedContent).getBytes(StandardCharsets.UTF_8), StandardOpenOption.WRITE);
           
             // 成功メッセージを表示
-            Sotuken.instance.moduleManager.addChatMessage("main.c の整形が完了しました");
+            //Sotuken.instance.moduleManager.addChatMessage("main.c の整形が完了しました");
 
         } catch (IOException e) {
             Sotuken.instance.moduleManager.addErrChatMessage("ファイルの整形中にエラーが発生しました: " + e.getMessage());
@@ -378,6 +378,4 @@ public class Run extends Module {
 			);
         }
     }
-    
-    
 }

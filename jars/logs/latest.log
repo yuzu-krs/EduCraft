@@ -1,172 +1,49 @@
-[23:26:38] [Client thread/INFO]: Setting user: Player234
-[23:26:38] [Client thread/INFO]: (Session ID is token:0:Player234)
-[23:26:39] [Client thread/INFO]: LWJGL Version: 2.9.4
-[23:26:39] [Client thread/INFO]: Reloading ResourceManager: Default
-[23:26:40] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:26:40] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[23:26:40] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:26:40] [Thread-8/INFO]: OpenAL initialized.
-[23:26:40] [Sound Library Loader/INFO]: Sound engine started
-[23:26:45] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[23:28:13] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[23:28:13] [Server thread/INFO]: Generating keypair
-[23:28:14] [Server thread/INFO]: Preparing start region for level 0
-[23:28:15] [Server thread/INFO]: Preparing spawn area: 93%
-[23:28:15] [Server thread/INFO]: Changing view distance to 8, from 10
-[23:28:15] [Server thread/INFO]: Player234[local:E:106fba1f] logged in with entity id 283 at (1003.0530540334605, 101.0, 1000.4800250912618)
-[23:28:15] [Server thread/INFO]: Player234 がゲームに参加しました
-[23:28:16] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[23:28:24] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
-[23:28:45] [Server thread/INFO]: Saving and pausing game...
-[23:28:45] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:28:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:28:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:29:12] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:29:12] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:29:12] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:29:12] [Thread-17/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:29:12] [Thread-17/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:29:12] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:29:21] [Server thread/INFO]: Saving and pausing game...
-[23:29:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:29:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:29:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:29:23] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:29:23] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:29:23] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:29:23] [Thread-19/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:29:23] [Thread-19/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:29:23] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:29:23] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:29:28] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:29:28] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:29:28] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:29:28] [Thread-21/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:29:28] [Thread-21/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:29:28] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:29:28] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:29:30] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:29:30] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:29:30] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:29:30] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:29:30] [Thread-23/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:29:30] [Thread-23/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:29:30] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:29:31] [Server thread/INFO]: Saving and pausing game...
-[23:29:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:29:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:29:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:33:53] [Thread-25/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:33:53] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:33:53] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
-[23:33:53] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
-[23:33:53] [Thread-25/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:33:53] [Thread-25/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:33:53] [Thread-25/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:33:53] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:33:53] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:33:53] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:33:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:33:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:33:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:33:55] [Server thread/INFO]: Saving and pausing game...
-[23:33:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:33:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:33:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:34:49] [Thread-27/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:34:49] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:34:49] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
-[23:34:49] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:34:49] [Thread-27/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:34:49] [Thread-27/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:34:49] [Thread-27/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:34:49] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:34:49] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:34:49] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:34:50] [Server thread/INFO]: Saving and pausing game...
-[23:34:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:34:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:34:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:35:20] [Thread-29/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:35:20] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:35:20] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f
-[23:35:20] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:35:20] [Thread-29/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:35:20] [Thread-29/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:35:20] [Thread-29/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:35:20] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:35:20] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:35:20] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:35:23] [Server thread/INFO]: Saving and pausing game...
-[23:35:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:35:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:35:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:35:30] [Thread-31/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:35:30] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:35:30] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §f
-[23:35:30] [Thread-32/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:35:30] [Thread-31/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:35:30] [Thread-31/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:35:30] [Thread-31/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:35:30] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:35:30] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:35:30] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:35:30] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[23:35:31] [Server thread/INFO]: Saving and pausing game...
-[23:35:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:35:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:35:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:33: error: 'AIR' undeclared (first use in this functio
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §cn)
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §c   14 |     setBlockReplace(999,101,999,AIR, 0);
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §c      |                                 ^~~
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:33: note: each undeclared identifier is reported only 
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
-[23:35:44] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §cコンパイルに失敗しました
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:33: error: 'AIR' undeclared (first use in this functio
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cn)
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c   14 |     setBlockReplace(999,101,999,AIR, 0);
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c      |                                 ^~~
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:33: note: each undeclared identifier is reported only 
-[23:35:45] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
-[23:35:46] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cコンパイルに失敗しました
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:33: error: 'AIR' undeclared (first use in this functio
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cn)
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c   14 |     setBlockReplace(999,101,999,AIR, 0);
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c      |                                 ^~~
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:14:33: note: each undeclared identifier is reported only 
-[23:37:15] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
-[23:37:16] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cコンパイルに失敗しました
-[23:37:20] [Server thread/INFO]: Saving and pausing game...
-[23:37:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:37:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:37:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:37:39] [Thread-36/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[23:37:40] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:37:40] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
-[23:37:40] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[23:37:40] [Thread-36/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[23:37:40] [Thread-36/INFO]: [CHAT] §eEduCraft§7: main.c の整形が完了しました
-[23:37:40] [Thread-36/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[23:37:40] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:37:40] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:37:40] [Server thread/INFO]: [Player234: ブロックを設置しました]
-[23:37:40] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:37:40] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:37:40] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[23:37:42] [Server thread/INFO]: Saving and pausing game...
-[23:37:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:37:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:37:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:44:58] [Client thread/INFO]: Stopping!
-[23:44:58] [Client thread/INFO]: SoundSystem shutting down...
-[23:44:59] [Server thread/INFO]: Stopping server
-[23:44:59] [Server thread/INFO]: Saving players
-[23:44:59] [Server thread/INFO]: Saving worlds
-[23:44:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[23:44:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[23:44:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[23:44:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:03:48] [Client thread/INFO]: Setting user: Player703
+[01:03:48] [Client thread/INFO]: (Session ID is token:0:Player703)
+[01:03:50] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:03:50] [Client thread/INFO]: Reloading ResourceManager: Default
+[01:03:51] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:03:51] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[01:03:51] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:03:51] [Thread-8/INFO]: OpenAL initialized.
+[01:03:52] [Sound Library Loader/INFO]: Sound engine started
+[01:03:56] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[01:04:02] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[01:04:02] [Server thread/INFO]: Generating keypair
+[01:04:02] [Server thread/INFO]: Preparing start region for level 0
+[01:04:03] [Server thread/INFO]: Changing view distance to 8, from 10
+[01:04:03] [Server thread/INFO]: Player703[local:E:00765ae5] logged in with entity id 283 at (1002.5135732603662, 101.0, 1001.3252315719652)
+[01:04:03] [Server thread/INFO]: Player703 がゲームに参加しました
+[01:04:04] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[01:04:07] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[01:04:07] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fHello World
+[01:04:07] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[01:04:07] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fHello World
+[01:04:07] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[01:04:07] [Thread-17/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[01:04:07] [Server thread/INFO]: [Player703: ブロックを設置しました]
+[01:04:07] [Server thread/INFO]: [Player703: ブロックを設置しました]
+[01:04:07] [Server thread/INFO]: [Player703: ブロックを設置しました]
+[01:04:07] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[01:04:07] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[01:04:07] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[01:04:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[01:04:09] [Server thread/INFO]: [Player703: ブロックを設置しました]
+[01:04:09] [Server thread/INFO]: [Player703: ブロックを設置しました]
+[01:04:09] [Server thread/INFO]: [Player703: ブロックを設置しました]
+[01:04:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[01:04:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[01:04:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[01:05:02] [Server thread/INFO]: Saving and pausing game...
+[01:05:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:05:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:05:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:05:03] [Client thread/INFO]: Stopping!
+[01:05:03] [Client thread/INFO]: SoundSystem shutting down...
+[01:05:03] [Server thread/INFO]: Stopping server
+[01:05:03] [Server thread/INFO]: Saving players
+[01:05:03] [Server thread/INFO]: Saving worlds
+[01:05:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:05:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:05:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:05:03] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
