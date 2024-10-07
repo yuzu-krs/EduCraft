@@ -1,49 +1,152 @@
-[01:03:48] [Client thread/INFO]: Setting user: Player703
-[01:03:48] [Client thread/INFO]: (Session ID is token:0:Player703)
-[01:03:50] [Client thread/INFO]: LWJGL Version: 2.9.4
-[01:03:50] [Client thread/INFO]: Reloading ResourceManager: Default
-[01:03:51] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:03:51] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[01:03:51] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[01:03:51] [Thread-8/INFO]: OpenAL initialized.
-[01:03:52] [Sound Library Loader/INFO]: Sound engine started
-[01:03:56] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[01:04:02] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[01:04:02] [Server thread/INFO]: Generating keypair
-[01:04:02] [Server thread/INFO]: Preparing start region for level 0
-[01:04:03] [Server thread/INFO]: Changing view distance to 8, from 10
-[01:04:03] [Server thread/INFO]: Player703[local:E:00765ae5] logged in with entity id 283 at (1002.5135732603662, 101.0, 1001.3252315719652)
-[01:04:03] [Server thread/INFO]: Player703 がゲームに参加しました
-[01:04:04] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[01:04:07] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[01:04:07] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[01:04:07] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[01:04:07] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fHello World
-[01:04:07] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[01:04:07] [Thread-17/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[01:04:07] [Server thread/INFO]: [Player703: ブロックを設置しました]
-[01:04:07] [Server thread/INFO]: [Player703: ブロックを設置しました]
-[01:04:07] [Server thread/INFO]: [Player703: ブロックを設置しました]
-[01:04:07] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[01:04:07] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[01:04:07] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[01:04:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
-[01:04:09] [Server thread/INFO]: [Player703: ブロックを設置しました]
-[01:04:09] [Server thread/INFO]: [Player703: ブロックを設置しました]
-[01:04:09] [Server thread/INFO]: [Player703: ブロックを設置しました]
-[01:04:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[01:04:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[01:04:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[01:05:02] [Server thread/INFO]: Saving and pausing game...
-[01:05:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[01:05:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[01:05:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[01:05:03] [Client thread/INFO]: Stopping!
-[01:05:03] [Client thread/INFO]: SoundSystem shutting down...
-[01:05:03] [Server thread/INFO]: Stopping server
-[01:05:03] [Server thread/INFO]: Saving players
-[01:05:03] [Server thread/INFO]: Saving worlds
-[01:05:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[01:05:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[01:05:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[01:05:03] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[02:17:39] [Client thread/INFO]: Setting user: Player703
+[02:17:39] [Client thread/INFO]: (Session ID is token:0:Player703)
+[02:17:41] [Client thread/INFO]: LWJGL Version: 2.9.4
+[02:17:41] [Client thread/INFO]: Reloading ResourceManager: Default
+[02:17:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:17:42] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[02:17:42] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:17:42] [Thread-8/INFO]: OpenAL initialized.
+[02:17:42] [Sound Library Loader/INFO]: Sound engine started
+[02:17:47] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[02:18:09] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[02:18:09] [Server thread/INFO]: Generating keypair
+[02:18:10] [Server thread/INFO]: Preparing start region for level 0
+[02:18:11] [Server thread/INFO]: Changing view distance to 8, from 10
+[02:18:11] [Server thread/INFO]: Player703[local:E:f37361b4] logged in with entity id 283 at (999.1348638478138, 105.59089732701169, 996.9561182826056)
+[02:18:11] [Server thread/INFO]: Player703 がゲームに参加しました
+[02:18:11] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[02:18:19] [Thread-17/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:18:19] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[02:25:16] [Client thread/INFO]: Stopping!
+[02:25:16] [Client thread/INFO]: SoundSystem shutting down...
+[02:25:16] [Server thread/INFO]: Stopping server
+[02:25:16] [Server thread/INFO]: Saving players
+[02:25:16] [Server thread/INFO]: Saving worlds
+[02:25:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[02:25:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[02:25:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[02:25:16] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

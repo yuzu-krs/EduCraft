@@ -355,13 +355,14 @@ public class Run extends Module {
             String defineAir = "#define AIR \"air\"\n";
             
             // setBlockReplaceの第4引数をAIRに変更
-            // \\s* 前後の空白などを除去 Replace(100 , 199, 299,... ) 0文字以上の文字
-            // (\\d+) 置換部分のためカッコ 1文字以上の数字
-            // [^,] カンマまでの任意の文字列にマッチ
-            // 第5引数は置換せず0とするだけなので()いらず
+            // 第1～3([^,]+) //()置換するため //[^,]でカンマ以外が + 1文字以上繰り返されている 
+            // 第4 , STONE,STONE , など前後の空白文字にマッチ
+            // 第5 引数前後の空白を除去,数字が1文字以上
             String updatedContent = content.replaceAll(
-            	    "setBlockReplace\\(\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*[^,]+\\s*,\\s*\\d+\\s*\\)", 
-            	    "setBlockReplace($1, $2, $3, AIR, 0)"
+            		
+			    "setBlockReplace\\(([^,]+),([^,]+),([^,]+),\\s*[^,]+\\s*,\\s*\\d+\\s*\\)", 
+			    "setBlockReplace($1, $2, $3, AIR, 0)"
+            		
         	);
             
             // 整形後の内容を再度ファイルに書き込む

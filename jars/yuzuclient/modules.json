@@ -30,7 +30,7 @@
     "enabled": false
   },
   "SetBlock関数": {
-    "enabled": false
+    "enabled": true
   },
   "Summon関数": {
     "enabled": false
