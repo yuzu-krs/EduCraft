@@ -1,0 +1,8 @@
+package me.gamrboy4life.paradox.analysis;
+
+public class formatCCode {
+	public void formatCCode() {
+		
+	}
+	
+}

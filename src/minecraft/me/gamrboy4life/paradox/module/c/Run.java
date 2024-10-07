@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.concurrent.TimeUnit;
 
 import org.lwjgl.input.Keyboard;
@@ -275,6 +278,11 @@ public class Run extends Module {
 		    	            // ファイルのコピー
 		    	            java.nio.file.Files.copy(sourceFile.toPath(), destFile.toPath(),
 		    	                java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+		    	            
+		    	            
+		    	            //コピーしたmain.cのフォーマットを行う
+		    	            formatCCode();
+		    	            
 		    				
 		    	            Sotuken.instance.moduleManager.addChatMessage("Undoディレクトリにログが保存されました");
 		    				
@@ -331,4 +339,45 @@ public class Run extends Module {
         super.onDisable();
         hasToggled = false; 
     }
+    
+    
+    // Undo/main.cを整形する
+    public void formatCCode() {
+        // 対象のファイル
+        String filePath = "C:/EduCraft/Undo/main.c";
+
+        try {
+
+            // ファイルの内容をすべて読み込む
+            String content = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
+            
+            // #define AIR "air" をファイルの最初に追加
+            String defineAir = "#define AIR \"air\"\n";
+            
+            // setBlockReplaceの第4引数をAIRに変更
+            // \\s* 前後の空白などを除去 Replace(100 , 199, 299,... ) 0文字以上の文字
+            // (\\d+) 置換部分のためカッコ 1文字以上の数字
+            // [^,] カンマまでの任意の文字列にマッチ
+            // 第5引数は置換せず0とするだけなので()いらず
+            String updatedContent = content.replaceAll(
+            	    "setBlockReplace\\(\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*[^,]+\\s*,\\s*\\d+\\s*\\)", 
+            	    "setBlockReplace($1, $2, $3, AIR, 0)"
+        	);
+            
+            // 整形後の内容を再度ファイルに書き込む
+            Files.write(Paths.get(filePath), (defineAir + updatedContent).getBytes(StandardCharsets.UTF_8), StandardOpenOption.WRITE);
+          
+            // 成功メッセージを表示
+            Sotuken.instance.moduleManager.addChatMessage("main.c の整形が完了しました");
+
+        } catch (IOException e) {
+            Sotuken.instance.moduleManager.addErrChatMessage("ファイルの整形中にエラーが発生しました: " + e.getMessage());
+            e.printStackTrace();
+    		Minecraft.getMinecraft().getSoundHandler().playSound(
+    			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+			);
+        }
+    }
+    
+    
 }
