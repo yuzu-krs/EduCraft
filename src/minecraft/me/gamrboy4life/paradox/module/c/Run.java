@@ -5,9 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.concurrent.TimeUnit;
 
 import org.lwjgl.input.Keyboard;
@@ -280,8 +277,6 @@ public class Run extends Module {
 		    	                java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 		    	            
 		    	            
-		    	            //コピーしたmain.cのフォーマットを行う
-		    	            formatCCode();
 		    	            
 		    				
 		    	            Sotuken.instance.moduleManager.addChatMessage("Undoディレクトリにログが保存されました");
@@ -341,42 +336,5 @@ public class Run extends Module {
     }
     
     
-    // Undo/main.cを整形する
-    public void formatCCode() {
-        // 対象のファイル
-        String filePath = "C:/EduCraft/Undo/main.c";
 
-        try {
-
-            // ファイルの内容をすべて読み込む
-            String content = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
-            
-            // #define AIR "air" をファイルの最初に追加
-            String defineAir = "#define AIR \"air\"\n";
-            
-            // setBlockReplaceの第4引数をAIRに変更
-            // 第1～3([^,]+) //()置換するため //[^,]でカンマ以外が + 1文字以上繰り返されている 
-            // 第4 , STONE,STONE , など前後の空白文字にマッチ
-            // 第5 引数前後の空白を除去,数字が1文字以上
-            String updatedContent = content.replaceAll(
-            		
-			    "setBlockReplace\\(([^,]+),([^,]+),([^,]+),\\s*[^,]+\\s*,\\s*\\d+\\s*\\)", 
-			    "setBlockReplace($1, $2, $3, AIR, 0)"
-            		
-        	);
-            
-            // 整形後の内容を再度ファイルに書き込む
-            Files.write(Paths.get(filePath), (defineAir + updatedContent).getBytes(StandardCharsets.UTF_8), StandardOpenOption.WRITE);
-          
-            // 成功メッセージを表示
-            //Sotuken.instance.moduleManager.addChatMessage("main.c の整形が完了しました");
-
-        } catch (IOException e) {
-            Sotuken.instance.moduleManager.addErrChatMessage("ファイルの整形中にエラーが発生しました: " + e.getMessage());
-            e.printStackTrace();
-    		Minecraft.getMinecraft().getSoundHandler().playSound(
-    			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
-			);
-        }
-    }
 }

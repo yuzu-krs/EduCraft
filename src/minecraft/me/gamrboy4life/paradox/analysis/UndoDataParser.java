@@ -30,13 +30,13 @@ public class UndoDataParser {
 				int x=Integer.parseInt(parts[1]);
 				int y=Integer.parseInt(parts[2]);
 				int z=Integer.parseInt(parts[3]);
-				String blockName=parts[4];
-				int blockInfo=Integer.parseInt(parts[5]);
+				//String blockName=parts[4];
+				//int blockInfo=Integer.parseInt(parts[5]);
 				
 				//setblockコマンドをマイクラのチャットに送信
 				Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
                     new C01PacketChatMessage(
-                    		String.format("/setblock %d %d %d %s %d replace",x,y,z,blockName,blockInfo)
+                    		String.format("/setblock %d %d %d air 0 replace",x,y,z)
                     )
 				);
 			}else {
