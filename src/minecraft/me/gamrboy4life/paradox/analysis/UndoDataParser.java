@@ -194,7 +194,7 @@ public class UndoDataParser {
 	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
 	                new C01PacketChatMessage(
 	                        String.format("/fill %d %d %d %d %d %d %s %d replace %s %d", 
-	                        x1, y1, z1, x2, y2, z2, blockName1, blockInfo1,blockName2,blockInfo2)
+	                        x1, y1, z1, x2, y2, z2,blockName2,blockInfo2,blockName1, blockInfo1)
 	                )
 	            );
 	        } else {
