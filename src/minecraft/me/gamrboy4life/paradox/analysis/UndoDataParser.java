@@ -10,8 +10,15 @@ public class UndoDataParser {
 		
 		if(isSetBlockReplace(data)) {
 			executeSetBlockReplace(data);
+			
+		}else if(isSetBlockKeep(data)) {
+			executeSetBlockKeep(data);
+			
 		}else if(isSetBlockDestroy(data)) {
 			executeSetBlockDestroy(data);
+			
+			
+			
 		}else if(isFillReplace(data)) {
 			executeFillReplace(data);
 		
@@ -56,6 +63,37 @@ public class UndoDataParser {
 	
 	
 	
+	private boolean isSetBlockKeep(String line) {
+		return line.startsWith("999999998,");
+	}
+	
+	
+	private void executeSetBlockKeep(String line) {
+		try {
+			//lineをカンマで分割
+			String[] parts=line.split(",");
+			//6パーツあるか
+			if(parts.length==6) {
+				int x=Integer.parseInt(parts[1]);
+				int y=Integer.parseInt(parts[2]);
+				int z=Integer.parseInt(parts[3]);
+				String blockName=parts[4];
+				int blockInfo=Integer.parseInt(parts[5]);
+				
+				//setblockコマンドをマイクラのチャットに送信
+				Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+                    new C01PacketChatMessage(
+                    		String.format("/fill %d %d %d %d %d %d air 0 replace %s %d"
+                    				,x,y,z,x,y,z,blockName,blockInfo)
+                    )
+				);
+			}else {
+				Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockKeep関数の形式が違います");
+			}
+		}catch (NumberFormatException e) {
+			Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockKeep関数解析: "+e.getMessage());
+		}
+	}	
 	
 	
 	

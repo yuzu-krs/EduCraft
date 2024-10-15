@@ -1,91 +1,637 @@
-[19:48:34] [Client thread/INFO]: Setting user: Player78
-[19:48:34] [Client thread/INFO]: (Session ID is token:0:Player78)
-[19:48:35] [Client thread/INFO]: LWJGL Version: 2.9.4
-[19:48:36] [Client thread/INFO]: Reloading ResourceManager: Default
-[19:48:36] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[19:48:36] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[19:48:36] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[19:48:36] [Thread-8/INFO]: OpenAL initialized.
-[19:48:37] [Sound Library Loader/INFO]: Sound engine started
-[19:48:42] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[19:48:53] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[19:48:53] [Server thread/INFO]: Generating keypair
-[19:48:53] [Server thread/INFO]: Preparing start region for level 0
-[19:48:54] [Server thread/INFO]: Changing view distance to 8, from 10
-[19:48:54] [Server thread/INFO]: Player78[local:E:13185850] logged in with entity id 283 at (551.2815188686704, 60.015555072702206, 1061.2954345666753)
-[19:48:54] [Server thread/INFO]: Player78 がゲームに参加しました
-[19:48:55] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[19:49:41] [Server thread/INFO]: Saving and pausing game...
-[19:49:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[19:49:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[19:49:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[19:50:17] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
-[19:50:22] [Server thread/INFO]: Saving and pausing game...
-[19:50:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[19:50:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[19:50:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[19:50:58] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
-[19:50:59] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
-[19:50:59] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
-[19:51:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10548ms behind, skipping 210 tick(s)
-[19:51:35] [Server thread/INFO]: [Player78: 現在時刻を1000に設定]
-[19:51:35] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
-[19:51:41] [Server thread/INFO]: [Player78: 天気を晴れに変更します]
-[19:51:41] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
-[19:54:02] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[19:54:02] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[19:54:02] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f立方体の作成が完了しました
-[19:54:02] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[19:54:02] [Thread-17/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[19:54:02] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[19:54:02] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[19:55:26] [Thread-19/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
-[19:55:26] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[19:55:26] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[19:58:01] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[19:58:01] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
-[19:58:01] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f立方体の作成が完了しました
-[19:58:01] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[19:58:01] [Thread-21/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[19:58:01] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[19:58:01] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[20:00:20] [Server thread/INFO]: Saving and pausing game...
-[20:00:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:00:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:00:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:06:59] [Thread-23/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
-[20:06:59] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[20:06:59] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[20:07:01] [Thread-25/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[20:07:02] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
-[20:07:02] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f立方体の作成が完了しました
-[20:07:02] [Thread-25/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[20:07:02] [Thread-25/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[20:07:02] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[20:07:02] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[20:07:04] [Thread-27/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
-[20:07:04] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[20:07:04] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[20:07:31] [Thread-29/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[20:07:31] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f
-[20:07:31] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f立方体の作成が完了しました
-[20:07:31] [Thread-29/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[20:07:31] [Thread-29/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[20:07:31] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[20:07:31] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[20:07:32] [Thread-31/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
-[20:07:32] [Server thread/INFO]: [Player78: ブロックを設置しました]
-[20:07:32] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[20:07:55] [Server thread/INFO]: Saving and pausing game...
-[20:07:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:07:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:07:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:07:57] [Client thread/INFO]: Stopping!
-[20:07:57] [Client thread/INFO]: SoundSystem shutting down...
-[20:07:57] [Server thread/INFO]: Stopping server
-[20:07:57] [Server thread/INFO]: Saving players
-[20:07:57] [Server thread/INFO]: Saving worlds
-[20:07:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:07:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:07:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:07:57] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:56:32] [Client thread/INFO]: Setting user: Player203
+[20:56:32] [Client thread/INFO]: (Session ID is token:0:Player203)
+[20:56:33] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:56:33] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:56:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:56:34] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[20:56:34] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:56:35] [Thread-8/INFO]: OpenAL initialized.
+[20:56:35] [Sound Library Loader/INFO]: Sound engine started
+[20:56:39] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[20:56:44] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[20:56:44] [Server thread/INFO]: Generating keypair
+[20:56:45] [Server thread/INFO]: Preparing start region for level 0
+[20:56:45] [Server thread/INFO]: Changing view distance to 8, from 10
+[20:56:46] [Server thread/INFO]: Player203[local:E:6b7f7490] logged in with entity id 283 at (544.9424354592227, 80.0, 1113.279570865199)
+[20:56:46] [Server thread/INFO]: Player203 がゲームに参加しました
+[20:56:46] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[20:56:49] [Server thread/INFO]: Saving and pausing game...
+[20:56:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[20:56:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[20:56:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[20:59:22] [Client thread/INFO]: Stopping!
+[20:59:22] [Client thread/INFO]: SoundSystem shutting down...
+[20:59:23] [Server thread/INFO]: Stopping server
+[20:59:23] [Server thread/INFO]: Saving players
+[20:59:23] [Server thread/INFO]: Saving worlds
+[20:59:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[20:59:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[20:59:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[20:59:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:59:29] [Client thread/INFO]: Setting user: Player546
+[20:59:29] [Client thread/INFO]: (Session ID is token:0:Player546)
+[20:59:30] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:59:31] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:59:31] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:59:32] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[20:59:32] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:59:32] [Thread-7/INFO]: OpenAL initialized.
+[20:59:32] [Sound Library Loader/INFO]: Sound engine started
+[20:59:40] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[21:00:22] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[21:00:22] [Server thread/INFO]: Generating keypair
+[21:00:22] [Server thread/INFO]: Preparing start region for level 0
+[21:00:23] [Server thread/INFO]: Preparing spawn area: 74%
+[21:00:23] [Server thread/INFO]: Changing view distance to 8, from 10
+[21:00:24] [Server thread/INFO]: Player546[local:E:8acad1d3] logged in with entity id 283 at (544.9424354592227, 80.0, 1113.279570865199)
+[21:00:24] [Server thread/INFO]: Player546 がゲームに参加しました
+[21:00:24] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[21:00:40] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
+[21:01:08] [Server thread/INFO]: [Player546: 現在時刻を1000に設定]
+[21:01:08] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[21:01:11] [Thread-16/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:01:11] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §f
+[21:01:11] [Thread-16/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:01:11] [Thread-16/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:01:11] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:01:11] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:01:15] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:01:15] [Thread-18/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:01:15] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:01:20] [Server thread/INFO]: Saving and pausing game...
+[21:01:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:01:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:01:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:01:36] [Thread-20/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:01:36] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §f
+[21:01:36] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:01:36] [Thread-20/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:01:36] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:01:36] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:01:39] [Thread-22/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:01:39] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §f
+[21:01:39] [Thread-22/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:01:40] [Thread-22/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:01:40] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:01:46] [Thread-24/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:01:46] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:01:55] [Thread-26/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:01:55] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:02:06] [Thread-28/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:02:06] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:06] [Thread-28/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:02:06] [Thread-28/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:02:06] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:02:06] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:02:08] [Thread-30/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:02:08] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:08] [Thread-30/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:02:08] [Thread-30/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:02:08] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:02:10] [Thread-32/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:02:10] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:02:10] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:02:47] [Server thread/INFO]: [Player546: 天気を晴れに変更します]
+[21:02:47] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[21:02:50] [Thread-34/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:02:50] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:50] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:50] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:50] [Thread-34/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:02:50] [Thread-34/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:02:50] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:02:50] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:02:50] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:02:50] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:02:54] [Thread-36/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:02:54] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:54] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:54] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[21:02:54] [Thread-36/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:02:54] [Thread-36/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:02:54] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:02:54] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:02:54] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:02:54] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:02:54] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:03:03] [Thread-38/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:03:04] [Thread-39/INFO]: [CHAT] §eEduCraft§7: §f
+[21:03:04] [Thread-39/INFO]: [CHAT] §eEduCraft§7: §f
+[21:03:04] [Thread-39/INFO]: [CHAT] §eEduCraft§7: §f
+[21:03:04] [Thread-38/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:03:04] [Thread-38/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:03:04] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:03:04] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:03:04] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:03:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:03:04] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:03:07] [Thread-40/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:03:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:03:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:03:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:03:07] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:03:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:04:06] [Thread-42/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:04:06] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[21:04:06] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[21:04:06] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[21:04:06] [Thread-42/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:04:06] [Thread-42/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:04:06] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:04:06] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:04:06] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:04:06] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:04:06] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:04:06] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:11:49] [Server thread/INFO]: Saving and pausing game...
+[21:11:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:11:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:11:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:12:44] [Client thread/INFO]: [CHAT] 未知のコマンドです。/help でコマンドの一覧を確認してください
+[21:12:48] [Client thread/INFO]: [CHAT] 未知のコマンドです。/help でコマンドの一覧を確認してください
+[21:12:54] [Server thread/INFO]: [Player546: 現在時刻を1000に設定]
+[21:12:54] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[21:12:57] [Server thread/INFO]: Saving and pausing game...
+[21:12:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:12:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:12:57] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:13:08] [Thread-44/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:13:09] [Thread-45/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:09] [Thread-45/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:09] [Thread-45/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:09] [Thread-45/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:09] [Thread-44/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:13:09] [Thread-44/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:13:09] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:13:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:09] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:13:21] [Thread-46/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:13:21] [Thread-47/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:21] [Thread-47/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:21] [Thread-47/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:21] [Thread-47/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:21] [Thread-46/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:13:21] [Thread-46/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:13:21] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:21] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:21] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:21] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:26] [Thread-48/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:13:26] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:13:26] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:13:26] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:26] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:13:26] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:26] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:13:28] [Thread-50/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:13:28] [Thread-51/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:28] [Thread-51/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:28] [Thread-51/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:28] [Thread-51/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:28] [Thread-50/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:13:28] [Thread-50/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:13:28] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:13:28] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:13:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:28] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:13:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:28] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:13:32] [Thread-52/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:13:32] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:13:32] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:13:32] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:32] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:13:32] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:32] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:13:40] [Thread-54/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:13:41] [Thread-55/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:41] [Thread-55/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:41] [Thread-55/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:41] [Thread-55/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:41] [Thread-54/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:13:41] [Thread-54/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:13:41] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:13:41] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:41] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:41] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:41] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:13:45] [Thread-56/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:13:45] [Thread-57/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:45] [Thread-57/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:45] [Thread-57/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:45] [Thread-57/INFO]: [CHAT] §eEduCraft§7: §f
+[21:13:45] [Thread-56/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:13:45] [Thread-56/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:13:45] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:45] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:45] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:45] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:13:48] [Thread-58/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:13:48] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:13:48] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:48] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:48] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:13:48] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:13:59] [Server thread/INFO]: Saving and pausing game...
+[21:13:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:13:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:13:59] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:14:52] [Thread-60/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-61/INFO]: [CHAT] §eEduCraft§7: §f
+[21:14:52] [Thread-60/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:14:52] [Thread-60/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:52] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:14:53] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:14:53] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:15:00] [Thread-62/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-63/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:00] [Thread-62/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:15:00] [Thread-62/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:00] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Thread-64/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-65/INFO]: [CHAT] §eEduCraft§7: §f
+[21:15:04] [Thread-64/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:15:04] [Thread-64/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:15:04] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:04] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:15:07] [Thread-66/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:15:07] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:18:16] [Thread-68/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-69/INFO]: [CHAT] §eEduCraft§7: §f
+[21:18:17] [Thread-68/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[21:18:17] [Thread-68/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Server thread/INFO]: [Player546: ブロックを設置しました]
+[21:18:17] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[21:18:22] [Server thread/INFO]: [Player546: 天気を晴れに変更します]
+[21:18:23] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[21:19:22] [Server thread/INFO]: Saving and pausing game...
+[21:19:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:19:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:19:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:20:18] [Thread-70/INFO]: [CHAT] §eEduCraft§7: Undoの実行に成功しました
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Server thread/INFO]: [Player546: 1 個のブロックで満たしました]
+[21:20:18] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] ブロックを設置できません
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:18] [Client thread/INFO]: [CHAT] 1 個のブロックで満たしました
+[21:20:21] [Server thread/INFO]: Saving and pausing game...
+[21:20:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:20:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:20:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:20:28] [Server thread/INFO]: Saving and pausing game...
+[21:20:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:20:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:20:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:22:20] [Client thread/INFO]: Stopping!
+[21:22:20] [Client thread/INFO]: SoundSystem shutting down...
+[21:22:20] [Server thread/INFO]: Stopping server
+[21:22:20] [Server thread/INFO]: Saving players
+[21:22:20] [Server thread/INFO]: Saving worlds
+[21:22:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:22:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:22:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:22:20] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
