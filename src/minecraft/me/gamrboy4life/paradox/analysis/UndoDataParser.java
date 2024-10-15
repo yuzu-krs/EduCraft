@@ -10,6 +10,8 @@ public class UndoDataParser {
 		
 		if(isSetBlockReplace(data)) {
 			executeSetBlockReplace(data);
+		}else if(isSetBlockDestroy(data)) {
+			executeSetBlockDestroy(data);
 		}else if(isFillReplace(data)) {
 			executeFillReplace(data);
 		
@@ -51,6 +53,48 @@ public class UndoDataParser {
 			Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockReplace関数解析: "+e.getMessage());
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	private boolean isSetBlockDestroy(String line) {
+		return line.startsWith("999999997,");
+	}
+	
+	
+	private void executeSetBlockDestroy(String line) {
+		try {
+			//lineをカンマで分割
+			String[] parts=line.split(",");
+			//6パーツあるか
+			if(parts.length==6) {
+				int x=Integer.parseInt(parts[1]);
+				int y=Integer.parseInt(parts[2]);
+				int z=Integer.parseInt(parts[3]);
+				//String blockName=parts[4];
+				//int blockInfo=Integer.parseInt(parts[5]);
+				
+				//setblockコマンドをマイクラのチャットに送信
+				Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+                    new C01PacketChatMessage(
+                    		String.format("/setblock %d %d %d air 0 destroy",x,y,z)
+                    )
+				);
+			}else {
+				Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockDestroy関数の形式が違います");
+			}
+		}catch (NumberFormatException e) {
+			Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:setBlockDestroy関数解析: "+e.getMessage());
+		}
+	}
+	
+	
+	
+	
 	
 	private boolean isFillReplace(String line) {
 		return line.startsWith("999999992,");
