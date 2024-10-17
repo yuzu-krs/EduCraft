@@ -245,12 +245,18 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="__LbT0IwqEe-_1-4jM58MBg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UndoDataParser.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UndoDataParser.java&quot; partName=&quot;UndoDataParser.java&quot; title=&quot;UndoDataParser.java&quot; tooltip=&quot;Client/src/me/gamrboy4life/paradox/analysis/UndoDataParser.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Client/src/me/gamrboy4life/paradox/analysis/UndoDataParser.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;10170&quot; selectionTopPixel=&quot;8108&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UndoDataParser.java&quot; partName=&quot;UndoDataParser.java&quot; title=&quot;UndoDataParser.java&quot; tooltip=&quot;Client/src/me/gamrboy4life/paradox/analysis/UndoDataParser.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Client/src/me/gamrboy4life/paradox/analysis/UndoDataParser.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;11570&quot; selectionTopPixel=&quot;9269&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_0pofgIxrEe-OcNGv8F7cJQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DataParser.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DataParser.java&quot; partName=&quot;DataParser.java&quot; title=&quot;DataParser.java&quot; tooltip=&quot;Client/src/me/gamrboy4life/paradox/analysis/DataParser.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Client/src/me/gamrboy4life/paradox/analysis/DataParser.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;93&quot; selectionOffset=&quot;5484&quot; selectionTopPixel=&quot;5427&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
       </children>
     </sharedElements>
@@ -478,7 +484,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPNmI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_pboHEIxMEe-9I7oAeuGn-g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_3Lw_AmI0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hNLG0IxrEe-OcNGv8F7cJQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_3Lw_AmI0Ee-owMgxeGUejA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPQ2I0Ee-owMgxeGUejA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -486,8 +492,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPRWI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_pbouIIxMEe-9I7oAeuGn-g" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="&#x5143;&#x306b;&#x623b;&#x3059;" enabled="false" command="_3Lw8x2I0Ee-owMgxeGUejA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_pbpVMIxMEe-9I7oAeuGn-g" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="&#x3084;&#x308a;&#x76f4;&#x3057;" enabled="false" command="_3Lw9cGI0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hNOxMIxrEe-OcNGv8F7cJQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="&#x5143;&#x306b;&#x623b;&#x3059;" enabled="false" command="_3Lw8x2I0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hNPYQIxrEe-OcNGv8F7cJQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="&#x3084;&#x308a;&#x76f4;&#x3057;" enabled="false" command="_3Lw9cGI0Ee-owMgxeGUejA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPSWI0Ee-owMgxeGUejA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -514,7 +520,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPm2I0Ee-owMgxeGUejA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_pbpVNoxMEe-9I7oAeuGn-g" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_3Lw-pGI0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hNPYRoxrEe-OcNGv8F7cJQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_3Lw-pGI0Ee-owMgxeGUejA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3Lq2JmI0Ee-owMgxeGUejA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
