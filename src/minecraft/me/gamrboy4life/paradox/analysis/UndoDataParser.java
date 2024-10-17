@@ -41,13 +41,58 @@ public class UndoDataParser {
 			
 		}else if(isCloneReplaceNormal(data)) {
 			executeCloneReplaceNormal(data);
-			
+		}else if(isCloneReplaceForce(data)) {
+			executeCloneReplaceForce(data);
 			
 		}else {
 			//Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
 	
 	}
+	
+	
+	private boolean isCloneReplaceForce(String line) {
+		return line.startsWith("999999988,");
+	}
+	
+	private void executeCloneReplaceForce(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 10) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+
+	            int dx=Math.abs(x2-x1);
+	            int dy=Math.abs(y2-y1);
+	            int dz=Math.abs(z2-z1);
+	            
+	            int newX=x+dx;
+	            int newY=y+dy;
+	            int newZ=z+dz;
+	            		
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/fill %d %d %d %d %d %d air 0", 
+	                        x,y,z,newX,newY,newZ)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceForce関数の形式が違います");
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneReplaceForce関数解析: " + e.getMessage());
+	    }
+	}
+	
 	
 	
 	
