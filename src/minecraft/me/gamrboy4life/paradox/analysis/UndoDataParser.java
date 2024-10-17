@@ -32,7 +32,8 @@ public class UndoDataParser {
 		}else if(isFillKeep(data)) {
 			executeFillKeep(data);
 			
-			
+		}else if(isFillHollow(data)) {
+			executeFillHollow(data);
 			
 		}else {
 			//Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
@@ -283,6 +284,42 @@ public class UndoDataParser {
 		        }
 		    } catch (NumberFormatException e) {
 		        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillKeep関数解析: " + e.getMessage());
+		    }
+		}
+		
+		
+		
+		private boolean isFillHollow(String line) {
+			return line.startsWith("999999994,");
+		}
+		
+		private void executeFillHollow(String line) {
+			try {
+		        // lineをカンマで分割
+		        String[] parts = line.split(",");
+		        // 9パーツあるか
+		        if (parts.length == 9) {
+		            int x1 = Integer.parseInt(parts[1]);
+		            int y1 = Integer.parseInt(parts[2]);
+		            int z1 = Integer.parseInt(parts[3]);
+		            int x2 = Integer.parseInt(parts[4]);
+		            int y2 = Integer.parseInt(parts[5]);
+		            int z2 = Integer.parseInt(parts[6]);
+		            //String blockName = parts[7];
+		            //int blockInfo = Integer.parseInt(parts[8]);
+
+		            // fillコマンドをマイクラのチャットに送信
+		            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+		                new C01PacketChatMessage(
+		                        String.format("/fill %d %d %d %d %d %d air 0 hollow", 
+		                        x1, y1, z1, x2, y2, z2)
+		                )
+		            );
+		        } else {
+		            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillHollow関数の形式が違います");
+		        }
+		    } catch (NumberFormatException e) {
+		        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:fillHollow関数解析: " + e.getMessage());
 		    }
 		}
 		
