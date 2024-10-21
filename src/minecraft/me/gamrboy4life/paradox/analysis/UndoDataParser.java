@@ -56,11 +56,174 @@ public class UndoDataParser {
 			
 		}else if(isCloneMaskedMove(data)) {
 			executeCloneMaskedMove(data);
+			
+			
+			
+		}else if(isCloneFilteredNormal(data)) {
+			executeCloneFilteredNormal(data);
+			
+		}else if(isCloneFilteredForce(data)) {
+			executeCloneFilteredForce(data);
+			
+		}else if(isCloneFilteredMove(data)) {
+			executeCloneFilteredMove(data);
+			
+			
 		}else {
 			//Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
 	
 	}
+	
+	
+	
+	private boolean isCloneFilteredNormal(String line) {
+		return line.startsWith("999999983,");
+	}
+	
+	private boolean isCloneFilteredForce(String line) {
+		return line.startsWith("999999982,");
+	}
+	
+	private boolean isCloneFilteredMove(String line) {
+		return line.startsWith("999999981,");
+	}
+	
+	
+	
+	private void executeCloneFilteredNormal(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 12) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	            String blockName = parts[10];
+	            int blockInfo = Integer.parseInt(parts[11]);
+	            
+	            int dx=Math.abs(x2-x1);
+	            int dy=Math.abs(y2-y1);
+	            int dz=Math.abs(z2-z1);
+	            
+	            int newX=x+dx;
+	            int newY=y+dy;
+	            int newZ=z+dz;
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/fill %d %d %d %d %d %d air 0 replace %s %d", 
+	                        x,y,z,newX,newY,newZ,blockName,blockInfo)
+	                )
+	            );
+
+	        } else {
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredNormal関数の形式が違います");
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredNormal関数解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneFilteredForce(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 12) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	            String blockName = parts[10];
+	            int blockInfo = Integer.parseInt(parts[11]);
+
+	            int dx=Math.abs(x2-x1);
+	            int dy=Math.abs(y2-y1);
+	            int dz=Math.abs(z2-z1);
+	            
+	            int newX=x+dx;
+	            int newY=y+dy;
+	            int newZ=z+dz;
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/fill %d %d %d %d %d %d air 0 replace %s %d", 
+	                        x,y,z,newX,newY,newZ,blockName,blockInfo)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredForce関数の形式が違います");
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredForce関数解析: " + e.getMessage());
+	    }
+	}
+	
+	private void executeCloneFilteredMove(String line) {
+		try {
+	        // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 12) {
+	            int x1 = Integer.parseInt(parts[1]);
+	            int y1 = Integer.parseInt(parts[2]);
+	            int z1 = Integer.parseInt(parts[3]);
+	            int x2 = Integer.parseInt(parts[4]);
+	            int y2 = Integer.parseInt(parts[5]);
+	            int z2 = Integer.parseInt(parts[6]);
+	            int x = Integer.parseInt(parts[7]);
+	            int y = Integer.parseInt(parts[8]);
+	            int z = Integer.parseInt(parts[9]);
+	            String blockName = parts[10];
+	            int blockInfo = Integer.parseInt(parts[11]);
+
+	            int dx=Math.abs(x2-x1);
+	            int dy=Math.abs(y2-y1);
+	            int dz=Math.abs(z2-z1);
+	            
+	            int newX=x+dx;
+	            int newY=y+dy;
+	            int newZ=z+dz;
+	            
+	            int minX = Math.min(x1, x2);
+	            int minY = Math.min(y1, y2);
+	            int minZ = Math.min(z1, z2);
+
+	            Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+	                new C01PacketChatMessage(
+	                        String.format("/clone %d %d %d %d %d %d %d %d %d filtered move %s %d", 
+	                        x,y,z,newX,newY,newZ,minX,minY,minZ,blockName,blockInfo)
+	                )
+	            );
+	        } else {
+	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredMove関数の形式が違います");
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:cloneFilteredMove関数解析: " + e.getMessage());
+	    }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	private boolean isCloneMaskedNormal(String line) {
