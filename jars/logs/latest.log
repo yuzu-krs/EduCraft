@@ -1,56 +1,258 @@
-[02:34:56] [Client thread/INFO]: Setting user: Player265
-[02:34:56] [Client thread/INFO]: (Session ID is token:0:Player265)
-[02:34:57] [Client thread/INFO]: LWJGL Version: 2.9.4
-[02:34:58] [Client thread/INFO]: Reloading ResourceManager: Default
-[02:34:58] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[02:34:58] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[02:34:58] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[02:34:58] [Thread-8/INFO]: OpenAL initialized.
-[02:34:59] [Sound Library Loader/INFO]: Sound engine started
-[02:35:03] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[02:35:07] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[02:35:07] [Server thread/INFO]: Generating keypair
-[02:35:07] [Server thread/INFO]: Preparing start region for level 0
-[02:35:08] [Server thread/INFO]: Changing view distance to 8, from 10
-[02:35:08] [Server thread/INFO]: Player265[local:E:c06d751a] logged in with entity id 283 at (1.4671117642723037, 104.78502770378924, 2.920447486464767)
-[02:35:08] [Server thread/INFO]: Player265 がゲームに参加しました
-[02:35:09] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[02:35:11] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[02:35:11] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[02:35:11] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §ffalse
-[02:35:11] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[02:35:11] [Thread-17/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[02:35:11] [Client thread/INFO]: [CHAT] 11,104,5のブロックはtile.air.nameです (予想では石)。
-[02:35:16] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[02:35:16] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
-[02:35:16] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §ffalse
-[02:35:16] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[02:35:16] [Thread-19/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[02:35:16] [Client thread/INFO]: [CHAT] 11,104,5のブロックはtile.air.nameです (予想では石)。
-[02:35:20] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[02:35:20] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
-[02:35:20] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §ffalse
-[02:35:20] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[02:35:20] [Thread-21/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[02:35:20] [Server thread/INFO]: [Player265: ブロックは11, 104, 5に見つかりました。]
-[02:35:20] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
-[02:35:22] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[02:35:22] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
-[02:35:22] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §ftrue
-[02:35:22] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[02:35:22] [Thread-23/INFO]: [CHAT] §eEduCraft§7: Undoディレクトリにログが保存されました
-[02:35:22] [Server thread/INFO]: [Player265: ブロックは11, 104, 5に見つかりました。]
-[02:35:22] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
-[02:35:26] [Server thread/INFO]: Saving and pausing game...
-[02:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[02:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[02:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[02:35:26] [Client thread/INFO]: Stopping!
-[02:35:26] [Client thread/INFO]: SoundSystem shutting down...
-[02:35:26] [Server thread/INFO]: Stopping server
-[02:35:26] [Server thread/INFO]: Saving players
-[02:35:26] [Server thread/INFO]: Saving worlds
-[02:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[02:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[02:35:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[02:35:26] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[06:01:15] [Client thread/INFO]: Setting user: Player140
+[06:01:15] [Client thread/INFO]: (Session ID is token:0:Player140)
+[06:01:17] [Client thread/INFO]: LWJGL Version: 2.9.4
+[06:01:17] [Client thread/INFO]: Reloading ResourceManager: Default
+[06:01:18] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[06:01:18] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[06:01:18] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[06:01:18] [Thread-8/INFO]: OpenAL initialized.
+[06:01:19] [Sound Library Loader/INFO]: Sound engine started
+[06:01:25] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[06:01:30] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[06:01:30] [Server thread/INFO]: Generating keypair
+[06:01:30] [Server thread/INFO]: Preparing start region for level 0
+[06:01:31] [Server thread/INFO]: Preparing spawn area: 45%
+[06:01:32] [Server thread/INFO]: Changing view distance to 8, from 10
+[06:01:32] [Server thread/INFO]: Player140[local:E:c31f13f8] logged in with entity id 283 at (-41.38699765832641, 106.0, 17.981228137436382)
+[06:01:32] [Server thread/INFO]: Player140 がゲームに参加しました
+[06:01:33] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[06:01:34] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.util.ConcurrentModificationException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_422]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_422]
+	at net.minecraft.util.Util.func_181617_a(Util.java:20) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1112) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+Caused by: java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1469) ~[?:1.8.0_422]
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1493) ~[?:1.8.0_422]
+	at net.minecraft.util.ClassInheritanceMultiMap.<init>(ClassInheritanceMultiMap.java:27) ~[bin/:?]
+	at net.minecraft.world.chunk.Chunk.<init>(Chunk.java:124) ~[bin/:?]
+	at net.minecraft.client.multiplayer.ChunkProviderClient.loadChunk(ChunkProviderClient.java:69) ~[bin/:?]
+	at net.minecraft.client.multiplayer.WorldClient.doPreChunk(WorldClient.java:160) ~[bin/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleMapChunkBulk(NetHandlerPlayClient.java:1413) ~[bin/:?]
+	at net.minecraft.network.play.server.S26PacketMapChunkBulk.processPacket(S26PacketMapChunkBulk.java:91) ~[bin/:?]
+	at net.minecraft.network.play.server.S26PacketMapChunkBulk.processPacket(S26PacketMapChunkBulk.java:1) ~[bin/:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:15) ~[bin/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_422]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_422]
+	at net.minecraft.util.Util.func_181617_a(Util.java:19) ~[bin/:?]
+	... 4 more
+[06:01:35] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:01:35] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:01:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックは石です (予想では土)。
+[06:01:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックは石です (予想では草ブロック)。
+[06:01:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックは石です (予想では水)。
+[06:01:37] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:01:38] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:38] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:38] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:01:38] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:01:38] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:01:38] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:01:38] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:01:42] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では石)。
+[06:01:42] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では土)。
+[06:01:42] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では草ブロック)。
+[06:01:42] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では水)。
+[06:01:44] [Thread-20/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:01:44] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:44] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:44] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:44] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:44] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[06:01:44] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:01:44] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:01:44] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では石)。
+[06:01:44] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では土)。
+[06:01:44] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では草ブロック)。
+[06:01:44] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では水)。
+[06:01:44] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:01:48] [Server thread/INFO]: Saving and pausing game...
+[06:01:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:01:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:01:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:02:14] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では石)。
+[06:02:14] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では土)。
+[06:02:14] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では草ブロック)。
+[06:02:14] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では水)。
+[06:02:15] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:02:15] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:15] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:15] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:15] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:15] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:15] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:02:15] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:02:15] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では石)。
+[06:02:15] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では土)。
+[06:02:15] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では草ブロック)。
+[06:02:15] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では水)。
+[06:02:15] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:02:27] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:02:27] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では石)。
+[06:02:27] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では土)。
+[06:02:27] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では草ブロック)。
+[06:02:27] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:02:28] [Thread-26/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:02:28] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:28] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:28] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:28] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:28] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:28] [Thread-26/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:02:29] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:02:29] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:02:29] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では石)。
+[06:02:29] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では土)。
+[06:02:29] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では草ブロック)。
+[06:02:29] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:02:29] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:02:33] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では石)。
+[06:02:33] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では土)。
+[06:02:33] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では草ブロック)。
+[06:02:33] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では水)。
+[06:02:34] [Thread-29/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:02:34] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:34] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:34] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:34] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:34] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:34] [Thread-29/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:02:34] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:02:34] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では石)。
+[06:02:34] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では土)。
+[06:02:34] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では草ブロック)。
+[06:02:34] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では水)。
+[06:02:34] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:02:39] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:02:39] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では石)。
+[06:02:39] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では土)。
+[06:02:39] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では草ブロック)。
+[06:02:39] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:02:41] [Thread-32/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:02:41] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:41] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:41] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:41] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:41] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:41] [Thread-32/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:02:41] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:02:41] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:02:41] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では石)。
+[06:02:41] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では土)。
+[06:02:41] [Client thread/INFO]: [CHAT] 11,104,5のブロックは水です (予想では草ブロック)。
+[06:02:41] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:02:41] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:02:51] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では石)。
+[06:02:51] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では土)。
+[06:02:51] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では草ブロック)。
+[06:02:51] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では水)。
+[06:02:52] [Thread-35/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:02:52] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:52] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:52] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:52] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:52] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[06:02:52] [Thread-35/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:02:52] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:02:52] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では石)。
+[06:02:52] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では土)。
+[06:02:52] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では草ブロック)。
+[06:02:52] [Client thread/INFO]: [CHAT] 11,104,5のブロックはガラスです (予想では水)。
+[06:02:52] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:03:31] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:03:31] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では石)。
+[06:03:31] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では土)。
+[06:03:31] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:03:31] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では水)。
+[06:03:32] [Thread-38/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:03:32] [Thread-40/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:32] [Thread-40/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:32] [Thread-40/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:32] [Thread-40/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:32] [Thread-38/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:03:32] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:03:32] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:03:32] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では石)。
+[06:03:32] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では土)。
+[06:03:32] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:03:32] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:03:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では石)。
+[06:03:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では土)。
+[06:03:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では草ブロック)。
+[06:03:35] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では水)。
+[06:03:36] [Thread-41/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:03:37] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:37] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:37] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:37] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:37] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:37] [Thread-41/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:03:37] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:03:37] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では石)。
+[06:03:37] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では土)。
+[06:03:37] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では草ブロック)。
+[06:03:37] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では水)。
+[06:03:37] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:03:42] [Server thread/INFO]: Saving and pausing game...
+[06:03:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:03:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:03:42] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:03:56] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:03:56] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では石)。
+[06:03:56] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では土)。
+[06:03:56] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:03:56] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では水)。
+[06:03:58] [Thread-44/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:03:58] [Thread-46/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:58] [Thread-46/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:58] [Thread-46/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:58] [Thread-46/INFO]: [CHAT] §eEduCraft§7: §f
+[06:03:58] [Thread-44/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:03:58] [Server thread/INFO]: [Player140: ブロックは11, 104, 5に見つかりました。]
+[06:03:58] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:03:58] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では石)。
+[06:03:58] [Client thread/INFO]: [CHAT] 11,104,5のブロックは草ブロックです (予想では土)。
+[06:03:58] [Client thread/INFO]: [CHAT] ブロックは11, 104, 5に見つかりました。
+[06:03:58] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:04:00] [Server thread/INFO]: Saving and pausing game...
+[06:04:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:04:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:04:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:04:16] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では石)。
+[06:04:16] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では土)。
+[06:04:16] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では草ブロック)。
+[06:04:16] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では水)。
+[06:04:17] [Thread-47/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[06:04:17] [Thread-49/INFO]: [CHAT] §eEduCraft§7: §f
+[06:04:17] [Thread-49/INFO]: [CHAT] §eEduCraft§7: §f
+[06:04:17] [Thread-49/INFO]: [CHAT] §eEduCraft§7: §f
+[06:04:17] [Thread-49/INFO]: [CHAT] §eEduCraft§7: §f
+[06:04:17] [Thread-49/INFO]: [CHAT] §eEduCraft§7: §f
+[06:04:17] [Thread-47/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[06:04:17] [Server thread/INFO]: [Player140: ブロックを設置しました]
+[06:04:17] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では石)。
+[06:04:17] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では土)。
+[06:04:17] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では草ブロック)。
+[06:04:17] [Client thread/INFO]: [CHAT] 11,104,5のブロックはTNTです (予想では水)。
+[06:04:17] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[06:04:19] [Server thread/INFO]: Saving and pausing game...
+[06:04:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:04:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:04:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:05:36] [Server thread/INFO]: Saving and pausing game...
+[06:05:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:05:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:05:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:05:37] [Client thread/INFO]: Stopping!
+[06:05:37] [Client thread/INFO]: SoundSystem shutting down...
+[06:05:37] [Server thread/INFO]: Stopping server
+[06:05:37] [Server thread/INFO]: Saving players
+[06:05:37] [Server thread/INFO]: Saving worlds
+[06:05:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[06:05:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[06:05:37] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[06:05:37] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

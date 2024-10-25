@@ -8,12 +8,14 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.lwjgl.input.Keyboard;
 
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.analysis.DataParser;
+import me.gamrboy4life.paradox.analysis.ScanfParser;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
@@ -39,8 +41,24 @@ public class Run extends Module {
         	new Thread(new Runnable() {
 				@Override
 				public void run() {
-					//コンパイルと実行を行う
-					compileAndRunCFile("C:/EduCraft/main.c");
+					
+					
+			        try {
+			            NetHandlerPlayClient.clearBlockFindResults();
+
+			            // testforblockのscanfを用いて入力パターンを取得する
+			            // コンパイルと実行を行う
+			            scanfCompileAndRunCFile("C:/EduCraft/main.c");
+
+			            // 3秒待機
+			            Thread.sleep(1000);
+
+			            // コンパイルと実行を行う
+			            compileAndRunCFile("C:/EduCraft/main.c");
+			        } catch (InterruptedException e) {
+			            // スレッドが中断された場合の処理
+			            e.printStackTrace();
+			        }
 				}
 			}).start();
         
@@ -54,8 +72,270 @@ public class Run extends Module {
             toggled = false;
         }
     }
+    
+    
+    
+    
+    private void scanfCompileAndRunCFile(String filePath) {
+    	try {
+    		
+    		File file=new File(filePath);
+
+    		
+    		//ファイルのディレクトリが存在しない場合は作成する
+    		File parentDir=file.getParentFile();
+    		if(parentDir!=null&&!parentDir.exists()) {
+    			if(parentDir.mkdirs()) {
+    				Sotuken.instance.moduleManager.addChatMessage("ディレクトリを新規作成しました: "+parentDir.getPath());
+    			}else {
+    				Sotuken.instance.moduleManager.addErrChatMessage("ディレクトリの作成に失敗しました: "+parentDir.getPath());
+            		Minecraft.getMinecraft().getSoundHandler().playSound(
+            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+        			);
+    			}
+    		}
+    		
+    		//ファイルが存在しない場合は新規作成
+    		if(!file.exists()) {
+    			if(file.createNewFile()) {
+    				Sotuken.instance.moduleManager.addChatMessage("ファイルを新規作成しました: "+parentDir.getPath());
+    			}else {
+    				Sotuken.instance.moduleManager.addErrChatMessage("ファイルの作成に失敗しました: "+parentDir.getPath());
+            		Minecraft.getMinecraft().getSoundHandler().playSound(
+            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+        			);
+    			}
+    		}
+    		
+    		
+    		
+    		//既存のmain.exeを削除する
+    		File exeFile=new File("C:/EduCraft/main.exe");
+    		if(exeFile.exists()) {
+    			if(exeFile.delete()) {
+    				//Sotuken.instance.moduleManager.addChatMessage("既存のexeファイルを削除しました:");
+    			}else {
+    				//Sotuken.instance.moduleManager.addChatMessage("既存のexeファイルの削除に失敗しました:");    				
+    			}
+    		}
+    		
+    		
+    		
+
+    		/*###########*/
+    		
+    		//コンパイル時の警告を検出するフラグ
+    		boolean hasWarnings = false;
+    		
+    		/*コンパイル*/
+
+    		String gccDir = "C:/EduCraft/bin/gcc";
+    		String minecraftDir = "C:/EduCraft/function_minecraft";
+    		String minecraftFile = "C:/EduCraft/function_minecraft/minecraft.c";
+
+    		ProcessBuilder compileProcessBuilder = new ProcessBuilder(
+    		    gccDir,
+    		    "-I" + minecraftDir,
+    		    filePath,
+    		    minecraftFile,
+    		    "-o",
+    		    "C:/EduCraft/main.exe"
+    		);
+
+    		// エラーを標準出力にリダイレクト
+    		compileProcessBuilder.redirectErrorStream(true);
+
+    		// コンパイルの開始
+    		Process compileProcess = compileProcessBuilder.start();
+
+    		// コンパイルprocessの出力をUTF-8で読み取る
+    		BufferedReader compileReader = new BufferedReader(new InputStreamReader(compileProcess.getInputStream(), StandardCharsets.UTF_8));
+    		String line;
+    		while ((line = compileReader.readLine()) != null) {
+    			
+    		    // "warning"が出力内に含まれていたら、警告があったと判断する
+    		    if(line.toLowerCase().contains("warning")) {
+    		    	hasWarnings=true;
+    		    }
+    			
+    		    // 行が76文字を超える場合は分割して表示
+    		    while (line.length() > 76) {
+    		        Sotuken.instance.moduleManager.addErrChatMessage(line.substring(0, 76));
+    		        line = line.substring(76);
+    		    }
+    		    
+    		    Sotuken.instance.moduleManager.addErrChatMessage(line);
+    		}
+
+    		// コンパイル終了待ち
+    		compileProcess.waitFor();
+
+    		if (compileProcess.exitValue() != 0) {
+    		    
+    		}else if(hasWarnings){
+    			
+    		}else {
+    			
+    		}
+    		/*###########*/    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		/*###########*/
+    		/*実行*/
+    		
+    		//コンパイルが失敗した場合実行しない
+    		if(compileProcess.exitValue()==0) {
+
+    			ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
+	    		
+	    		//実行processの開始
+	    		final Process runProcess=runProcessBuilder.start();
+	    		
+	    		
+	            // 出力を非同期的に読み取るスレッドを作成
+	            Thread outputReaderThread = new Thread(new Runnable() {
+					@Override
+					public void run() {
+						
+						
+						ScanfParser parser=new ScanfParser();
+						
+					    try {
+					    	BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(),StandardCharsets.UTF_8));
+					        String line;
+					        while ((line = runReader.readLine()) != null) {
+					        	
+					        	parser.ScanfParseData(line);
+					        	
+					        }	
+					    } catch (IOException e) {
+					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+					        e.printStackTrace();
+		            		Minecraft.getMinecraft().getSoundHandler().playSound(
+		            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+		        			);
+					    }
+					}
+					
+				});
+	            outputReaderThread.start();
+	            
+	            
+	            
+	            
+	            //入力ストリームを作成し、外部プロセスに「0」を入力
+	            OutputStream outputStream = runProcess.getOutputStream();
+	            PrintWriter processInputWriter = new PrintWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8), true);
+	            
+	            
+	            processInputWriter.println("dummy");
+
+	            
+
+	            
+	            
+
+	            //無限ループのためのタイムアウト設定をする(10秒)
+	            boolean completed = runProcess.waitFor(10, TimeUnit.SECONDS);
+	            if(!completed) {
+	            	
+	            	
+                    DataParser parser = new DataParser();
+                    try {
+                        InputStream inputStream = runProcess.getInputStream();
+                        BufferedReader runReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+
+                        StringBuilder fullData = new StringBuilder();
+                        
+                        //一度に読み取れるバッファサイズを最大1024文字にする
+                        char[] buffer = new char[1024]; 
+                        int numCharsRead;
+
+                    	//最大1024文字までデータを格納し、numCharsReadに格納する
+                        while ((numCharsRead = runReader.read(buffer)) != -1) {
+                            fullData.append(buffer, 0, numCharsRead);
+                            //何かしらデータがある場合、解析を行う。 
+                            if (fullData.length() > 0) {
+                                parser.parseData(fullData.toString()); //解析
+                                fullData.setLength(0); // 解析後fullDataをリセット
+                            }
+                        }
+                    } catch (IOException e) {
+                        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+                        e.printStackTrace();
+                		Minecraft.getMinecraft().getSoundHandler().playSound(
+                			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+            			);
+                    }
+	            	
+
+	            	
+	            	//タイムアウト発生時の処理
+	            	runProcess.destroy(); //プロセスを強制終了
+	            	Sotuken.instance.moduleManager.addErrChatMessage("プログラムの実行がタイムアウトしました");
+            		Minecraft.getMinecraft().getSoundHandler().playSound(
+            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+        			);
+	            		            	
+	            	
+	            	//出力読み取りスレッドを中断
+	            	outputReaderThread.interrupt();
+	            }else {
+	            	//タイムアウトしなかったら、出力を読み取りスレッドの終了を待つ
+	            	outputReaderThread.join();
+	            	
+	        		//実行結果のチェック
+		    		if(runProcess.exitValue()!=0) {
+		    			Sotuken.instance.moduleManager.addErrChatMessage("実行に失敗しました");
+	            		Minecraft.getMinecraft().getSoundHandler().playSound(
+	            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+	        			);
+		    		}else {
+		    			
+		    			
+		    			
+		    		}
+	            }
+	    		
+	    		
+
+	    		
+	    		
+    		}
+    		/*###########*/
+
+    		
+    		
+    	}catch(IOException e) {
+    		Sotuken.instance.moduleManager.addErrChatMessage("IOエラーが発生しました: " + e.getMessage());
+    		e.printStackTrace();
+    		Minecraft.getMinecraft().getSoundHandler().playSound(
+    			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+			);
+    	}catch(InterruptedException e) {
+    		Sotuken.instance.moduleManager.addErrChatMessage("プロセスが中断されました: " + e.getMessage());	
+    		e.printStackTrace();
+    		Minecraft.getMinecraft().getSoundHandler().playSound(
+    			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+			);
+    	}
+		
+	}
+    
+    
+    
  
     private void compileAndRunCFile(String filePath) {
+    	
+        
+
+
+
+
     	try {
     		
     		File file=new File(filePath);
@@ -193,7 +473,6 @@ public class Run extends Module {
 					        String line;
 					        while ((line = runReader.readLine()) != null) {
 					        	parser.parseData(line);
-					        	
 					        }	
 					    } catch (IOException e) {
 					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
@@ -210,24 +489,24 @@ public class Run extends Module {
 	            
 	            
 	            
-	            
-	            
-	            
-	            
-	            //入力ストリームを作成し、外部プロセスに「0」を入力
+
+	         // 入力ストリームを作成し、外部プロセスに順次データを入力
 	            OutputStream outputStream = runProcess.getOutputStream();
 	            PrintWriter processInputWriter = new PrintWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8), true);
-	            
-	            int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
-	            // プロセスがscanfを持っている場合「blockFindResult」を入力
-	            processInputWriter.println(blockFindResult);  // blockFindResultの値を入力として送信
+
+	            List<Integer> blockFindResults = NetHandlerPlayClient.getBlockFindResults();
+
+	            // blockFindResults リストの内容を頭から順にプロセスに送信
+	            for (int result : blockFindResults) {
+	                processInputWriter.println(result);  // リストの各値を入力として送信
+	                System.out.println("送信: blockFindResult = " + result);
+	            }
+
+	            // データの送信後、必要に応じて flush でバッファをクリア
+	            processInputWriter.flush();
 
 	            
-	            
-	            
-	            
-	            
-	            
+
 	            
 	            
 	            
@@ -308,7 +587,7 @@ public class Run extends Module {
 		    	            
 		    	            
 		    				
-		    	            Sotuken.instance.moduleManager.addChatMessage("Undoディレクトリにログが保存されました");
+		    	            //Sotuken.instance.moduleManager.addChatMessage("Undoディレクトリにログが保存されました");
 		    				
 		    				
 		    				

@@ -2,6 +2,7 @@ package net.minecraft.client.network;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -864,7 +865,10 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
     
     
     
-    private static int blockFindResult=0; //false
+
+    private static List<Integer> blockFindResults = new ArrayList<>(); // 可変長のintリスト
+    
+    
 
     public void handleChat(S02PacketChat packetIn)
     {
@@ -882,27 +886,29 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
             System.out.println(chatMessageString);
             
             
-            // メッセージに基づいてブロックの状態をチェック
+            // メッセージに基づいてブロックの状態をチェックし、リストに格納
             if (chatMessageString.contains("ブロックは") && chatMessageString.contains("に見つかりました。")) {
-                // ブロックが見つかった場合
-                blockFindResult = -1; // 見つかった状態
-                System.out.println("ブロックが見つかりました。戻り値: " + blockFindResult);
+                blockFindResults.add(-1); // 見つかった状態をリストに追加
+                System.out.println("ブロックが見つかりました。リストに追加されました: " + -1);
             } else if (chatMessageString.contains("のブロックは") &&
-            		chatMessageString.contains("です") &&
-            		chatMessageString.contains("(予想では")&&
-            		chatMessageString.contains(")。")) {
-                // ブロックが見つからなかった場合
-                blockFindResult = 0; // 見つからなかった状態
-                System.out.println("ブロックは見つかりませんでした。戻り値: " + blockFindResult);
+                       chatMessageString.contains("です") &&
+                       chatMessageString.contains("(予想では") &&
+                       chatMessageString.contains(")。")) {
+                blockFindResults.add(0); // 見つからなかった状態をリストに追加
+                System.out.println("ブロックは見つかりませんでした。リストに追加されました: " + 0);
             }
             
         }
     }
     
-    public static int getBlockFindResult() {
-    	return blockFindResult;
+    public static List<Integer> getBlockFindResults() {
+        return blockFindResults;
     }
     
+    // クリアメソッドを追加
+    public static void clearBlockFindResults() {
+        blockFindResults.clear();
+    }
     
     
     

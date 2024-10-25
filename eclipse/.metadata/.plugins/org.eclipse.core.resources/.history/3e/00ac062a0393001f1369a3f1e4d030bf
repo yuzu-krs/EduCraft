@@ -1,0 +1,26 @@
+package me.gamrboy4life.paradox.analysis;
+
+import me.gamrboy4life.paradox.Sotuken;
+
+public class ScanfParser {
+public void parseData(String data) {
+		
+		
+			
+			
+		 if(isTestForBlock(data)) {
+			executeTestForBlock(data);
+			
+			
+		}else if(isTestForBlocksAll(data)) {
+			executeTestForBlocksAll(data);
+			
+		}else if(isTestForBlocksMasked(data)) {
+			executeTestForBlocksMasked(data);
+			
+		}else {
+			//Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
+		}
+	
+	}
+}
