@@ -817,6 +817,9 @@ public class DataParser {
 	            );
 	            
 	            
+	            
+
+	            
 	        } else {
 	            Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlock関数の形式が違います");
 	        }

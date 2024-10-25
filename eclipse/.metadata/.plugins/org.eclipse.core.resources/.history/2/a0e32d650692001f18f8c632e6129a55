@@ -1,0 +1,39 @@
+import me.gamrboy4life.paradox.module.c.CustomNetHandler.CustomNetHandler;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.network.NetHandlerPlayClient;
+import net.minecraft.network.play.client.C01PacketChatMessage;
+import net.minecraft.network.play.server.S02PacketChat;
+import net.minecraft.util.ChatComponentText;
+
+public class CustomNetHandler extends NetHandlerPlayClient {
+
+    // コンストラクタ
+    public CustomNetHandler(Minecraft mc) {
+        // 必要なコンストラクタを適切に呼び出す
+        super(mc.getNetHandler().getNetworkManager(), mc.getNetHandler().getGameProfile());
+    }
+
+    // S02PacketChatの処理
+    @Override
+    public void processChat(S02PacketChat packet) {
+        String message = packet.getChatComponent().getUnformattedText();
+        // サーバーメッセージを表示
+        System.out.println("Server Message: " + message);
+        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new ChatComponentText("Server Message: " + message));
+    }
+}
+
+// コマンドを送信するメソッド
+public void sendCommand(int x, int y, int z, String blockName, int blockInfo) {
+    Minecraft.getMinecraft().thePlayer.sendQueue.addToSendQueue(
+        new C01PacketChatMessage(
+            String.format("/testforblock %d %d %d %s %d", x, y, z, blockName, blockInfo)
+        )
+    );
+}
+
+// NetHandlerを置き換えるメソッド
+public void replaceNetHandler() {
+    Minecraft mc = Minecraft.getMinecraft();
+    mc.getNetHandler().setNetHandler(new CustomNetHandler(mc));
+}

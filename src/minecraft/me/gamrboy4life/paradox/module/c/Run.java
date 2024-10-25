@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +18,7 @@ import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.client.network.NetHandlerPlayClient;
 import net.minecraft.util.ResourceLocation;
 
 public class Run extends Module {
@@ -189,6 +193,7 @@ public class Run extends Module {
 					        String line;
 					        while ((line = runReader.readLine()) != null) {
 					        	parser.parseData(line);
+					        	
 					        }	
 					    } catch (IOException e) {
 					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
@@ -201,6 +206,30 @@ public class Run extends Module {
 					
 				});
 	            outputReaderThread.start();
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            //入力ストリームを作成し、外部プロセスに「0」を入力
+	            OutputStream outputStream = runProcess.getOutputStream();
+	            PrintWriter processInputWriter = new PrintWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8), true);
+	            
+	            int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+	            // プロセスがscanfを持っている場合「blockFindResult」を入力
+	            processInputWriter.println(blockFindResult);  // blockFindResultの値を入力として送信
+
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
 	            
 
 	            //無限ループのためのタイムアウト設定をする(10秒)
@@ -274,7 +303,7 @@ public class Run extends Module {
 		    	            
 		    	            // ファイルのコピー
 		    	            java.nio.file.Files.copy(sourceFile.toPath(), destFile.toPath(),
-		    	                java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+	    	                java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 		    	            
 		    	            
 		    	            

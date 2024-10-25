@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="addErrChatMessage"/>
+		<item key="selection" value="S02PacketChat"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="S02PacketChat"/>
+			<item value="Processchat"/>
+			<item value="ProcessChat"/>
+			<item value="Process"/>
+			<item value="Chat"/>
 			<item value="addErrChatMessage"/>
 			<item value="unicode"/>
 			<item value="getFontByName"/>
@@ -21,10 +26,10 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="124"/>
-		<item key="DIALOG_Y_ORIGIN" value="427"/>
-		<item key="DIALOG_WIDTH" value="408"/>
-		<item key="DIALOG_HEIGHT" value="402"/>
-		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-28|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
+		<item key="DIALOG_X_ORIGIN" value="778"/>
+		<item key="DIALOG_Y_ORIGIN" value="487"/>
+		<item key="DIALOG_WIDTH" value="552"/>
+		<item key="DIALOG_HEIGHT" value="550"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|12.0|0|WINDOWS|1|-20|0|0|0|400|0|0|0|-128|3|2|1|50|Yu Gothic UI"/>
 	</section>
 </section>
