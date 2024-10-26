@@ -888,8 +888,8 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
             
             // メッセージに基づいてブロックの状態をチェックし、リストに格納
             if (chatMessageString.contains("ブロックは") && chatMessageString.contains("に見つかりました。")) {
-                blockFindResults.add(-1); // 見つかった状態をリストに追加
-                System.out.println("ブロックが見つかりました。リストに追加されました: " + -1);
+                blockFindResults.add(1); // 見つかった状態をリストに追加
+                System.out.println("ブロックが見つかりました。リストに追加されました: " + 1);
             } else if (chatMessageString.contains("のブロックは") &&
                        chatMessageString.contains("です") &&
                        chatMessageString.contains("(予想では") &&

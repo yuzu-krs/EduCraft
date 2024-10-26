@@ -51,7 +51,7 @@ public class Run extends Module {
 			            scanfCompileAndRunCFile("C:/EduCraft/main.c");
 
 			            // 3秒待機
-			            Thread.sleep(1000);
+			            Thread.sleep(3000);
 
 			            // コンパイルと実行を行う
 			            compileAndRunCFile("C:/EduCraft/main.c");
