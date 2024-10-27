@@ -2,7 +2,6 @@ package net.minecraft.client.network;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -866,50 +865,50 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
     
     
 
-    private static List<Integer> blockFindResults = new ArrayList<>(); // 可変長のintリスト
-    
-    
+    private static int blockFindResult = -1; // 結果の初期値を設定（例：-1は未チェック）
 
-    public void handleChat(S02PacketChat packetIn)
-    {
+    public void handleChat(S02PacketChat packetIn) {
         PacketThreadUtil.checkThreadAndEnqueue(packetIn, this, this.gameController);
 
-        if (packetIn.getType() == 2)
-        {
+        if (packetIn.getType() == 2) {
             this.gameController.ingameGUI.setRecordPlaying(packetIn.getChatComponent(), false);
-        }
-        else
-        {
+        } else {
             this.gameController.ingameGUI.getChatGUI().printChatMessage(packetIn.getChatComponent());
-            
-            String chatMessageString=packetIn.getChatComponent().getUnformattedText();
+
+            String chatMessageString = packetIn.getChatComponent().getUnformattedText();
             System.out.println(chatMessageString);
-            
-            
-            // メッセージに基づいてブロックの状態をチェックし、リストに格納
+
+            // メッセージに基づいてブロックの状態をチェックし、結果を格納
             if (chatMessageString.contains("ブロックは") && chatMessageString.contains("に見つかりました。")) {
-                blockFindResults.add(1); // 見つかった状態をリストに追加
-                System.out.println("ブロックが見つかりました。リストに追加されました: " + 1);
+                blockFindResult = 1; // 見つかった場合の状態を設定
+                System.out.println("ブロックが見つかりました: " + blockFindResult);
             } else if (chatMessageString.contains("のブロックは") &&
                        chatMessageString.contains("です") &&
                        chatMessageString.contains("(予想では") &&
                        chatMessageString.contains(")。")) {
-                blockFindResults.add(0); // 見つからなかった状態をリストに追加
-                System.out.println("ブロックは見つかりませんでした。リストに追加されました: " + 0);
+                blockFindResult = 0; // 見つからなかった場合の状態を設定
+                System.out.println("ブロックは見つかりませんでした: " + blockFindResult);
+            } else if (chatMessageString.contains("にあるブロックには") &&
+                    chatMessageString.contains("のデータ値を持っています") &&
+                    chatMessageString.contains("(予想では") &&
+                    chatMessageString.contains(")。")) {
+	             blockFindResult = 0; // 見つからなかった場合の状態を設定
+	             System.out.println("ブロックは見つかりませんでした: " + blockFindResult);
+            	
             }
-            
         }
     }
-    
-    public static List<Integer> getBlockFindResults() {
-        return blockFindResults;
+
+ // 最新の状態を取得
+    public static int getBlockFindResult() {
+    	
+
+        return blockFindResult;
     }
-    
-    // クリアメソッドを追加
-    public static void clearBlockFindResults() {
-        blockFindResults.clear();
+    // 結果をリセットするメソッド
+    public static void clearBlockFindResult() {
+        blockFindResult = -1; // リセット状態を指定（例：-1は未チェック）
     }
-    
     
     
     

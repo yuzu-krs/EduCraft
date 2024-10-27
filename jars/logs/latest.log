@@ -1,30 +1,98 @@
-[22:43:10] [Client thread/INFO]: Setting user: Player859
-[22:43:10] [Client thread/INFO]: (Session ID is token:0:Player859)
-[22:43:12] [Client thread/INFO]: LWJGL Version: 2.9.4
-[22:43:12] [Client thread/INFO]: Reloading ResourceManager: Default
-[22:43:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[22:43:13] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[22:43:13] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[22:43:13] [Thread-8/INFO]: OpenAL initialized.
-[22:43:14] [Sound Library Loader/INFO]: Sound engine started
-[22:43:19] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[22:43:30] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[22:43:30] [Server thread/INFO]: Generating keypair
-[22:43:30] [Server thread/INFO]: Preparing start region for level 0
-[22:43:31] [Server thread/INFO]: Changing view distance to 8, from 10
-[22:43:32] [Server thread/INFO]: Player859[local:E:4abfb8cb] logged in with entity id 283 at (9.601871135130457, 104.0, 8.781427666292808)
-[22:43:32] [Server thread/INFO]: Player859 がゲームに参加しました
-[22:43:32] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[22:45:03] [Server thread/INFO]: Saving and pausing game...
-[22:45:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[22:45:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[22:45:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[22:45:04] [Client thread/INFO]: Stopping!
-[22:45:04] [Client thread/INFO]: SoundSystem shutting down...
-[22:45:04] [Server thread/INFO]: Stopping server
-[22:45:04] [Server thread/INFO]: Saving players
-[22:45:04] [Server thread/INFO]: Saving worlds
-[22:45:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[22:45:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[22:45:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[22:45:04] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:14:58] [Client thread/INFO]: Setting user: Player468
+[11:14:58] [Client thread/INFO]: (Session ID is token:0:Player468)
+[11:14:59] [Client thread/INFO]: LWJGL Version: 2.9.4
+[11:15:00] [Client thread/INFO]: Reloading ResourceManager: Default
+[11:15:00] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:15:00] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[11:15:00] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:15:00] [Thread-8/INFO]: OpenAL initialized.
+[11:15:01] [Sound Library Loader/INFO]: Sound engine started
+[11:15:05] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[11:15:09] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[11:15:09] [Server thread/INFO]: Generating keypair
+[11:15:09] [Server thread/INFO]: Preparing start region for level 0
+[11:15:10] [Server thread/INFO]: Changing view distance to 8, from 10
+[11:15:10] [Server thread/INFO]: Player468[local:E:3e0aa6a8] logged in with entity id 223 at (-39.79817865145845, 106.0, 14.211803613009309)
+[11:15:10] [Server thread/INFO]: Player468 がゲームに参加しました
+[11:15:11] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[11:15:13] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:15:13] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:13] [Client thread/INFO]: [CHAT] 9,104,5にあるブロックには0のデータ値を持っています (予想では5)。
+[11:15:13] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:13] [Client thread/INFO]: [CHAT] 9,104,5のブロックは草ブロックです (予想では砂)。
+[11:15:13] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fAll conditions are false
+[11:15:13] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:15:22] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:15:22] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:23] [Client thread/INFO]: [CHAT] 9,104,5にあるブロックには0のデータ値を持っています (予想では5)。
+[11:15:23] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:23] [Client thread/INFO]: [CHAT] 9,104,5のブロックは草ブロックです (予想では砂)。
+[11:15:23] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §fAll conditions are false
+[11:15:23] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:15:25] [Server thread/INFO]: Saving and pausing game...
+[11:15:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[11:15:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[11:15:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[11:15:37] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:15:37] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:37] [Client thread/INFO]: [CHAT] 9,104,5のブロックは砂です (予想では草ブロック)。
+[11:15:37] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:37] [Server thread/INFO]: [Player468: ブロックは9, 104, 5に見つかりました。]
+[11:15:37] [Client thread/INFO]: [CHAT] ブロックは9, 104, 5に見つかりました。
+[11:15:37] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:37] [Client thread/INFO]: [CHAT] 9,104,6のブロックは砂です (予想では石)。
+[11:15:37] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §fAll conditions are false
+[11:15:37] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:15:49] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:15:49] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:49] [Client thread/INFO]: [CHAT] 9,104,5のブロックは砂です (予想では草ブロック)。
+[11:15:49] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:49] [Server thread/INFO]: [Player468: ブロックは9, 104, 5に見つかりました。]
+[11:15:49] [Client thread/INFO]: [CHAT] ブロックは9, 104, 5に見つかりました。
+[11:15:49] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:49] [Server thread/INFO]: [Player468: ブロックは9, 104, 6に見つかりました。]
+[11:15:49] [Client thread/INFO]: [CHAT] ブロックは9, 104, 6に見つかりました。
+[11:15:49] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §fCondition 2: true at (9, 104, 5)
+[11:15:49] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[11:15:49] [Client thread/INFO]: [CHAT] 9,104,6のブロックは石です (予想では水)。
+[11:15:50] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f  No additional blocks found near (9, 104, 6)
+[11:15:50] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:16:10] [Thread-25/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:16:11] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:11] [Client thread/INFO]: [CHAT] 9,104,5のブロックは砂です (予想では草ブロック)。
+[11:16:13] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §c実行に失敗しました
+[11:16:13] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[11:16:15] [Thread-27/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:16:15] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:15] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:15] [Client thread/INFO]: [CHAT] 9,104,5のブロックは砂です (予想では草ブロック)。
+[11:16:15] [Server thread/INFO]: [Player468: ブロックは9, 104, 5に見つかりました。]
+[11:16:15] [Client thread/INFO]: [CHAT] ブロックは9, 104, 5に見つかりました。
+[11:16:15] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §fCondition 2: true at (9, 104, 5)
+[11:16:15] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:16] [Client thread/INFO]: [CHAT] 9,104,6のブロックは草ブロックです (予想では水)。
+[11:16:16] [Thread-28/INFO]: [CHAT] §eEduCraft§7: §f  No additional blocks found near (9, 104, 6)
+[11:16:16] [Thread-27/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:16:31] [Thread-29/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:16:31] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:31] [Client thread/INFO]: [CHAT] 9,104,5のブロックは砂です (予想では草ブロック)。
+[11:16:31] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:31] [Server thread/INFO]: [Player468: ブロックは9, 104, 5に見つかりました。]
+[11:16:31] [Client thread/INFO]: [CHAT] ブロックは9, 104, 5に見つかりました。
+[11:16:31] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §f
+[11:16:31] [Client thread/INFO]: [CHAT] 9,104,6のブロックは草ブロックです (予想では石)。
+[11:16:31] [Thread-30/INFO]: [CHAT] §eEduCraft§7: §fAll conditions are false
+[11:16:31] [Thread-29/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:16:33] [Server thread/INFO]: Saving and pausing game...
+[11:16:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[11:16:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[11:16:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[11:17:03] [Client thread/INFO]: Stopping!
+[11:17:03] [Client thread/INFO]: SoundSystem shutting down...
+[11:17:03] [Server thread/INFO]: Stopping server
+[11:17:03] [Server thread/INFO]: Saving players
+[11:17:03] [Server thread/INFO]: Saving worlds
+[11:17:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[11:17:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[11:17:03] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[11:17:04] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
