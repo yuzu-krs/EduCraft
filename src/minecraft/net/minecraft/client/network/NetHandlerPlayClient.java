@@ -895,6 +895,12 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
 	             blockFindResult = 0; // 見つからなかった場合の状態を設定
 	             System.out.println("ブロックは見つかりませんでした: " + blockFindResult);
             	
+            }else if (chatMessageString.contains("個のブロックを比較しました")) {
+	             blockFindResult = 1; // 見つかった場合
+	             
+            }else if (chatMessageString.contains("比較元と比較先が同一です")) {
+	             blockFindResult = 0; // 見つかった場合
+	             
             }
         }
     }

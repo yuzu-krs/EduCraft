@@ -237,8 +237,49 @@ public class Run extends Module {
 
 					        	    // データの送信後、必要に応じて flush でバッファをクリア
 					        	    processInputWriter.flush();
+					        	    
+					        	    
+					        	}else if (line.startsWith("999999949")) { //testForBlocksAll
+					        	    // マイクラチャット表示のため1秒待機
+					        	    try {
+					        	        Thread.sleep(100); // 0.1秒待つ
+					        	    } catch (InterruptedException e) {
+					        	        e.printStackTrace();
+					        	    }
+
+					        	    // blockFindResult を取得
+					        	    int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+
+					        	    // blockFindResult の内容をプロセスに送信
+					        	    if (blockFindResult != -1) { // -1 は未設定状態とし、送信をスキップ
+					        	        processInputWriter.println(blockFindResult);  // 値を入力として送信
+					        	        System.out.println("送信: blockFindResult = " + blockFindResult);
+					        	         NetHandlerPlayClient.clearBlockFindResult(); //リセット
+					        	    }
+
+					        	    // データの送信後、必要に応じて flush でバッファをクリア
+					        	    processInputWriter.flush();
+					        	}else if (line.startsWith("999999948")) { //testForBlocksMasked
+					        	    // マイクラチャット表示のため1秒待機
+					        	    try {
+					        	        Thread.sleep(100); // 0.1秒待つ
+					        	    } catch (InterruptedException e) {
+					        	        e.printStackTrace();
+					        	    }
+
+					        	    // blockFindResult を取得
+					        	    int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+
+					        	    // blockFindResult の内容をプロセスに送信
+					        	    if (blockFindResult != -1) { // -1 は未設定状態とし、送信をスキップ
+					        	        processInputWriter.println(blockFindResult);  // 値を入力として送信
+					        	        System.out.println("送信: blockFindResult = " + blockFindResult);
+					        	         NetHandlerPlayClient.clearBlockFindResult(); //リセット
+					        	    }
+
+					        	    // データの送信後、必要に応じて flush でバッファをクリア
+					        	    processInputWriter.flush();
 					        	}
-					        	
 					        }	
 					    } catch (IOException e) {
 					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
