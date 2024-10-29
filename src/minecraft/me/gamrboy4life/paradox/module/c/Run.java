@@ -14,6 +14,7 @@ import org.lwjgl.input.Keyboard;
 
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.analysis.DataParser;
+import me.gamrboy4life.paradox.command.commands.Scanf;
 import me.gamrboy4life.paradox.module.Category;
 import me.gamrboy4life.paradox.module.Module;
 import net.minecraft.client.Minecraft;
@@ -215,7 +216,10 @@ public class Run extends Module {
 					        String line;
 					        while ((line = runReader.readLine()) != null) {
 					        	parser.parseData(line);
-					        						        	
+					        	
+					        	
+				        		System.out.println(line);
+					        	
 					        	//testForBlockの場合　入力が来る
 					        	if (line.startsWith("999999959")) {
 					        	    // マイクラチャット表示のため1秒待機
@@ -279,7 +283,33 @@ public class Run extends Module {
 
 					        	    // データの送信後、必要に応じて flush でバッファをクリア
 					        	    processInputWriter.flush();
-					        	}
+					            }
+					        	
+					        	
+					        	
+					        	else  if(line.startsWith("999999919")){
+					        		// 入力テキストが空でない状態になるまで待機
+					                while (Scanf.getInputText().isEmpty()) {
+					                    try {
+					                    	
+
+					                        Thread.sleep(5000); // 100ミリ秒待機
+					                    } catch (InterruptedException e) {
+					                        e.printStackTrace(); // エラーハンドリング
+					                    }
+					                }
+
+					                String scanfFindResult = Scanf.getInputText();
+					                
+				                    processInputWriter.println(scanfFindResult);  // 値を入力として送信
+					                
+				                    Scanf.clearInputText(); // 入力テキストをクリア
+					                // データの送信後、必要に応じて flush でバッファをクリア
+					                processInputWriter.flush();
+					            }
+					        	
+					        	
+					        	
 					        }	
 					    } catch (IOException e) {
 					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
@@ -304,7 +334,7 @@ public class Run extends Module {
 	            
 
 	            //無限ループのためのタイムアウト設定をする(10秒)
-	            boolean completed = runProcess.waitFor(10, TimeUnit.SECONDS);
+	            boolean completed = runProcess.waitFor(30, TimeUnit.SECONDS);
 	            if(!completed) {
 	            	
 	            	

@@ -18,9 +18,9 @@ public class Help extends Command{
 			Sotuken.instance.moduleManager.addChatMessage("キーバインド  .[b|bind] <Mod名> <key>");
 			Sotuken.instance.moduleManager.addChatMessage("キーバインド初期化  .[b|bind] clear");
 			Sotuken.instance.moduleManager.addChatMessage("Mod即時オン  .[t|toggle] <Mod名>");
-			Sotuken.instance.moduleManager.addChatMessage("Sayコマンド  .[s|say] <任意の文字列>");
-			Sotuken.instance.moduleManager.addChatMessage("Spamコマンド 使用例↓");
-			Sotuken.instance.moduleManager.addChatMessage(".[c|chatspam] <数> <間隔(ミリ秒)> <任意の文字列>");
+			Sotuken.instance.moduleManager.addChatMessage("Chatコマンド  .[c|chat] <任意の文字列>");
+			Sotuken.instance.moduleManager.addChatMessage("Scanfコマンド .[s|scanf] <任意の文字列>");
+
 		}else{
 			Sotuken.instance.moduleManager.addChatMessage("そのようなモデルはありません! [.help]");
 		}

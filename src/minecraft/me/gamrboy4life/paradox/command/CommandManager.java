@@ -6,9 +6,9 @@ import java.util.List;
 
 import me.gamrboy4life.paradox.Sotuken;
 import me.gamrboy4life.paradox.command.commands.Bind;
-import me.gamrboy4life.paradox.command.commands.ChatSpam;
 import me.gamrboy4life.paradox.command.commands.Help;
-import me.gamrboy4life.paradox.command.commands.Say;
+import me.gamrboy4life.paradox.command.commands.Chat;
+import me.gamrboy4life.paradox.command.commands.Scanf;
 import me.gamrboy4life.paradox.command.commands.Toggle;
 import me.gamrboy4life.paradox.event.events.EventChat;
 
@@ -23,10 +23,10 @@ public class CommandManager {
 	
 	public void setup() {
 		commands.add(new Bind());
-		commands.add(new Say());
+		commands.add(new Chat());
 		commands.add(new Toggle());
-		commands.add(new ChatSpam());
 		commands.add(new Help());
+		commands.add(new Scanf());
 	}
 	
 	public static List<Command> getCommands(){

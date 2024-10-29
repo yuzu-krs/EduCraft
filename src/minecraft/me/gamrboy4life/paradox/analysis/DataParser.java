@@ -91,6 +91,9 @@ public class DataParser {
 		}else if(isTestForBlocksMasked(data)) {
 			executeTestForBlocksMasked(data);
 			
+		}else if(isScanf(data)) {
+			//scanfの場合は飛ばす
+		
 		}else {
 			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
 		}
@@ -920,6 +923,11 @@ public class DataParser {
 	    } catch (NumberFormatException e) {
 	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlocksMasked関数解析: " + e.getMessage());
 	    }
+	}
+	
+	private boolean isScanf(String line) {
+		return line.startsWith("999999919");
+		
 	}
 	
 	
