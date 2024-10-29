@@ -26,6 +26,9 @@
   "Fill関数": {
     "enabled": false
   },
+  "m_scanf関数": {
+    "enabled": false
+  },
   "SendCommand関数": {
     "enabled": false
   },

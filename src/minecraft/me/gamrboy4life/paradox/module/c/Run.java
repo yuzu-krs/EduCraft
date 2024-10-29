@@ -217,8 +217,8 @@ public class Run extends Module {
 					        while ((line = runReader.readLine()) != null) {
 					        	parser.parseData(line);
 					        	
-					        	
-				        		System.out.println(line);
+					        	Scanf.clearInputText(); // 入力テキストをクリア
+				        		
 					        	
 					        	//testForBlockの場合　入力が来る
 					        	if (line.startsWith("999999959")) {

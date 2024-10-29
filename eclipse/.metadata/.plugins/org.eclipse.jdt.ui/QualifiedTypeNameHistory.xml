@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.Category"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLEditorKit.Parser"/>
     <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.Sotuken"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.command.commands.Scanf"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.MscanfGui"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.Mscanf"/>
 </qualifiedTypeNameHistroy>
