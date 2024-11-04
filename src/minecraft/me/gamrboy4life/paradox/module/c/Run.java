@@ -7,6 +7,8 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.lwjgl.input.Keyboard;
 
@@ -60,6 +62,36 @@ public class Run extends Module {
     
     
     
+    // 入力内容や条件結果を保存するstaticなリスト
+    public static List<Object> logIfMscanf = new ArrayList<Object>();
+    
+    // リストの先頭要素を取得して削除するメソッド
+    public static Object getAndRemoveFirstData() {
+        if (!logIfMscanf.isEmpty()) {
+            // 先頭の要素を取得
+            Object firstData = logIfMscanf.get(0);
+            // 先頭の要素をリストから削除
+            logIfMscanf.remove(0);
+            System.out.println("取得して削除: " + firstData);
+            return firstData;
+        } else {
+            System.out.println("リストが空です");
+            return null;
+        }
+    }
+    
+ // リストのすべての要素を表示するメソッド
+    public static void displayAllData() {
+        if (!logIfMscanf.isEmpty()) {
+            System.out.println("リストの中身:");
+            for (Object data : logIfMscanf) {
+                System.out.println(data);
+            }
+        } else {
+            System.out.println("リストが空です");
+        }
+    }
+
     
     
  
@@ -188,6 +220,10 @@ public class Run extends Module {
     		
     		//コンパイルが失敗した場合実行しない
     		if (compileProcess.exitValue() == 0) {
+    			
+    			logIfMscanf.clear();    // リスト全体をクリアするメソッド
+
+    			
     		    ProcessBuilder runProcessBuilder = new ProcessBuilder("C:/EduCraft/main.exe");
 
     		    // 実行プロセスの開始
@@ -221,19 +257,22 @@ public class Run extends Module {
     		                        if (blockFindResult != -1) {
     		                            processInputWriter.println(blockFindResult); // 値を入力として送信
     		                            System.out.println("送信: blockFindResult = " + blockFindResult);
+    		                            logIfMscanf.add(blockFindResult); //Undoのためのログを保存
     		                            NetHandlerPlayClient.clearBlockFindResult(); // リセット
     		                        }
     		                        processInputWriter.flush();
     		                    } else if (line.startsWith("999999919")) {
     		                        while (Scanf.getInputText().isEmpty()) {
     		                            try {
-    		                                Thread.sleep(100); // 100ミリ秒待機
+    		                                Thread.sleep(500); // 100ミリ秒待機
     		                            } catch (InterruptedException e) {
     		                                e.printStackTrace();
     		                            }
     		                        }
     		                        String scanfFindResult = Scanf.getInputText();
     		                        processInputWriter.println(scanfFindResult);
+    		                        logIfMscanf.add(scanfFindResult); //Undoのためのログを保存
+    		                        
     		                        Scanf.clearInputText(); // 入力テキストをクリア
     		                        processInputWriter.flush();
     		                    }
