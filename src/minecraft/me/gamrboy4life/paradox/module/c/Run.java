@@ -2,13 +2,11 @@ package me.gamrboy4life.paradox.module.c;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
-import java.util.concurrent.TimeUnit;
 
 import org.lwjgl.input.Keyboard;
 
@@ -189,251 +187,99 @@ public class Run extends Module {
     		/*実行*/
     		
     		//コンパイルが失敗した場合実行しない
-    		if(compileProcess.exitValue()==0) {
+    		if (compileProcess.exitValue() == 0) {
+    		    ProcessBuilder runProcessBuilder = new ProcessBuilder("C:/EduCraft/main.exe");
 
-    			ProcessBuilder runProcessBuilder=new ProcessBuilder("C:/EduCraft/main.exe");
-	    		
-	    		//実行processの開始
-	    		final Process runProcess=runProcessBuilder.start();
-	    		
-	    		
-	    		
-	    		// 入力ストリームを作成し、外部プロセスにデータを入力
-	    		OutputStream outputStream = runProcess.getOutputStream();
-	    		final PrintWriter processInputWriter = new PrintWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8), true);
-	    		
-	    		
-	    		
-	            // 出力を非同期的に読み取るスレッドを作成
-	            Thread outputReaderThread = new Thread(new Runnable() {
-					@Override
-					public void run() {
-						
-						DataParser parser= new DataParser();
-						
-					    try {
-					    	BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(),StandardCharsets.UTF_8));
-					        String line;
-					        while ((line = runReader.readLine()) != null) {
-					        	parser.parseData(line);
-					        	
-					        	Scanf.clearInputText(); // 入力テキストをクリア
-				        		
-					        	
-					        	//testForBlockの場合　入力が来る
-					        	if (line.startsWith("999999959")) {
-					        	    // マイクラチャット表示のため1秒待機
-					        	    try {
-					        	        Thread.sleep(100); // 0.1秒待つ
-					        	    } catch (InterruptedException e) {
-					        	        e.printStackTrace();
-					        	    }
+    		    // 実行プロセスの開始
+    		    final Process runProcess = runProcessBuilder.start();
 
-					        	    // blockFindResult を取得
-					        	    int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+    		    // 入力ストリームを作成し、外部プロセスにデータを入力
+    		    OutputStream outputStream = runProcess.getOutputStream();
+    		    final PrintWriter processInputWriter = new PrintWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8), true);
 
-					        	    // blockFindResult の内容をプロセスに送信
-					        	    if (blockFindResult != -1) { // -1 は未設定状態とし、送信をスキップ
-					        	        processInputWriter.println(blockFindResult);  // 値を入力として送信
-					        	        System.out.println("送信: blockFindResult = " + blockFindResult);
-					        	         NetHandlerPlayClient.clearBlockFindResult(); //リセット
-					        	    }
+    		    // 出力を非同期的に読み取るスレッドを作成
+    		    Thread outputReaderThread = new Thread(new Runnable() {
+    		        @Override
+    		        public void run() {
+    		            DataParser parser = new DataParser();
 
-					        	    // データの送信後、必要に応じて flush でバッファをクリア
-					        	    processInputWriter.flush();
-					        	    
-					        	    
-					        	}else if (line.startsWith("999999949")) { //testForBlocksAll
-					        	    // マイクラチャット表示のため1秒待機
-					        	    try {
-					        	        Thread.sleep(100); // 0.1秒待つ
-					        	    } catch (InterruptedException e) {
-					        	        e.printStackTrace();
-					        	    }
+    		            try {
+    		                BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(), StandardCharsets.UTF_8));
+    		                String line;
+    		                while ((line = runReader.readLine()) != null) {
+    		                    parser.parseData(line);
+    		                    Scanf.clearInputText(); // 入力テキストをクリア
 
-					        	    // blockFindResult を取得
-					        	    int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+    		                    if (line.startsWith("999999959") || line.startsWith("999999949") || line.startsWith("999999948")) {
+    		                        try {
+    		                            Thread.sleep(100); // 0.1秒待つ
+    		                        } catch (InterruptedException e) {
+    		                            e.printStackTrace();
+    		                        }
 
-					        	    // blockFindResult の内容をプロセスに送信
-					        	    if (blockFindResult != -1) { // -1 は未設定状態とし、送信をスキップ
-					        	        processInputWriter.println(blockFindResult);  // 値を入力として送信
-					        	        System.out.println("送信: blockFindResult = " + blockFindResult);
-					        	         NetHandlerPlayClient.clearBlockFindResult(); //リセット
-					        	    }
+    		                        int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+    		                        if (blockFindResult != -1) {
+    		                            processInputWriter.println(blockFindResult); // 値を入力として送信
+    		                            System.out.println("送信: blockFindResult = " + blockFindResult);
+    		                            NetHandlerPlayClient.clearBlockFindResult(); // リセット
+    		                        }
+    		                        processInputWriter.flush();
+    		                    } else if (line.startsWith("999999919")) {
+    		                        while (Scanf.getInputText().isEmpty()) {
+    		                            try {
+    		                                Thread.sleep(100); // 100ミリ秒待機
+    		                            } catch (InterruptedException e) {
+    		                                e.printStackTrace();
+    		                            }
+    		                        }
+    		                        String scanfFindResult = Scanf.getInputText();
+    		                        processInputWriter.println(scanfFindResult);
+    		                        Scanf.clearInputText(); // 入力テキストをクリア
+    		                        processInputWriter.flush();
+    		                    }
+    		                }
+    		            } catch (IOException e) {
+    		                Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
+    		                e.printStackTrace();
+    		                Minecraft.getMinecraft().getSoundHandler().playSound(
+    		                    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+    		                );
+    		            }
+    		        }
+    		    });
+    		    outputReaderThread.start();
 
-					        	    // データの送信後、必要に応じて flush でバッファをクリア
-					        	    processInputWriter.flush();
-					        	}else if (line.startsWith("999999948")) { //testForBlocksMasked
-					        	    // マイクラチャット表示のため1秒待機
-					        	    try {
-					        	        Thread.sleep(100); // 0.1秒待つ
-					        	    } catch (InterruptedException e) {
-					        	        e.printStackTrace();
-					        	    }
+    		    // プロセスが完了するまで待機し、エラー時にのみメッセージを表示
+    		    outputReaderThread.join();
 
-					        	    // blockFindResult を取得
-					        	    int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
+    		    if (runProcess.exitValue() != 0) {
+    		        Sotuken.instance.moduleManager.addErrChatMessage("実行に失敗しました");
+    		        Minecraft.getMinecraft().getSoundHandler().playSound(
+    		            PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+    		        );
+    		    } else {
+    		        Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
+    		        try {
+    		            File sourceFile = new File("C:/EduCraft/main.c");
+    		            File destFile = new File("C:/EduCraft/Undo/main.c");
 
-					        	    // blockFindResult の内容をプロセスに送信
-					        	    if (blockFindResult != -1) { // -1 は未設定状態とし、送信をスキップ
-					        	        processInputWriter.println(blockFindResult);  // 値を入力として送信
-					        	        System.out.println("送信: blockFindResult = " + blockFindResult);
-					        	         NetHandlerPlayClient.clearBlockFindResult(); //リセット
-					        	    }
+    		            File destDir = destFile.getParentFile();
+    		            if (!destDir.exists()) {
+    		                destDir.mkdirs(); // ディレクトリを作成
+    		            }
 
-					        	    // データの送信後、必要に応じて flush でバッファをクリア
-					        	    processInputWriter.flush();
-					            }
-					        	
-					        	
-					        	
-					        	else  if(line.startsWith("999999919")){
-					        		// 入力テキストが空でない状態になるまで待機
-					                while (Scanf.getInputText().isEmpty()) {
-					                    try {
-					                    	
+    		            // ファイルのコピー
+    		            java.nio.file.Files.copy(sourceFile.toPath(), destFile.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 
-					                        Thread.sleep(5000); // 100ミリ秒待機
-					                    } catch (InterruptedException e) {
-					                        e.printStackTrace(); // エラーハンドリング
-					                    }
-					                }
-
-					                String scanfFindResult = Scanf.getInputText();
-					                
-				                    processInputWriter.println(scanfFindResult);  // 値を入力として送信
-					                
-				                    Scanf.clearInputText(); // 入力テキストをクリア
-					                // データの送信後、必要に応じて flush でバッファをクリア
-					                processInputWriter.flush();
-					            }
-					        	
-					        	
-					        	
-					        }	
-					    } catch (IOException e) {
-					        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
-					        e.printStackTrace();
-		            		Minecraft.getMinecraft().getSoundHandler().playSound(
-		            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
-		        			);
-					    }
-					}
-					
-				});
-	            outputReaderThread.start();
-	            
-	            
-	            
-	            
-
-
-
-	            
-	            
-	            
-
-	            //無限ループのためのタイムアウト設定をする(10秒)
-	            boolean completed = runProcess.waitFor(30, TimeUnit.SECONDS);
-	            if(!completed) {
-	            	
-	            	
-                    DataParser parser = new DataParser();
-                    try {
-                        InputStream inputStream = runProcess.getInputStream();
-                        BufferedReader runReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
-
-                        StringBuilder fullData = new StringBuilder();
-                        
-                        //一度に読み取れるバッファサイズを最大1024文字にする
-                        char[] buffer = new char[1024]; 
-                        int numCharsRead;
-
-                    	//最大1024文字までデータを格納し、numCharsReadに格納する
-                        while ((numCharsRead = runReader.read(buffer)) != -1) {
-                            fullData.append(buffer, 0, numCharsRead);
-                            //何かしらデータがある場合、解析を行う。 
-                            if (fullData.length() > 0) {
-                                parser.parseData(fullData.toString()); //解析
-                                fullData.setLength(0); // 解析後fullDataをリセット
-                            }
-                        }
-                    } catch (IOException e) {
-                        Sotuken.instance.moduleManager.addErrChatMessage("出力読み取り中にエラーが発生しました: " + e.getMessage());
-                        e.printStackTrace();
-                		Minecraft.getMinecraft().getSoundHandler().playSound(
-                			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
-            			);
-                    }
-	            	
-
-	            	
-	            	//タイムアウト発生時の処理
-	            	runProcess.destroy(); //プロセスを強制終了
-	            	Sotuken.instance.moduleManager.addErrChatMessage("プログラムの実行がタイムアウトしました");
-            		Minecraft.getMinecraft().getSoundHandler().playSound(
-            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
-        			);
-	            		            	
-	            	
-	            	//出力読み取りスレッドを中断
-	            	outputReaderThread.interrupt();
-	            }else {
-	            	//タイムアウトしなかったら、出力を読み取りスレッドの終了を待つ
-	            	outputReaderThread.join();
-	            	
-	        		//実行結果のチェック
-		    		if(runProcess.exitValue()!=0) {
-		    			Sotuken.instance.moduleManager.addErrChatMessage("実行に失敗しました");
-	            		Minecraft.getMinecraft().getSoundHandler().playSound(
-	            			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
-	        			);
-		    		}else {
-		    			Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
-		    			
-		    			//実行が成功した場合main.cをUndoディレクトリにコピーする
-		    			try {
-		    	            File sourceFile = new File("C:/EduCraft/main.c");
-		    	            File destFile = new File("C:/EduCraft/Undo/main.c");
-		    	            
-		    	            // ディレクトリが存在しない場合は作成
-		    	            File destDir = destFile.getParentFile();
-		    	            if (!destDir.exists()) {
-		    	                destDir.mkdirs();  // ディレクトリを作成
-		    	            }
-		    	            
-		    	            // ファイルのコピー
-		    	            java.nio.file.Files.copy(sourceFile.toPath(), destFile.toPath(),
-	    	                java.nio.file.StandardCopyOption.REPLACE_EXISTING);
-		    	            
-		    	            
-		    	            
-		    				
-		    	            //Sotuken.instance.moduleManager.addChatMessage("Undoディレクトリにログが保存されました");
-		    				
-		    				
-		    				
-		    				
-		    			}catch(IOException e) {
-		    				
-		    	            Sotuken.instance.moduleManager.addErrChatMessage("ファイルのコピー中にエラーが発生しました: " + e.getMessage());
-		    	            e.printStackTrace();
-		    	            Minecraft.getMinecraft().getSoundHandler().playSound(
-		    	                PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
-		    	            );
-		    				
-		    				
-		    			}
-		    			
-		    		}
-	            }
-	    		
-	    		
-
-	    		
-	    		
+    		        } catch (IOException e) {
+    		            Sotuken.instance.moduleManager.addErrChatMessage("ファイルのコピー中にエラーが発生しました: " + e.getMessage());
+    		            e.printStackTrace();
+    		            Minecraft.getMinecraft().getSoundHandler().playSound(
+    		                PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+    		            );
+    		        }
+    		    }
     		}
-    		/*###########*/
 
     		
     		
