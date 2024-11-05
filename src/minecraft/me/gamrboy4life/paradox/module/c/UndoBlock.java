@@ -121,7 +121,7 @@ public class UndoBlock extends Module {
     		compileProcess.waitFor();
 
     		if (compileProcess.exitValue() != 0) {
-    		    Sotuken.instance.moduleManager.addErrChatMessage("コンパイルに失敗しました");
+    		    Sotuken.instance.moduleManager.addErrChatMessage("Undoファイルが存在しません");
         		Minecraft.getMinecraft().getSoundHandler().playSound(
         			    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
     			);
@@ -198,8 +198,9 @@ public class UndoBlock extends Module {
     		    } else {
     		        Sotuken.instance.moduleManager.addChatMessage("Undoが成功しました");
     		        
-    		        
-    		        
+    		        //Undo後削除
+    		        new File("C:/EduCraft/Undo/main.c").delete();
+    		        new File("C:/EduCraft/Undo/main.exe").delete();
     		    }
     		}
 
