@@ -1,88 +1,55 @@
-[10:24:31] [Client thread/INFO]: Setting user: Player750
-[10:24:31] [Client thread/INFO]: (Session ID is token:0:Player750)
-[10:24:33] [Client thread/INFO]: LWJGL Version: 2.9.4
-[10:24:33] [Client thread/INFO]: Reloading ResourceManager: Default
-[10:24:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:24:34] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[10:24:34] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:24:34] [Thread-8/INFO]: OpenAL initialized.
-[10:24:35] [Sound Library Loader/INFO]: Sound engine started
-[10:24:39] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[10:24:44] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[10:24:44] [Server thread/INFO]: Generating keypair
-[10:24:44] [Server thread/INFO]: Preparing start region for level 0
-[10:24:45] [Server thread/INFO]: Changing view distance to 8, from 10
-[10:24:45] [Server thread/INFO]: Player750[local:E:9d432cec] logged in with entity id 223 at (2005.3256038842292, 112.5, 2008.444108136522)
-[10:24:45] [Server thread/INFO]: Player750 がゲームに参加しました
-[10:24:45] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[10:25:01] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
-[10:25:07] [Server thread/INFO]: Saving and pausing game...
-[10:25:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:25:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:25:07] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:25:47] [Server thread/INFO]: Saving and pausing game...
-[10:25:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:25:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:25:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:26:23] [Server thread/INFO]: Saving and pausing game...
-[10:26:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:26:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:26:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:26:29] [Server thread/INFO]: Saving and pausing game...
-[10:26:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:26:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:26:29] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:26:32] [Server thread/INFO]: Saving and pausing game...
-[10:26:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:26:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:26:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:26:43] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[10:26:44] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[10:26:44] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[10:26:44] [Server thread/INFO]: [Player750: ブロックを設置しました]
-[10:26:44] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[10:26:50] [Server thread/INFO]: Saving and pausing game...
-[10:26:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:26:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:26:50] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:27:11] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[10:27:11] [Thread-20/INFO]: [CHAT] §eEduCraft§7: §f
-[10:27:11] [Thread-19/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[10:27:11] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[10:27:14] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[10:27:14] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
-[10:27:14] [Thread-21/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[10:27:14] [Client thread/INFO]: [CHAT] そのブロックは設置できません
-[10:27:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 2005,112,2011
-[10:27:24] [Server thread/INFO]: Saving and pausing game...
-[10:27:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:27:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:27:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:27:32] [Server thread/INFO]: Saving and pausing game...
-[10:27:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:27:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:27:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:27:32] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[10:27:33] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
-[10:27:33] [Thread-23/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
-[10:27:33] [Server thread/INFO]: [Player750: ブロックを設置しました]
-[10:27:33] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[10:27:36] [Thread-25/INFO]: [CHAT] §eEduCraft§7: Undoが成功しました
-[10:27:36] [Server thread/INFO]: [Player750: ブロックを設置しました]
-[10:27:36] [Client thread/INFO]: [CHAT] ブロックを設置しました
-[10:27:37] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §ccc1.exe: fatal error: C:/EduCraft/Undo/main.c: No such file or directory
-[10:27:37] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §ccompilation terminated.
-[10:27:37] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §cUndoファイルが存在しません
-[10:27:38] [Server thread/INFO]: Saving and pausing game...
-[10:27:38] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:27:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:27:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:27:39] [Client thread/INFO]: Stopping!
-[10:27:39] [Client thread/INFO]: SoundSystem shutting down...
-[10:27:39] [Server thread/INFO]: Stopping server
-[10:27:39] [Server thread/INFO]: Saving players
-[10:27:39] [Server thread/INFO]: Saving worlds
-[10:27:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[10:27:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[10:27:39] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[10:27:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:03:45] [Client thread/INFO]: Setting user: Player703
+[01:03:45] [Client thread/INFO]: (Session ID is token:0:Player703)
+[01:03:47] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:03:48] [Client thread/INFO]: Reloading ResourceManager: Default
+[01:03:48] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:03:48] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[01:03:48] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:03:49] [Thread-8/INFO]: OpenAL initialized.
+[01:03:49] [Sound Library Loader/INFO]: Sound engine started
+[01:03:54] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[01:04:02] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[01:04:02] [Server thread/INFO]: Generating keypair
+[01:04:02] [Server thread/INFO]: Preparing start region for level 0
+[01:04:03] [Server thread/INFO]: Preparing spawn area: 7%
+[01:04:04] [Server thread/INFO]: Preparing spawn area: 32%
+[01:04:05] [Server thread/INFO]: Preparing spawn area: 77%
+[01:04:06] [Server thread/INFO]: Changing view distance to 8, from 10
+[01:04:06] [Server thread/INFO]: Player703[local:E:c6e13477] logged in with entity id 223 at (2002.5590677692865, 112.0, 2006.890953724556)
+[01:04:06] [Server thread/INFO]: Player703 がゲームに参加しました
+[01:04:07] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[01:04:17] [Server thread/INFO]: Saving and pausing game...
+[01:04:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:04:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:04:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:04:26] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[01:04:26] [Server thread/INFO]: Saving and pausing game...
+[01:04:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:04:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:04:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:04:30] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[01:04:33] [Server thread/INFO]: Saving and pausing game...
+[01:04:33] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:04:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:04:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:04:42] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[01:04:44] [Thread-19/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[01:05:10] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c実行に失敗しました
+[01:05:13] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[01:05:49] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[01:05:56] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[01:05:58] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[01:06:17] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[01:06:19] [Server thread/INFO]: Saving and pausing game...
+[01:06:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:06:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:06:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:06:20] [Client thread/INFO]: Stopping!
+[01:06:20] [Client thread/INFO]: SoundSystem shutting down...
+[01:06:20] [Server thread/INFO]: Stopping server
+[01:06:20] [Server thread/INFO]: Saving players
+[01:06:20] [Server thread/INFO]: Saving worlds
+[01:06:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[01:06:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[01:06:20] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[01:06:20] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

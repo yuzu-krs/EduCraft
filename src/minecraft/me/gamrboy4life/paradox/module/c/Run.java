@@ -97,6 +97,24 @@ public class Run extends Module {
  
     private void compileAndRunCFile(String filePath) {
     	
+    	
+    	//強制終了処理
+        try {
+        	//taskkill プロセスを終了
+        	//F 強制終了
+        	//IM 後ろに続くイメージ名をkill
+            ProcessBuilder builder = new ProcessBuilder("taskkill", "/F", "/IM", "main.exe");
+            Process process = builder.start();
+            process.waitFor(); // プロセスが終了するまで待機
+            
+        } catch (IOException e) {
+            Sotuken.instance.moduleManager.addChatMessage("プロセス終了中にエラーが発生しました: " + e.getMessage());
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            Sotuken.instance.moduleManager.addChatMessage("プロセス終了中にエラーが発生しました: " + e.getMessage());
+            e.printStackTrace();
+        }
+    	
         
 
 
