@@ -301,6 +301,14 @@ public class Run extends Module {
     		                Minecraft.getMinecraft().getSoundHandler().playSound(
     		                    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
     		                );
+    		                
+    		            } catch (OutOfMemoryError e) {
+    		                // OutOfMemoryErrorをキャッチしてメッセージを表示
+    		                Sotuken.instance.moduleManager.addErrChatMessage("プログラムの実行がタイムアウトしました");
+    		                e.printStackTrace();
+    		                Minecraft.getMinecraft().getSoundHandler().playSound(
+    		                    PositionedSoundRecord.create(new ResourceLocation("note.bass"), 1.0F)
+    		                );
     		            }
     		        }
     		    });
