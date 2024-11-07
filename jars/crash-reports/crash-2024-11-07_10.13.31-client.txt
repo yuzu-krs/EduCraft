@@ -1,0 +1,79 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 24/11/07 10:13
+Description: Unexpected error
+
+java.util.ConcurrentModificationException
+	at com.google.common.collect.HashBiMap$Itr.checkForConcurrentModification(HashBiMap.java:339)
+	at com.google.common.collect.HashBiMap$Itr.hasNext(HashBiMap.java:345)
+	at net.minecraft.client.audio.SoundManager.updateAllSounds(SoundManager.java:243)
+	at net.minecraft.client.audio.SoundHandler.update(SoundHandler.java:234)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2235)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1122)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:428)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.google.common.collect.HashBiMap$Itr.checkForConcurrentModification(HashBiMap.java:339)
+	at com.google.common.collect.HashBiMap$Itr.hasNext(HashBiMap.java:345)
+	at net.minecraft.client.audio.SoundManager.updateAllSounds(SoundManager.java:243)
+	at net.minecraft.client.audio.SoundHandler.update(SoundHandler.java:234)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player953'/223, l='MpServer', x=897.74, y=64.00, z=2295.23]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 5760975 game time, 1084 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 47 total; [EntitySkeleton['スケルトン'/1667, l='MpServer', x=916.53, y=41.00, z=2329.91], EntitySkeleton['スケルトン'/522, l='MpServer', x=866.50, y=14.00, z=2226.50], EntityZombie['ゾンビ'/1162, l='MpServer', x=893.50, y=32.00, z=2368.50], EntityCreeper['クリーパー'/1674, l='MpServer', x=887.78, y=33.00, z=2349.69], EntitySkeleton['スケルトン'/523, l='MpServer', x=870.50, y=14.00, z=2229.50], EntityZombie['ゾンビ'/1163, l='MpServer', x=892.06, y=32.00, z=2366.41], EntityCreeper['クリーパー'/1675, l='MpServer', x=885.41, y=33.00, z=2348.31], EntityZombie['ゾンビ'/1036, l='MpServer', x=830.50, y=18.00, z=2324.50], EntityZombie['ゾンビ'/1164, l='MpServer', x=891.50, y=32.00, z=2362.50], EntityCreeper['クリーパー'/1676, l='MpServer', x=887.03, y=33.00, z=2348.53], EntityCreeper['クリーパー'/1165, l='MpServer', x=892.03, y=32.00, z=2369.31], EntityZombie['ゾンビ'/1171, l='MpServer', x=922.50, y=29.00, z=2311.50], EntitySlime['スライム'/1815, l='MpServer', x=880.50, y=15.00, z=2234.72], EntityBat['コウモリ'/537, l='MpServer', x=911.47, y=32.10, z=2308.25], EntityBat['コウモリ'/538, l='MpServer', x=906.56, y=32.10, z=2291.75], EntityZombie['ゾンビ'/1053, l='MpServer', x=967.50, y=49.00, z=2270.50], EntityZombie['ゾンビ'/1056, l='MpServer', x=968.50, y=49.00, z=2273.50], EntityZombie['ゾンビ'/929, l='MpServer', x=967.50, y=26.00, z=2352.50], EntityZombie['ゾンビ'/1057, l='MpServer', x=966.88, y=49.00, z=2273.19], EntityBat['コウモリ'/1584, l='MpServer', x=925.75, y=29.04, z=2309.56], EntityMinecartChest['container.minecart'/305, l='MpServer', x=863.50, y=36.06, z=2355.50], EntityMinecartChest['container.minecart'/310, l='MpServer', x=870.50, y=33.06, z=2352.50], EntityMinecartChest['container.minecart'/311, l='MpServer', x=876.50, y=32.06, z=2370.50], EntityCreeper['クリーパー'/1208, l='MpServer', x=858.50, y=34.00, z=2348.50], EntityMinecartChest['container.minecart'/314, l='MpServer', x=885.50, y=36.06, z=2330.50], EntityCreeper['クリーパー'/321, l='MpServer', x=903.91, y=35.00, z=2289.31], EntityEnderman['エンダーマン'/1348, l='MpServer', x=837.50, y=26.00, z=2220.50], EntitySkeleton['スケルトン'/966, l='MpServer', x=902.50, y=31.00, z=2286.50], EntitySkeleton['スケルトン'/967, l='MpServer', x=900.50, y=31.00, z=2285.50], EntitySkeleton['スケルトン'/328, l='MpServer', x=918.50, y=42.00, z=2317.50], EntityMinecartChest['container.minecart'/329, l='MpServer', x=924.50, y=36.06, z=2359.50], EntitySkeleton['スケルトン'/1225, l='MpServer', x=827.50, y=38.00, z=2313.50], EntitySkeleton['スケルトン'/971, l='MpServer', x=907.50, y=30.00, z=2358.50], EntityZombie['ゾンビ'/1867, l='MpServer', x=844.50, y=18.00, z=2318.50], EntityZombie['ゾンビ'/1868, l='MpServer', x=842.50, y=18.00, z=2317.50], EntityZombie['ゾンビ'/1869, l='MpServer', x=843.50, y=18.00, z=2318.50], EntityBat['コウモリ'/850, l='MpServer', x=884.34, y=37.09, z=2351.81], EntityBat['コウモリ'/851, l='MpServer', x=896.25, y=34.10, z=2344.59], EntityCreeper['クリーパー'/1492, l='MpServer', x=961.50, y=20.00, z=2282.50], EntityMinecartChest['container.minecart'/347, l='MpServer', x=969.50, y=36.06, z=2357.50], EntityPlayerSP['Player953'/223, l='MpServer', x=897.74, y=64.00, z=2295.23], EntitySkeleton['スケルトン'/1129, l='MpServer', x=844.50, y=30.00, z=2218.50], EntitySpider['クモ'/1265, l='MpServer', x=944.50, y=34.00, z=2320.50], EntityCreeper['クリーパー'/1011, l='MpServer', x=959.50, y=19.00, z=2312.50], EntityCreeper['クリーパー'/1012, l='MpServer', x=957.50, y=19.00, z=2314.50], EntitySkeleton['スケルトン'/1013, l='MpServer', x=817.15, y=24.00, z=2300.45], EntityCreeper['クリーパー'/887, l='MpServer', x=893.94, y=34.00, z=2291.53]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:390)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2794)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:457)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 11 (amd64) version 10.0
+	CPU: 8x 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+	Java Version: 1.8.0_422, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 602781760 bytes (574 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) Iris(R) Xe Graphics GL version 4.6.0 - Build 30.0.101.1340, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 日本語 (日本)
+	Profiler Position: N/A (disabled)
+	CPU: 8x 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz

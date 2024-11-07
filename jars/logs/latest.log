@@ -1,33 +1,201 @@
-[07:01:26] [Client thread/INFO]: Setting user: Player187
-[07:01:26] [Client thread/INFO]: (Session ID is token:0:Player187)
-[07:01:29] [Client thread/INFO]: LWJGL Version: 2.9.4
-[07:01:31] [Client thread/INFO]: Reloading ResourceManager: Default
-[07:01:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[07:01:32] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[07:01:32] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[07:01:32] [Thread-8/INFO]: OpenAL initialized.
-[07:01:33] [Sound Library Loader/INFO]: Sound engine started
-[07:01:41] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[07:02:36] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[07:02:36] [Server thread/INFO]: Generating keypair
-[07:02:36] [Server thread/INFO]: Preparing start region for level 0
-[07:02:37] [Server thread/INFO]: Preparing spawn area: 65%
-[07:02:37] [Server thread/INFO]: Changing view distance to 8, from 10
-[07:02:38] [Server thread/INFO]: Player187[local:E:6a796d79] logged in with entity id 223 at (923.1738408605341, 64.0, 2307.300000011921)
-[07:02:38] [Server thread/INFO]: Player187 がゲームに参加しました
-[07:02:38] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[07:02:40] [Server thread/INFO]: Saving and pausing game...
-[07:02:40] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[07:02:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[07:02:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[07:04:23] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[07:04:40] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §cプログラムの実行がタイムアウトしました
-[07:04:48] [Client thread/INFO]: Stopping!
-[07:04:48] [Client thread/INFO]: SoundSystem shutting down...
-[07:04:48] [Server thread/INFO]: Stopping server
-[07:04:48] [Server thread/INFO]: Saving players
-[07:04:48] [Server thread/INFO]: Saving worlds
-[07:04:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[07:04:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[07:04:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[07:04:48] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[10:36:51] [Client thread/INFO]: Setting user: Player78
+[10:36:51] [Client thread/INFO]: (Session ID is token:0:Player78)
+[10:36:53] [Client thread/INFO]: LWJGL Version: 2.9.4
+[10:36:54] [Client thread/INFO]: Reloading ResourceManager: Default
+[10:36:55] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[10:36:55] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[10:36:55] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[10:36:55] [Thread-8/INFO]: OpenAL initialized.
+[10:36:55] [Sound Library Loader/INFO]: Sound engine started
+[10:37:04] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[10:37:21] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[10:37:21] [Server thread/INFO]: Generating keypair
+[10:37:21] [Server thread/INFO]: Preparing start region for level 0
+[10:37:22] [Server thread/INFO]: Preparing spawn area: 73%
+[10:37:23] [Server thread/INFO]: Changing view distance to 8, from 10
+[10:37:23] [Server thread/INFO]: Player78[local:E:f21bb652] logged in with entity id 223 at (906.7160654013896, 63.0, 2246.1056018907666)
+[10:37:23] [Server thread/INFO]: Player78 がゲームに参加しました
+[10:37:24] [Server thread/INFO]: Saving and pausing game...
+[10:37:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[10:37:25] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[10:37:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[10:37:25] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[10:37:30] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[10:37:31] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:31] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:31] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fチェックする範囲のブロックの名前を入力してください:
+[10:37:31] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:31] [Server thread/INFO]: [Player78: 現在時刻を1000に設定]
+[10:37:31] [Server thread/INFO]: [Player78: 天気を晴れに変更します]
+[10:37:31] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[10:37:31] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[10:37:34] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始X座標を入力してください:
+[10:37:34] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:34] [Server thread/INFO]: <Player78> tnt
+[10:37:34] [Client thread/INFO]: [CHAT] <Player78> tnt
+[10:37:48] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始Y座標を入力してください:
+[10:37:48] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:48] [Server thread/INFO]: <Player78> 902
+[10:37:48] [Client thread/INFO]: [CHAT] <Player78> 902
+[10:37:52] [Server thread/INFO]: <Player78> 64
+[10:37:52] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始Z座標を入力してください:
+[10:37:52] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:52] [Client thread/INFO]: [CHAT] <Player78> 64
+[10:37:55] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲の終了X座標を入力してください:
+[10:37:55] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:55] [Server thread/INFO]: <Player78> 2245
+[10:37:55] [Client thread/INFO]: [CHAT] <Player78> 2245
+[10:37:58] [Server thread/INFO]: <Player78> 902
+[10:37:58] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲の終了Y座標を入力してください:
+[10:37:58] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:58] [Client thread/INFO]: [CHAT] <Player78> 902
+[10:37:59] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲の終了Z座標を入力してください:
+[10:37:59] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:37:59] [Server thread/INFO]: <Player78> 64
+[10:37:59] [Client thread/INFO]: [CHAT] <Player78> 64
+[10:38:00] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fコピー先のX座標を入力してください:
+[10:38:00] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:00] [Server thread/INFO]: <Player78> 2245
+[10:38:00] [Client thread/INFO]: [CHAT] <Player78> 2245
+[10:38:04] [Server thread/INFO]: <Player78> 902
+[10:38:04] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fコピー先のY座標を入力してください:
+[10:38:04] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:04] [Client thread/INFO]: [CHAT] <Player78> 902
+[10:38:06] [Server thread/INFO]: <Player78> 65
+[10:38:06] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fコピー先のZ座標を入力してください:
+[10:38:06] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:06] [Client thread/INFO]: [CHAT] <Player78> 65
+[10:38:17] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fチェックする範囲のブロック名: tnt
+[10:38:17] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f開始座標: X=902, Y=64, Z=2245
+[10:38:17] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f終了座標: X=902, Y=64, Z=2245
+[10:38:17] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fコピー先の座標: X=902, Y=65, Z=2245
+[10:38:17] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:18] [Server thread/INFO]: <Player78> 2245
+[10:38:18] [Server thread/INFO]: [Player78: 1 個のブロックを比較しました]
+[10:38:18] [Client thread/INFO]: [CHAT] <Player78> 2245
+[10:38:18] [Client thread/INFO]: [CHAT] 1 個のブロックを比較しました
+[10:38:18] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:18] [Server thread/INFO]: [Player78: ブロックは902, 63, 2245に見つかりました。]
+[10:38:18] [Client thread/INFO]: [CHAT] ブロックは902, 63, 2245に見つかりました。
+[10:38:18] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f範囲内のブロックが一致しています。
+[10:38:18] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:18] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f指定された範囲がコピーされました。
+[10:38:18] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[10:38:18] [Server thread/INFO]: [Player78: ブロックを設置しました]
+[10:38:18] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:38:21] [Thread-19/INFO]: [CHAT] §eEduCraft§7: Undoが成功しました
+[10:38:21] [Server thread/INFO]: [Player78: ブロックは902, 63, 2245に見つかりました。]
+[10:38:21] [Server thread/INFO]: [Player78: ブロックを設置しました]
+[10:38:21] [Client thread/INFO]: [CHAT] 比較元と比較先が同一です
+[10:38:21] [Client thread/INFO]: [CHAT] ブロックは902, 63, 2245に見つかりました。
+[10:38:21] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:38:23] [Thread-21/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[10:38:24] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:24] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:24] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §fチェックする範囲のブロックの名前を入力してください:
+[10:38:24] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:24] [Server thread/INFO]: [Player78: 現在時刻を1000に設定]
+[10:38:24] [Server thread/INFO]: [Player78: 天気を晴れに変更します]
+[10:38:24] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[10:38:24] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[10:38:27] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始X座標を入力してください:
+[10:38:27] [Thread-22/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:27] [Server thread/INFO]: <Player78> 2245
+[10:38:27] [Client thread/INFO]: [CHAT] <Player78> 2245
+[10:38:29] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[10:38:32] [Thread-23/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[10:38:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §fチェックする範囲のブロックの名前を入力してください:
+[10:38:32] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:32] [Server thread/INFO]: [Player78: 現在時刻を1000に設定]
+[10:38:32] [Server thread/INFO]: [Player78: 天気を晴れに変更します]
+[10:38:32] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[10:38:32] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[10:38:36] [Server thread/INFO]: <Player78> tnt
+[10:38:36] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始X座標を入力してください:
+[10:38:36] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:36] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §c実行に失敗しました
+[10:38:36] [Client thread/INFO]: [CHAT] <Player78> tnt
+[10:38:47] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始Y座標を入力してください:
+[10:38:47] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[10:38:47] [Server thread/INFO]: <Player78> 902
+[10:38:47] [Client thread/INFO]: [CHAT] <Player78> 902
+[10:40:40] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始Z座標を入力してください:
+[10:40:40] [Thread-24/INFO]: [CHAT] §eEduCraft§7: §f
+[10:40:40] [Server thread/INFO]: <Player78> 2245
+[10:40:40] [Client thread/INFO]: [CHAT] <Player78> 2245
+[10:40:44] [Client thread/INFO]: [CHAT] §eEduCraft§7: main.exe を強制終了しました。
+[10:40:45] [Thread-25/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[10:40:45] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:40:45] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:40:45] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fチェックする範囲のブロックの名前を入力してください:
+[10:40:45] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:40:45] [Server thread/INFO]: [Player78: 現在時刻を1000に設定]
+[10:40:45] [Server thread/INFO]: [Player78: 天気を晴れに変更します]
+[10:40:45] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[10:40:45] [Client thread/INFO]: [CHAT] 天気を晴れに変更します
+[10:40:48] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始X座標を入力してください:
+[10:40:48] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:40:48] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §c実行に失敗しました
+[10:40:48] [Server thread/INFO]: <Player78> tnt
+[10:40:48] [Client thread/INFO]: [CHAT] <Player78> tnt
+[10:41:14] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始Y座標を入力してください:
+[10:41:14] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:14] [Server thread/INFO]: <Player78> 901
+[10:41:14] [Client thread/INFO]: [CHAT] <Player78> 901
+[10:41:22] [Server thread/INFO]: <Player78> 64
+[10:41:22] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲の開始Z座標を入力してください:
+[10:41:22] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:22] [Client thread/INFO]: [CHAT] <Player78> 64
+[10:41:27] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲の終了X座標を入力してください:
+[10:41:27] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:27] [Server thread/INFO]: <Player78> 2295
+[10:41:27] [Client thread/INFO]: [CHAT] <Player78> 2295
+[10:41:30] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲の終了Y座標を入力してください:
+[10:41:30] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:30] [Server thread/INFO]: <Player78> 901
+[10:41:30] [Client thread/INFO]: [CHAT] <Player78> 901
+[10:41:31] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲の終了Z座標を入力してください:
+[10:41:31] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:31] [Server thread/INFO]: <Player78> 64
+[10:41:31] [Client thread/INFO]: [CHAT] <Player78> 64
+[10:41:32] [Server thread/INFO]: <Player78> 2295
+[10:41:32] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fコピー先のX座標を入力してください:
+[10:41:32] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:32] [Client thread/INFO]: [CHAT] <Player78> 2295
+[10:41:34] [Server thread/INFO]: <Player78> 901
+[10:41:34] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fコピー先のY座標を入力してください:
+[10:41:34] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:34] [Client thread/INFO]: [CHAT] <Player78> 901
+[10:41:36] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fコピー先のZ座標を入力してください:
+[10:41:36] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:36] [Server thread/INFO]: <Player78> 65
+[10:41:36] [Client thread/INFO]: [CHAT] <Player78> 65
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fチェックする範囲のブロック名: tnt
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f開始座標: X=901, Y=64, Z=2295
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f終了座標: X=901, Y=64, Z=2295
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §fコピー先の座標: X=901, Y=65, Z=2295
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:43] [Server thread/INFO]: <Player78> 2295
+[10:41:43] [Server thread/INFO]: [Player78: 1 個のブロックを比較しました]
+[10:41:43] [Client thread/INFO]: [CHAT] <Player78> 2295
+[10:41:43] [Client thread/INFO]: [CHAT] 1 個のブロックを比較しました
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:43] [Server thread/INFO]: [Player78: ブロックは901, 63, 2295に見つかりました。]
+[10:41:43] [Client thread/INFO]: [CHAT] ブロックは901, 63, 2295に見つかりました。
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f範囲内のブロックが一致しています。
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f
+[10:41:43] [Thread-26/INFO]: [CHAT] §eEduCraft§7: §f指定された範囲がコピーされました。
+[10:41:43] [Thread-25/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[10:41:43] [Server thread/INFO]: [Player78: ブロックを設置しました]
+[10:41:43] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:43:02] [Client thread/INFO]: Stopping!
+[10:43:02] [Client thread/INFO]: SoundSystem shutting down...
+[10:43:02] [Server thread/INFO]: Stopping server
+[10:43:02] [Server thread/INFO]: Saving players
+[10:43:02] [Server thread/INFO]: Saving worlds
+[10:43:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[10:43:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[10:43:02] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[10:43:02] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

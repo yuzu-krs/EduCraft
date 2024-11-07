@@ -266,7 +266,7 @@ public class Run extends Module {
 
     		                    if (line.startsWith("999999959") || line.startsWith("999999949") || line.startsWith("999999948")) {
     		                        try {
-    		                            Thread.sleep(100); // 0.1秒待つ
+    		                            Thread.sleep(200); // 200ミリ秒待機
     		                        } catch (InterruptedException e) {
     		                            e.printStackTrace();
     		                        }
@@ -282,7 +282,7 @@ public class Run extends Module {
     		                    } else if (line.startsWith("999999919")) {
     		                        while (Scanf.getInputText().isEmpty()) {
     		                            try {
-    		                                Thread.sleep(500); // 100ミリ秒待機
+    		                                Thread.sleep(10); // 10ミリ秒待機
     		                            } catch (InterruptedException e) {
     		                                e.printStackTrace();
     		                            }

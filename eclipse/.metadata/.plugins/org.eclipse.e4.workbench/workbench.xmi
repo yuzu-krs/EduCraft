@@ -148,10 +148,9 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_3LoZ-GI0Ee-owMgxeGUejA" containerData="6658" selectedElement="_3LoZ-mI0Ee-owMgxeGUejA">
-              <children xsi:type="advanced:Placeholder" xmi:id="_3LoZ-WI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.editorss" containerData="7412" ref="_3LpoeWI0Ee-owMgxeGUejA"/>
-              <children xsi:type="basic:PartStack" xmi:id="_3LoZ-mI0Ee-owMgxeGUejA" elementId="output" containerData="2588" selectedElement="_3LoZ_GI0Ee-owMgxeGUejA">
+              <children xsi:type="advanced:Placeholder" xmi:id="_3LoZ-WI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.editorss" containerData="7971" ref="_3LpoeWI0Ee-owMgxeGUejA"/>
+              <children xsi:type="basic:PartStack" xmi:id="_3LoZ-mI0Ee-owMgxeGUejA" elementId="output" containerData="2029" selectedElement="_3LoZ_GI0Ee-owMgxeGUejA">
                 <tags>&#x30bf;&#x30fc;&#x30df;&#x30ca;&#x30eb;</tags>
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_3LoZ-2I0Ee-owMgxeGUejA" elementId="org.eclipse.ui.views.AllMarkersView" toBeRendered="false" ref="_3Lpog2I0Ee-owMgxeGUejA" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:&#x4e00;&#x822c;</tags>
@@ -247,14 +246,17 @@
       <tags>categoryTag:&#x30d8;&#x30eb;&#x30d7;</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_3LpoeWI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.editorss" selectedElement="_3LpoemI0Ee-owMgxeGUejA">
-      <children xsi:type="basic:PartStack" xmi:id="_3LpoemI0Ee-owMgxeGUejA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_5qsTYJx2Ee-tWJL2Jby89A">
+      <children xsi:type="basic:PartStack" xmi:id="_3LpoemI0Ee-owMgxeGUejA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_4OE84JyhEe-dWtfCQ7x-MA">
         <tags>EditorStack</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_5qsTYJx2Ee-tWJL2Jby89A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Run.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Run.java&quot; partName=&quot;Run.java&quot; title=&quot;Run.java&quot; tooltip=&quot;Client/src/me/gamrboy4life/paradox/module/c/Run.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Client/src/me/gamrboy4life/paradox/module/c/Run.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;10763&quot; selectionTopPixel=&quot;6202&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_4OE84JyhEe-dWtfCQ7x-MA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Run.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Run.java&quot; partName=&quot;Run.java&quot; title=&quot;Run.java&quot; tooltip=&quot;Client/src/me/gamrboy4life/paradox/module/c/Run.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Client/src/me/gamrboy4life/paradox/module/c/Run.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;10984&quot; selectionTopPixel=&quot;5982&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -276,8 +278,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:&#x4e00;&#x822c;</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_3Lpoh2I0Ee-owMgxeGUejA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -484,7 +484,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPNmI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_CP_KsJx2Ee-tWJL2Jby89A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_3Lw_AmI0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JwnfMJylEe-0OvJT7dUJ1w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_3Lw_AmI0Ee-owMgxeGUejA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPQ2I0Ee-owMgxeGUejA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -492,8 +492,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPRWI0Ee-owMgxeGUejA" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_CP_xwpx2Ee-tWJL2Jby89A" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="&#x5143;&#x306b;&#x623b;&#x3059;" enabled="false" command="_3Lw8x2I0Ee-owMgxeGUejA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_CQAY0Jx2Ee-tWJL2Jby89A" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="&#x3084;&#x308a;&#x76f4;&#x3057;" enabled="false" command="_3Lw9cGI0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JwoGQ5ylEe-0OvJT7dUJ1w" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="&#x5143;&#x306b;&#x623b;&#x3059;" command="_3Lw8x2I0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JwotUJylEe-0OvJT7dUJ1w" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="&#x3084;&#x308a;&#x76f4;&#x3057;" enabled="false" command="_3Lw9cGI0Ee-owMgxeGUejA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPSWI0Ee-owMgxeGUejA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -520,7 +520,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3LqPm2I0Ee-owMgxeGUejA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_CQA_4px2Ee-tWJL2Jby89A" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_3Lw-pGI0Ee-owMgxeGUejA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JwpUYJylEe-0OvJT7dUJ1w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_3Lw-pGI0Ee-owMgxeGUejA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3Lq2JmI0Ee-owMgxeGUejA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
