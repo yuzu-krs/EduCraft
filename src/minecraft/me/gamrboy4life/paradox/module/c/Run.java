@@ -65,20 +65,33 @@ public class Run extends Module {
     // 入力内容や条件結果を保存するstaticなリスト
     public static List<Object> logIfMscanf = new ArrayList<Object>();
     
-    // リストの先頭要素を取得して削除するメソッド
-    public static Object getAndRemoveFirstData() {
-        if (!logIfMscanf.isEmpty()) {
+    // UndoBlockに入力パターンや条件結果を送るリスト
+    // 入力内容や条件結果を保存するstaticなリスト
+    public static List<Object> SendlogIfMscanf = new ArrayList<Object>();
+    
+ // logIfMscanf の内容を SendlogIfMscanf にコピーするメソッド
+    public static void copyLogToSendLog() {
+        // 既存の内容をクリアしてからコピー
+        SendlogIfMscanf.clear();
+        SendlogIfMscanf.addAll(logIfMscanf);
+        System.out.println("logIfMscanf の内容を SendlogIfMscanf にコピーしました");
+    }
+    
+ // リストの先頭要素を取得して削除するメソッド (SendlogIfMscanf 用)
+    public static Object getAndRemoveFirstDataSend() {
+        if (!SendlogIfMscanf.isEmpty()) {
             // 先頭の要素を取得
-            Object firstData = logIfMscanf.get(0);
+            Object firstData = SendlogIfMscanf.get(0);
             // 先頭の要素をリストから削除
-            logIfMscanf.remove(0);
-            System.out.println("取得して削除: " + firstData);
+            SendlogIfMscanf.remove(0);
+            System.out.println("取得して削除 (Send): " + firstData);
             return firstData;
         } else {
-            System.out.println("リストが空です");
+            System.out.println("リスト (Send) が空です");
             return null;
         }
     }
+
     
  // リストのすべての要素を表示するメソッド
     public static void displayAllData() {
@@ -332,9 +345,13 @@ public class Run extends Module {
     		            if (!destDir.exists()) {
     		                destDir.mkdirs(); // ディレクトリを作成
     		            }
+    		            
+    		            copyLogToSendLog(); //入力パターンをUndoに送る
 
     		            // ファイルのコピー
     		            java.nio.file.Files.copy(sourceFile.toPath(), destFile.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+    		            
+    		            
 
     		        } catch (IOException e) {
     		            Sotuken.instance.moduleManager.addErrChatMessage("ファイルのコピー中にエラーが発生しました: " + e.getMessage());

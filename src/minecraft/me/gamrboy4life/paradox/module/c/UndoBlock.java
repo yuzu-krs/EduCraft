@@ -195,7 +195,7 @@ public class UndoBlock extends Module {
     		                    if (line.startsWith("999999959") || line.startsWith("999999949") || line.startsWith("999999948")||line.startsWith("999999919")) {
     		                        //Run.javaでためた入力パターンの先頭をゲットして削除
 
-    		                    	processInputWriter.println(Run.getAndRemoveFirstData());
+    		                    	processInputWriter.println(Run.getAndRemoveFirstDataSend());
     		                    }
     		                }
     		            } catch (IOException e) {
