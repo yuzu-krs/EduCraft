@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="org.apache.logging.log4j.message.StringFormatterMessageFactory"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
@@ -25,7 +24,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.Summon"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlock"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.TestForBlocks"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.describe.EduCraft"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition"/>
     <fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition.MovingObjectType"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.c.Run"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.analysis.UndoDataParser"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.EduCraft"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.describe.EduCraft"/>
 </qualifiedTypeNameHistroy>
