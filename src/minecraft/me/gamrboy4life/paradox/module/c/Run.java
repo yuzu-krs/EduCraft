@@ -337,6 +337,9 @@ public class Run extends Module {
     		        );
     		    } else {
     		        Sotuken.instance.moduleManager.addChatMessage("実行が成功しました");
+    		        Minecraft.getMinecraft().getSoundHandler().playSound(
+    		                PositionedSoundRecord.create(new ResourceLocation("random.levelup"), 1.0F)
+    		        );
     		        try {
     		            File sourceFile = new File("C:/EduCraft/main.c");
     		            File destFile = new File("C:/EduCraft/Undo/main.c");

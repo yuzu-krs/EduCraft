@@ -220,6 +220,10 @@ public class UndoBlock extends Module {
     		    } else {
     		        Sotuken.instance.moduleManager.addChatMessage("Undoが成功しました");
     		        
+    		        Minecraft.getMinecraft().getSoundHandler().playSound(
+    		                PositionedSoundRecord.create(new ResourceLocation("random.orb"), 1.0F)
+    		        );
+    		        
     		        //Undo後削除
     		        new File("C:/EduCraft/Undo/main.c").delete();
     		        new File("C:/EduCraft/Undo/main.exe").delete();
