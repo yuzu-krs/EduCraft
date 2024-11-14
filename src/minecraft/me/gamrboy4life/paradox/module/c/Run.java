@@ -302,6 +302,14 @@ public class Run extends Module {
     		                        }
     		                        String scanfFindResult = Scanf.getInputText();
     		                        processInputWriter.println(scanfFindResult);
+		                        	
+    		                        //入力しているようにユーザーに見せている
+		                            try {
+		                                Thread.sleep(200); // 200ミリ秒待機
+		                            } catch (InterruptedException e) {
+		                                e.printStackTrace();
+		                            }
+    		                        
     		                        logIfMscanf.add(scanfFindResult); //Undoのためのログを保存
     		                        
     		                        Scanf.clearInputText(); // 入力テキストをクリア

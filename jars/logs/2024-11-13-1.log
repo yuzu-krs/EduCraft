@@ -1,0 +1,304 @@
+[09:42:22] [Client thread/INFO]: Setting user: Player468
+[09:42:22] [Client thread/INFO]: (Session ID is token:0:Player468)
+[09:42:23] [Client thread/INFO]: LWJGL Version: 2.9.4
+[09:42:23] [Client thread/INFO]: Reloading ResourceManager: Default
+[09:42:24] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[09:42:24] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[09:42:24] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[09:42:24] [Thread-8/INFO]: OpenAL initialized.
+[09:42:25] [Sound Library Loader/INFO]: Sound engine started
+[09:42:30] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[09:42:38] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[09:42:38] [Server thread/INFO]: Generating keypair
+[09:42:38] [Server thread/INFO]: Preparing start region for level 0
+[09:42:39] [Server thread/INFO]: Changing view distance to 8, from 10
+[09:42:40] [Server thread/INFO]: Player468[local:E:a988e637] logged in with entity id 223 at (2005.9602074319355, 113.0, 2010.0472511639675)
+[09:42:40] [Server thread/INFO]: Player468 がゲームに参加しました
+[09:42:40] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[09:42:45] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[09:42:45] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fHello World
+[09:42:45] [Thread-17/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[09:47:59] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 2005,112,2010
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:13:40: error: 'GLASS' undeclared (first use in this funct
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cion)
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c   13 |         setBlockReplace(2005,112,2010, GLASS, 0);
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §c      |                                        ^~~~~
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:13:40: note: each undeclared identifier is reported only 
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[09:48:09] [Thread-19/INFO]: [CHAT] §eEduCraft§7: §cコンパイルに失敗しました
+[09:48:11] [Server thread/INFO]: Saving and pausing game...
+[09:48:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:48:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:48:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[09:48:24] [Thread-20/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[09:48:24] [Thread-21/INFO]: [CHAT] §eEduCraft§7: §f
+[09:48:24] [Thread-20/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[09:48:24] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[09:48:24] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[09:50:45] [Thread-22/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[09:50:45] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §f
+[09:50:45] [Thread-23/INFO]: [CHAT] §eEduCraft§7: §f0 ,-1972639840 ,0 にガラスブロックを設置しました
+[09:50:45] [Thread-22/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[09:50:45] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[09:50:45] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[09:51:05] [Thread-24/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[09:51:05] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f
+[09:51:05] [Thread-25/INFO]: [CHAT] §eEduCraft§7: §f2005 ,112 ,2010 にガラスブロックを設置しました
+[09:51:05] [Thread-24/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[09:51:05] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[09:51:55] [Server thread/INFO]: Saving and pausing game...
+[09:51:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:51:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:51:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[09:56:12] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 2006,112,2010
+[09:56:25] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 2004,114,2012
+[09:56:53] [Thread-26/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[09:56:53] [Thread-27/INFO]: [CHAT] §eEduCraft§7: §f
+[09:56:53] [Thread-26/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[09:56:53] [Server thread/INFO]: [Player468: 27 個のブロックで満たしました]
+[09:56:53] [Client thread/INFO]: [CHAT] 27 個のブロックで満たしました
+[09:57:51] [Server thread/INFO]: Saving and pausing game...
+[09:57:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:57:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:57:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[09:58:12] [Server thread/INFO]: Saving and pausing game...
+[09:58:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:58:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:58:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[09:58:21] [Server thread/INFO]: Saving and pausing game...
+[09:58:21] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[09:58:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[09:58:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[10:08:09] [Thread-28/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-29/INFO]: [CHAT] §eEduCraft§7: §f
+[10:08:09] [Thread-28/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:09] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:10] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[10:08:32] [Server thread/INFO]: Saving and pausing game...
+[10:08:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[10:08:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[10:08:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[10:47:05] [Server thread/INFO]: Saving and pausing game...
+[10:47:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[10:47:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[10:47:05] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[11:18:28] [Thread-30/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-31/INFO]: [CHAT] §eEduCraft§7: §f
+[11:18:28] [Thread-30/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:18:28] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:19:43] [Client thread/INFO]: [CHAT] §eEduCraft§7: VSCodeでファイルを開きます: C:/EduCraft/main.c
+[11:23:08] [Thread-32/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:23:08] [Thread-33/INFO]: [CHAT] §eEduCraft§7: §fHello World
+[11:23:08] [Thread-32/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cIn file included from C:/EduCraft/main.c:2:
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:9: error: expected declaration specifiers or '...' befo
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cre '(' token
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:17: error: expected declaration specifiers or '...' bef
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §core '(' token
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c      |                 ^~~~
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:23: error: expected declaration specifiers or '...' bef
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §core numeric constant
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c      |                       ^~~~~~
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:31: error: expected declaration specifiers or '...' bef
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §core numeric constant
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c      |                               ^
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c: In function 'main':
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:10:35: error: 'GLASS' undeclared (first use in this funct
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cion)
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c   10 |     setBlockReplace(100, 64, 100, GLASS, 0);
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §c      |                                   ^~~~~
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:10:35: note: each undeclared identifier is reported only 
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §conce for each function it appears in
+[11:30:11] [Thread-34/INFO]: [CHAT] §eEduCraft§7: §cコンパイルに失敗しました
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cIn file included from C:/EduCraft/main.c:2:
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:9: error: expected declaration specifiers or '...' befo
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cre '(' token
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c      |         ^~~~~~
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:17: error: expected declaration specifiers or '...' bef
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §core '(' token
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c      |                 ^~~~
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:23: error: expected declaration specifiers or '...' bef
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §core numeric constant
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c      |                       ^~~~~~
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cC:/EduCraft/main.c:4:31: error: expected declaration specifiers or '...' bef
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §core numeric constant
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c    4 | setvbuf(stdout, NULL, _IONBF, 0); // この行を消すと意図通りに動かなくなる可能性があります
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §c      |                               ^
+[11:30:35] [Thread-35/INFO]: [CHAT] §eEduCraft§7: §cコンパイルに失敗しました
+[11:31:34] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 2002,112,2008
+[11:31:51] [Thread-36/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:31:51] [Thread-37/INFO]: [CHAT] §eEduCraft§7: §f
+[11:31:51] [Thread-36/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:31:51] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[11:31:51] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[11:33:07] [Thread-38/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:33:08] [Thread-39/INFO]: [CHAT] §eEduCraft§7: §f
+[11:33:08] [Thread-39/INFO]: [CHAT] §eEduCraft§7: §f2002 ,112 ,2008 にガラスブロックを設置しました
+[11:33:08] [Thread-38/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:33:08] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:33:25] [Thread-40/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:33:25] [Thread-41/INFO]: [CHAT] §eEduCraft§7: §f
+[11:33:25] [Thread-41/INFO]: [CHAT] §eEduCraft§7: §f 2002, 112, 2008 にガラスブロックを設置しました
+[11:33:25] [Thread-40/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:33:25] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[11:33:25] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[11:33:39] [Thread-42/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:33:39] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f
+[11:33:39] [Thread-43/INFO]: [CHAT] §eEduCraft§7: §f2002,112,2008にガラスブロックを設置しました
+[11:33:39] [Thread-42/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:33:39] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:33:58] [Server thread/INFO]: Saving and pausing game...
+[11:33:58] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[11:33:58] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[11:33:58] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[11:34:09] [Thread-44/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:34:09] [Thread-45/INFO]: [CHAT] §eEduCraft§7: §f
+[11:34:09] [Thread-45/INFO]: [CHAT] §eEduCraft§7: §f2002 ,112 ,2008 にガラスブロックを設置しました
+[11:34:09] [Thread-44/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:34:09] [Client thread/INFO]: [CHAT] そのブロックは設置できません
+[11:34:27] [Thread-46/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
+[11:34:27] [Thread-47/INFO]: [CHAT] §eEduCraft§7: §f
+[11:34:27] [Thread-47/INFO]: [CHAT] §eEduCraft§7: §f 2002, 112, 2008 にガラスブロックを設置しました
+[11:34:27] [Thread-46/INFO]: [CHAT] §eEduCraft§7: 実行が成功しました
+[11:34:27] [Server thread/INFO]: [Player468: ブロックを設置しました]
+[11:34:27] [Client thread/INFO]: [CHAT] ブロックを設置しました
+[12:56:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2187ms behind, skipping 43 tick(s)
