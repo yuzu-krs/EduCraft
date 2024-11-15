@@ -71,9 +71,11 @@ public class DataParser {
 			
 			
 			
+			
 		}else if(isSummon(data)) {
 			executeSummon(data);
 		
+			
 			
 			
 		}else if(isSendCommand(data)) {
@@ -81,8 +83,15 @@ public class DataParser {
 			
 			
 			
+			
+			
 		}else if(isTestForBlock(data)) {
 			executeTestForBlock(data);
+			
+		}else if(isErr(data)) {
+			executeErr(data);
+			
+			
 			
 			
 		}else if(isTestForBlocksAll(data)) {
@@ -93,6 +102,8 @@ public class DataParser {
 			
 		}else if(isScanf(data)) {
 			//scanfの場合は飛ばす
+			
+			
 		
 		}else {
 			Sotuken.instance.moduleManager.addRunChatMessage(data.toString());
@@ -828,6 +839,26 @@ public class DataParser {
 	        }
 	    } catch (NumberFormatException e) {
 	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlock関数解析: " + e.getMessage());
+	    }
+	}
+	
+	
+	private boolean isErr(String line) {
+		return line.startsWith("-999999959,");
+	}
+	
+	private void executeErr(String line) {
+		try {
+		
+			 // lineをカンマで分割
+	        String[] parts = line.split(",");
+	        if (parts.length == 2) {
+	            String err = parts[1];
+	        
+	            Sotuken.instance.moduleManager.addErrRunChatMessage(String.format("%s", err));
+	        }
+	    } catch (NumberFormatException e) {
+	        Sotuken.instance.moduleManager.addErrRunChatMessage("エラー:testForBlock系関数解析: " + e.getMessage());
 	    }
 	}
 	
