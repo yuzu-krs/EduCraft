@@ -1,58 +1,13 @@
-[13:25:16] [Client thread/INFO]: Setting user: Player984
-[13:25:16] [Client thread/INFO]: (Session ID is token:0:Player984)
-[13:25:17] [Client thread/INFO]: LWJGL Version: 2.9.4
-[13:25:18] [Client thread/INFO]: Reloading ResourceManager: Default
-[13:25:18] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:25:18] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[13:25:18] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:25:19] [Thread-8/INFO]: OpenAL initialized.
-[13:25:19] [Sound Library Loader/INFO]: Sound engine started
-[13:25:24] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[13:25:45] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[13:25:45] [Server thread/INFO]: Generating keypair
-[13:25:46] [Server thread/INFO]: Preparing start region for level 0
-[13:25:47] [Server thread/INFO]: Preparing spawn area: 39%
-[13:25:47] [Server thread/INFO]: Changing view distance to 8, from 10
-[13:25:48] [Server thread/INFO]: Player984[local:E:8b21de65] logged in with entity id 223 at (2003.629952836472, 114.0, 2006.5115465375252)
-[13:25:48] [Server thread/INFO]: Player984 がゲームに参加しました
-[13:25:48] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[13:25:52] [Server thread/INFO]: Saving and pausing game...
-[13:25:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:25:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:25:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:26:10] [Thread-17/INFO]: [CHAT] §eEduCraft§7: コンパイルに成功しました
-[13:26:10] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fブロック名を入力してください:
-[13:26:10] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:26:13] [Server thread/INFO]: <Player984> tnt
-[13:26:13] [Client thread/INFO]: [CHAT] <Player984> tnt
-[13:26:13] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fX座標を入力してください:
-[13:26:13] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:26:14] [Server thread/INFO]: <Player984> tnt
-[13:26:14] [Client thread/INFO]: [CHAT] <Player984> tnt
-[13:26:14] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fY座標を入力してください:
-[13:26:14] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:26:15] [Server thread/INFO]: <Player984> tnt
-[13:26:15] [Client thread/INFO]: [CHAT] <Player984> tnt
-[13:26:15] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §fZ座標を入力してください:
-[13:26:15] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:26:16] [Server thread/INFO]: <Player984> tnt
-[13:26:16] [Client thread/INFO]: [CHAT] <Player984> tnt
-[13:26:16] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f指定の座標にブロック tnt を設置しました。
-[13:26:16] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f561 -1481829488 561
-[13:26:16] [Client thread/INFO]: [CHAT] 入力した数値 (-1.481829488E9) は小さすぎます。0 以上にしてください
-[13:26:16] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §f
-[13:26:16] [Thread-18/INFO]: [CHAT] §eEduCraft§7: §cエラー: 無効な入力 32767 です。プログラムを終了します。
-[13:26:16] [Thread-17/INFO]: [CHAT] §eEduCraft§7: §c実行に失敗しました
-[13:26:53] [Server thread/INFO]: Saving and pausing game...
-[13:26:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:26:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:26:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:26:54] [Client thread/INFO]: Stopping!
-[13:26:54] [Client thread/INFO]: SoundSystem shutting down...
-[13:26:54] [Server thread/INFO]: Stopping server
-[13:26:54] [Server thread/INFO]: Saving players
-[13:26:54] [Server thread/INFO]: Saving worlds
-[13:26:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[13:26:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[13:26:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[13:26:54] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:51:05] [Client thread/INFO]: Setting user: Player359
+[16:51:05] [Client thread/INFO]: (Session ID is token:0:Player359)
+[16:51:06] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:51:07] [Client thread/INFO]: Reloading ResourceManager: Default
+[16:51:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:51:07] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[16:51:07] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:51:08] [Thread-8/INFO]: OpenAL initialized.
+[16:51:08] [Sound Library Loader/INFO]: Sound engine started
+[16:51:14] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[16:51:35] [Client thread/INFO]: Stopping!
+[16:51:35] [Client thread/INFO]: SoundSystem shutting down...
+[16:51:35] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
