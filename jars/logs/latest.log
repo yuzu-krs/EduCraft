@@ -1,13 +1,31 @@
-[16:51:05] [Client thread/INFO]: Setting user: Player359
-[16:51:05] [Client thread/INFO]: (Session ID is token:0:Player359)
-[16:51:06] [Client thread/INFO]: LWJGL Version: 2.9.4
-[16:51:07] [Client thread/INFO]: Reloading ResourceManager: Default
-[16:51:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:51:07] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[16:51:07] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:51:08] [Thread-8/INFO]: OpenAL initialized.
-[16:51:08] [Sound Library Loader/INFO]: Sound engine started
-[16:51:14] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[16:51:35] [Client thread/INFO]: Stopping!
-[16:51:35] [Client thread/INFO]: SoundSystem shutting down...
-[16:51:35] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:04:47] [Client thread/INFO]: Setting user: Player312
+[17:04:47] [Client thread/INFO]: (Session ID is token:0:Player312)
+[17:04:48] [Client thread/INFO]: LWJGL Version: 2.9.4
+[17:04:49] [Client thread/INFO]: Reloading ResourceManager: Default
+[17:04:49] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:04:50] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[17:04:50] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:04:50] [Thread-8/INFO]: OpenAL initialized.
+[17:04:50] [Sound Library Loader/INFO]: Sound engine started
+[17:04:55] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[17:05:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[17:05:47] [Server thread/INFO]: Generating keypair
+[17:05:47] [Server thread/INFO]: Preparing start region for level 0
+[17:05:48] [Server thread/INFO]: Preparing spawn area: 99%
+[17:05:48] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:05:49] [Server thread/INFO]: Player312[local:E:f81b7ef6] logged in with entity id 223 at (1882.7138554041665, 120.27326095408658, 2000.8445565134798)
+[17:05:49] [Server thread/INFO]: Player312 がゲームに参加しました
+[17:05:49] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[17:05:52] [Server thread/INFO]: Saving and pausing game...
+[17:05:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:05:52] [Client thread/INFO]: Stopping!
+[17:05:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:05:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:05:52] [Client thread/INFO]: SoundSystem shutting down...
+[17:05:52] [Server thread/INFO]: Stopping server
+[17:05:52] [Server thread/INFO]: Saving players
+[17:05:52] [Server thread/INFO]: Saving worlds
+[17:05:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:05:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:05:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:05:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
