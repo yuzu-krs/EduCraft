@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModLookingAt"/>
     <fullyQualifiedTypeName name="org.jetbrains.annotations.Nls.Capitalization"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.CloneGui"/>
-    <fullyQualifiedTypeName name="org.intellij.lang.annotations.PrintFormat"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.SendCommandGui"/>
     <fullyQualifiedTypeName name="java.lang.Cloneable"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.Clone"/>
@@ -54,10 +53,11 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.MscanfGui"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.Mscanf"/>
     <fullyQualifiedTypeName name="net.minecraft.network.play.server.S38PacketPlayerListItem.AddPlayerData"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.c.Run"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.analysis.UndoDataParser"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.EduCraft"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.describe.EduCraft"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.c.Run"/>
+    <fullyQualifiedTypeName name="org.intellij.lang.annotations.PrintFormat"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

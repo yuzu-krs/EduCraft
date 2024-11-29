@@ -274,6 +274,11 @@ public class Run extends Module {
     		                BufferedReader runReader = new BufferedReader(new InputStreamReader(runProcess.getInputStream(), StandardCharsets.UTF_8));
     		                String line;
     		                while ((line = runReader.readLine()) != null) {
+    		                	
+    		                	
+
+    		                	
+    		                	
     		                    parser.parseData(line);
     		                    Scanf.clearInputText(); // 入力テキストをクリア
 
@@ -292,6 +297,37 @@ public class Run extends Module {
     		                            NetHandlerPlayClient.clearBlockFindResult(); // リセット
     		                        }
     		                        processInputWriter.flush();
+    		                        
+    		                        
+    		                        
+    		                        
+		                        //プレイヤーのx座標をゲット
+    		                    }else if(line.startsWith("999999939")) {
+    		                    	
+    		                    	
+    		                    	
+    		                    	processInputWriter.println((int) Math.floor(mc.thePlayer.posX));
+    		                    	logIfMscanf.add((int) Math.floor(mc.thePlayer.posX));
+    		                    	processInputWriter.flush();
+    		                    	
+		                        //プレイヤーのy座標をゲット    		                    	
+    		                    }else if(line.startsWith("999999938")) {    		                    	
+
+    		                    	
+    		                    	processInputWriter.println((int) Math.floor(mc.thePlayer.posY));
+    		                    	logIfMscanf.add((int) Math.floor(mc.thePlayer.posY));
+    		                    	processInputWriter.flush();
+    		                    	
+		                        //プレイヤーのz座標をゲット
+    		                    }else if(line.startsWith("999999937")) {
+    		                    	
+    		                    	
+    		                    	
+    		                    	processInputWriter.println((int) Math.floor(mc.thePlayer.posZ));
+    		                    	logIfMscanf.add((int) Math.floor(mc.thePlayer.posZ));
+    		                    	processInputWriter.flush();
+    		                    	
+    		                    	
     		                    } else if (line.startsWith("999999919")) {
     		                        while (Scanf.getInputText().isEmpty()) {
     		                            try {

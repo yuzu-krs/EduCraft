@@ -100,6 +100,18 @@ public class DataParser {
 		}else if(isTestForBlocksMasked(data)) {
 			executeTestForBlocksMasked(data);
 			
+
+		
+		}else if(isgetPositionX(data)) {
+
+			
+		}else if(isgetPositionY(data)) {
+
+			
+		}else if(isgetPositionZ(data)) {
+			
+			
+			
 		}else if(isScanf(data)) {
 			//scanfの場合は飛ばす
 			
@@ -964,7 +976,17 @@ public class DataParser {
 	
 	
 	
+	private boolean isgetPositionX(String line) {
+		return line.startsWith("999999939");
+	}
 	
+	private boolean isgetPositionY(String line) {
+		return line.startsWith("999999938");
+	}
+	
+	private boolean isgetPositionZ(String line) {
+		return line.startsWith("999999937");
+	}
 	
 	
     
