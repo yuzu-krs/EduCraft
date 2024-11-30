@@ -192,7 +192,8 @@ public class UndoBlock extends Module {
     		                while ((line = runReader.readLine()) != null) {
     		                    parser.undoParseData(line);
     		                    System.out.println("jafoiwjeijfoiawji"+line);
-    		                    if (line.startsWith("999999959") || line.startsWith("999999949") || line.startsWith("999999948")||line.startsWith("999999919")) {
+    		                    if (line.startsWith("999999959") || line.startsWith("999999949") || line.startsWith("999999948")||line.startsWith("999999919")||
+    		                    		line.startsWith("999999939")||line.startsWith("999999938")||line.startsWith("999999937")) {
     		                        //Run.javaでためた入力パターンの先頭をゲットして削除
 
     		                    	processInputWriter.println(Run.getAndRemoveFirstDataSend());
