@@ -12,6 +12,7 @@ import me.gamrboy4life.paradox.module.editor.Notepad;
 import me.gamrboy4life.paradox.module.editor.VSCode;
 import me.gamrboy4life.paradox.module.grammar.Clone;
 import me.gamrboy4life.paradox.module.grammar.Fill;
+import me.gamrboy4life.paradox.module.grammar.GetPosition;
 import me.gamrboy4life.paradox.module.grammar.Mscanf;
 import me.gamrboy4life.paradox.module.grammar.SendCommand;
 import me.gamrboy4life.paradox.module.grammar.SetBlock;
@@ -59,6 +60,7 @@ public class ModuleManager {
 		//文法情報
 		newMod(new Clone());
 		newMod(new Fill());	
+		newMod(new GetPosition());
 		newMod(new Mscanf());
 		newMod(new SendCommand());
 		newMod(new SetBlock());
