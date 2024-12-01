@@ -281,13 +281,19 @@ public class Run extends Module {
     		                	
     		                    parser.parseData(line);
     		                    Scanf.clearInputText(); // 入力テキストをクリア
+    		                    NetHandlerPlayClient.clearBlockFindResult(); // リセット
 
     		                    if (line.startsWith("999999959") || line.startsWith("999999949") || line.startsWith("999999948")) {
-    		                        try {
-    		                            Thread.sleep(200); // 200ミリ秒待機
-    		                        } catch (InterruptedException e) {
-    		                            e.printStackTrace();
+    		                        
+    		                    	while (NetHandlerPlayClient.getBlockFindResult() == -1) {
+    		                            try {
+    		                                Thread.sleep(10); // 10ミリ秒待機
+    		                            } catch (InterruptedException e) {
+    		                                e.printStackTrace();
+    		                            }
     		                        }
+    		                    	
+
 
     		                        int blockFindResult = NetHandlerPlayClient.getBlockFindResult();
     		                        if (blockFindResult != -1) {
