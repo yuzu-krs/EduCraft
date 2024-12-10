@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class SendCommand extends Module {
 
     public SendCommand() {
-        super("sendCommand関数", 0, Category.GRAMMAR);
+        super("sendcommand関数", 0, Category.GRAMMAR);
     }
 
     @Override

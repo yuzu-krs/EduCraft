@@ -26,13 +26,13 @@
   "fill関数": {
     "enabled": false
   },
-  "getPosition関数": {
-    "enabled": false
+  "getposition関数": {
+    "enabled": true
   },
   "m_scanf関数": {
     "enabled": false
   },
-  "sendCommand関数": {
+  "sendcommand関数": {
     "enabled": false
   },
   "setblock関数": {
