@@ -18,6 +18,7 @@ import me.gamrboy4life.paradox.module.Module;
 import me.gamrboy4life.paradox.module.describe.EduCraft;
 import me.gamrboy4life.paradox.module.grammar.Clone;
 import me.gamrboy4life.paradox.module.grammar.Fill;
+import me.gamrboy4life.paradox.module.grammar.GetPosition;
 import me.gamrboy4life.paradox.module.grammar.Mscanf;
 import me.gamrboy4life.paradox.module.grammar.SendCommand;
 import me.gamrboy4life.paradox.module.grammar.SetBlock;
@@ -75,6 +76,7 @@ public class FileManager {
 			,TestForBlocks.class.getName()
 			,EduCraft.class.getName()
 			,Mscanf.class.getName()
+			,GetPosition.class.getName()
 			);
 	
 	public boolean isModBlackListed(Module m) {

@@ -58,6 +58,6 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.c.Run"/>
     <fullyQualifiedTypeName name="org.intellij.lang.annotations.PrintFormat"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.GetPosition"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.gui.grammargui.GetPositionGui"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.GetPosition"/>
 </qualifiedTypeNameHistroy>

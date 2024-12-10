@@ -27,7 +27,7 @@
     "enabled": false
   },
   "GetPosition関数": {
-    "enabled": true
+    "enabled": false
   },
   "m_scanf関数": {
     "enabled": false
