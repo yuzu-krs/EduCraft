@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class Clone extends Module {
 
     public Clone() {
-        super("Clone関数", 0, Category.GRAMMAR);
+        super("clone関数", 0, Category.GRAMMAR);
     }
 
     @Override

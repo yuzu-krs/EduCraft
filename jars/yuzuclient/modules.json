@@ -20,31 +20,31 @@
   "VSCode": {
     "enabled": false
   },
-  "Clone関数": {
+  "clone関数": {
     "enabled": false
   },
-  "Fill関数": {
+  "fill関数": {
     "enabled": false
   },
-  "GetPosition関数": {
+  "getPosition関数": {
     "enabled": false
   },
   "m_scanf関数": {
     "enabled": false
   },
-  "SendCommand関数": {
+  "sendCommand関数": {
     "enabled": false
   },
-  "SetBlock関数": {
+  "setblock関数": {
     "enabled": false
   },
-  "Summon関数": {
+  "summon関数": {
     "enabled": false
   },
-  "TestForBlock関数": {
+  "testforblock関数": {
     "enabled": false
   },
-  "TestForBlocks関数": {
+  "testforblocks関数": {
     "enabled": false
   },
   "座標": {

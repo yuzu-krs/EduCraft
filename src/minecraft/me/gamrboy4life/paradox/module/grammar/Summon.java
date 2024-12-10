@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class Summon extends Module {
 
     public Summon() {
-        super("Summon関数", 0, Category.GRAMMAR);
+        super("summon関数", 0, Category.GRAMMAR);
     }
 
     @Override

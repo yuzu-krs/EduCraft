@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class Fill extends Module {
 
     public Fill() {
-        super("Fill関数", 0, Category.GRAMMAR);
+        super("fill関数", 0, Category.GRAMMAR);
     }
 
     @Override
