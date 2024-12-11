@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class GetPosition extends Module {
 
     public GetPosition() {
-        super("getposition関数", 0, Category.GRAMMAR);
+        super("getPosition関数", 0, Category.GRAMMAR);
     }
 
     @Override

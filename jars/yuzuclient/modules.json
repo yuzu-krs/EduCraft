@@ -26,25 +26,25 @@
   "fill関数": {
     "enabled": false
   },
-  "getposition関数": {
+  "getPosition関数": {
     "enabled": true
   },
   "m_scanf関数": {
     "enabled": false
   },
-  "sendcommand関数": {
+  "sendCommand関数": {
     "enabled": false
   },
-  "setblock関数": {
+  "setBlock関数": {
     "enabled": false
   },
   "summon関数": {
     "enabled": false
   },
-  "testforblock関数": {
+  "testForBlock関数": {
     "enabled": false
   },
-  "testforblocks関数": {
+  "testForBlocks関数": {
     "enabled": false
   },
   "座標": {

@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class SetBlock extends Module {
 
     public SetBlock() {
-        super("setblock関数", 0, Category.GRAMMAR);
+        super("setBlock関数", 0, Category.GRAMMAR);
     }
 
     @Override

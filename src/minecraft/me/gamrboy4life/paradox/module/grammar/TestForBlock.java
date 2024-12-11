@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 public class TestForBlock extends Module {
 
     public TestForBlock() {
-        super("testforblock関数", 0, Category.GRAMMAR);
+        super("testForBlock関数", 0, Category.GRAMMAR);
     }
 
     @Override
