@@ -27,7 +27,7 @@
     "enabled": false
   },
   "getPosition関数": {
-    "enabled": true
+    "enabled": false
   },
   "m_scanf関数": {
     "enabled": false
@@ -46,6 +46,9 @@
   },
   "testForBlocks関数": {
     "enabled": false
+  },
+  "ブロックID": {
+    "enabled": true
   },
   "座標": {
     "enabled": true

@@ -1,0 +1,55 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.block.Block;
+import net.minecraft.util.BlockPos;
+
+public class ModBlockID extends ModDraggable {
+
+    private static boolean enabled = true; // 表示の有効/無効を管理
+
+    @Override
+    public int getWidth() {
+        return font.getStringWidth(getBlockIDString());
+    }
+
+    @Override
+    public int getHeight() {
+        return font.FONT_HEIGHT;
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        if (enabled) {
+            font.drawString(getBlockIDString(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+        }
+    }
+
+    private String getBlockIDString() {
+        if (mc.theWorld == null || mc.thePlayer == null) {
+            return "Block ID: N/A";
+        }
+
+        BlockPos pos = new BlockPos(mc.thePlayer.posX, mc.thePlayer.posY - 1, mc.thePlayer.posZ);
+        Block block = mc.theWorld.getBlockState(pos).getBlock();
+
+        return String.format("Block ID: %d", Block.getIdFromBlock(block));
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        if (enabled) {
+            font.drawString("Block ID: 1", pos.getAbsoluteX(), pos.getAbsoluteY(), -1); // ダミー表示
+        }
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean isEnabled) {
+        ModBlockID.enabled = isEnabled;
+    }
+}

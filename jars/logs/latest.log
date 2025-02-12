@@ -1,26 +1,36 @@
-[18:51:54] [Client thread/INFO]: Setting user: Player687
-[18:51:54] [Client thread/INFO]: (Session ID is token:0:Player687)
-[18:51:56] [Client thread/INFO]: LWJGL Version: 2.9.4
-[18:51:56] [Client thread/INFO]: Reloading ResourceManager: Default
-[18:51:57] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[18:51:57] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[18:51:57] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[18:51:57] [Thread-8/INFO]: OpenAL initialized.
-[18:51:57] [Sound Library Loader/INFO]: Sound engine started
-[18:52:02] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[18:52:06] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[18:52:06] [Server thread/INFO]: Generating keypair
-[18:52:07] [Server thread/INFO]: Preparing start region for level 0
-[18:52:08] [Server thread/INFO]: Changing view distance to 8, from 10
-[18:52:08] [Server thread/INFO]: Player687[local:E:98b5cc56] logged in with entity id 223 at (650.269324305664, 69.0, 1168.1060839063325)
-[18:52:08] [Server thread/INFO]: Player687 がゲームに参加しました
-[18:52:08] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[18:52:31] [Client thread/INFO]: Stopping!
-[18:52:31] [Client thread/INFO]: SoundSystem shutting down...
-[18:52:32] [Server thread/INFO]: Stopping server
-[18:52:32] [Server thread/INFO]: Saving players
-[18:52:32] [Server thread/INFO]: Saving worlds
-[18:52:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[18:52:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[18:52:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[18:52:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:41:39] [Client thread/INFO]: Setting user: Player625
+[19:41:39] [Client thread/INFO]: (Session ID is token:0:Player625)
+[19:41:40] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:41:41] [Client thread/INFO]: Reloading ResourceManager: Default
+[19:41:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:41:41] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[19:41:41] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:41:42] [Thread-8/INFO]: OpenAL initialized.
+[19:41:42] [Sound Library Loader/INFO]: Sound engine started
+[19:41:47] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[19:41:54] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[19:41:54] [Server thread/INFO]: Generating keypair
+[19:41:55] [Server thread/INFO]: Preparing start region for level 0
+[19:41:56] [Server thread/INFO]: Changing view distance to 8, from 10
+[19:41:56] [Server thread/INFO]: Player625[local:E:413a9000] logged in with entity id 284 at (-5.699999988079073, 70.0, -448.47945244299996)
+[19:41:56] [Server thread/INFO]: Player625 がゲームに参加しました
+[19:41:57] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[19:42:42] [Server thread/INFO]: Saving and pausing game...
+[19:42:42] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[19:42:42] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[19:42:42] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[19:42:49] [Server thread/INFO]: Saving and pausing game...
+[19:42:49] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[19:42:49] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[19:42:49] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[19:44:31] [Server thread/INFO]: Player625 は [所持品の確認] の実績を取得した
+[19:44:31] [Client thread/INFO]: [CHAT] Player625 は [所持品の確認] の実績を取得した
+[19:44:36] [Client thread/INFO]: Stopping!
+[19:44:36] [Client thread/INFO]: SoundSystem shutting down...
+[19:44:36] [Server thread/INFO]: Stopping server
+[19:44:36] [Server thread/INFO]: Saving players
+[19:44:36] [Server thread/INFO]: Saving worlds
+[19:44:36] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[19:44:36] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[19:44:36] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[19:44:36] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

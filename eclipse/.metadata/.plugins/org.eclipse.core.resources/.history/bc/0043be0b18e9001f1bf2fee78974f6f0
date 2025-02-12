@@ -1,0 +1,62 @@
+package me.gamrboy4life.paradox.mods.impl;
+
+import me.gamrboy4life.paradox.gui.hud.ScreenPosition;
+import me.gamrboy4life.paradox.mods.ModDraggable;
+import net.minecraft.block.Block;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.MovingObjectPosition;
+
+public class ModBlockID extends ModDraggable {
+
+    private static boolean enabled = true; // 表示の有効/無効を管理
+
+    @Override
+    public int getWidth() {
+        return font.getStringWidth(getBlockNameString());
+    }
+
+    @Override
+    public int getHeight() {
+        return font.FONT_HEIGHT;
+    }
+
+    @Override
+    public void render(ScreenPosition pos) {
+        if (enabled) {
+            font.drawString(getBlockNameString(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+        }
+    }
+
+    private String getBlockNameString() {
+        if (mc.theWorld == null || mc.thePlayer == null) {
+            return "Looking at: N/A";
+        }
+
+        MovingObjectPosition mop = mc.objectMouseOver;
+        if (mop == null || mop.typeOfHit != MovingObjectPosition.MovingObjectType.BLOCK) {
+            return "Looking at: None";
+        }
+
+        BlockPos pos = mop.getBlockPos();
+        Block block = mc.theWorld.getBlockState(pos).getBlock();
+        String blockName = block.getLocalizedName(); // ブロックの表示名を取得
+
+        return String.format("Looking at: %s", blockName);
+    }
+
+    @Override
+    public void renderDummy(ScreenPosition pos) {
+        if (enabled) {
+            font.drawString("Looking at: Stone", pos.getAbsoluteX(), pos.getAbsoluteY(), -1); // ダミー表示
+        }
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean isEnabled) {
+        ModBlockID.enabled = isEnabled;
+    }
+}
