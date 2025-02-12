@@ -59,6 +59,9 @@
   "方角": {
     "enabled": true
   },
+  "視点先のブロックIDをコピー": {
+    "enabled": false
+  },
   "現在位置の座標をコピー": {
     "enabled": false
   },

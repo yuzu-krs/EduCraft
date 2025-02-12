@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.analysis.DataParser"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.grammar.GetPosition"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.status.BlockID"/>
     <fullyQualifiedTypeName name="me.gamrboy4life.paradox.mods.impl.ModBlockID"/>
+    <fullyQualifiedTypeName name="me.gamrboy4life.paradox.module.misc.CopyBlockID"/>
 </qualifiedTypeNameHistroy>

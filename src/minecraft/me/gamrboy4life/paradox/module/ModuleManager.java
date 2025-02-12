@@ -19,6 +19,7 @@ import me.gamrboy4life.paradox.module.grammar.SetBlock;
 import me.gamrboy4life.paradox.module.grammar.Summon;
 import me.gamrboy4life.paradox.module.grammar.TestForBlock;
 import me.gamrboy4life.paradox.module.grammar.TestForBlocks;
+import me.gamrboy4life.paradox.module.misc.CopyBlockID;
 import me.gamrboy4life.paradox.module.misc.CopyLookingAt;
 import me.gamrboy4life.paradox.module.misc.CopyXYZ;
 import me.gamrboy4life.paradox.module.status.BlockID;
@@ -84,6 +85,7 @@ public class ModuleManager {
 		//newMod(new Panic());
 		
 		//MISC
+		newMod(new CopyBlockID());
 		newMod(new CopyXYZ());
 		newMod(new CopyLookingAt());
 

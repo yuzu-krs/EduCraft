@@ -1,36 +1,50 @@
-[19:41:39] [Client thread/INFO]: Setting user: Player625
-[19:41:39] [Client thread/INFO]: (Session ID is token:0:Player625)
-[19:41:40] [Client thread/INFO]: LWJGL Version: 2.9.4
-[19:41:41] [Client thread/INFO]: Reloading ResourceManager: Default
-[19:41:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[19:41:41] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[19:41:41] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[19:41:42] [Thread-8/INFO]: OpenAL initialized.
-[19:41:42] [Sound Library Loader/INFO]: Sound engine started
-[19:41:47] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[19:41:54] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[19:41:54] [Server thread/INFO]: Generating keypair
-[19:41:55] [Server thread/INFO]: Preparing start region for level 0
-[19:41:56] [Server thread/INFO]: Changing view distance to 8, from 10
-[19:41:56] [Server thread/INFO]: Player625[local:E:413a9000] logged in with entity id 284 at (-5.699999988079073, 70.0, -448.47945244299996)
-[19:41:56] [Server thread/INFO]: Player625 がゲームに参加しました
-[19:41:57] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
-[19:42:42] [Server thread/INFO]: Saving and pausing game...
-[19:42:42] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
-[19:42:42] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
-[19:42:42] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
-[19:42:49] [Server thread/INFO]: Saving and pausing game...
-[19:42:49] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
-[19:42:49] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
-[19:42:49] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
-[19:44:31] [Server thread/INFO]: Player625 は [所持品の確認] の実績を取得した
-[19:44:31] [Client thread/INFO]: [CHAT] Player625 は [所持品の確認] の実績を取得した
-[19:44:36] [Client thread/INFO]: Stopping!
-[19:44:36] [Client thread/INFO]: SoundSystem shutting down...
-[19:44:36] [Server thread/INFO]: Stopping server
-[19:44:36] [Server thread/INFO]: Saving players
-[19:44:36] [Server thread/INFO]: Saving worlds
-[19:44:36] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
-[19:44:36] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
-[19:44:36] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
-[19:44:36] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[06:55:42] [Client thread/INFO]: Setting user: Player453
+[06:55:42] [Client thread/INFO]: (Session ID is token:0:Player453)
+[06:55:43] [Client thread/INFO]: LWJGL Version: 2.9.4
+[06:55:43] [Client thread/INFO]: Reloading ResourceManager: Default
+[06:55:44] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[06:55:44] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[06:55:44] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[06:55:44] [Thread-8/INFO]: OpenAL initialized.
+[06:55:45] [Sound Library Loader/INFO]: Sound engine started
+[06:55:48] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[06:55:55] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[06:55:55] [Server thread/INFO]: Generating keypair
+[06:55:55] [Server thread/INFO]: Preparing start region for level 0
+[06:55:56] [Server thread/INFO]: Changing view distance to 8, from 10
+[06:55:56] [Server thread/INFO]: Player453[local:E:b400e5bd] logged in with entity id 283 at (144.47738391390698, 75.0, -602.865968767193)
+[06:55:56] [Server thread/INFO]: Player453 がゲームに参加しました
+[06:55:56] [Client thread/INFO]: [CHAT] §e§lEduCraft§r§fへようこそ！§r §fTABGUIは§e§n矢印キー§r§fで操作できます。
+[06:56:01] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: tallgrass
+[06:56:04] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: grass
+[06:56:09] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:10] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:14] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:21] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:23] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:29] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 128,70,-617
+[06:56:32] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 119,73,-624
+[06:56:33] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:40] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: tallgrass
+[06:56:44] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:45] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:56:59] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先の座標がクリップボードにコピーされました: 109,68,-658
+[06:57:00] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: tallgrass
+[06:58:39] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: leaves
+[06:58:41] [Client thread/INFO]: [CHAT] §eEduCraft§7: §c目の前にブロックがないため、コピーできませんでした
+[06:58:43] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: leaves
+[06:58:49] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: wool
+[06:58:56] [Client thread/INFO]: [CHAT] §eEduCraft§7: 視点先のブロックIDがクリップボードにコピーされました: log
+[06:59:29] [Server thread/INFO]: Saving and pausing game...
+[06:59:29] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[06:59:29] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[06:59:29] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[06:59:31] [Client thread/INFO]: Stopping!
+[06:59:32] [Client thread/INFO]: SoundSystem shutting down...
+[06:59:32] [Server thread/INFO]: Stopping server
+[06:59:32] [Server thread/INFO]: Saving players
+[06:59:32] [Server thread/INFO]: Saving worlds
+[06:59:32] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[06:59:32] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[06:59:32] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[06:59:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
